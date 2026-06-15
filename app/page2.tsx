@@ -100,7 +100,7 @@ export default function HomePage() {
           {/* RIGHT (image half) */}
           <div className="relative hidden lg:block">
             <Image
-              src="/image1.png"
+              src="/couple1.jpg"
               alt=""
               fill
               className="object-cover"
