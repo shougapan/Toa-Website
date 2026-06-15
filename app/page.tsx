@@ -258,7 +258,7 @@ export default function HomePage() {
       {/* Image Layer with Enhanced Gradient Blending */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/couple2.jpg"
+          src="/couple1.jpg"
           alt="幸せなカップルのイメージ"
           fill
           priority
