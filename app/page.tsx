@@ -1,1074 +1,434 @@
-"use client";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link'; 
+import { Sparkles, CheckCircle2, ChevronDown, ChevronRight, BarChart3, Clock, Briefcase, Stethoscope, ClipboardCheck, ShieldAlert, HeartHandshake } from 'lucide-react';
 
-import { useState } from "react";
-import Image from "next/image";
-import { 
-  Calendar, 
-  ChevronRight, 
-  HeartHandshake,
-  Compass,
-  ChevronDown, 
-  UserCheck2 ,
-  Heart, 
-  ShieldCheck, 
-  BarChart3, 
-  RotateCcw, 
-  Award, 
-  Users, 
-  Send,
-  Sparkles,
-  CheckCircle2
-} from "lucide-react";
-
-export default function HomePage() {
-  const primaryPink = "bg-[#E6A2B3]";
-  const accentPink = "text-[#D9889D]";
-  const lightPinkBg = "bg-[#E6A2B3]/10";
-  const softCreamPink = "bg-[#F7EBEA]";
-
-  const hashtags = ["#大阪梅田", "#結婚相談所", "#女医監修", "#ロジカル婚活", "#成婚率"];
-
-  // PERSONALITY DIAGNOSIS STATE LOGIC
-  const [currentQuestion, setCurrentQuestion] = useState(1);
-  const quizQuestions = {
-    1: {
-      title: "Q1. 憧れの素敵な人（王子様・美女）に出会ったとき、あなたの心境に一番近いものは？",
-      answers: [
-        { label: "A", text: "「自分とは住む世界が違うな」と、つい一歩引いてしまう" },
-        { label: "B", text: "「素敵な人だな」と思いつつ、相手からのアプローチをそっと待つ" },
-        { label: "C", text: "「どうすれば自分の魅力をアピールできるか」と、前向きにチャンスを考える" }
-      ]
-    },
-    2: {
-      title: "Q2. 気になる人と二人きりのとき、あなたの「恋愛スタイル」はどれ？",
-      answers: [
-        { label: "A", text: "相手の話をじっくり聞き、常に聞き役に回るのが落ち着く" },
-        { label: "B", text: "相手のペースに合わせつつ、ここぞという時にさりげなく気遣いを見せる" },
-        { label: "C", text: "自分の話も楽しく共有しながら、お互いのリードで対等に会話を盛り上げる" }
-      ]
-    },
-    3: {
-      title: "Q3. 「自分の外見やファッション」に対する、あなたの現在の自信度は？",
-      answers: [
-        { label: "A", text: "自分に似合うものがまだよく分からず、いつも無難なスタイルになりがち" },
-        { label: "B", text: "自分なりのこだわりや良さはあるが、理想の人の前に出るにはプロの客観的な意見も聞いてみたい" },
-        { label: "C", text: "自分の魅力を引き出すスタイルを理解しており、外見にはある程度自信を持っている" }
-      ]
-    },
-    4: {
-      title: "Q4. 理想のお相手と「初めてのデート」に行くなら、プロデュースしたい理想のプランは？",
-      answers: [
-        { label: "A", text: "緊張せずに、二人でゆっくりお話しできる静かで落ち着いたカフェ" },
-        { label: "B", text: "少し贅沢なホテルのラウンジなど、非日常の特別感を味わえる場所" },
-        { label: "C", text: "トレンドの隠れ家レストランなど、自分が「ここが良い」と自信を持って提案できる場所" }
-      ]
-    },
-    5: {
-      title: "Q5. 結婚を意識するお相手に対して、あなたが一番「武器（魅力）」にできると思う部分は？",
-      answers: [
-        { label: "A", text: "相手を否定せず、いつでも味方でいられる「絶対的な安心感と誠実さ」" },
-        { label: "B", text: "周りをよく見て、お相手の欲しい言葉やサポートをそっと差し出せる「上品な気配り」" },
-        { label: "C", text: "自分の軸をしっかり持ち、お互いを高め合っていける「知性と自立心」" }
-      ]
-    }
-  };
-
-  // FORM SUBMISSION STATE
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-  };
-
+export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-rose-200">
+    <div className="w-full bg-[#FAF8F5] text-gray-800 antialiased selection:bg-[#E6A2B3]/30">
       
-      {/* HEADER NAVBAR */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-xs">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3">
+      {/* ============================================================
+          1. HERO SECTION (キャッチコピー & 3つの強みカード)
+         ============================================================ */}
+ {/* ============================================================
+          1. HERO SECTION (キャッチコピー & 3つの強みカード)
+         ============================================================ */}
+      <section className="relative w-full lg:h-screen bg-linear-to-br from-white via-[#FAF8F5] to-white overflow-hidden border-b border-gray-100">
+        
+        {/* 背景の環境光・オーナメント装飾 */}
+        <div className="absolute top-1/4 left-1/12 w-96 h-96 bg-[#E6A2B3]/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 right-1/3 w-80 h-80 bg-rose-100/20 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="w-full max-w-none grid grid-cols-1 lg:grid-cols-12 min-h-[700px] lg:h-screen">
           
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div className="relative w-8 h-8 flex items-center justify-center rounded-full border border-[#E6A2B3]">
-                <div className="absolute w-6 h-6 rounded-full border border-[#E6A2B3] opacity-60 transform translate-x-0.5" />
-                <div className="absolute w-6 h-6 rounded-full border border-[#E6A2B3] opacity-60 transform -translate-x-0.5" />
+          {/* 左カラム: テキスト＆トップ3つの強みカード */}
+          <div className="lg:col-span-7 flex flex-col justify-center px-4 sm:px-8 lg:pl-16 lg:pr-12 pt-6 sm:pt-10 lg:pt-8 pb-12 lg:pb-12 z-10 bg-linear-to-r from-white via-white to-transparent overflow-visible">
+            <div className="w-full max-w-4xl overflow-visible">
+              
+              {/* 上部タグラベルのグループ */}
+              <div className="flex flex-wrap items-center gap-2 mb-5 justify-center lg:justify-start">
+                <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-xs">
+                  <Sparkles className="w-3.5 h-3.5 animate-pulse" />
+                  <span>現役女医監修 × ロジカル成婚戦略</span>
+                </div>
+                <div className="inline-flex items-center gap-1 bg-white border border-[#EEDAD6] text-gray-700 px-3 py-1.5 rounded-full text-xs font-semibold">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#D9889D]" />
+                  <span>知性と客観的データで、成婚の確率を高める</span>
+                </div>
+              </div>
+
+              {/* メインキャッチコピー */}
+              <div className="text-center lg:text-left mb-8 select-none relative">
+                <h1 className="text-[#D9889D] text-xs sm:text-sm font-black tracking-widest uppercase mb-2 block">
+                  Relationship Diagnosis
+                </h1>
+
+                {/* スクイーズしたテキスト（サブキャッチコピーとして追加） */}
+                <p className="text-sm sm:text-base font-extrabold text-gray-700 mb-4 tracking-tight leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  現役女医監修×キャリア20年ベテランが仕掛ける<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D9889D] to-[#b3566f] font-black">「最高峰の婚活プロデュース」</span>
+                </p>
+
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-[1.3] lg:leading-[1.25] max-w-2xl mx-auto lg:mx-0">    
+                  <span className="block mb-2 sm:mb-3">キャリアも、結婚も、</span>
+                  <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#D9889D] to-[#b3566f]">
+                    妥協しない。
+                    <span className="absolute bottom-2 left-0 w-full h-3 bg-gradient-to-r from-[#E6A2B3]/25 to-transparent -z-10 rounded-full" />
+                  </span>
+                </h2>
+
+                {/* 下矢印による視線誘導 */}
+                <div className="mt-5 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
+                  <p className="text-xs sm:text-sm text-gray-500 font-bold bg-[#FAF8F5] lg:bg-transparent border border-gray-100 lg:border-none px-4 py-2 lg:p-0 rounded-xl flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
+                    戦略的ハイスペック婚活が選ばれる三つのポイント
+                  </p>
+                  <div className="w-6 h-6 rounded-full bg-[#E6A2B3]/10 flex items-center justify-center animate-bounce">
+                    <ChevronDown className="w-3.5 h-3.5 text-[#D9889D]" />
+                  </div>
+                </div>
+              </div>
+
+              {/* 3つのプレミアムボックス */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4 lg:w-[130%] lg:max-w-none z-30 relative px-2 md:px-0">
+                
+                {/* 強み 1 */}
+                <Link 
+                  href="/why-us"
+                  className="bg-white/85 backdrop-blur-xl rounded-2xl p-6 min-h-[170px] border border-white shadow-[0_15px_35px_rgba(230,162,179,0.25)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(230,162,179,0.4)] group block"
+                >
+                  <div>
+                    <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-3 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] px-3 py-1 rounded-lg shadow-sm">
+                      <span className="opacity-80">POINT</span>
+                      <span className="text-xs font-black border-l border-white/30 pl-1.5">01</span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2 tracking-tight leading-snug group-hover:text-[#D9889D] transition-colors">
+                      現役女医のプロデュース
+                    </h3>
+                    <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
+                      女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
+                    </p>
+                  </div>
+                </Link>
+
+                {/* 強み 2 */}
+                <Link 
+                  href="/why-us"
+                  className="bg-white/85 backdrop-blur-xl rounded-2xl p-6 min-h-[170px] border border-white shadow-[0_15px_35px_rgba(168,85,247,0.18)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(168,85,247,0.3)] group block"
+                >
+                  <div>
+                    <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-3 bg-gradient-to-r from-purple-400 to-indigo-500 px-3 py-1 rounded-lg shadow-sm">
+                      <span className="opacity-80">POINT</span>
+                      <span className="text-xs font-black border-l border-white/30 pl-1.5">02</span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2 tracking-tight leading-snug group-hover:text-purple-600 transition-colors">
+                      あなたの魅力を最大化
+                    </h3>
+                    <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
+                      出会った瞬さに『また会いたい』と思わせるさまざまな戦略をアドバイス
+                    </p>
+                  </div>
+                </Link>
+
+                {/* 強み 3 */}
+                <Link 
+                  href="/why-us"
+                  className="bg-white/85 backdrop-blur-xl rounded-2xl p-6 min-h-[170px] border border-white shadow-[0_15px_35px_rgba(217,119,6,0.18)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(217,119,6,0.3)] group block"
+                >
+                  <div>
+                    <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-3 bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-1 rounded-lg shadow-sm">
+                      <span className="opacity-80">POINT</span>
+                      <span className="text-xs font-black border-l border-white/30 pl-1.5">03</span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2 tracking-tight leading-snug group-hover:text-amber-600 transition-colors">
+                      男女２名のダブルサポート
+                    </h3>
+                    <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
+                      婚活サポート歴２０年のベテランカウンセラー×女医による多角的なサポートを提供
+                    </p>
+                  </div>
+                </Link>
+
+              </div>
+
+            </div>
+          </div>
+
+          {/* 右カラム: メインビジュアル画像・実績バッジ */}
+          <div className="relative lg:col-span-5 h-[450px] lg:h-full w-full overflow-hidden flex items-end">
+            
+            {/* 実績データフローティングバッジ */}
+            <div className="absolute top-6 right-6 z-20 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-lg border border-gray-100 flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-rose-50 flex items-center justify-center shrink-0">
+                <BarChart3 className="w-4 h-4 text-[#D9889D]" />
               </div>
               <div>
-                <h1 className="text-sm md:text-base font-bold tracking-wider text-gray-900 leading-none">
-                  大阪梅田結婚相談所
-              </h1>
-              <p className="text-[10px] md:text-xs text-gray-600 tracking-tight mt-0.5 font-medium">
-                  MARRIAGE & MEDICAL AGENCY
+                <p className="text-[9px] text-gray-400 font-bold uppercase tracking-wider leading-none mb-0.5">Success Rate</p>
+                <p className="text-xs font-extrabold text-gray-900">
+                  1年以内成婚率 <span className="text-sm text-[#D9889D] font-black">78.4%</span>
                 </p>
               </div>
             </div>
-            <div className="hidden lg:block h-6 w-px bg-gray-200" />
-            <p className="hidden lg:block text-xs text-gray-500 font-medium">
-              女性医師監修のロジカル成婚
-            </p>
-          </div>
 
-          <div className="flex items-center gap-6">
-            <nav className="hidden md:block">
-              <ul className="flex gap-6 text-xs md:text-sm font-semibold text-gray-800">
-                <li className="hover:text-[#E6A2B3] cursor-pointer transition-colors">ホーム</li>
-                <li className="hover:text-[#E6A2B3] cursor-pointer transition-colors">お問い合わせ</li>
-                <li className="hover:text-[#E6A2B3] cursor-pointer transition-colors">クリニック</li>
-                <li className="hover:text-[#E6A2B3] cursor-pointer transition-colors">お知らせ</li>
-              </ul>
-            </nav>
-
-            <div className="flex items-stretch self-stretch -my-3">
-              <a href="#contact" className={`${primaryPink} hover:bg-[#D9889D] text-white px-5 py-4 text-xs md:text-sm font-bold flex items-center gap-1 transition-colors`}>
-                お問い合わせはこちら
-                <ChevronRight className="w-4 h-4" />
-              </a>
+            {/* 当日予約アクティブピン */}
+            <div className="absolute bottom-6 right-6 z-20 bg-gray-900/95 backdrop-blur-md text-white rounded-xl px-4 py-2.5 shadow-md flex items-center gap-2.5 font-medium text-xs">
+              <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+              <span>本日の無料面談枠あり</span>
             </div>
-          </div>
 
-        </div>
-      </header>
-
-{/* --- HERO SECTION (TOP-ALIGNED TEXT WITH FADED LEFT PICTURE BLEND) --- */}
-<section className="relative w-full bg-linear-to-br from-white via-[#FAF8F5] to-white overflow-hidden border-b border-gray-100">
-  
-  <div className="absolute top-1/4 left-1/12 w-96 h-96 bg-[#E6A2B3]/5 rounded-full blur-3xl pointer-events-none" />
-  <div className="absolute bottom-10 right-1/3 w-80 h-80 bg-rose-100/30 rounded-full blur-3xl pointer-events-none" />
-
-  <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 min-h-[680px] lg:min-h-[780px]">
-    
-    {/* LEFT COLUMN: TEXT CONTENT */}
-    <div className="lg:col-span-7 flex flex-col justify-start px-4 sm:px-6 lg:pl-12 lg:pr-8 pt-10 sm:pt-14 lg:pt-16 pb-12 lg:pb-20 z-10 bg-linear-to-r from-white via-white to-transparent overflow-visible">
-      <div className="w-full max-w-4xl overflow-visible">
-        
-        <div className="flex flex-wrap items-center gap-2 mb-5 justify-center lg:justify-start">
-          <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-            <span>現役女医監修 × ロジカル成婚戦略</span>
-          </div>
-          <div className="inline-flex items-center gap-1 bg-white border border-[#EEDAD6] text-gray-700 px-3 py-1.5 rounded-full text-xs font-semibold">
-            <CheckCircle2 className="w-3.5 h-3.5 text-[#D9889D]" />
-            <span>20年実績 of Wサポート体制</span>
-          </div>
-        </div>
-
-        {/* --- LEAD SECTION WITH CLEAR CONNECTION --- */}
-        <div className="text-center lg:text-left mb-8 select-none relative">
-          <h1 className="text-[#D9889D] text-xs sm:text-sm font-black tracking-widest uppercase mb-3 block">
-            Relationship Diagnosis
-          </h1>
-
-          <h2 className="text-lg sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight leading-[1.4] lg:leading-[1.35] max-w-2xl mx-auto lg:mx-0">            
-            <span className="relative inline-block">
-              現役女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」 
-              <span className="absolute bottom-1.5 left-0 w-full h-2.5 bg-gradient-to-r from-[#E6A2B3]/25 to-transparent -z-10 rounded-full" />
-            </span>
-          </h2>
-
-          {/* Connected Subtext & Down Arrow for Visual Flow */}
-          <div className="mt-5 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
-            <p className="text-xs sm:text-sm text-gray-500 font-bold bg-[#FAF8F5] lg:bg-transparent border border-gray-100 lg:border-none px-4 py-2 lg:p-0 rounded-xl flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
-              大阪梅田結婚相談所が選ばれる三つのポイント
-            </p>
-            <div className="w-6 h-6 rounded-full bg-[#E6A2B3]/10 flex items-center justify-center animate-bounce">
-              <ChevronDown className="w-3.5 h-3.5 text-[#D9889D]" />
+            {/* グラデーションマスク付きカバー画像 */}
+            <div className="absolute inset-0 w-full h-full z-0">
+              <Image
+                src="/couple1.jpg"
+                alt="幸せなカップルのイメージ"
+                fill
+                priority
+                className="object-[80%_center] lg:object-[60%_center] object-cover"
+              />
+              <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/40 via-[#FAF8F5]/20 to-transparent z-10 hidden lg:block pointer-events-none" />
+              <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#FAF8F5] to-transparent lg:hidden z-10 pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#FAF8F5]/50 to-transparent lg:hidden z-10 pointer-events-none" />
             </div>
+
+            <div className="absolute bottom-3 left-4 z-20 bg-white/60 backdrop-blur-xs px-2 py-0.5 rounded text-[9px] text-gray-500 border border-gray-200/30">
+              ※イメージ画像
+            </div>
+
           </div>
         </div>
+      </section>
 
-        {/* --- THREE ULTRA-POP PREMIUM BOXES (CONNECTED SECTION) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 lg:w-[140%] lg:max-w-none z-30 relative px-2 md:px-0">
+      {/* ============================================================
+          2. INTRODUCTION SECTION (なぜビジネスのような戦略が必要か)
+         ============================================================ */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-[0_15px_50px_rgba(230,162,179,0.08)] border border-rose-100/40 relative overflow-hidden">
           
-          {/* Strength 1: Rose High-Contrast Pop */}
-          <div className="bg-white/85 backdrop-blur-xl rounded-2xl p-7 min-h-[190px] border border-white shadow-[0_15px_35px_rgba(230,162,179,0.25)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(230,162,179,0.4)]">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-4 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] px-3 py-1 rounded-lg shadow-sm">
-                <span className="opacity-80">POINT</span>
-                <span className="text-xs font-black border-l border-white/30 pl-1.5">01</span>
-              </div>
-              <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2.5 tracking-tight leading-snug">
-                現役女医のプロデュース
-              </h3>
-              <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
-                女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
-              </p>
-            </div>
-          </div>
-
-          {/* Strength 2: Purple High-Contrast Pop */}
-          <div className="bg-white/85 backdrop-blur-xl rounded-2xl p-7 min-h-[190px] border border-white shadow-[0_15px_35px_rgba(168,85,247,0.18)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(168,85,247,0.3)]">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-4 bg-gradient-to-r from-purple-400 to-indigo-500 px-3 py-1 rounded-lg shadow-sm">
-                <span className="opacity-80">POINT</span>
-                <span className="text-xs font-black border-l border-white/30 pl-1.5">02</span>
-              </div>
-              <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2.5 tracking-tight leading-snug">
-                あなたの魅力を最大化
-              </h3>
-              <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
-                出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
-              </p>
-            </div>
-          </div>
-
-          {/* Strength 3: Gold/Amber High-Contrast Pop */}
-          <div className="bg-white/85 backdrop-blur-xl rounded-2xl p-7 min-h-[190px] border border-white shadow-[0_15px_35px_rgba(217,119,6,0.18)] flex flex-col justify-between transition-all duration-300 hover:bg-white hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_25px_50px_rgba(217,119,6,0.3)]">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-wider text-white mb-4 bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-1 rounded-lg shadow-sm">
-                <span className="opacity-80">POINT</span>
-                <span className="text-xs font-black border-l border-white/30 pl-1.5">03</span>
-              </div>
-              <h3 className="text-base sm:text-lg font-black text-gray-900 mb-2.5 tracking-tight leading-snug">
-                男女２名のダブルサポート
-              </h3>
-              <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
-                婚活サポート歴２０年のベテランカウンセラー×女医による多角的なサポートを提供
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    {/* RIGHT COLUMN: IMAGES */}
-    <div className="relative lg:col-span-5 h-[480px] lg:h-auto w-full overflow-hidden flex items-end">
-      
-      {/* Top Floating Badge */}
-      <div className="absolute top-6 right-6 z-20 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-lg border border-gray-100 flex items-center gap-3">
-        <div className="w-9 h-9 rounded-xl bg-rose-50 flex items-center justify-center shrink-0">
-          <BarChart3 className="w-4 h-4 text-[#D9889D]" />
-        </div>
-        <div>
-          <p className="text-[9px] text-gray-400 font-bold uppercase tracking-wider leading-none mb-0.5">Success Rate</p>
-          <p className="text-xs font-extrabold text-gray-900">
-            1年以内成婚率 <span className="text-sm text-[#D9889D] font-black">78.4%</span>
-          </p>
-        </div>
-      </div>
-
-      {/* Bottom Schedule Pin */}
-      <div className="absolute bottom-6 right-6 z-20 bg-gray-955/95 backdrop-blur-md text-white rounded-xl px-4 py-2.5 shadow-md flex items-center gap-2.5 font-medium text-xs">
-        <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-        <span>本日の無料面談枠あり</span>
-      </div>
-
-      {/* Image Layer with Enhanced Gradient Blending */}
-      <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src="/couple1.jpg"
-          alt="幸せなカップルのイメージ"
-          fill
-          priority
-          className="object-[80%_center] lg:object-[60%_center] object-cover transform scale-100"
-        />
-        
-        <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-[#FAF8F5] via-[#FAF8F5]/40 via-[#FAF8F5]/20 to-transparent z-10 hidden lg:block pointer-events-none" />
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#FAF8F5] to-transparent lg:hidden z-10 pointer-events-none" />
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#FAF8F5]/50 to-transparent lg:hidden z-10 pointer-events-none" />
-      </div>
-
-      <div className="absolute bottom-3 left-4 z-20 bg-white/60 backdrop-blur-xs px-2 py-0.5 rounded text-[9px] text-gray-500 border border-gray-200/30">
-        ※イメージ画像
-      </div>
-
-    </div>
-
-  </div>
-
-  {/* --- ALWAYS HOVERING/FIXED CONSULTATION BUTTONS CONTAINER --- */}
-  {/* On Desktop: Floats neatly at the bottom-left of the viewport. On Mobile: Pins seamlessly to the bottom width edge. */}
-  <div className="fixed bottom-0 left-0 w-full md:w-auto md:bottom-6 md:left-6 z-50 px-4 pb-4 md:p-0 flex flex-col sm:flex-row gap-3 md:gap-4 items-center bg-linear-to-t from-white via-white/90 to-transparent md:bg-transparent pt-6 md:pt-0">
-    
-    {/* 1. WEB CONSULTATION RESERVATION */}
-    <a 
-      href="#contact" 
-      className={`w-full sm:w-auto inline-flex items-center justify-center gap-3 ${primaryPink} hover:bg-[#D9889D] text-white font-extrabold px-6 lg:px-8 py-3.5 rounded-full shadow-2xl shadow-[#E6A2B3]/40 text-sm lg:text-base transition-all duration-300 transform hover:scale-[1.03] text-center tracking-wide`}
-    >
-      <span>無料相談の枠を予約する</span>
-      <ChevronRight className="w-4 h-4 bg-white/20 rounded-full p-0.5 shrink-0" />
-    </a>
-    
-    {/* 2. OFFICIAL LINE CONSULTATION */}
-    <a 
-      href="https://line.me" 
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#06C755] hover:bg-[#05B34C] text-white font-extrabold px-6 lg:px-8 py-3.5 rounded-full shadow-2xl shadow-[#06C755]/30 text-sm lg:text-base transition-all duration-300 transform hover:scale-[1.03] text-center tracking-wide"
-    >
-      <svg className="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
-        <path d="M12 2C6.48 2 2 5.84 2 10.58c0 2.9 1.7 5.48 4.34 6.94-.17.58-.62 2.37-.7 2.73-.1.43.14.43.33.33.13-.08 2.12-1.44 2.95-2.03.7.2 1.43.3 2.17.3 5.52 0 10-3.84 10-8.58S17.52 2 12 2zm4.62 11.23h-1.46c-.14 0-.26-.12-.26-.26v-3.7c0-.14.12-.26.26-.26h1.46c.14 0 .26.12.26.26v.44c0 .14-.12.26-.26.26h-.94v.74h.94c.14 0 .26.12.26.26v.44c0 .14-.12.26-.26.26h-.94v.8h.94c.14 0 .26.12.26.26v.44c0 .15-.12.26-.26.26zm-2.88 0h-.44c-.14 0-.26-.12-.26-.26V9.8c0-.14.12-.26.26-.26h.44c.14 0 .26.12.26.26v2.9c.01.14-.11.27-.26.27zm-1.45 0c0 .14-.12.26-.26.26h-.44c-.1-.01-.19-.08-.23-.17l-1.37-2.04v1.95c0 .14-.12.26-.26.26h-.44c-.14 0-.26-.12-.26-.26V9.8c0-.14.12-.26.26-.26h.44c.1.01.19.08.24.18l1.36 2.02V9.8c0-.14.12-.26.26-.26h.44c.14 0 .26.12.26.26v3.43zm-4.73-1.06h.94c.14 0 .26.12.26.26v.44c0 .14-.12.26-.26.26H6.6c-.14 0-.26-.12-.26-.26V9.8c0-.14.12-.26.26-.26h.44c.14 0 .26.12.26.26v2.9h.26z"/>
-      </svg>
-      <span>LINEで気軽に相談してみる</span>
-    </a>
-
-  </div>
-</section>
-{/*SECTION 2*/}
-<section className="relative w-full bg-linear-to-b from-[#FAF8F5] via-white to-[#FFF5F6] py-20 sm:py-28 overflow-hidden">
-  
-  {/* Background Ornaments - ALL SHIFTED TO PINK SPECTRUM */}
-  <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-40 select-none">
-    <div className="absolute top-12 left-5 w-72 h-72 rounded-full bg-[#E6A2B3]/15 blur-3xl" />
-    <div className="absolute top-1/3 right-5 w-96 h-96 rounded-full bg-rose-100/30 blur-3xl" />
-    <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-pink-50/40 blur-3xl" />
-  </div>
-
-  <div className="mx-auto max-w-5xl px-4 sm:px-6 relative z-10">
-    
-    {/* --- SECTION HEADER --- */}
-    <div className="text-center mb-16 sm:mb-20">
-      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#EEDAD6] text-[#D9889D] text-xs font-black tracking-widest uppercase mb-4 shadow-2xs">
-        <HeartHandshake className="w-3.5 h-3.5" />
-        <span>Our Philosophy</span>
-      </div>
-      
-      <h2 className="text-xl sm:text-3xl font-black text-gray-900 tracking-tight leading-snug max-w-3xl mx-auto">
-        婚活カウンセラーとして20年の男性ベテランが仕掛ける<br className="hidden sm:block"/>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-[#D9889D] to-rose-600">
-          「技あり婚活！」男女2人のカウンセラーによる欲張りサポート
-        </span>
-      </h2>
-      
-      <p className="mt-6 text-sm sm:text-base text-gray-800 font-extrabold tracking-wide max-w-2xl mx-auto bg-gradient-to-r from-[#E6A2B3]/10 via-[#FFF5F6]/30 to-rose-50/20 border border-white/80 rounded-2xl px-6 py-4 shadow-xs">
-        理想のさらに上へ。<br/>
-        一般のデータ検索では辿り着けない「特別な出会い」の可能性をあなたに。
-      </p>
-    </div>
-
-    {/* --- INTRODUCTION TEXT BLOCK --- */}
-    <div className="bg-white/70 backdrop-blur-md rounded-3xl p-8 sm:p-10 border border-white shadow-[0_15px_40px_rgba(230,162,179,0.03)] mb-16">
-      <div className="max-w-3xl mx-auto text-center lg:text-left">
-        <h3 className="text-base sm:text-lg font-black text-gray-900 mb-6 flex items-center justify-center lg:justify-start gap-2.5">
-          <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-tr from-[#D9889D] to-[#E6A2B3]" />
-          世の中には数多くの結婚相談所がありますが、出会いに満足できていますか？
-        </h3>
-        
-        <p className="text-[13px] sm:text-sm text-gray-600 leading-xl font-medium text-justify">
-          当相談所は、一般的なマッチングデータだけに頼る場所ではありません。<br/>
-          第一線で活躍し、エグゼクティブたちのリアルな価値観、ライフスタイルを熟知する
-          <span className="text-gray-900 font-bold bg-linear-to-b from-transparent to-[#E6A2B3]/20 px-1">【現役の女性医師による監修】</span>。
-          そして、業界の酸いも甘いも知り尽くし、数々の成婚を導いてきた
-          <span className="text-gray-900 font-bold bg-linear-to-b from-transparent to-rose-100 px-1">【キャリア20年のベテラン男性カウンセラー】</span>。<br/><br/>
-          この婚活界のトッププロと医師が2名でタッグを組み、会員様1名に対して
-          <span className="text-[#D9889D] font-black">「男女2人1組の専任チーム」</span>
-          として密着サポートする、極めて稀少なプレミアム相談所です。
-        </p>
-
-        <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-          <div className="flex items-start gap-3 bg-[#FFF5F6]/40 p-4 rounded-xl">
-            <div className="text-xs font-black text-[#D9889D] bg-white rounded-lg px-2 py-1 shadow-2xs border border-rose-50">Insight</div>
-            <p className="text-[12px] text-gray-600 font-bold leading-normal">
-              「白馬の王子様」「かぐや姫のような美女」といった表面上の理想ではなく、あなたのアイデンティティを深く見つめ直す“自分探しの旅”に並走します。
-            </p>
-          </div>
-          <div className="flex items-start gap-3 bg-[#FFF5F6]/40 p-4 rounded-xl">
-            <div className="text-xs font-black text-rose-500 bg-white rounded-lg px-2 py-1 shadow-2xs border border-rose-50">Synergy</div>
-            <p className="text-[12px] text-gray-600 font-bold leading-normal">
-              男性目線・女性目線、そしてエグゼクティブの世界を知る目線が高度に融合。ずっとずっと一緒にいられる「真のパートナー像」を浮き彫りに。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* --- THE TWO PERSPECTIVES (ROSE SPECTRUM CARDS) --- */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-      
-      {/* Card 1: Female Doctor Insight */}
-      <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 border border-white shadow-[0_20px_40px_rgba(230,162,179,0.12)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_45px_rgba(230,162,179,0.2)]">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white px-4 py-1.5 rounded-xl text-xs font-black tracking-wide shadow-xs">
-              <span>現役女医の視点</span>
-            </div>
-            <Compass className="w-5 h-5 text-[#D9889D] opacity-60" />
-          </div>
-          
-          <h4 className="text-base font-black text-gray-900 mb-4 leading-snug">
-            数々の診療を経て、多くの人々の心に寄り添ってきたからこそできる選択。
-          </h4>
-          
-          <p className="text-[13px] text-gray-600 leading-xl font-medium text-justify">
-            「誰を選べばいいのか、誰が自分に合うのか、お相手の方が本当に求めているパートナー像は何なのか…」<br/><br/>
-            それは人生の重要な運命の分かれ道です。どちらに舵をきればいいか迷う大切な決断の瞬間に、あなたの本心とお気持ちを深く汲みながら、優しく、ロジカルにサポートさせていただきます。
-          </p>
-        </div>
-        <div className="mt-6 pt-4 border-t border-gray-50 text-[11px] font-bold text-[#D9889D] flex items-center gap-1.5">
-          <span>● メディカル×エグゼクティブ心理分析</span>
-        </div>
-      </div>
-
-      {/* Card 2: Veteran Perspective - SHIFTED TO ROSE/PINK */}
-      <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 border border-white shadow-[0_20px_40px_rgba(217,119,128,0.08)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_45px_rgba(217,119,128,0.18)]">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#D9889D] to-rose-500 text-white px-4 py-1.5 rounded-xl text-xs font-black tracking-wide shadow-xs">
-              <span>ベテランの視点</span>
-            </div>
-            <ShieldCheck className="w-5 h-5 text-rose-400 opacity-60" />
-          </div>
-          
-          <h4 className="text-base font-black text-gray-900 mb-4 leading-snug">
-            20年の現場実績に基づく、現実的に成婚へと射抜くための確かなロジック。
-          </h4>
-          
-          <p className="text-[13px] text-gray-600 leading-xl font-medium text-justify">
-            多数のデータや経験から予想される結果や可能性を、私たちは常に正直にお伝えします。<br/><br/>
-            時には耳が痛く、厳しい内容もあるかもしれません。しかし、現場をリアルに見てきたからこそ推測しうる「成婚への近道情報」を事前に知っておくことは、人生の貴重な時間を無駄にせず、まわり道を避けるための最大の武器になります。
-          </p>
-        </div>
-        <div className="mt-6 pt-4 border-t border-gray-50 text-[11px] font-bold text-rose-500 flex items-center gap-1.5">
-          <span>● キャリア20年・現場主義の実績ロジック</span>
-        </div>
-      </div>
-
-    </div>
-
-    {/* --- EPILOGUE: MESSAGE OF EMPATHY --- */}
-    <div className="relative rounded-3xl p-8 sm:p-10 text-center bg-gradient-to-br from-white via-[#FFFBFB] to-[#FFF5F6] border-2 border-dashed border-[#EEDAD6] shadow-sm max-w-4xl mx-auto">
-      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#D9889D] to-rose-400 text-white font-black text-[10px] tracking-widest px-4 py-1 rounded-full uppercase shadow-xs">
-        Message for you
-      </div>
-
-      <h4 className="text-base sm:text-lg font-black text-gray-950 mb-4 tracking-tight">
-        最後に決断するのはあなた自身。婚活に「正解」はありません。
-      </h4>
-
-      <p className="text-[13px] text-gray-600 leading-xl max-w-2xl mx-auto font-medium">
-        婚活を続ける選択も、一度お休みする選択も、すべてが正解です。<br/>
-        全ての方の様々な形や決断、それ自体があなたらしい素晴らしい生き方なのだと感じます。<br/><br/>
-        私たちは、その
-        <span className="text-[#D9889D] font-black mx-0.5">「十人十色のご希望」</span>
-        に応じて、どこよりも細かく、家族のように寄り添える強みを持っています。<br/>
-        温かいアットホームなサポートと一緒に、あなたの新しい一歩をぜひ一緒に頑張りましょう！
-      </p>
-
-      <div className="mt-8 inline-flex items-center gap-2 text-xs font-black text-gray-800 bg-white px-4 py-2 rounded-xl border border-rose-50 shadow-2xs">
-        <UserCheck2 className="w-4 h-4 text-[#D9889D]" />
-        <span>大阪梅田結婚相談所 専任カウンセラーチーム一同</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-{/* --- PROCESS & NETWORK SECTION --- */}
-<section className="py-20 bg-white border-b border-gray-100 relative overflow-hidden">
-  {/* Soft background decor to match the premium medical/VIP branding */}
-  <div className="absolute top-1/3 right-0 w-96 h-96 bg-rose-50/40 rounded-full blur-3xl pointer-events-none" />
-  <div className="absolute bottom-10 left-10 w-80 h-80 bg-amber-50/30 rounded-full blur-3xl pointer-events-none" />
-
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-    
-    {/* SECTION HEADER */}
-    <div className="text-center max-w-3xl mx-auto mb-16">
-      <span className="inline-block text-xs font-bold tracking-wider text-[#D9889D] bg-[#FDF6F6] px-4 py-1.5 rounded-full mb-4 border border-[#F5E3E3]">
-        MULTIDIMENSIONAL PROCESS
-      </span>
-      <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight leading-snug">
-        2名1組だからできる、<br className="sm:hidden" />真の理想像を浮き彫りにする<br />
-        <span className="relative inline-block mt-2">
-          「多面的分析プロセス」
-          <span className="absolute bottom-1 left-0 w-full h-2 bg-[#E6A2B3]/20 -z-10" />
-        </span>
-      </h2>
-      <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-        私たちは、独自の「多面的プロファイリング」によって、あなた自身も気づいていない「真の理想像」を3つのステップで極限まで明確化します。
-      </p>
-    </div>
-
-    {/* THREE STEP PROGRESSION */}
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
-      
-      {/* STEP 1: 女医監修 */}
-      <div className="relative bg-[#FDF6F6] border border-[#F5E3E3] rounded-3xl p-8 shadow-2xs flex flex-col justify-between transition-all hover:shadow-md">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <span className="text-xs font-extrabold tracking-widest text-[#D9889D] uppercase">Step 01</span>
-            <div className="w-10 h-10 bg-white border border-[#EEDAD6] rounded-xl flex items-center justify-center shadow-2xs">
-              <span className="text-base">🩺</span>
-            </div>
-          </div>
-          <h3 className="text-base font-bold text-gray-900 mb-4 leading-snug">
-            現役女医による<br />「深層心理スクリーニング」
-          </h3>
-          <div className="space-y-4 text-xs text-gray-600 leading-relaxed">
-            <p>
-              まずは、あなたが表面的な希望条件を求める「本当の理由」を、現役女医の視点から紐解きます。
-            </p>
-            <p className="border-l-2 border-[#E6A2B3]/40 pl-3 bg-white/50 py-2 rounded-r-xl">
-              <strong>「条件」の分解：</strong>経済的な安定が欲しいのか、尊敬できる知性が欲しいのか。動機によって紹介すべきお相手の「人柄」や「職種」は全く変わります。
-            </p>
-            <p>
-              <strong>「理想のライフスタイル」の解剖：</strong>ハイスペック層のリアルな日常を熟知する女医だからこそ、生活レベルでのマッチングもご提供します。
-            </p>
-          </div>
-        </div>
-        <p className="mt-6 text-[11px] font-medium text-gray-400 italic">
-          ※長く人生に役立つアイデンティティの追求の一助に。
-        </p>
-      </div>
-
-      {/* STEP 2: ベテランカウンセラー */}
-      <div className="relative bg-[#F6F6FA] border border-[#E6E6F0] rounded-3xl p-8 shadow-2xs flex flex-col justify-between transition-all hover:shadow-md">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <span className="text-xs font-extrabold tracking-widest text-purple-400 uppercase">Step 02</span>
-            <div className="w-10 h-10 bg-white border border-purple-100 rounded-xl flex items-center justify-center shadow-2xs">
-              <span className="text-base">👔</span>
-            </div>
-          </div>
-          <h3 className="text-base font-bold text-gray-900 mb-4 leading-snug">
-            キャリア20年のベテランによる<br />「人生と生活を豊かにする相手選び」
-          </h3>
-          <div className="space-y-4 text-xs text-gray-600 leading-relaxed">
-            <p>
-              条件としての理想を並べるだけでなく、これからのあなたの人生や実際の生活を、本当に豊かにできるお相手を探すことが最も重要です。
-            </p>
-            <p>
-              20年間、何百組もの幸せな夫婦を見届けてきたベテラン男性カウンセラーが、豊富な経験に基づいてアドバイスを行います。
-            </p>
-            <p className="border-l-2 border-purple-300 pl-3 bg-white/50 py-2 rounded-r-xl">
-              <strong>相性の本質：</strong>「こういう性格の異性と結ばれると、結婚後の人生がより素晴らしくなる」という、長年の経験だけが知るノウハウをお伝えします。
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* STEP 3: 特別ネットワーク */}
-      <div className="relative bg-[#FAF6F0] border border-[#EFE5D9] rounded-3xl p-8 shadow-2xs flex flex-col justify-between transition-all hover:shadow-md">
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <span className="text-xs font-extrabold tracking-widest text-amber-600/70 uppercase">Step 03</span>
-            <div className="w-10 h-10 bg-white border border-amber-100 rounded-xl flex items-center justify-center shadow-2xs">
-              <span className="text-base">✨</span>
-            </div>
-          </div>
-          <h3 className="text-base font-bold text-gray-900 mb-4 leading-snug">
-            私たちが持つ<br />「特別なネットワーク」の可能性
-          </h3>
-          <div className="space-y-4 text-xs text-gray-600 leading-relaxed">
-            <p>
-              あなたの「真の理想像」が明確になった瞬間から、私たちの本当のサポートが始まります。
-            </p>
-            <p>
-              長年の活動のなかで築き上げてきた独自のVIP人脈や特別なリレーションシップ。さらには、現役女医だからこそアプローチが視野に入る、医療界をはじめとしたハイスペック層の確かな知人ネットワーク。
-            </p>
-            <p className="border-l-2 border-amber-300 pl-3 bg-white/50 py-2 rounded-r-xl font-medium text-amber-900">
-              一般の婚活市場やマッチングアプリには決して出回らない特別なルートからアプローチを仕掛けていきます。
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    {/* BOTTOM CLOSING MANIFESTO */}
-    <div className="bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl text-center lg:text-left">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,162,179,0.15),transparent_45%)]" />
-      
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <div className="lg:col-span-8 space-y-4">
-          <div className="space-y-2">
-            <p className="text-xs sm:text-sm text-[#E6A2B3] font-bold tracking-wide">
-              「アプリや普通の相談所では、望むお相手に会えなかった」
-            </p>
-            <p className="text-xs sm:text-sm text-[#E6A2B3] font-bold tracking-wide">
-              「自分の価値を正しく理解してくれる、ワンランク上のパートナーと出会いたい」
-            </p>
-          </div>
-          <h3 className="text-base sm:text-lg lg:text-xl font-bold leading-relaxed text-gray-100 pt-2">
-            そう願うあなたのために、私たちは持てるすべての人脈と英知を尽くして並走することをお約束します。<br className="hidden lg:block" />
-            妥協のない、欲張りな婚活をここから始めましょう。
-          </h3>
-        </div>
-        
-        <div className="lg:col-span-4 flex justify-center lg:justify-end">
-          <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] hover:from-[#D9889D] hover:to-[#C77389] text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] text-sm tracking-wider w-full sm:w-auto">
-            <span>妥協のない婚活を始める</span>
-            <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-{/* --- HOSPITALITY SECTION (HANDMADE MATCHMAKING) --- */}
-<section className="py-20 bg-[#FAF8F5] border-b border-gray-100 relative overflow-hidden">
-  {/* Elegant branding accents */}
-  <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#E6A2B3]/5 rounded-full blur-3xl pointer-events-none" />
-
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-      
-      {/* LEFT COLUMN: TEXT CONTENT */}
-      <div className="lg:col-span-7 space-y-6">
-        <div>
-          <span className="inline-block text-xs font-bold tracking-wider text-[#D9889D] bg-white px-4 py-1.5 rounded-full mb-4 border border-[#EEDAD6]/60 shadow-2xs">
-            OUR HOSPITALITY
-          </span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight leading-snug">
-            当相談所のおもてなし<br />
-            <span className="relative inline-block mt-2 text-[#D9889D]">
-              ぬくもりのある ハンドメイドの婚活
-              <span className="absolute bottom-1 left-0 w-full h-1.5 bg-[#E6A2B3]/20 -z-10" />
-            </span>
-          </h2>
-        </div>
-
-        <div className="space-y-5 text-sm text-gray-600 leading-relaxed">
-          <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-[#EEDAD6]/40 space-y-3">
-            <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
-              <span className="text-rose-400">📱</span> 条件だけでは見えない「本当の相性」
+          <div className="text-center mb-10">
+            <span className="text-xs font-black text-[#D9889D] tracking-widest uppercase bg-rose-50 px-3 py-1 rounded-md">The Logic</span>
+            <h3 className="text-xl sm:text-2xl font-black text-gray-900 mt-3 tracking-tight">
+              恋愛や結婚に、ビジネスのような「戦略」が必要な理由
             </h3>
-            <p>
-              手軽に出会えるマッチングアプリや、条件追求主体のオンライン相談所は、非常に効率的です。
-            </p>
-            <p>
-              しかし、アプリの画面上でどれだけ「年齢・年収・職業」といった数字や条件が一致していても、<strong>「実際に会ってみたら、会話のテンポや価値観が全然違った」</strong>という経験はありませんか？
-            </p>
           </div>
 
-          <p>
-            同じ「年収〇〇万円のビジネスマン」であっても、その中身やライフスタイル、家庭に求める役割は人によって**180度異なります**。条件の枠組みだけでは、お相手の「繊細な個性」や「未来の暮らしのイメージ」までを見抜くことは困難です。
-          </p>
-          
-          <p className="font-bold text-gray-900 text-base pt-2">
-            だからこそ私たちは、オンラインのデータ共有だけに留まりません。
-          </p>
-
-          <p>
-            あなた自身の「ぼんやりとした理想」の奥にある本音を細かくカウンセリングしてご希望に寄り添い、目に見えない相性までを深く見極める**「ぬくもりのあるハンドメイドの婚活」**を大切にしています。
-          </p>
-        </div>
-      </div>
-
-      {/* RIGHT COLUMN: CONCEPT VISUAL CARDS */}
-      <div className="lg:col-span-5 space-y-4">
-        
-        {/* Top Card: The digital reality */}
-        <div className="bg-white/40 border border-gray-200/60 rounded-2xl p-6 opacity-60 scale-95 origin-bottom transition-all hover:opacity-80">
-          <div className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Digital Data Match</div>
-          <div className="text-sm font-bold text-gray-500 mb-3">一般的なアプリ・データ主体の相談所</div>
-          <div className="flex flex-wrap gap-2">
-            <span className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-md">年齢・年収・職業の数値化</span>
-            <span className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-md">画面上の条件一致</span>
-            <span className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-md">価値観のミスマッチ</span>
-          </div>
-        </div>
-
-        {/* Bottom Card: Your Premium handmade approach */}
-        <div className="bg-gradient-to-br from-[#FDF6F6] to-[#FAF6F0] border-2 border-[#E6A2B3]/30 rounded-3xl p-8 shadow-md relative overflow-hidden transform lg:scale-105">
-          <div className="absolute top-0 right-0 w-24 h-24 bg-[#E6A2B3]/10 rounded-full blur-xl pointer-events-none" />
-          
-          <div className="text-xs font-bold text-[#D9889D] uppercase tracking-wider mb-2">Premium Human Touch</div>
-          <h4 className="text-base font-black text-gray-900 mb-4">
-            アプリやデータには真似できない、<br />人と人との深い繋がりをご提案
-          </h4>
-          
-          <ul className="space-y-3 text-xs text-gray-700 font-medium">
-            <li className="flex items-start gap-2.5">
-              <span className="text-[#D9889D] mt-0.5">✓</span>
-              <span>「ぼんやりとした理想」の奥にある本音の抽出</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-[#D9889D] mt-0.5">✓</span>
-              <span>会話のテンポ・生活リズムまで見据えた相性設計</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-[#D9889D] mt-0.5">✓</span>
-              <span>数字には表れない「繊細な個性」のハンドメイドマッチ</span>
-            </li>
-          </ul>
-
-          <div className="mt-6 pt-5 border-t border-[#EEDAD6]/40 text-center">
-            <p className="text-xs font-bold text-[#D9889D]">
-              これこそが私たちが追求するおもてなしの形です。
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-      {/* --- STRATEGIC ADVANTAGE SECTION --- */}
-      <section className="py-24 lg:py-32 bg-white border-t border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          
-          <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-            <p className={`${accentPink} text-xs font-bold tracking-widest uppercase mb-3`}>STRATEGY & MEDICAL APPROACH</p>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-950 tracking-tight leading-normal sm:leading-relaxed">
-              キャリアも、結婚も、妥協しない。<br />
-              <span className="text-gray-900 font-medium text-lg sm:text-xl block mt-2">
-                知性と客観的データで、成婚の確率を高める戦略的ハイスペック婚活。
-              </span>
-            </h2>
-            <div className={`w-12 h-0.5 ${accentPink} mx-auto mt-6 opacity-60`} />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed font-medium">
+              <p>
+                職場でもあなたは、目標達成のために<span className="text-gray-900 font-bold border-b-2 border-[#E6A2B3]/30 px-0.5">「現状分析」</span>や<span className="text-gray-900 font-bold border-b-2 border-[#E6A2B3]/30 px-0.5">「正しい計画」</span>を立ててきたはずです。実は、婚活も全く同じです。
+              </p>
+              <p className="bg-[#FAF8F5] p-4 rounded-xl border-l-4 border-amber-400 text-gray-700 text-sm">
+                「いい人がいれば……」と運を天に任せるのは、<br />
+                <span className="font-bold text-gray-900">ゴールのないプロジェクトを進めるようなもの</span>です。
+              </p>
+            </div>
             
-            <div className="lg:col-span-7 space-y-5">
-              <h3 className="text-lg font-bold text-gray-900 tracking-tight flex items-center gap-2">
-                <span className={`w-1.5 h-5 ${primaryPink} rounded-full inline-block`} />
-                恋愛や結婚に、ビジネスのような「戦略」が必要な理由
-              </h3>
-              <div className="text-sm text-gray-600 space-y-4 leading-relaxed font-normal">
-                <p>
-                  職場でもあなたは、目標達成のために「現状分析」や「正しい計画」を立ててきたはずです。実は、婚活も全く同じです。
-                </p>
-                <p>
-                  「いい人がいれば……」と運を天に任せるのは、ゴールのないプロジェクトを進めるようなもの。当相談所では、現役の女医が実践している「徹底的な論理思考」と「客観的なデータ分析」を婚活応用。
-                </p>
-                <p className="font-semibold text-gray-900">
-                  あなたの魅力をデータに基づいて分析し、理想のお相手と出会うための<br/>「確実性の高いルート」を戦略的に導き出します。
-                </p>
+            <div className="bg-gradient-to-br from-[#FAF8F5] to-white rounded-2xl p-6 sm:p-8 border border-[#EEDAD6]/60 shadow-xs">
+              <div className="flex items-center gap-2 mb-3 text-[#D9889D]">
+                <Stethoscope className="w-5 h-5" />
+                <span className="text-xs font-bold tracking-wider">現役女医が実践するアプローチ</span>
               </div>
+              <p className="text-base sm:text-lg text-gray-900 font-black leading-relaxed mb-4">
+                「徹底的な論理思考」と<br />「客観的なデータ分析」を応用。
+              </p>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
+                あなたの魅力をデータに基づいて分析し、理想のお相手と出会うための「確実性の高いルート」を導き出します。私たちの具体的なアプローチの詳細は
+                <Link href="/why-us" className="text-[#D9889D] font-bold underline hover:text-[#b3566f] ml-1 transition-colors">
+                  コンセプト・カウンセラー紹介ページ
+                </Link>
+                をご覧ください。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ============================================================
+          3. THREE REASONS SECTION (選ばれている3つの理由)
+         ============================================================ */}
+      <section className="py-20 bg-white border-y border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center mb-14">
+            <h3 className="text-xs font-black text-[#D9889D] tracking-widest uppercase mb-2">Our Features</h3>
+            <p className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">選ばれている3つの理由</p>
+            <div className="w-10 h-0.5 bg-[#D9889D] mx-auto mt-4 rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            {/* 理由 1 */}
+            <div className="bg-[#FAF8F5] rounded-2xl p-8 border border-transparent transition-all duration-300 hover:bg-white hover:border-rose-100 hover:shadow-[0_20px_45px_rgba(230,162,179,0.12)] group">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#D9889D] flex items-center justify-center shadow-xs mb-6 group-hover:scale-110 transition-transform duration-300">
+                <BarChart3 className="w-6 h-6" />
+              </div>
+              <span className="text-[10px] font-black text-[#D9889D] tracking-widest block mb-1">REASON 01</span>
+              <h4 className="text-base sm:text-lg font-black text-gray-900 mb-3 tracking-tight leading-snug">
+                「感覚」に頼らない<br />データ主導のマッチング
+              </h4>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
+                相思相愛になりやすいお相手を厳選。客観的な指標を用いることで、ミスマッチのない理想的な出会いを提供します。
+                <Link href="/support" className="text-[#D9889D] font-bold block mt-2 hover:underline">
+                  料金・サービス詳細へ →
+                </Link>
+              </p>
             </div>
 
-            <div className="lg:col-span-5 bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-[#EEDAD6]/40 shadow-xs">
-              <h4 className="text-xs font-extrabold text-[#D9889D] tracking-widest uppercase mb-4">FEATURES</h4>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <div className={`w-5 h-5 shrink-0 rounded-full ${lightPinkBg} text-[#D9889D] flex items-center justify-center text-xs font-bold mt-0.5`}>✓</div>
-                  <div>
-                    <h5 className="text-sm font-bold text-gray-900 mb-1">「感覚」に頼らないデータ主導のマッチング</h5>
-                    <p className="text-xs text-gray-600 leading-normal">相思相愛になりやすいお相手を厳選します。</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <div className={`w-5 h-5 shrink-0 rounded-full ${lightPinkBg} text-[#D9889D] flex items-center justify-center text-xs font-bold mt-0.5`}>✓</div>
-                  <div>
-                    <h5 className="text-sm font-bold text-gray-900 mb-1">仕事と婚活を両立できるタイムパフォーマンス</h5>
-                    <p className="text-xs text-gray-600 leading-normal">無駄な時間を省き、仕事をしながらスタイリッシュに婚活。最短期間での成婚を目指します。</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <div className={`w-5 h-5 shrink-0 rounded-full ${lightPinkBg} text-[#D9889D] flex items-center justify-center text-xs font-bold mt-0.5`}>✓</div>
-                  <div>
-                    <h5 className="text-sm font-bold text-gray-900 mb-1">キャリアへの理解が深いパートナーが見つかる</h5>
-                    <p className="text-xs text-gray-600 leading-normal">共働きや互いのライフスタイルを尊重し合える出会いを提供します。</p>
-                  </div>
-                </li>
-              </ul>
+            {/* 理由 2 */}
+            <div className="bg-[#FAF8F5] rounded-2xl p-8 border border-transparent transition-all duration-300 hover:bg-white hover:border-rose-100 hover:shadow-[0_20px_45px_rgba(230,162,179,0.12)] group">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#D9889D] flex items-center justify-center shadow-xs mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Clock className="w-6 h-6" />
+              </div>
+              <span className="text-[10px] font-black text-[#D9889D] tracking-widest block mb-1">REASON 02</span>
+              <h4 className="text-base sm:text-lg font-black text-gray-900 mb-3 tracking-tight leading-snug">
+                仕事と婚活を両立できる<br />タイムパフォーマンス
+              </h4>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
+                無駄な時間を省き、仕事をしながらスタイリッシュに婚活。
+                <Link href="/why-us" className="text-[#D9889D] font-bold inline hover:underline mx-0.5">
+                  選ばれる理由
+                </Link>
+                でもある高効率な仕組みで、最短期間での納得の成婚を目指します。
+              </p>
+            </div>
+
+            {/* 理由 3 */}
+            <div className="bg-[#FAF8F5] rounded-2xl p-8 border border-transparent transition-all duration-300 hover:bg-white hover:border-rose-100 hover:shadow-[0_20px_45px_rgba(230,162,179,0.12)] group">
+              <div className="w-12 h-12 rounded-xl bg-white text-[#D9889D] flex items-center justify-center shadow-xs mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Briefcase className="w-6 h-6" />
+              </div>
+              <span className="text-[10px] font-black text-[#D9889D] tracking-widest block mb-1">REASON 03</span>
+              <h4 className="text-base sm:text-lg font-black text-gray-900 mb-3 tracking-tight leading-snug">
+                キャリアへの理解が深い<br />パートナーが見つかる
+              </h4>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
+                共働きや互いのライフスタイル、人生のビジョンを尊重し合えるハイレイヤーな出会いを提供します。まずはお気軽に
+                <Link href="/contact" className="text-[#D9889D] font-bold inline hover:underline mx-0.5">
+                  無料カウンセリング
+                </Link>
+                へお申し込みください。
+              </p>
             </div>
 
           </div>
+        </div>
+      </section>
 
-          <div className="bg-[#FAF8F5]/60 rounded-3xl p-6 sm:p-10 border border-gray-100 text-center mb-16">
-            <span className="text-xs font-bold text-[#D9889D] tracking-wider block mb-2">MEDICAL PROCESS</span>
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-8 tracking-tight">
+      {/* ============================================================
+          4. MEDICAL APPROACH SECTION (3つの医療アプローチ)
+         ============================================================ */}
+      <section className="py-20 bg-linear-to-b from-white to-[#FAF8F5]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-1.5 bg-[#D9889D]/10 text-[#D9889D] px-3 py-1 rounded-md text-xs font-bold tracking-wider mb-3">
+              <Stethoscope className="w-3.5 h-3.5" />
+              <span>Medical Method</span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
               成婚の確率を高める「3つの医療アプローチ」
             </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              
-              <div className="bg-white rounded-2xl p-6 border border-[#EEDAD6]/30 shadow-xs flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black font-mono text-[#D9889D]/20">01</span>
-                    <span className="text-[10px] font-bold text-[#D9889D] bg-[#E6A2B3]/10 px-2.5 py-0.5 rounded-full">DIAGNOSIS</span>
-                  </div>
-                  <h4 className="text-sm font-bold text-gray-900 mb-2">
-                    【検査】独自の分析であなたの強みを可視化
-                  </h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    客観的なデータを用いて、婚活市場における「あなたの最大の強み」を明確にします。
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 border border-[#EEDAD6]/30 shadow-xs flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black font-mono text-[#D9889D]/20">02</span>
-                    <span className="text-[10px] font-bold text-[#D9889D] bg-[#E6A2B3]/10 px-2.5 py-0.5 rounded-full">PRESCRIPTION</span>
-                  </div>
-                  <h4 className="text-sm font-bold text-gray-900 mb-2">
-                    【処方】課題をクリアにする的確なアドバイス
-                  </h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    どうしたら状況をよくできるか具体的な改善ステップを提案します。
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 border border-[#EEDAD6]/30 shadow-xs flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black font-mono text-[#D9889D]/20">03</span>
-                    <span className="text-[10px] font-bold text-[#D9889D] bg-[#E6A2B3]/10 px-2.5 py-0.5 rounded-full">TREATMENT</span>
-                  </div>
-                  <h4 className="text-sm font-bold text-gray-900 mb-2">
-                    【サポート】メンタルまで支える徹底的なサポート
-                  </h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    医師ならではの心理学知見で、婚活の不安やストレスをケアし、ポジティブに進めるよう支えます。
-                  </p>
-                </div>
-              </div>
-
-            </div>
+            <p className="text-xs text-gray-500 mt-2 font-medium">根拠に基づき、最短で結果を出すためのドクターズ・プロセス</p>
           </div>
 
-        </div>
-      </section>
-
-      {/* SERVICE INTRODUCTION SECTION */}
-      <section className="py-24 lg:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16 lg:mb-24">
-          <p className={`${accentPink} text-xs font-bold tracking-widest uppercase mb-2`}>SERVICE DETAILS</p>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            提供サービスのご案内
-          </h2>
-          <div className={`w-12 h-0.5 ${accentPink} mx-auto mt-4 opacity-60`} />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-20 lg:mb-28">
-          <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xs transition-all hover:shadow-md hover:border-[#E6A2B3]/20">
-            <div className={`w-12 h-12 rounded-xl ${lightPinkBg} flex items-center justify-center ${accentPink} mb-6`}>
-              <BarChart3 className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">データと論理に基づく分析</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              直感や偶然だけに頼るのではなく、独自の客観的指標とカウンセリングデータを分析。あなたのライフプランに最適なパートナーシップへの道をロジカルに導き出します。
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xs transition-all hover:shadow-md hover:border-[#E6A2B3]/20">
-            <div className={`w-12 h-12 rounded-xl ${lightPinkBg} flex items-center justify-center ${accentPink} mb-6`}>
-              <Heart className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">医師監修のマインドケア</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              婚活に伴う精神的な不安やストレスをケアするため、現役の女性医師監修による心理的アプローチを導入。健やかで前向きな意思決定を常にサポートします。
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xs transition-all hover:shadow-md hover:border-[#E6A2B3]/20">
-            <div className={`w-12 h-12 rounded-xl ${lightPinkBg} flex items-center justify-center ${accentPink} mb-6`}>
-              <ShieldCheck className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-3">厳格な審査とプライバシー</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              各種証明書の提出を義務付けた会員限定のクローズドな環境をご用意。大阪梅田という好立地でありながら、個人のプライバシーは完全に守られた空間を提供します。
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-      {/* INTERACTIVE PERSONALITY TEST SECTION */}
-      <section className="py-20 lg:py-28 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          
-          <div className="text-center mb-12">
-            <p className={`${accentPink} text-xs font-bold tracking-widest uppercase mb-2`}>DIAGNOSIS TEST</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">30秒でわかる！ロジカル婚活診断</h2>
-            <p className="text-xs sm:text-sm text-gray-600 mt-3 max-w-md mx-auto leading-relaxed">
-              あなたの隠れた恋愛の価値観や、医師監修アプローチがどのようにマッチするかをデータをもとに簡易診断します。
-            </p>
-            <div className={`w-12 h-0.5 ${accentPink} mx-auto mt-4 opacity-60`} />
-          </div>
-
-          <div className="bg-[#FAF8F5] rounded-3xl p-6 sm:p-10 border border-[#EEDAD6]/70 shadow-xs relative overflow-hidden">
+          <div className="space-y-6">
             
-            {currentQuestion <= 5 ? (
-              <>
-                <div className="flex items-center justify-between mb-6">
-                  <span className={`text-xs font-bold ${accentPink} tracking-wider font-mono`}>
-                    QUESTION 0{currentQuestion} / 05
-                  </span>
-                  <div className="w-32 h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                    <div 
-                      className={`h-full ${primaryPink} rounded-full transition-all duration-300`} 
-                      style={{ width: `${(currentQuestion / 5) * 100}%` }}
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-base sm:text-lg font-bold text-gray-900 leading-snug">
-                    {quizQuestions[currentQuestion as keyof typeof quizQuestions].title}
-                  </h3>
-                </div>
-
-                <div className="space-y-3.5">
-                  {quizQuestions[currentQuestion as keyof typeof quizQuestions].answers.map((answer, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setCurrentQuestion(currentQuestion + 1)}
-                      className="w-full text-left bg-white hover:bg-[#E6A2B3]/5 active:bg-[#E6A2B3]/10 border border-gray-200 hover:border-[#E6A2B3]/40 p-4 rounded-xl flex items-center justify-between group transition-all duration-200 shadow-xs"
-                    >
-                      <div className="flex items-center gap-4">
-                        <span className="w-6 h-6 shrink-0 rounded-full border border-gray-300 flex items-center justify-center text-xs font-bold text-gray-500 bg-gray-50 group-hover:border-[#E6A2B3] group-hover:bg-[#E6A2B3]/10 group-hover:text-[#D9889D] transition-colors">
-                          {answer.label}
-                        </span>
-                        <span className="text-xs sm:text-sm text-gray-700 font-medium group-hover:text-gray-900">
-                          {answer.text}
-                        </span>
-                      </div>
-                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#D9889D] group-hover:translate-x-0.5 transition-all" />
-                    </button>
-                  ))}
-                </div>
-              </>
-            ) : (
-              <div className="text-center py-6">
-                <div className={`w-12 h-12 rounded-full ${lightPinkBg} flex items-center justify-center mx-auto mb-4 ${accentPink}`}>
-                  <ShieldCheck className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">診断が完了しました！</h3>
-                <p className="text-xs sm:text-sm text-gray-600 max-w-md mx-auto leading-relaxed mb-8">
-                  ご回答ありがとうございます。あなたに最適化された「ロジカル成婚カルテ」の構築準備が整いました。詳しい解説 and 分析レポートを受け取りましょう。
-                </p>
-                <a href="#contact" className={`inline-block ${primaryPink} hover:bg-[#D9889D] text-white font-bold px-8 py-4 rounded-full shadow-md shadow-[#E6A2B3]/20 transition-all`}>
-                  無料相談でカルテを受け取る
-                </a>
+            {/* アプローチ 1 */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100/80 shadow-xs flex flex-col sm:flex-row gap-6 items-start transition-all duration-300 hover:shadow-md">
+              <div className="w-12 h-12 rounded-full bg-rose-50 text-[#D9889D] flex items-center justify-center shrink-0 font-bold text-lg">
+                <ClipboardCheck className="w-5 h-5" />
               </div>
-            )}
-
-            <div className="mt-8 pt-6 border-t border-gray-200/60 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-[11px] text-gray-500 text-center sm:text-left leading-normal">
-                ※診断結果の分析解説は、無料カウンセリング時にお一人ずつの個別データシートとしてお渡しいたします。
-              </p>
-              {currentQuestion > 1 && (
-                <button 
-                  onClick={() => setCurrentQuestion(1)}
-                  className="text-xs font-bold text-gray-400 hover:text-gray-600 transition-colors underline underline-offset-4 shrink-0 flex items-center gap-1"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  最初からやり直す
-                </button>
-              )}
+              <div>
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <span className="text-[10px] font-black tracking-wider text-white bg-gray-900 px-2 py-0.5 rounded-xs">APPROACH 01</span>
+                  <h4 className="text-base sm:text-lg font-black text-gray-900">【検査】独自の分析であなたの強みを可視化</h4>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-600 font-medium leading-relaxed">
+                  客観的なデータを用いて、婚活市場における「あなたの最大の強み」を明確にします。主観に頼らないからこそ、自身の持つ本当の価値に気付くことができます。（具体的なプログラム内容は
+                  <Link href="/support" className="text-[#D9889D] font-bold underline hover:text-[#b3566f] mx-0.5">
+                    サービス・プランのご案内
+                  </Link>
+                  に掲載しています）
+                </p>
+              </div>
             </div>
 
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full border border-[#E6A2B3]/10 pointer-events-none" />
-          </div>
+            {/* アプローチ 2 */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100/80 shadow-xs flex flex-col sm:flex-row gap-6 items-start transition-all duration-300 hover:shadow-md">
+              <div className="w-12 h-12 rounded-full bg-rose-50 text-[#D9889D] flex items-center justify-center shrink-0 font-bold text-lg">
+                <ShieldAlert className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <span className="text-[10px] font-black tracking-wider text-white bg-gray-900 px-2 py-0.5 rounded-xs">APPROACH 02</span>
+                  <h4 className="text-base sm:text-lg font-black text-gray-900">【処方】課題をクリアにする的確なアドバイス</h4>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-600 font-medium leading-relaxed">
+                  ボトルネックとなっている課題に対して、どうしたら状況を改善できるか具体的なステップを提案。あなたの魅力を最大化する明確な「処方箋」を提示します。
+                </p>
+              </div>
+            </div>
 
+            {/* アプローチ 3 */}
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100/80 shadow-xs flex flex-col sm:flex-row gap-6 items-start transition-all duration-300 hover:shadow-md">
+              <div className="w-12 h-12 rounded-full bg-rose-50 text-[#D9889D] flex items-center justify-center shrink-0 font-bold text-lg">
+                <HeartHandshake className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <span className="text-[10px] font-black tracking-wider text-white bg-gray-900 px-2 py-0.5 rounded-xs">APPROACH 03</span>
+                  <h4 className="text-base sm:text-lg font-black text-gray-900">【サポート】メンタルまで支える徹底的なサポート</h4>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-600 font-medium leading-relaxed">
+                  医師ならではの心理学知見で、婚活に伴う不安やストレスをきめ細やかにケア。活動中のマインドを高いレベルで安定させ、ポジティブに進めるようフルサポートします。
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
-      {/* --- CONTACT FORM SECTION --- */}
-<section id="contact" className="py-24 lg:py-32 bg-[#FAF8F5] border-t border-gray-100 scroll-mt-16">
-  <div className="max-w-3xl mx-auto px-4 sm:px-6">
-    
-    <div className="text-center mb-12">
-      <p className={`${accentPink} text-xs font-bold tracking-widest uppercase mb-2`}>RESERVATION & CONTACT</p>
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-        無料カウンセリング予約・お問い合わせ
-      </h2>
-      <p className="text-xs sm:text-sm text-gray-600 mt-3 max-w-md mx-auto leading-relaxed">
-        完全予約制・プライバシー厳守。ご質問のみでもお気軽にお寄せください。
-      </p>
-      <div className={`w-12 h-0.5 ${accentPink} mx-auto mt-4 opacity-60`} />
-    </div>
-
-    <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-[#EEDAD6]/40">
-      {!formSubmitted ? (
-        <form onSubmit={handleFormSubmit} className="space-y-6">
+      {/* ============================================================
+          5. CLOSING OUTRO SECTION (仕事も結婚も両方欲しい！)
+         ============================================================ */}
+      <section className="py-24 bg-gradient-to-br from-[#FAF8F5] via-white to-white text-center px-4 sm:px-6 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-rose-50/30 rounded-full blur-3xl -z-10" />
+        
+        <div className="max-w-3xl mx-auto">
+          <span className="text-xs font-black text-[#D9889D] tracking-widest uppercase block mb-3">Message for You</span>
+          <h3 className="text-xl sm:text-3xl font-black text-gray-900 tracking-tight mb-8">
+            【仕事も結婚も両方欲しい！】
+          </h3>
           
-          {/* NAME FIELD */}
-          <div>
-            <label className="block text-xs font-bold text-gray-800 mb-2 flex items-center gap-1.5">
-              お名前 <span className="text-[10px] text-white bg-[#E6A2B3] px-1.5 py-0.5 rounded">必須</span>
-            </label>
-            <input 
-              type="text" 
-              required
-              placeholder="山田 太郎"
-              className="w-full text-sm bg-[#FAF8F5] border border-gray-200 focus:border-[#E6A2B3] focus:bg-white rounded-xl px-4 py-3 outline-none transition-all placeholder:text-gray-400"
-            />
+          <div className="space-y-5 text-sm sm:text-base text-gray-700 font-bold leading-relaxed max-w-2xl mx-auto mb-12">
+            <p>
+              あなたが仕事で培ってきた決断力や論理力、誠実さなどは、<br />
+              幸せな結婚を掴むための<span className="text-[#D9889D] font-black">強力な武器</span>になります。
+            </p>
+            <p className="text-gray-900 sm:text-lg font-black">
+              キャリアも、これからの人生の幸福も、どちらも諦める必要はありません。
+            </p>
+            <p className="text-gray-500 font-medium text-xs sm:text-sm pt-4 border-t border-gray-100 max-w-md mx-auto">
+              知性とデータを味方につけて、ハイスペックな異性や理解の深い一生モノのパートナーと出会う一歩を踏み出してみませんか？
+              <Link href="/contact" className="text-[#D9889D] font-bold underline hover:text-[#b3566f] block mt-3">
+                まずは無料面談であなたのお悩みをお聞かせください
+              </Link>
+            </p>
           </div>
-
-          {/* EMAIL FIELD (New) */}
-          <div>
-            <label className="block text-xs font-bold text-gray-800 mb-2 flex items-center gap-1.5">
-              メールアドレス <span className="text-[10px] text-white bg-[#E6A2B3] px-1.5 py-0.5 rounded">必須</span>
-            </label>
-            <input 
-              type="email" 
-              required
-              placeholder="example@email.com"
-              className="w-full text-sm bg-[#FAF8F5] border border-gray-200 focus:border-[#E6A2B3] focus:bg-white rounded-xl px-4 py-3 outline-none transition-all placeholder:text-gray-400"
-            />
-          </div>
-
-          {/* AGE & SEX FIELDS */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-xs font-bold text-gray-800 mb-2 flex items-center gap-1.5">
-                年齢 <span className="text-[10px] text-white bg-[#E6A2B3] px-1.5 py-0.5 rounded">必須</span>
-              </label>
-              <input 
-                type="number" 
-                required
-                min="20"
-                max="80"
-                placeholder="35"
-                className="w-full text-sm bg-[#FAF8F5] border border-gray-200 focus:border-[#E6A2B3] focus:bg-white rounded-xl px-4 py-3 outline-none transition-all placeholder:text-gray-400"
-              />
-            </div>
-            <div>
-              <label className="block text-xs font-bold text-gray-800 mb-2 flex items-center gap-1.5">
-                性別 <span className="text-[10px] text-white bg-[#E6A2B3] px-1.5 py-0.5 rounded">必須</span>
-              </label>
-              <select 
-                required
-                className="w-full text-sm bg-[#FAF8F5] border border-gray-200 focus:border-[#E6A2B3] focus:bg-white rounded-xl px-4 py-3 outline-none transition-all text-gray-800"
-              >
-                <option value="" disabled selected>選択してください</option>
-                <option value="male">男性</option>
-                <option value="female">女性</option>
-                <option value="other">その他</option>
-              </select>
-            </div>
-          </div>
-
-          {/* OCCUPATION FIELD (New) */}
-          <div>
-            <label className="block text-xs font-bold text-gray-800 mb-2 flex items-center gap-1.5">
-              ご職業 <span className="text-[10px] text-white bg-[#E6A2B3] px-1.5 py-0.5 rounded">必須</span>
-            </label>
-            <input 
-              type="text" 
-              required
-              placeholder="医師、会社員、公務員など"
-              className="w-full text-sm bg-[#FAF8F5] border border-gray-200 focus:border-[#E6A2B3] focus:bg-white rounded-xl px-4 py-3 outline-none transition-all placeholder:text-gray-400" 
-            />
-          </div>
-
-          <div className="pt-4">
-            <button
-              type="submit"
-              className={`w-full inline-flex items-center justify-center gap-2 ${primaryPink} hover:bg-[#D9889D] text-white font-bold py-4 rounded-xl shadow-md shadow-[#E6A2B3]/20 transition-all text-sm cursor-pointer`}
-            >
-              <span>この内容で送信する</span>
-              <Send className="w-4 h-4" />
-            </button>
-          </div>
-        </form>
-      ) : (
-        <div className="text-center py-12 space-y-3">
-          <div className={`w-12 h-12 rounded-full ${lightPinkBg} flex items-center justify-center mx-auto ${accentPink}`}>
-            <ShieldCheck className="w-6 h-6" />
-          </div>
-          <h3 className="text-lg font-bold text-gray-900">送信が完了いたしました</h3>
-          <p className="text-sm text-gray-600 max-w-xs mx-auto">
-            内容を確認の上、担当カウンセラーより2営業日以内にご連絡いたします。
-          </p>
         </div>
-      )}
+      </section>
+
+      {/* 追従型CTAコンテナのための下部余白 */}
+      <div className="h-24 md:h-28" />
+
+      {/* ============================================================
+          6. STICKY CTA CONTAINER (画面下部・追従型コンテナ)
+         ============================================================ */}
+      <div className="fixed bottom-0 left-0 w-full md:w-auto md:bottom-6 md:left-6 z-50 px-4 pb-4 md:p-0 flex flex-col sm:flex-row gap-3 md:gap-4 items-center bg-linear-to-t from-white via-white/95 to-transparent md:bg-transparent pt-6 md:pt-0">
+        
+        {/* 1. WEB面談予約ボタン */}
+        <Link 
+          href="/contact" 
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] hover:from-[#D9889D] hover:to-rose-600 text-white font-extrabold px-6 lg:px-8 py-3.5 rounded-full shadow-2xl shadow-[#E6A2B3]/40 text-sm lg:text-base transition-all duration-300 transform scale-100 hover:scale-[1.03] text-center tracking-wide"
+        >
+          <span>無料相談の枠を予約する</span>
+          <ChevronRight className="w-4 h-4 bg-white/20 rounded-full p-0.5 shrink-0" />
+        </Link>
+        
+        {/* 2. 公式LINE相談ボタン */}
+        <Link 
+          href="https://line.me" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#06C755] hover:bg-[#05B34C] text-white font-extrabold px-6 lg:px-8 py-3.5 rounded-full shadow-2xl shadow-[#06C755]/30 text-sm lg:text-base transition-all duration-300 transform scale-100 hover:scale-[1.03] text-center tracking-wide"
+        >
+          <svg className="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 5.84 2 10.58c0 2.9 1.7 5.48 4.34 6.94-.17.58-.62 2.37-.7 2.73-.1.43.14.43.33.33.13-.08 2.12-1.44 2.95-2.03.7.2 1.43.3 2.17.3 5.52 0 10-3.84 10-8.58S17.52 2 12 2zm4.62 11.23h-1.46c-.14 0-.26-.12-.26-.26v-3.7c0-.14.12-.26.26-.26h1.46c.14 0 .26.12.26.26v.44c0 .14-.12.26-.26.26h-.94v.74h.94c.14 0 .26.12.26.26v.44c0 .14-.12.26-.26.26h-.94v.8h.94c.14 0 .26.12.26.26v.44c0 .15-.12.26-.26.26zm-2.88 0h-.44c-.14 0-.26-.12-.26-.26V9.8c0-.14.12-.26.26-.26h.44c.14 0 .26.12.26.26vNav.2.9h.26z"/>
+          </svg>
+          <span>LINEで気軽に相談してみる</span>
+        </Link>
+
+      </div>
     </div>
-  </div>
-</section>
-    </main>
   );
 }

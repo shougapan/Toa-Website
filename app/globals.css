@@ -5,6 +5,16 @@
   --foreground: #171717;
 }
 
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FAF8F5; /* Set the body to matches your page bg */
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
