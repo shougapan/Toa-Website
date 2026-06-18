@@ -227,7 +227,7 @@ export default function HomePage() {
                 男女２名のダブルサポート
               </h3>
               <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
-                婚活サポート歴２０年のベテランカウンセラー×女医による多角的なサポートを提供
+                証明書の提出が必須の、安心なネットワーク。
               </p>
             </div>
           </div>

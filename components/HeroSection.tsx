@@ -34,7 +34,7 @@ export default function HeroSection() {
             <div className="text-center lg:text-left mb-8 select-none relative">
               <h1 className="text-[#D9889D] text-xs sm:text-sm font-black tracking-widest uppercase mb-3 block">
                 Relationship Diagnosis
-              </h1>
+            </h1>
 
               <h2 className="text-lg sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight leading-[1.4] lg:leading-[1.35] max-w-2xl mx-auto lg:mx-0">    
                 <span className="relative inline-block">
