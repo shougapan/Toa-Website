@@ -19,9 +19,11 @@ export default function Home() {
         {/* 3. Hero Minimalist Text Content */}
         <div className="absolute inset-0 flex flex-col justify-start items-start p-6 sm:p-12 md:p-16 pt-12 sm:pt-16 md:pt-20 max-w-2xl text-left">
           {/* Main Title - Deep Elegant Navy Blue */}
-          <h1 className="text-3xl font-black leading-tight text-gray-800 md:text-4xl lg:text-5xl tracking-tight">
-            Hello there
-          </h1>
+<h1 className="text-2xl font-black leading-tight text-gray-800 md:text-4xl lg:text-5xl tracking-tight drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
+  女医とベテラン<br/>
+  カウンセラーの<br/>
+  <span className="text-rose-500">技あり婚活</span>
+</h1>
           
           {/* Subtitle - Warm Muted Rose */}
           <p className="mt-4 text-sm font-bold text-fuchsia-400 md:text-base lg:text-lg max-w-sm leading-relaxed">
