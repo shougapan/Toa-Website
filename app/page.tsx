@@ -6,7 +6,8 @@ export default function Home() {
       
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
-<section className="mx-4 sm:-mx-6 lg:-mx-8 relative aspect-square max-h-[500px] w-full overflow-hidden rounded-b-2xl md:rounded-2xl shadow-sm">
+{/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[360px] sm:h-[400px] md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* 1. Background Image */}
   <img
     src="/couple1.jpg"
@@ -18,11 +19,11 @@ export default function Home() {
   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent mix-blend-multiply" />
 
   {/* 3. Hero Content */}
-  {/* CHANGED: Increased top padding (pt-14 sm:pt-20 md:pt-24) to nudge the entire block downward */}
-  <div className="absolute inset-0 flex flex-col justify-start items-start p-6 pt-8 sm:p-11 sm:pt-20 md:p-15 md:pt-24 max-w-xl text-left z-10">
+  {/* ADJUSTED: Nudged top padding (pt-10 sm:pt-14 md:pt-18) to keep layout proportional to the shorter height */}
+  <div className="absolute inset-0 flex flex-col justify-start items-start p-6 pt-10 sm:p-12 sm:pt-14 md:p-16 md:pt-18 max-w-xl text-left z-10 mx-auto w-full px-4 sm:px-6 lg:px-8">
     
     {/* Top Badge/Kicker */}
-    <span className="inline-block text-xl md:text-sm font-bold tracking-wider text-rose-300 bg-black/40 border border-white/20 backdrop-blur-md px-2 py-0.5 rounded-full mb-6 shadow-sm opacity-75">
+    <span className="inline-block text-xl md:text-sm font-bold tracking-wider text-rose-300 bg-black/40 border border-white/20 backdrop-blur-md px-2 py-0.5 rounded-full mb-4 shadow-sm opacity-75">
       大阪梅田結婚相談所
     </span>
 
@@ -31,12 +32,12 @@ export default function Home() {
       <span className="block text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 drop-shadow-sm">
         現役女医監修と<br/>ベテランカウンセラー
       </span>
-      がサポートする、<br className="hidden sm:inline" /><br/>
-      あなただけの <span className="text-rose-300 drop-shadow-sm font-extrabold"><br/>唯一無二の婚活</span>
+      がサポートする、<br className="hidden sm:inline mb-" />
+     <span > <br/>あなただけの <span className="text-rose-300 drop-shadow-sm font-extrabold"><br/>唯一無二の婚活</span></span>
     </h1>
     
     {/* Subtitle / Description */}
-    <p className="mt-4 text-xs sm:text-sm md:text-base text-pink-100 max-w-md leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+    <p className="mt-3 text-xs sm:text-sm md:text-base text-pink-100 max-w-md leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
       プロフェッショナルな2つの視点から、あなたに寄り添った最適なパートナー探しをサポートいたします。
     </p>
   </div>
