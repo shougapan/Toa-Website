@@ -44,8 +44,8 @@ export default function PremiumNavbar() {
                 <span className="text-base font-black text-gray-900 tracking-tight leading-tight">
                   大阪梅田結婚相談所
                 </span>
-                <span className="text-[9px] font-black text-[#D9889D] tracking-widest leading-none mt-1 uppercase">
-                  Osaka Umeda Marriage Agency
+                <span className="text-[12px] font-black text-[#D9889D] tracking-widest leading-none mt-1 uppercase">
+                 ２０代３０代の真剣婚活・1年以内の成婚
                 </span>
               </div>
             </Link>

@@ -5,86 +5,117 @@ export default function Home() {
     <div className="space-y-16 pb-24 md:pb-12">
       
       {/* --- HERO SECTION --- */}
-      <section className="-mx-4 sm:-mx-6 lg:-mx-8 relative h-[55vh] min-h-[380px] md:h-[500px] overflow-hidden rounded-b-2xl md:rounded-2xl shadow-sm">
-        {/* 1. Your Light Blue Background Image */}
-        <img
-          src="/couple1.jpg"
-          alt="Marriage Consultation Hero"
-          className="absolute inset-0 h-full w-full object-cover object-center"
-        />
+      {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
+<section className="mx-4 sm:-mx-6 lg:-mx-8 relative aspect-square max-h-[500px] w-full overflow-hidden rounded-b-2xl md:rounded-2xl shadow-sm">
+  {/* 1. Background Image */}
+  <img
+    src="/couple1.jpg"
+    alt="Marriage Consultation Hero"
+    className="absolute inset-0 h-full w-full object-cover object-center"
+  />
 
-        {/* 2. Soft Luminous Cream Gradient Mask Fade */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FAF8F5]/95 via-[#FAF8F5]/60 to-transparent pointer-events-none" />
+  {/* 2. Lightened Contrast Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent mix-blend-multiply" />
 
-        {/* 3. Hero Minimalist Text Content */}
-        <div className="absolute inset-0 flex flex-col justify-start items-start p-6 sm:p-12 md:p-16 pt-12 sm:pt-16 md:pt-20 max-w-2xl text-left">
-          {/* Main Title - Deep Elegant Navy Blue */}
-<h1 className="text-2xl font-black leading-tight text-gray-800 md:text-4xl lg:text-5xl tracking-tight drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
-  女医とベテラン<br/>
-  カウンセラーの<br/>
-  <span className="text-rose-500">技あり婚活</span>
-</h1>
-          
-          {/* Subtitle - Warm Muted Rose */}
-          <p className="mt-4 text-sm font-bold text-fuchsia-400 md:text-base lg:text-lg max-w-sm leading-relaxed">
-            {/* Enter subtitle text here if needed */}
-          </p>
-        </div>
-      </section>
+  {/* 3. Hero Content */}
+  {/* CHANGED: Increased top padding (pt-14 sm:pt-20 md:pt-24) to nudge the entire block downward */}
+  <div className="absolute inset-0 flex flex-col justify-start items-start p-6 pt-8 sm:p-11 sm:pt-20 md:p-15 md:pt-24 max-w-xl text-left z-10">
+    
+    {/* Top Badge/Kicker */}
+    <span className="inline-block text-xl md:text-sm font-bold tracking-wider text-rose-300 bg-black/40 border border-white/20 backdrop-blur-md px-2 py-0.5 rounded-full mb-6 shadow-sm opacity-75">
+      大阪梅田結婚相談所
+    </span>
 
-
+    {/* Main Title */}
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight text-white tracking-tight drop-shadow-[0_3px_5px_rgba(0,0,0,0.6)]">
+      <span className="block text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 drop-shadow-sm">
+        現役女医監修と<br/>ベテランカウンセラー
+      </span>
+      がサポートする、<br className="hidden sm:inline" /><br/>
+      あなただけの <span className="text-rose-300 drop-shadow-sm font-extrabold"><br/>唯一無二の婚活</span>
+    </h1>
+    
+    {/* Subtitle / Description */}
+    <p className="mt-4 text-xs sm:text-sm md:text-base text-pink-100 max-w-md leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+      プロフェッショナルな2つの視点から、あなたに寄り添った最適なパートナー探しをサポートいたします。
+    </p>
+  </div>
+</section>
       {/* --- STRENGTHS SECTION --- */}
-      <section className="space-y-8">
-        <div className="text-center">
-          <h2 className="text-xl font-bold tracking-wide text-gray-800 md:text-2xl">
-            当相談所が選ばれる3つの理由
-          </h2>
-          <div className="mx-auto mt-2 h-1 w-12 rounded bg-rose-400" />
-        </div>
+{/* --- STRENGTHS SECTION --- */}
+<section className="space-y-3">
+  <div className="text-center">
+    <h2 className="text-2xl font-black tracking-wide text-gray-950 md:text-3xl">
+      当相談所が選ばれる3つの理由
+    </h2>
+    <div className="mx-auto mt-2 h-1 w-12 rounded bg-rose-400" />
+  </div>
 
-        {/* Strict side-by-side grid across all screen sizes */}
-        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
-          {/* Card 1 */}
-          <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white/80 p-3 sm:p-4 md:p-6 text-center shadow-sm backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1">
-            <div className="mb-2 md:mb-4 flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-rose-50 text-sm sm:text-base md:text-xl font-bold text-rose-500">
-              01
-            </div>
-            <h3 className="text-xs font-bold text-gray-800 sm:text-sm md:text-lg tracking-tight">
-              現役女医のプロデュース
-            </h3>
-            <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm leading-normal sm:leading-relaxed text-gray-600">
-              女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
-            </p>
-          </div>
+  {/* Strict side-by-side grid across all screen sizes */}
+  <div className="grid grid-cols-3 gap-1.5 sm:gap-4 md:gap-6">
+    
+    {/* Card 1 */}
+    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
+      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
+        ♥️ 01
+      </div>
+      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
+      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
+        現役女医のプロデュース
+      </h3>
+      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
+      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
+        女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
+      </p>
+      
+      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
+      <a href="#strength1" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
+        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
+      </a>
+    </div>
 
-          {/* Card 2 */}
-          <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white/80 p-3 sm:p-4 md:p-6 text-center shadow-sm backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1">
-            <div className="mb-2 md:mb-4 flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-rose-50 text-sm sm:text-base md:text-xl font-bold text-rose-500">
-              02
-            </div>
-            <h3 className="text-xs font-bold text-gray-800 sm:text-sm md:text-lg tracking-tight">
-              あなたの魅力を最大化
-            </h3>
-            <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm leading-normal sm:leading-relaxed text-gray-600">
-              出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
-            </p>
-          </div>
+    {/* Card 2 */}
+    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
+      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
+        ♥️ 02
+      </div>
+      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
+      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
+        あなたの魅力を最大化
+      </h3>
+      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
+      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
+        出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
+      </p>
+      
+      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
+      <a href="#strength2" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
+        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
+      </a>
+    </div>
 
-          {/* Card 3 */}
-          <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white/80 p-3 sm:p-4 md:p-6 text-center shadow-sm backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1">
-            <div className="mb-2 md:mb-4 flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-rose-50 text-sm sm:text-base md:text-xl font-bold text-rose-500">
-              03
-            </div>
-            <h3 className="text-xs font-bold text-gray-800 sm:text-sm md:text-lg tracking-tight">
-              安全な会員基盤
-            </h3>
-            <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm leading-normal sm:leading-relaxed text-gray-600">
-              証明書の提出が必須の、安心な network。
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Card 3 */}
+    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
+      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
+        ♥️ 03
+      </div>
+      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
+      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
+        安全な会員基盤
+      </h3>
+      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
+      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
+        証明書の提出が必須の、安心な network。
+      </p>
+      
+      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
+      <a href="#strength3" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
+        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
+      </a>
+    </div>
 
+  </div>
+</section>
 
       {/* --- DOCTOR'S SUPPORT SECTION --- */}
       <section className="mx-auto max-w-4xl rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
@@ -98,7 +129,6 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* Increased base text sizing from text-sm/base to text-base/lg/xl */}
         <div className="space-y-6 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-normal tracking-wide">
           <p>
             病院の診察室で、ドクターがパソコンの画面ばかりを見て、あなたの顔をまともに見なければ寂しくて冷たい気持ちになりますよね。<br />
@@ -120,7 +150,7 @@ export default function Home() {
           </p>
           
           <p>
-            合理的な認識や、経験に基づく適切な判断があるのは当然ですが、さらなる人として温かみを加えて、ご満足いただけるサポートを提供させていただけるよう尽力いたします。
+            合理的な認識や、経験に基づく適切な判断があるのは当然いますが、さらなる人として温かみを加えて、ご満足いただけるサポートを提供させていただけるよう尽力いたします。
           </p>
           
           <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
