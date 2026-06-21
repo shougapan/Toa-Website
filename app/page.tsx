@@ -642,6 +642,69 @@ export default function Home() {
   </div>
 </section>
 
+<section className="w-full px-4 md:px-8 py-1">
+
+  {/* Header */}
+  <div className="max-w-5xl mx-auto mb-10">
+    <span className="text-sm font-bold tracking-wider text-rose-500 uppercase">
+      Recommend
+    </span>
+
+    <h2 className="mt-3 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
+      大阪梅田結婚相談所はこんな方におすすめ
+    </h2>
+
+    <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
+  </div>
+
+  {/* Content */}
+  <div className="max-w-5xl mx-auto space-y-3 text-gray-700 leading-relaxed text-base md:text-lg">
+
+    <div>
+      <p className="font-bold text-gray-900">
+        ✅ 大阪で効率よく婚活したい方
+      </p>
+      <p className="mt-2">
+        大阪市、豊中市、北摂などにお住まいで、
+        スマートにハイクラス婚活を進めたい方。
+      </p>
+    </div>
+
+    <div>
+      <p className="font-bold text-gray-900">
+        ✅ 医師やベテランカウンセラーのサポートを求める方
+      </p>
+      <p className="mt-2">
+        婚活の不安やストレスを、現役女医によるメンタルサポートで解消したい方。
+        また、「結婚相談所 20年 カウンセラー 大阪」のプロに頼りたい方。
+      </p>
+    </div>
+
+    <div>
+      <p className="font-bold text-gray-900">
+        ✅ 関西のハイクラス婚を熟知した伴走サポートが欲しい方
+      </p>
+      <p className="mt-2">
+        キャリア20年のベテラン仲人による、
+        あなた専用のオーダーメイド婚活サポートを求める方。
+      </p>
+    </div>
+
+    <div>
+      <p className="font-bold text-gray-900">
+        ✅ ハイステータスな出会いを求める方
+      </p>
+      <p className="mt-2">
+        「ハイステータス 結婚相談所 医師在籍」での出会いを希望し、
+        「医師 婚活 結婚相談所 現役医師サポート」や
+        「女医 婚活 相談所 ベテランカウンセラー」の強みを活かして
+        質の高い出会いを掴みたい方。
+      </p>
+    </div>
+
+  </div>
+</section>
+
     </div>
   );
 }

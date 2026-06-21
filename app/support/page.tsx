@@ -97,20 +97,26 @@ export default function SupportPage() {
               </span>
             </button>
 
-            <div className="p-4 rounded-xl bg-gray-50/50 border border-dashed border-gray-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 opacity-80">
-              <div className="space-y-1">
-                <span className="inline-block bg-gray-200 text-gray-600 text-[10px] font-black px-2 py-0.5 rounded-sm">その他のお悩み</span>
-                <p className="text-xs sm:text-sm font-bold text-gray-600">
-                  ・誰もがうらやむハイステ男女を紹介して欲しい / ・理想のお相手はお見合い不成立 / ・仮交際にならない
-                </p>
-              </div>
-              <Link 
-                href="/#contact" 
-                className="text-xs font-black text-gray-900 flex items-center gap-1 shrink-0 hover:underline"
-              >
-                詳しく相談する <ChevronRight className="w-3.5 h-3.5" />
-              </Link>
-            </div>
+<div className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center justify-between group transition-all">
+  
+  <div className="space-y-1">
+    <span className="inline-block bg-gray-200 text-gray-600 text-[10px] font-black px-2 py-0.5 rounded-sm">
+      その他のお悩み
+    </span>
+
+    <p className="text-xs sm:text-sm font-bold text-gray-900 flex items-center gap-2">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
+      誰もがうらやむハイステ男女を紹介して欲しい / 理想のお相手はお見合い不成立 / 仮交際にならない
+    </p>
+  </div>
+
+  <Link
+    href="/#contact"
+    className="text-xs font-black text-[#D9889D] flex items-center gap-1 shrink-0 ml-4 group-hover:translate-x-1 transition-transform"
+  >
+    解決法をみる <ChevronRight className="w-3.5 h-3.5" />
+  </Link>
+</div>
           </div>
         </div>
       </div>
@@ -359,6 +365,120 @@ export default function SupportPage() {
           </div>
         </div>
       </div>
+
+      <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12 space-y-10 text-gray-800 leading-relaxed">
+
+  {/* H2 */}
+  <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+    恋愛経験が無いのですが大丈夫ですか？
+  </h2>
+
+  {/* Intro */}
+  <div className="space-y-4 text-sm sm:text-base">
+    <p>誰にも言えない婚活の不安を解決。</p>
+
+    <p>
+      「今まで一度も異性と付き合ったことがない…」<br />
+      「恋愛経験がゼロの状態で、結婚相談所に入会、お見合いやデートなんてできるの？」
+    </p>
+
+    <p>そんな婚活の不安や恋愛の悩みを抱えていませんか？</p>
+  </div>
+
+  {/* Section 1 */}
+  <div className="space-y-3">
+    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+      恋愛経験ゼロがむしろ「最大の強み」に変わる！
+    </h3>
+
+    <p>
+      恋愛経験が少ないのはマイナスではなく「謙虚で素直、清楚」という最大の強みになります。
+      婚活では経験の多さではなく、誠実さが重視されます。
+    </p>
+
+    <p>
+      プロのカウンセラーと本気の婚活で、スピード成婚を目指しましょう。
+    </p>
+  </div>
+
+  {/* Section 2 */}
+  <div className="space-y-3">
+    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+      会話のお悩み
+    </h3>
+
+    <p>
+      「お見合いやデートで何を話せばいいかわからない」
+      「沈黙が怖い」という不安は多くの方が抱えています。
+    </p>
+
+    <p>
+      会話とはスピーチではなく、「気持ちのキャッチボール」です。
+      情報ではなく感情の交換が大切です。
+    </p>
+  </div>
+
+  {/* Key bullets */}
+  <div className="space-y-6">
+
+    <div>
+      <h4 className="font-bold">🔵 情報ではなく感情の交換</h4>
+      <p className="text-sm">
+        会話で大切なのは「何を話したか」ではなく「どんな気持ちになったか」です。
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-bold">🔵 2人でつくる空間と時間</h4>
+      <p className="text-sm">
+        会話は一人で作るものではなく、思いやりのキャッチボールです。
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-bold">🔵 ありのままで大丈夫</h4>
+      <p className="text-sm">
+        無理に盛り上げる必要はありません。等身大のあなたで大丈夫です。
+      </p>
+    </div>
+
+  </div>
+
+  {/* Support section */}
+  <div className="space-y-4">
+    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+      ありのままのあなたを活かすサポート
+    </h3>
+
+    <div className="space-y-3 text-sm sm:text-base">
+
+      <p><strong>① プロフィール作成：</strong>あなたの魅力を引き出す文章を作成</p>
+      <p><strong>② 服装・見た目：</strong>第一印象を最大化するアドバイス</p>
+      <p><strong>③ 客観的フィードバック：</strong>婚活市場での見え方を分析</p>
+      <p><strong>④ デート後フォロー：</strong>LINE・電話で継続サポート</p>
+
+    </div>
+  </div>
+
+  {/* Closing */}
+  <div className="pt-6 border-t border-gray-200 space-y-4">
+
+    <p className="font-semibold">
+      恋愛経験ゼロは婚活では「優良物件」です。
+    </p>
+
+    <p>
+      結婚相談所は恋愛上手が勝つ場所ではなく、
+      誠実で素直な人が選ばれる場所です。
+    </p>
+
+    <p className="font-bold text-gray-900">
+      大阪梅田結婚相談所が、あなたの初めての恋を人生最高の結婚へ導きます。
+    </p>
+
+  </div>
+
+</section>
 
     </div>
   );

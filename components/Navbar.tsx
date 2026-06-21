@@ -17,10 +17,11 @@ export default function PremiumNavbar() {
   }, []);
 
   const navLinks = [
-    { name: 'ホーム', href: '/' },
-    { name: '選ばれる理由', href: '/why-us' },
-    { name: '料金・活動の流れ', href: '/plan' },
-    { name: '特別紹介サポート', href: '/support' },
+    { name: '大阪梅田結婚相談所について', href: '/' },
+    { name: '大阪梅田結婚相談所が選ばれる理由', href: '/why-us' },
+    { name: '料金プランと成婚までの流れ', href: '/plan' },
+    { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
+    { name: '成婚エピソード', href: '/marriage-story' },
   ];
 
   return (
