@@ -658,7 +658,7 @@ export default function Home() {
   </div>
 
   {/* Content */}
-  <div className="max-w-5xl mx-auto space-y-3 text-gray-700 leading-relaxed text-base md:text-lg">
+  <div className="max-w-5xl mx-auto space-y-3e text-gray-700 leading-relaxed text-base md:text-lg">
 
     <div>
       <p className="font-bold text-gray-900">
@@ -700,6 +700,110 @@ export default function Home() {
         「女医 婚活 相談所 ベテランカウンセラー」の強みを活かして
         質の高い出会いを掴みたい方。
       </p>
+    </div>
+
+  </div>
+</section>
+
+<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+  <div className="text-center mb-10">
+    <span className="inline-block bg-[#F7E6EB] text-[#D9889D] text-xs font-black px-3 py-1 rounded-full mb-4">
+      FAQ
+    </span>
+
+    <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+      よくあるご質問
+    </h2>
+
+    <p className="mt-3 text-gray-600">
+      初めての婚活でも安心して活動していただけるよう、
+      よくいただくご質問をまとめました。
+    </p>
+  </div>
+
+  <div className="space-y-1">
+
+    {/* FAQ 1 */}
+    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+      <div className="flex items-start gap-3 mb-4">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+          📌
+        </span>
+        <h3 className="font-black text-gray-900 text-lg">
+          結婚相談所に入会したら、本当にサクラはいませんか？
+        </h3>
+      </div>
+
+      <div className="pl-11">
+        <p className="text-gray-700 leading-relaxed">
+          はい、サクラは一切在籍しておりません。
+          当相談所が加盟する結婚相談所連盟では、
+          「独身証明書」「住民票」「学歴証明書」
+          「収入証明書（男性必須）」などの提出を義務付けています。
+          身元が確実で、本気で結婚したい方だけが活動しているため、
+          安心してパートナー探しに集中していただけます。
+        </p>
+      </div>
+    </div>
+
+    {/* FAQ 2 */}
+    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+      <div className="flex items-start gap-3 mb-4">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+          📌
+        </span>
+        <h3 className="font-black text-gray-900 text-lg">
+          人見知りで、お見合いでうまく話せるか不安です。
+        </h3>
+      </div>
+
+      <div className="pl-11">
+        <p className="text-gray-700 leading-relaxed">
+          ご安心ください。当相談所では、お見合い前の服装選びや髪型の
+          トータルコーディネートはもちろん、
+          「何を話せばいいか」の会話シミュレーション（模擬お見合い）
+          まで事前に行います。
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mt-4">
+          また、お見合い当日の流れやNGマナーなども丁寧にご説明いたしますので、
+          恋愛経験が少ない方でも自信を持って活動していただけます。
+        </p>
+      </div>
+    </div>
+
+    {/* FAQ 3 */}
+    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+      <div className="flex items-start gap-3 mb-4">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+          📌
+        </span>
+        <h3 className="font-black text-gray-900 text-lg">
+          マッチングアプリと結婚相談所の最大の違いは何ですか？
+        </h3>
+      </div>
+
+      <div className="pl-11">
+        <p className="text-gray-700 leading-relaxed">
+          最も大きな違いは
+          <span className="font-bold text-gray-900">
+            「お相手の結婚に対する本気度」と「プロのサポートの有無」
+          </span>
+          です。
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mt-4">
+          アプリは手軽な反面、結婚の意思が低い方や既婚者が紛れ込むリスクがあります。
+          一方、結婚相談所では全員が
+          「良い人がいればすぐにでも結婚したい」
+          と考えているため、出会いから成婚までのスピードが非常に早いのが特徴です。
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mt-4">
+          また、交際中のお悩みやプロポーズのタイミングまで、
+          ベテランカウンセラーが仲介・アドバイスを行う点も大きな違いです。
+        </p>
+      </div>
     </div>
 
   </div>

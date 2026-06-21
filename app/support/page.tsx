@@ -22,6 +22,7 @@ export default function SupportPage() {
   // Navigation section triggers for the anchor scrolling layout
   const section1Ref = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
+  const section3Ref = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (elementRef: React.RefObject<HTMLDivElement | null>) => {
     if (elementRef.current) {
@@ -97,8 +98,10 @@ export default function SupportPage() {
               </span>
             </button>
 
-<div className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center justify-between group transition-all">
-  
+<button
+  onClick={() => scrollToSection(section3Ref)}
+  className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center justify-between group transition-all"
+>
   <div className="space-y-1">
     <span className="inline-block bg-gray-200 text-gray-600 text-[10px] font-black px-2 py-0.5 rounded-sm">
       その他のお悩み
@@ -110,13 +113,10 @@ export default function SupportPage() {
     </p>
   </div>
 
-  <Link
-    href="/#contact"
-    className="text-xs font-black text-[#D9889D] flex items-center gap-1 shrink-0 ml-4 group-hover:translate-x-1 transition-transform"
-  >
+  <span className="text-xs font-black text-[#D9889D] flex items-center gap-1 shrink-0 ml-4 group-hover:translate-x-1 transition-transform">
     解決法をみる <ChevronRight className="w-3.5 h-3.5" />
-  </Link>
-</div>
+  </span>
+</button>
           </div>
         </div>
       </div>
@@ -366,118 +366,482 @@ export default function SupportPage() {
         </div>
       </div>
 
-      <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12 space-y-10 text-gray-800 leading-relaxed">
+<section ref={section3Ref} className="py-20 bg-gradient-to-b from-[#FFF8FA] to-white">
+  <div className="w-full px-4 sm:px-6 lg:px-8">
 
-  {/* H2 */}
-  <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
-    恋愛経験が無いのですが大丈夫ですか？
-  </h2>
+    {/* Header */}
+    <div className="text-center mb-12">
+      <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#FCEEF2] text-[#D9889D] text-sm font-black">
+        恋愛経験が少ない方へ
+      </span>
 
-  {/* Intro */}
-  <div className="space-y-4 text-sm sm:text-base">
-    <p>誰にも言えない婚活の不安を解決。</p>
+      <h2 className="mt-5 text-3xl sm:text-5xl font-black text-gray-900 leading-tight">
+        恋愛経験が無いのですが
+        <br />
+        大丈夫ですか？
+      </h2>
 
-    <p>
-      「今まで一度も異性と付き合ったことがない…」<br />
-      「恋愛経験がゼロの状態で、結婚相談所に入会、お見合いやデートなんてできるの？」
-    </p>
-
-    <p>そんな婚活の不安や恋愛の悩みを抱えていませんか？</p>
-  </div>
-
-  {/* Section 1 */}
-  <div className="space-y-3">
-    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
-      恋愛経験ゼロがむしろ「最大の強み」に変わる！
-    </h3>
-
-    <p>
-      恋愛経験が少ないのはマイナスではなく「謙虚で素直、清楚」という最大の強みになります。
-      婚活では経験の多さではなく、誠実さが重視されます。
-    </p>
-
-    <p>
-      プロのカウンセラーと本気の婚活で、スピード成婚を目指しましょう。
-    </p>
-  </div>
-
-  {/* Section 2 */}
-  <div className="space-y-3">
-    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
-      会話のお悩み
-    </h3>
-
-    <p>
-      「お見合いやデートで何を話せばいいかわからない」
-      「沈黙が怖い」という不安は多くの方が抱えています。
-    </p>
-
-    <p>
-      会話とはスピーチではなく、「気持ちのキャッチボール」です。
-      情報ではなく感情の交換が大切です。
-    </p>
-  </div>
-
-  {/* Key bullets */}
-  <div className="space-y-6">
-
-    <div>
-      <h4 className="font-bold">🔵 情報ではなく感情の交換</h4>
-      <p className="text-sm">
-        会話で大切なのは「何を話したか」ではなく「どんな気持ちになったか」です。
+      <p className="mt-6 text-lg text-gray-600 font-medium">
+        誰にも言えない婚活の不安を解決
       </p>
     </div>
 
-    <div>
-      <h4 className="font-bold">🔵 2人でつくる空間と時間</h4>
-      <p className="text-sm">
-        会話は一人で作るものではなく、思いやりのキャッチボールです。
-      </p>
+    {/* Intro */}
+    <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-pink-100 mb-10">
+      <div className="space-y-5 text-gray-700 leading-relaxed">
+        <p>「今まで一度も異性と付き合ったことがない…」</p>
+        <p>
+          「恋愛経験がゼロの状態で、結婚相談所に入会、お見合いやデートなんてできるの？」
+        </p>
+        <p>
+          そんな <span className="font-bold text-[#D9889D]">婚活の不安</span> や
+          <span className="font-bold text-[#D9889D]"> 恋愛の悩み</span>
+          を抱えていませんか？
+        </p>
+      </div>
     </div>
 
-    <div>
-      <h4 className="font-bold">🔵 ありのままで大丈夫</h4>
-      <p className="text-sm">
-        無理に盛り上げる必要はありません。等身大のあなたで大丈夫です。
-      </p>
+    {/* Solution */}
+    <div className="bg-[#FFF5F8] border border-pink-200 rounded-3xl p-8 sm:p-10 mb-12">
+      <div className="inline-flex items-center bg-[#D9889D] text-white px-4 py-2 rounded-full text-sm font-black mb-5">
+        解決
+      </div>
+
+      <h3 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4">
+        恋愛経験ゼロがむしろ
+        <span className="text-[#D9889D]">「最大の強み」</span>
+        に変わる！
+      </h3>
+
+      <div className="space-y-4 text-gray-700 leading-relaxed">
+        <p>
+          恋愛経験が少ないのはマイナス？いいえ
+          「謙虚で素直、清楚」という最大の強みになります！
+        </p>
+
+        <p>
+          婚活では、恋愛経験が多い方が人気なわけではありません。
+          人生を一緒に過ごしていける素直で誠実な人が求められています。
+        </p>
+
+        <p>
+          プロのカウンセラーと本気の婚活、スピード成婚を目指しましょう。
+        </p>
+      </div>
     </div>
 
-  </div>
+    {/* Conversation Intro */}
+    <div className="bg-white rounded-3xl border border-gray-200 p-8 sm:p-10 mb-10">
+      <h3 className="text-2xl font-black text-gray-900 mb-6">
+        〜会話のお悩み〜
+      </h3>
 
-  {/* Support section */}
-  <div className="space-y-4">
-    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
-      ありのままのあなたを活かすサポート
-    </h3>
+      <div className="space-y-5 text-gray-700 leading-relaxed">
+        <p>「お見合いやデートでの会話」</p>
 
-    <div className="space-y-3 text-sm sm:text-base">
+        <p>
+          「何を話せばいいかわからない」「沈黙が怖い」という婚活あるあるの不安をよくききます。
+        </p>
 
-      <p><strong>① プロフィール作成：</strong>あなたの魅力を引き出す文章を作成</p>
-      <p><strong>② 服装・見た目：</strong>第一印象を最大化するアドバイス</p>
-      <p><strong>③ 客観的フィードバック：</strong>婚活市場での見え方を分析</p>
-      <p><strong>④ デート後フォロー：</strong>LINE・電話で継続サポート</p>
+        <p>
+          まず、当社【大阪梅田結婚相談所】が考える真の会話とは…？
+        </p>
 
+        <p>
+          会話は、うまく喋る必要のある面接やスピーチではありません。
+          かならずしも面白いことを言ったり時事話題を事前用意する必要もありません。
+        </p>
+
+        <p>
+          「会話」とは、単なる情報のやり取りではなく、
+          「私はもっとあなたを知りたいし、私のことも知ってほしい」
+          という気持ちを伝え合うためのキャッチボールです。
+        </p>
+
+        <p>
+          逆にいうと気持ちがなければ、いくら上辺だけ会話しても何も伝わらないし、
+          何も響きません。
+        </p>
+
+        <p>
+          恋愛経験が少ないと、会話を
+          「好印象を与えるテクニックを駆使して喋るべき」や
+          「頑張って盛りあげないと」と捉えがちですが、
+        </p>
+
+        <div className="bg-[#FFF5F8] rounded-2xl p-6 border border-pink-100">
+          <p className="text-xl font-black text-[#D9889D]">
+            本当はありのままのあなたで大丈夫です！
+          </p>
+          <p className="mt-2 text-gray-700">
+            会話の本質を紐解くポイントをまとめました。
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  {/* Closing */}
-  <div className="pt-6 border-t border-gray-200 space-y-4">
+    {/* Point 1 */}
+    <div className="bg-white rounded-3xl p-8 sm:p-10 border border-blue-100 shadow-sm mb-8">
+      <h3 className="text-2xl font-black text-blue-600 mb-6">
+        🔵「情報」だけではなく「感情」の交換
+      </h3>
 
-    <p className="font-semibold">
-      恋愛経験ゼロは婚活では「優良物件」です。
+      <div className="space-y-5 text-gray-700 leading-relaxed">
+        <p>
+          会話で最も大切なのは、何を話したかではなく、
+          お互いにどんな気持ちになったかです。
+        </p>
+
+        <div className="bg-gray-50 rounded-2xl p-5">
+          <p className="font-bold text-pink-500 mb-2">
+            🌸情報の交換とは？
+          </p>
+          <p>
+            「趣味は？」「旅行とショッピングです」「そうですか」
+          </p>
+          <p>（これでは気持ちは伝わりません）</p>
+        </div>
+
+        <div className="bg-pink-50 rounded-2xl p-5">
+          <p className="font-bold text-pink-500 mb-2">
+            🌸感情の交換とは？
+          </p>
+
+          <ul className="space-y-3 list-disc pl-5">
+            <li>
+              「趣味は？」「旅行です」「いいですね！癒されますよね。どこにご旅行されたのですか？」
+            </li>
+            <li>
+              「趣味は？」「ゴルフです」「そうなんですね！私はしたことないです！お上手なんですか？」
+              （相手を知りたいという気持ちが大切なので必ずしも同じ趣味でなくてもOK）
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* Point 2 */}
+    <div className="bg-white rounded-3xl p-8 sm:p-10 border border-blue-100 shadow-sm mb-8">
+      <h3 className="text-2xl font-black text-blue-600 mb-6">
+        🔵2人でつくる空間と時間
+      </h3>
+
+      <div className="space-y-4 text-gray-700 leading-relaxed">
+        <p>
+          会話は、どちらか一方が、がんばって作るものではありません。
+        </p>
+
+        <p>
+          🌸「会話」とは、お話のなかで相手が表した気持ちを優しく受け止め、
+          自分の気持ちを言葉でお返しするというキャッチボールです。
+        </p>
+
+        <p>
+          🌸お互いが「お相手と仲良く関わり合う」という思いやりの気持ちを持つことで、
+          たとえ言葉数が少なくても、時間と空間を共有できます。
+        </p>
+
+        <p>
+          🌸例えば、芸能人のように面白い会話を連発しなくても
+          【お相手を笑わせてあげたいな】という素敵な気持ちで振る舞えば、
+          それはきっとお相手に柔らかく伝わります。
+        </p>
+
+        <p>
+          🌸男女ともに、正直で謙虚な姿勢は素敵です。
+        </p>
+
+        <blockquote className="border-l-4 border-[#D9889D] pl-5 italic font-bold text-gray-900">
+          「異性とこんなに楽しくお話ししたの、初めてです！」
+        </blockquote>
+
+        <p>
+          その飾らない素直な一言が、お相手を
+          「嘘のないこの人といると自分が安心できる」
+          という気持ちにします。
+        </p>
+      </div>
+    </div>
+
+
+<div className="bg-white rounded-3xl p-8 sm:p-10 border border-blue-100 shadow-sm mb-8">
+  <h3 className="text-2xl font-black text-blue-600 mb-6">
+    🔵ありのままのあなたで大丈夫！
+  </h3>
+
+  <div className="space-y-5 text-gray-700 leading-relaxed">
+
+    <p>
+      「ありのままで喋る」というのは、
+      「自分を実物以上に大きく見せようとせず、
+      等身大の自分のままで、誠実に相手と向き合う」
+      というスタンスです。
     </p>
 
     <p>
-      結婚相談所は恋愛上手が勝つ場所ではなく、
-      誠実で素直な人が選ばれる場所です。
+      恋愛経験が少ないと
+      「魅力的な人と思われたい」
+      「嫌われたくない」
+      と仮面をかぶってしまいがちですが、
+      <span className="font-bold text-[#D9889D]">
+        そのままのあなたで大丈夫です！
+      </span>
     </p>
 
-    <p className="font-bold text-gray-900">
-      大阪梅田結婚相談所が、あなたの初めての恋を人生最高の結婚へ導きます。
-    </p>
+    <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-pink-500 mb-3">
+        🌸「格好悪い自分」を隠さない
+      </h4>
+
+      <div className="space-y-4">
+        <p>
+          完璧な人間を演じる必要はありません。
+          むしろ、自分の不器用さや緊張さえ言葉にしてしまうほうが、
+          相手に「正直で素直な人だな」という安心感を与えます。
+        </p>
+
+        <div className="bg-white rounded-xl p-4 border border-pink-100">
+          <p className="font-bold text-gray-900 mb-2">
+            スタンス
+          </p>
+          <p>
+            「緊張していること」や
+            「不慣れなこと」を隠さない。
+          </p>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-pink-100">
+          <p className="font-bold text-gray-900 mb-2">
+            具体的なセリフ
+          </p>
+
+          <ul className="space-y-2 list-disc pl-5">
+            <li>
+              「実はこういう場（お見合い）に、
+              すごく緊張していて上手く喋れないかもしれないです。すみません！」
+            </li>
+            <li>
+              「恋愛経験があまりなくてデートのお店選びも手際が悪いかもしれませんが、
+              一生懸命探します！」
+            </li>
+          </ul>
+        </div>
+
+        <blockquote className="border-l-4 border-[#D9889D] pl-4 italic font-semibold text-gray-800">
+          どんなに素敵な有名レストランも
+          「お相手のために一生懸命に探したレストラン」
+          にはかなうわけはありません。
+        </blockquote>
+      </div>
+    </div>
+
+    <div className="bg-pink-50 rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-pink-500 mb-3">
+        🌸「面白い話」をしようと無理しない
+      </h4>
+
+      <div className="space-y-4">
+        <p>
+          面白い特別なエピソードを話したりする必要はありません。
+          「ありのままのスタンス」とは、
+          あなたの日常を喋ることです。
+        </p>
+
+        <div className="bg-white rounded-xl p-4 border border-pink-100">
+          <p className="font-bold text-gray-900 mb-2">
+            スタンス
+          </p>
+          <p>
+            「特別な話」ではなく
+            「いつもの自分」を知ってもらう
+          </p>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 border border-pink-100">
+          <p className="font-bold text-gray-900 mb-2">
+            具体例
+          </p>
+
+          <ul className="space-y-2 list-disc pl-5">
+            <li>
+              「趣味と言えるほどではないんですが、
+              休日は家でYouTubeを見て癒されてます」
+            </li>
+            <li>
+              「平日は仕事と家を往復するだけの生活なんです。
+              だから今日はご一緒できて嬉しいです。」
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-[#FFF8FA] rounded-2xl p-6 border border-pink-100">
+      <p>
+        「嫌われたらどうしよう」
+        「どう思われてるのかな」
+        と気にしてばかりいると、
+        ありのままの自分は出せません。
+      </p>
+
+      <p className="mt-4">
+        お相手も同じように不安を抱えて婚活をしています。
+      </p>
+
+      <p className="mt-4">
+        目の前のお相手は、
+        あなたを審査するための面接官ではありません。
+      </p>
+
+      <p className="mt-4">
+        お互いに「居心地が良い関係になれるかな？」
+        を確かめ合っているだけです。
+      </p>
+
+      <p className="mt-4">
+        たとえ上手く喋れなくても、
+        あなたの真面目な姿勢をきっと見てくれています。
+      </p>
+
+      <p className="mt-4">
+        お見合いでご一緒したのも何かのご縁なのですから、
+        一期一会を大切にし、
+        少しでもお互いを知るためにお話ししましょう。
+      </p>
+    </div>
 
   </div>
+</div>
 
+<div className="bg-white rounded-3xl p-8 sm:p-10 border border-blue-100 shadow-sm mb-8">
+  <h3 className="text-2xl font-black text-blue-600 mb-6">
+    🔵「ありのままのあなた」を活かす大阪梅田結婚相談所のサポート
+  </h3>
+
+  <p className="text-gray-700 leading-relaxed mb-8">
+    「ありのままの自分でいること」と
+    「プロのサポートを頼ること」は、
+    決して矛盾しません。
+    むしろ、「ありのままの自分」を魅力的に伝えるためにこそ、
+    結婚相談所のサポートが必要になります。
+  </p>
+
+  <div className="grid gap-6">
+
+    <div className="bg-[#FFF8FA] rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-[#D9889D] mb-3">
+        ① プロフィール作成：あなたの魅力を伝える
+      </h4>
+
+      <p className="text-gray-700">
+        🌸サポート内容:
+        ベテランカウンセラーがあなたの普段の生活や人柄を聞き出し、
+        あなたの魅力を発見！
+        お相手に「この人と会ってみたい」と思わせる魅力的プロフィールを作成します。
+      </p>
+    </div>
+
+    <div className="bg-[#FFF8FA] rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-[#D9889D] mb-3">
+        ② 服装・見た目：あなたの雰囲気をさらに魅力的に
+      </h4>
+
+      <p className="text-gray-700 mb-3">
+        格好つける必要はありませんが、
+        好印象を与える外見は大切です。
+      </p>
+
+      <p className="text-gray-700">
+        🌸サポート内容:
+        お見合い場所にふさわしいスーツやワンピースの選び方、
+        髪型、眉毛の整え方、
+        清潔感や可愛らしさを出す方法などを具体的にアドバイスします。
+      </p>
+    </div>
+
+    <div className="bg-[#FFF8FA] rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-[#D9889D] mb-3">
+        ③「素の自分」がどう見えているか客観的に知る
+      </h4>
+
+      <p className="text-gray-700">
+        🌸サポート内容:
+        人生経験豊かなプロの目から、
+        「あなたが婚活市場の異性からどう見え、どう評価されるか」
+        という客観的なフィードバックを具体的に教えてもらえます。
+      </p>
+
+      <p className="mt-4 text-gray-700">
+        外見にも内面にも変えることができないものもありますし、
+        ちょっとした工夫だけで良くなるものもあります。
+        婚活にとどまらず本当の自分をみつめ、
+        自分を磨くチャンスになるに違いありません。
+      </p>
+    </div>
+
+    <div className="bg-[#FFF8FA] rounded-2xl p-6 border border-pink-100">
+      <h4 className="font-black text-[#D9889D] mb-3">
+        ④ デート後の振り返り
+      </h4>
+
+      <p className="text-gray-700 mb-4">
+        デートが終わった後に
+        「こんな状況だったんだけど、どうなんだろう」
+        「自分はこう思うんだけど、それであってるのかな？」
+        と気になることはたくさんあります。
+      </p>
+
+      <p className="text-gray-700">
+        🌸サポート内容:
+        お見合いやデートの後、
+        必要に応じてプロのカウンセラーがLINE相談やお電話でご相談にのります。
+      </p>
+
+      <p className="mt-4 text-gray-700">
+        🌸人生経験の豊かなプロのカウンセラーと色々話し合う中で、
+        自分の気持ちが整理できて、
+        どう選択したら良いかなど、
+        ご自身で気づきがふえます。
+      </p>
+
+      <p className="mt-4 text-gray-700">
+        人生の選択に正解はありません。
+        しっかり考えて出した結論なら全て正解です。
+        また、失敗は成功の元という言葉がありますが、
+        成功だけではなく失敗を経験する中でも、
+        人生に役立つヒントをご自身で得る機会になれば幸いです。
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    <div className="mt-12 bg-gradient-to-r from-[#D9889D] to-pink-400 rounded-3xl p-8 sm:p-12 text-white text-center">
+      <h3 className="text-2xl sm:text-3xl font-black mb-4">
+        恋愛経験ゼロは、婚活では「優良物件」
+      </h3>
+
+      <p className="leading-relaxed max-w-3xl mx-auto">
+        大阪梅田結婚相談所で最高のファースト成婚を叶えましょう。
+        あなたの「初めて」を私たちが100%バックアップします。
+      </p>
+
+      <div className="mt-8 space-y-3 text-left max-w-3xl mx-auto">
+        <div className="bg-white/10 rounded-xl p-4">
+          1. 素直なあなたとじっくり相談 ➡ 異性との接し方の基本やデートのマナーを、イチから丁寧にお伝えします。
+        </div>
+
+        <div className="bg-white/10 rounded-xl p-4">
+          2. 安心なお相手の厳選 ➡ あなたの素直さを大切にしてくれる誠実な会員様をピックアップ。
+        </div>
+
+        <div className="bg-white/10 rounded-xl p-4">
+          3. お見合い・交際も丸投げOK ➡ デート中のLINEの返し方から会話の進め方まで、私たちが100%バックアップします。
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
     </div>

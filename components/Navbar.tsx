@@ -22,6 +22,8 @@ export default function PremiumNavbar() {
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
     { name: '成婚エピソード', href: '/marriage-story' },
+    { name: '入会までの流れ', href: '/membership-steps' },
+    { name: '婚活よくある質問Q＆A', href: '/FAQ' },
   ];
 
   return (
