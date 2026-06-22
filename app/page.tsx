@@ -705,8 +705,8 @@ export default function Home() {
   </div>
 </section>
 
-<section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-  <div className="text-center mb-10">
+<section className="max-w-5xl mx-auto px-0 sm:px-6 lg:px-8 py-2">
+  <div className="text-center mb-10 px-4 sm:px-0">
     <span className="inline-block bg-[#F7E6EB] text-[#D9889D] text-xs font-black px-3 py-1 rounded-full mb-4">
       FAQ
     </span>
@@ -721,12 +721,12 @@ export default function Home() {
     </p>
   </div>
 
-  <div className="space-y-1">
+  <div className="space-y-2 sm:space-y-4">
 
     {/* FAQ 1 */}
-    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+    <div className="bg-white rounded-3xl border border-gray-200 p-5 sm:p-8 shadow-sm">
       <div className="flex items-start gap-3 mb-4">
-        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+        <span className="flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
           📌
         </span>
         <h3 className="font-black text-gray-900 text-lg">
@@ -734,7 +734,7 @@ export default function Home() {
         </h3>
       </div>
 
-      <div className="pl-11">
+      <div className="pl-0 sm:pl-11">
         <p className="text-gray-700 leading-relaxed">
           はい、サクラは一切在籍しておりません。
           当相談所が加盟する結婚相談所連盟では、
@@ -747,9 +747,9 @@ export default function Home() {
     </div>
 
     {/* FAQ 2 */}
-    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+    <div className="bg-white rounded-3xl border border-gray-200 p-5 sm:p-8 shadow-sm">
       <div className="flex items-start gap-3 mb-4">
-        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+        <span className="flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
           📌
         </span>
         <h3 className="font-black text-gray-900 text-lg">
@@ -757,7 +757,7 @@ export default function Home() {
         </h3>
       </div>
 
-      <div className="pl-11">
+      <div className="pl-0 sm:pl-11">
         <p className="text-gray-700 leading-relaxed">
           ご安心ください。当相談所では、お見合い前の服装選びや髪型の
           トータルコーディネートはもちろん、
@@ -773,9 +773,9 @@ export default function Home() {
     </div>
 
     {/* FAQ 3 */}
-    <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+    <div className="bg-white rounded-3xl border border-gray-200 p-5 sm:p-8 shadow-sm">
       <div className="flex items-start gap-3 mb-4">
-        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+        <span className="flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
           📌
         </span>
         <h3 className="font-black text-gray-900 text-lg">
@@ -783,7 +783,7 @@ export default function Home() {
         </h3>
       </div>
 
-      <div className="pl-11">
+      <div className="pl-0 sm:pl-11">
         <p className="text-gray-700 leading-relaxed">
           最も大きな違いは
           <span className="font-bold text-gray-900">
@@ -805,6 +805,30 @@ export default function Home() {
         </p>
       </div>
     </div>
+
+    {/* More FAQs Link Card */}
+    <a 
+      href="/FAQ" 
+      className="flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 rounded-3xl p-6 shadow-sm transition-colors duration-200 group"
+    >
+      <div className="flex items-center gap-3">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F7E6EB] text-[#D9889D] font-black">
+          💡
+        </span>
+        <span className="font-black text-gray-900 text-lg">
+          もっと質問を見る / その他のよくあるご質問
+        </span>
+      </div>
+      <svg 
+        className="w-6 h-6 text-gray-400 group-hover:text-[#D9889D] transition-colors transform group-hover:translate-x-1 duration-200" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor" 
+        strokeWidth={3}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
 
   </div>
 </section>

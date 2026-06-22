@@ -58,7 +58,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step1Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
 
@@ -74,7 +74,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step2Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
 
@@ -90,7 +90,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step3Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
 
@@ -106,7 +106,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step4Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
 
@@ -122,7 +122,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step5Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
 
@@ -138,7 +138,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             onClick={() => scrollToSection(step5Ref)}
             className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
           >
-            * 詳しい説明を見るのボタン
+            💓詳しい説明を見る💓
           </button>
         </div>
       </section>
@@ -148,12 +148,9 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         
         {/* STEP 1 DETAIL */}
         <div ref={step1Ref} className="scroll-mt-3">
-          <div className="bg-amber-50 p-1.5 mb-2 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-            ステップ1 の詳しい説明 の内容Details of Step 1 after pressing the button and being transported
-          </div>
           <div className="p-2.5 border border-pink-100 bg-white rounded space-y-2 text-justify">
             <h3 className="text-xs sm:text-sm font-bold text-gray-800 border-b pb-1">
-              Ｈ3 STEP 1：お見合い成立率が劇的に変わる「プロフィールの戦略的作成」と「奇跡の1枚を引き出す写真プロデュース」
+               STEP 1：お見合い成立率が劇的に変わる「プロフィールの戦略的作成」と「奇跡の1枚を引き出す写真プロデュース」
             </h3>
             <p>
               結婚相談所の婚活において、お見合い写真とプロフィールは「あなたと出会うための最初の大切な扉（第一印象）」です。お相手が「ぜひお見合いしてみたい！」と感じ、次のステップ（マッチング）へ進むことができます。魅力を引き出すプロフィール生まれ変わる自分にワクワク！「雰囲気美人」「雰囲気イケメン」になるためのプロサポート
@@ -192,12 +189,9 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 2 DETAIL */}
         <div ref={step2Ref} className="scroll-mt-3">
-          <div className="bg-amber-50 p-1.5 mb-2 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-            ステップ2の詳しい説明 の内容Details of Step 2after pressing the button and being transported
-          </div>
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             <h3 className="text-xs sm:text-sm font-bold text-gray-800 border-b pb-1">
-              Ｈ3 「ただ検索するだけ」の婚活は、もう終わり。あなたの理想をカタチにする、独自の「お相手検索サポート」
+              「ただ検索するだけ」の婚活は、もう終わり。あなたの理想をカタチにする、独自の「お相手検索サポート」
             </h3>
             <p className="font-bold text-gray-700">【本文】</p>
             <p>当相談所の最先端検索システムには、数万人以上の真剣な会員様が登録されています。しかし、条件を入れてボタンを押すだけでは、本当に相性の良いパートナーが見つかりません。だからこそ当相談所では、関西の婚活を知り尽くしたベテランのカウンセラーが、あなたの「検索の精度」を劇的に高める伴走サポートを行います。</p>
@@ -210,12 +204,9 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 3 DETAIL */}
         <div ref={step3Ref} className="scroll-mt-3">
-          <div className="bg-amber-50 p-1.5 mb-2 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-            ステップ3の詳しい説明 の内容Details of Step 3after pressing the button and being transported
-          </div>
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             <h3 className="text-xs sm:text-sm font-bold text-gray-800 border-b pb-1">
-              Ｈ3 お見合いでは第一印象が一番大切。
+               お見合いでは第一印象が一番大切。
             </h3>
             
             <div className="bg-gray-50 border border-gray-300 p-2 rounded flex flex-col space-y-1.5">
@@ -233,12 +224,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             </div>
 
             <div className="bg-pink-50/30 p-2 rounded border border-pink-100">
-              <p className="font-bold text-gray-800 text-[11px] mb-1">【女性編】透明感と上品な色気を放つ「人魚姫ワンピース」と風で揺れるヒラヒラのスカート</p>
+              <p className="font-bold text-gray-800 text-[11px] mb-1">❤️【女性編】透明感と上品な色気を放つ「人魚姫ワンピース」と風で揺れるヒラヒラのスカート</p>
               <p className="text-[11px] text-gray-700">女性の婚活ファッションで圧倒的に強いのは、やはりワンピースやスカートスタイルです。しかし、ただ綺麗めワンピを着ればいいというわけではありません。異性をドキッとさせる「スタイル美人に格上げするシルエット」華やかで明るいパステルカラー、王道の白を選び、骨格診断（骨格ストレート・骨格ウェーブ・骨格ナチュラル）に基づき、ウエスト位置を高く見せ、動くたびにひらりと綺麗に揺れる素材を選ぶことで、女性らしい柔らかさとエレガントさを演出します。シルクやサテンのような上品な光沢やとろみブラウスは、肌を美しく見せ、女性らしい柔らかさを強調し、守りたくなるような雰囲気を与えてくれます。圧倒的ヒロイン感100%の「ふんわりシフォンスカート×上品リブニットも計算された「メリハリシルエット」になれるおすすめです。体のラインを綺麗に見せるコンパクトなリブニットに風が吹くたびに柔らかく揺れるシフォン素材のスカートが華やか。守ってあげたいと思わせます。適度なデコルテの肌見せ、華奢で上品なの細いネックレス、手首を細く見せる上質なブレスレット。身体のラインを綺麗に見せる半袖ニットなど、男性を釘付けにする要素を欲張りに詰め込み上品かつ綺麗な雰囲気美女になりましょう。</p>
             </div>
 
             <div className="pt-2 border-t border-gray-100">
-              <p className="font-bold text-gray-800">他の男に圧倒的な差をつける！理想の女性を射止める「上級者向けメンズ婚活スタイル」【男性編】</p>
+              <p className="font-bold text-gray-800">🩵他の男に圧倒的な差をつける！理想の女性を射止める「上級者向けメンズ婚活スタイル」🩵
+💙【男性編】</p>
               
               <div className="mt-1.5 p-2 bg-gray-50 rounded border border-gray-200 text-[11px] space-y-1">
                 <p className="font-bold text-gray-800">1. クール＆リッチを叶える「3つの鉄則」</p>
@@ -267,12 +259,9 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 4 DETAIL */}
         <div ref={step4Ref} className="scroll-mt-3">
-          <div className="bg-amber-50 p-1.5 mb-2 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-            ステップ4の詳しい説明 の内容Details of Step 4after pressing the button and being transported
-          </div>
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             <h3 className="text-xs sm:text-sm font-bold text-gray-800 border-b pb-1">
-              Ｈ3 成婚率を劇的に変える「仮交際」の並走サポート
+               成婚率を劇的に変える「仮交際」の並走サポート
             </h3>
             <p className="font-semibold text-center text-gray-700 bg-gray-50 p-1 rounded border text-[11px]">
               大阪・梅田で勝つ婚活｜仮交際から真剣交際へ繋ぐ「女医×ベテラン」のリアルタイムサポート
@@ -282,17 +271,17 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             </p>
             
             <div className="border-l-2 border-pink-500 pl-2 py-0.5 space-y-0.5">
-              <h4 className="font-bold text-gray-800">Ｈ3 デート直後のモヤモヤを解決するロジカルカウンセリング</h4>
+              <h4 className="font-bold text-gray-800"> デート直後のモヤモヤを解決するロジカルカウンセリング</h4>
               <p className="text-[11px] text-gray-600">デートが終わったら、すぐに「楽しかった点」「違和感を持った点」をデートの振り返りで共有していただきます。カウンセラーが、「なぜその違和感を持ったのか」「どのようにしたらいいか」を一緒に相談していきます。</p>
             </div>
 
             <div className="border-l-2 border-pink-500 pl-2 py-0.5 space-y-0.5">
-              <h4 className="font-bold text-gray-800">### Ｈ3 2. 梅田の最新デートスポットを網羅したプラン＆服装プロデュース</h4>
+              <h4 className="font-bold text-gray-800">###  2. 梅田の最新デートスポットを網羅したプラン＆服装プロデュース</h4>
               <p className="text-[11px] text-gray-600">「デートはどこに行けばいい？」「踏み込んだ話をしたい」といった相談に、お店選びから服装、関係の進め方までご相談します。平日デートから、週末デートまで、トレンドを抑えたスマートなプランを提案します。</p>
             </div>
 
             <div className="border-l-2 border-pink-500 pl-2 py-0.5 space-y-0.5">
-              <h4 className="font-bold text-gray-800">### Ｈ3 3. お相手の「本音」を結婚相談所に確認するアプローチ</h4>
+              <h4 className="font-bold text-gray-800">###  3. お相手の「本音」を結婚相談所に確認するアプローチ</h4>
               <p className="text-[11px] text-gray-600">「自分のことをどう思っているか直接聞きづらい」という場合もご安心ください。業界を熟知したベテランカウンセラーが、重要なタイミングではお相手側の結婚相談所に確認します。「お相手も好印象を持っていますよ」「もう少し今の関係で考えたい」など、相手のリアルな本音をフィードバックしてくれます。告白（真剣交際）にすすむタイミングもわかりやすくなります。またこちら側の好意を伝え、お相手の相談所のカウンセラーからもそれとなくお伝えしていただくことも可能です。</p>
             </div>
 
@@ -304,9 +293,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 5 & 6 DETAILS */}
         <div ref={step5Ref} className="scroll-mt-3">
-          <div className="bg-amber-50 p-1.5 mb-2 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-            ステップ5の詳しい説明 の内容Details of Step 5after pressing the button and being transported
-          </div>
+    
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             <h3 className="text-xs sm:text-sm font-bold text-gray-800 border-b pb-1">
               成婚への最終ステップ「真剣交際」からプロポーズまでのサポート
@@ -328,9 +315,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
               <p className="text-gray-600">「住む場所」「仕事の継続」「家計の管理」「将来の家族計画」など、切り出しにくいお金や将来のテーマについて、カウンセラーが、ストレスなく本音を話し合える「スマートな対話の進め方やタイミング」をアドバイス。お互いの価値観を認め合いながら、理想の家庭像を形にするためのサポートをします。</p>
             </div>
 
-            <div className="bg-amber-50 p-1.5 rounded border border-amber-200 text-[10px] font-bold text-amber-800">
-              ステップ6の詳しい説明 の内容Details of Step 6 after pressing the button and being transported
-            </div>
+    
 
             <div className="p-2 bg-gray-50 rounded border text-[11px] space-y-0.5">
               <h3 className="font-bold text-gray-800">### 2. 「プロポーズのタイミング」</h3>
