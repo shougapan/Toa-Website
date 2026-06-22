@@ -24,6 +24,7 @@ export default function PremiumNavbar() {
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '入会までの流れ', href: '/membership-steps' },
     { name: '婚活よくある質問Q＆A', href: '/FAQ' },
+    { name: 'Steps', href: '/steps' },
   ];
 
   return (
