@@ -44,8 +44,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         </p>
       </section>
 
-      {/* Highly Compact Mobile Navigation Stack */}
-      <section className="mb-6 space-y-2">
+<section className="mb-6 space-y-2">
         {/* STEP 1 */}
         <div className="border border-gray-200 p-2 rounded bg-white">
           <div className="flex items-baseline space-x-1 mb-0.5">
@@ -53,13 +52,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">プロフィールの作成＆写真撮影</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">あなたの魅力を最大限に引き出すプロフィールを一緒に作成します。提携しているフォトスタジオでのスタジオ撮影もサポートいたしますので、好印象を与える素敵な1枚をご用意できます。</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step1Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step1Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
 
         {/* STEP 2 */}
@@ -69,13 +71,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">お相手探し・ご紹介</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">最先端の検索システムを使って、24時間いつでもご希望の条件でお相手をお探しいただけます。また、データだけでは分からない、カウンセラー目線での「あなたにぴったりなお相手」のご紹介も行います</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step2Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step2Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
 
         {/* STEP 3 */}
@@ -85,13 +90,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">お見合い</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">お互いに「会ってみたい」となったらお見合いが成立です。場所や日時の調整はすべてカウンセラーが代行します。当日の服装や会話のコツなども事前にアドバイスいたしますのでご安心ください。</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step3Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step3Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
 
         {/* STEP 4 */}
@@ -101,13 +109,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">仮交際（お知り合いの期間）</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">お見合い後、お互いに「また会いたい」と思ったら交際スタートです。まずは複数の方とデートを重ねながら、少しずつお互いのことを知っていく期間です。</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step4Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step4Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
 
         {/* STEP 5 */}
@@ -117,13 +128,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">真剣交際（恋人の期間）</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">「この人と結婚を見据えてお付き合いしたい」という特定の1名が決まったら、真剣交際へと進みます。他の異性との連絡や紹介はストップし、結婚後の具体的なイメージを擦り合わせていきます。</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step5Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step5Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
 
         {/* STEP 6 */}
@@ -133,13 +147,16 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="font-bold text-gray-800">プロポーズ・ご成婚</p>
           </div>
           <p className="text-gray-600 text-[11px] leading-snug">お互いの気持ちが固まったら、いよいよプロポーズです。タイミングやシチュエーションのご相談もお任せください。</p>
-          <button 
-            type="button"
-            onClick={() => scrollToSection(step5Ref)}
-            className="mt-1.5 w-full text-center bg-pink-50 py-1 rounded text-[11px] font-bold text-pink-700 border border-pink-200 active:bg-pink-100"
-          >
-            💓詳しい説明を見る💓
-          </button>
+          <div className="mt-2 flex justify-end items-center h-[28px]">
+            <button 
+              type="button"
+              onClick={() => scrollToSection(step5Ref)}
+              className="relative overflow-hidden inline-flex items-center space-x-1 bg-gradient-to-r from-pink-500 to-rose-500 px-3.5 py-0.5 rounded-full text-[10px] font-black text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
+            >
+              <span className="relative z-10">💓 詳しい説明</span>
+              <span className="relative z-10 text-[8px] opacity-90">▶</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -211,9 +228,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             
             <div className="bg-gray-50 border border-gray-300 p-2 rounded flex flex-col space-y-1.5">
               <span className="text-[11px] leading-tight text-gray-700">大阪梅田結婚相談所ではお見合いの基本ルールをサポートします。</span>
-              <button type="button" className="w-full text-center bg-gray-800 text-white font-bold py-1 rounded text-[10px] active:bg-gray-700">
-                【ページ8へButton to jump to ‘Rules for Arranged Meetings’ on page 8 
-              </button>
+         <button 
+  type="button" 
+  onClick={() => window.location.href = '/rules'}
+  className="w-full text-center bg-gray-800 text-white font-bold py-1 rounded text-[10px] active:bg-gray-700"
+>
+  お見合いルール・規約を見る
+</button>
             </div>
 
             <p className="text-gray-600">や第一印象を決める外見などをサポートします。</p>

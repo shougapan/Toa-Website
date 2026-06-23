@@ -47,6 +47,7 @@ export default function Home() {
   </div>
 </section>
 
+
 <section className="w-full px-4 md:px-8 py-1">
 
   {/* Header */}
@@ -444,7 +445,6 @@ export default function Home() {
   </div>
 </section>
 
-
 <section className="w-full px-4 md:px-8 py-1">
 
   {/* Header */}
@@ -494,7 +494,7 @@ export default function Home() {
   </div>
 
   {/* STEP 2 */}
-  <div className="max-w-5xl mx-auto">
+  <div className="max-w-5xl mx-auto mb-16">
     <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
       2. お見合いセッティングと実践会話レッスン（出会いフェーズ）
     </h3>
@@ -526,8 +526,49 @@ export default function Home() {
     </div>
   </div>
 
-</section>
+  {/* STEP 3 */}
+  <div className="max-w-5xl mx-auto mb-16">
+    <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
+      3. 仮交際・真剣交際中のリアルタイム相談（交際フェーズ）
+    </h3>
 
+    <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
+      <p>
+        お見合いでお互いに良い印象を持てば「仮交際」へと進みます。ここからが成婚の鍵を握る最も重要な時期です。デートの場所選びから、嫌われないLINEの返信頻度、仮交際お断りの理由分析まで、ベテラン仲人がリアルタイムで的確にアドバイスします。
+      </p>
+      
+      <p>
+        お互いに「この人しかいない」と確信したら、1対1の「真剣交際タイミング」へとステップアップし、結婚後のリアルな生活（共働き希望か、家事育児の分担など）について具体的なすり合わせを行います。
+      </p>
+      
+      <p>
+        もし迷いや不安があっても、カウンセラーと一緒に前向きな決断とモチベーションを維持できます。
+      </p>
+    </div>
+  </div>
+
+  {/* STEP 4 */}
+  <div className="max-w-5xl mx-auto">
+    <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
+      4. プロポーズのプロデュースと成婚退会（ゴールフェーズ）
+    </h3>
+
+    <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
+      <p>
+        交際期間を重ね、お互いの結婚への温度感が固まったら、プロポーズです。大阪梅田結婚相談所では、お相手に100%喜ばれるプロポーズの言葉・シチュエーション・タイミングや、婚約指輪）の選び方、夜景の見える高級レストランの演出までを完全バックアップします。
+      </p>
+      
+      <p>
+        プライバシーは完全秘密厳守で守り抜き、笑顔の寿退会（成婚退会）を迎えていただきます。
+      </p>
+      
+      <p>
+        多くの会員様が半年以内でのスピード成婚を叶えて笑顔で卒業されています
+      </p>
+    </div>
+  </div>
+
+</section>
 <section className="w-full px-4 md:px-8 py-2">
 
   {/* Header */}

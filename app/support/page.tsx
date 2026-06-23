@@ -109,7 +109,7 @@ export default function SupportPage() {
 
     <p className="text-xs sm:text-sm font-bold text-gray-900 flex items-center gap-2">
       <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
-      誰もがうらやむハイステ男女を紹介して欲しい / 理想のお相手はお見合い不成立 / 仮交際にならない
+      「恋愛経験がないのでお見合いやデートが不安」婚活の悩みを解決！
     </p>
   </div>
 
