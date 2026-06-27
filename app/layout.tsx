@@ -51,7 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   alt="LINEで友だち追加"
                   width={180}
                   height={56}
-                  className="w-full h-14 rounded-full bg-white shadow-xl object-contain"
+                  className="w-full h-14 rounded-full bg-green shadow-xl object-contain"
                 />
               </a>
 
