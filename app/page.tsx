@@ -2,61 +2,39 @@
 
 
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="space-y-16 pb-2 md:pb-12">
+    <div className="space-y-6 pb-2 md:pb-12">
+      
       
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[360px] sm:h-[400px] md:h-[430px] overflow-hidden rounded-none shadow-sm">
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[205px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
-    src="/couple1.jpg"
+    src="/main.jpg"
     alt="Marriage Consultation Hero"
-    className="absolute inset-0 h-full w-full object-cover object-center"
+    className="absolute inset-0 w-full  object-center"
   />
 
   {/* Hero Content */}
-  <div className="absolute inset-0 flex flex-col justify-start items-start p-6 pt-10 sm:p-12 sm:pt-14 md:p-16 md:pt-18 max-w-xl text-left z-10 mx-auto w-full px-4 sm:px-6 lg:px-8">
 
-<span className="inline-block text-xl md:text-sm font-bold tracking-wider text-pink-300 bg-white border border-white/20 backdrop-blur-md px-2 py-0.5 rounded-full mb-4 shadow-sm opacity-100">
-  大阪梅田結婚相談所
-</span>
-
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight text-blue-700 tracking-tight ">
-      <span className="block text-lg sm:text-xl md:text-2xl font-bold text-blue-700 mb-2 drop-shadow-sm">
-        現役女医監修と<br />ベテランカウンセラー
-      </span>
-      がサポートする、<br className="hidden sm:inline" />
-      <span>
-        <br />
-        あなただけの
-        <span className="text-blue-700  font-extrabold">
-          <br />
-          唯一無二の婚活
-        </span>
-      </span>
-    </h1>
-
-    <p className="mt-3 text-xs sm:text-sm md:text-base text-blue-700 max-w-md leading-relaxed font-semibold ">
-      プロフェッショナルな2つの視点から、あなたに寄り添った最適なパートナー探しをサポートいたします。
-    </p>
-
-  </div>
 </section>
 
 
-<section className="w-full px-4 md:px-8 py-1">
+
+<section className="w-full px-4 md:px-8">
 
   {/* Header */}
-  <div className="max-w-5xl mx-auto mb-10">
+  <div className="max-w-5xl mx-auto ">
     <span className="text-sm font-bold tracking-wider text-rose-500 uppercase">
       About
     </span>
 
-    <h2 className="mt-3 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
+    <h2 className="mt-2 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
       大阪梅田結婚相談所とは
     </h2>
 

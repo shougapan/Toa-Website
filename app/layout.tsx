@@ -1,6 +1,7 @@
 import React from "react";
 import "./globals.css";
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -14,7 +15,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
           {/* Background ornaments */}
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-50">
-
             {/* Top Left */}
             <div className="absolute top-10 left-0 h-40 w-40 rounded-full bg-[#E6A2B3]/15 blur-3xl md:h-72 md:w-72" />
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
 
           {/* Main Content */}
-          <main className="relative z-10 pt-16 lg:pt-24">
+          <main className="relative z-10 pt-16 pb-24 lg:pt-24 lg:pb-0">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
               {children}
             </div>
@@ -37,10 +37,35 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
           {/* Mobile Sticky CTA */}
           <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
-            <button className="w-full rounded-full bg-rose-500 py-4 text-base font-semibold text-white shadow-xl transition hover:bg-rose-600">
-              無料相談を予約する
-            </button>
+            <div className="flex items-center gap-3">
+
+              {/* LINE Button */}
+              <a
+                href="https://lin.ee/ZXB0UNs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[42%]"
+              >
+                <Image
+                  src="/Line1.png"
+                  alt="LINEで友だち追加"
+                  width={180}
+                  height={56}
+                  className="w-full h-14 rounded-full bg-white shadow-xl object-contain"
+                />
+              </a>
+
+              {/* Reservation Button */}
+              <a
+                href="/contact"
+                className="flex-1 flex items-center justify-center rounded-full bg-rose-500 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rose-600"
+              >
+                無料相談を予約する
+              </a>
+
+            </div>
           </div>
+
         </div>
       </body>
     </html>

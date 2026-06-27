@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, HeartHandshake, ChevronRight, Calendar } from 'lucide-react';
+import Image from "next/image";
 
 export default function PremiumNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,20 +32,25 @@ export default function PremiumNavbar() {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-out ${
+        className={`className="bg-[#FAF7F4]" fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-out ${
           scrolled 
-            ? 'bg-[#FAF8F5]/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-b border-gray-200/30 py-3' 
+            ? 'bg-[#FAF7F4]/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-b border-gray-200/30 py-3' 
             : 'bg-transparent py-6'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-start ">
             
             {/* 1. Brand Logo */}
-            <Link href="/" className="flex items-center gap-3 group z-50">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#E6A2B3] to-[#D9889D] flex items-center justify-center shadow-md shadow-[#E6A2B3]/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#E6A2B3]/40">
-                <HeartHandshake className="w-5 h-5 text-white transform transition-transform group-hover:animate-pulse" />
-              </div>
+            <Link href="/" className="flex items-start gap-3 group z-50">
+      <Image
+    src="/logo2.png"
+    alt="Logo"
+    width={45}
+    height={45}
+    className=" "
+    priority
+  />
               <div className="flex flex-col">
                 <span className="text-base font-black text-gray-900 tracking-tight leading-tight">
                   大阪梅田結婚相談所
