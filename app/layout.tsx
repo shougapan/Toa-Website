@@ -23,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
             {/* Bottom */}
             <div className="absolute bottom-0 left-0 h-48 w-48 rounded-full bg-pink-50/40 blur-3xl md:h-80 md:w-80" />
-          </div>
+      </div>
 
           {/* Navbar */}
           <Navbar />

@@ -37,9 +37,9 @@ export default function PremiumNavbar() {
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '入会までの流れ', href: '/membership-steps' },
     { name: '婚活よくある質問Q＆A', href: '/FAQ' },
+    { name: 'いい人がいない！ともう３0代のあなたへ', href: '/consider' },
     { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps' },
     { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
-    { name: 'いい人がいない！ともう３0代のあなたへ', href: '/consider' },
   ];
 
   return (

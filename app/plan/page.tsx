@@ -1,6 +1,9 @@
 "use client";
 
 import React from 'react';
+import Image from "next/image";
+import femaleAdvisor from "@/public/femaleAdvisor.jpg";
+import maleAdvisor from "@/public/maleAdvisor.jpg";
 import Link from 'next/link';
 import { 
   Sparkles, 
@@ -232,6 +235,135 @@ export default function PricingPage() {
           </div>
         </div>
       </div>
+
+       <main className="bg-[#FFF9FA] min-h-screen">
+
+      {/* Hero */}
+      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8]">
+        <div className="max-w-5xl mx-auto px-5 py-12 sm:py-16">
+
+          <span className="inline-block text-xs font-black tracking-widest uppercase text-pink-500 mb-3">
+            For High Status Men & Women
+          </span>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
+            人生の幸せは一日でも長い方がいい。<br />
+            年収1000万以上男女・医師が集うハイスペック婚活
+          </h1>
+
+          <div className="mt-8 text-lg sm:text-xl leading-9 text-gray-700 space-y-5">
+
+            {/* Paste introductory paragraphs here */}
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      {/* Female Doctor Letter */}
+
+      <section className="max-w-5xl mx-auto px-5 py-12">
+
+        <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
+
+          <div className="text-center mb-8">
+
+            <span className="text-xs font-black tracking-widest uppercase text-pink-400 block">
+              Message
+            </span>
+
+            <h2 className="mt-1 text-2xl sm:text-3xl font-black text-gray-900">
+              🩷 現役女医カウンセラーからのアドバイス
+            </h2>
+
+          </div>
+
+          <div className="text-[17px] sm:text-lg leading-8 text-gray-700">
+
+            <div className="float-left mr-5 mb-3 w-28 sm:w-36 md:w-44">
+              <Image
+                src={femaleAdvisor}
+                alt="Female Doctor"
+                className="rounded-2xl shadow-md w-full h-auto object-cover"
+                priority
+              />
+            </div>
+
+第一線で戦うあなたへ。最短で「幸せな家庭」を手に入れるためのアプローチ】 日々、社会の最前線でご活躍されている皆さまへ。 社会的な責任や役割の中、充実した多忙な毎日を送っておられると思います。一方で、責任ある立場になればなるほど、誰からも助言は得られにくく自らで自らの判断や行動を律し、あらゆるフィールドで知的好奇心を満たしながら、さらなる高みを目指す毎日になります。立ち止まり考え、そしてまた進んでいく毎日の中、社会で必要とされる喜びを享受されているはずです。一つの扉を開けば、またその先の扉が開くように、終わりのない挑戦が楽しく、人生の価値を高めてくれます。 一方で、仕事だけでは幸せになれないとよく言われますが、それは 仕事とは別に、肩書き関係なく本当の自分に戻れる居場所があることが、人生の幸福度を決定づけるという意味でもあります。社会的な立場で求められる自分と本当の自分には少し違いがあることが多いはずです。社会では責任あるスマートな決断を求められ自信溢れた行動を要求されますが、プライベートでは心配性だったり小学生のように甘えただったりすることもよくあります。 家庭に帰った瞬間に、自分の社会的地位や年収、肩書きに関係なく、ただ『あなた』という存在を受け入れて、どんな敵が来てもどんなことが起きても味方でいてくれるパートナーがいる。誰かにささえられ、誰かをささえることが、人を、強くしてくれます。 また、小さな幸せが私達を幸せにしてくれます。美味しいご飯を一緒に食べ、何気ない今日の出来事を話し、時には笑い合い、時には熱く語り、お互いの存在に安心を感じる。そんな何気ない日常の温かみは、外の世界のどんな成功よりも深く私たちの心を癒やしてくれます。 幸せな結婚生活のスタートは、一日でも早いほうがいいと思います。なぜなら、温かい家庭や家族や子供のために生きる毎日は、仕事とは違う別の大きな幸せを人生に与えてくれますし、幸せをささえる健康や寿命も限りあるものですから、一日一日は誰にとっても貴重なものです。 ハイステータス男女の立場や思考を理解する大阪梅田ドクターズ結婚相談所で、あなたの豊かな未来を変える一歩を踏み出してみませんか？ LINE相談でお話しできるのを楽しみにしています。 【🔘LINEで質問してみる➡️】
+
+            <div className="clear-both"></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      {/* Male Counselor Letter */}
+
+      <section className="max-w-5xl mx-auto px-5 pb-12">
+
+        <div className="rounded-3xl border border-blue-100 bg-white shadow-sm p-6 sm:p-10">
+
+          <div className="text-center mb-8">
+
+            <span className="text-xs font-black tracking-widest uppercase text-sky-500 block">
+              Message
+            </span>
+
+            <h2 className="mt-1 text-2xl sm:text-3xl font-black text-gray-900">
+              🩵 ベテランカウンセラーのメッセージ
+            </h2>
+
+          </div>
+
+          <div className="text-[17px] sm:text-lg leading-8 text-gray-700">
+
+            <div className="float-left mr-5 mb-3 w-28 sm:w-36 md:w-44">
+              <Image
+                src={maleAdvisor}
+                alt="Male Counselor"
+                className="rounded-2xl shadow-md w-full h-auto object-cover"
+              />
+            </div>
+
+20年間で多数の人生を見てきたから断言できることがあります。「結婚は、あなたの人生を2倍にも3倍にも豊かにする」 これまで20年間、大阪でハイスペック層と呼ばれる皆さまの婚活を多数見守り、良縁を結んできました。たくさんの男女の悩みにも寄り添ってきました。 その中で感じているのは、第一線で活躍する方ほど『一人で生きていける強さ』を持っているということです。しかし、だからこそ『この人とだから、一緒に生きていきたい』と思えるパートナーに出会えたときの喜びは計り知れません。 『今日、こんなに嬉しいことがあった』『仕事でちょっと迷いがあった』 そんな日々の機微を、聞いてもらえる家族がいることそれは、これからの人生を生き抜く上での『無敵の盾』を手に入れるようなものです。一人で見る景色も素晴らしいですが、愛する人と二人で分かち合う景色は、あなたの人生の彩りをまったく違うものに変えてくれます。 大切に守るべき人、大切な自分の家庭があれば、人は強くなれますし、人生の選択肢も豊かに広がります。 家族のために、時には犠牲になりながら、また失敗も成功も経験し、挫折を知りながら深みある人間に成長するでしょう。 結婚をあせる必要はありませんが、人生の最も輝かしい、エネルギーに溢れた時間を共に紡ぎ、支え合う時間は、一日でも長いほうが絶対に幸せです。 ハイスペックなあなたの『本当の相性』まだ結婚したその先までを、20年の経験から推しはかることができます。パートナーに出会うチャンスを広げるため、婚活もプロを頼って最短で最高の成果を掴み取りましょう。大阪梅田ドクターズ結婚相談所があなたのハイスペック婚活を全力でサポートします。婚活について質問してみたいことがあればご遠慮なくどうぞ。誠実にお応えしたいと思っています。 【🔘LINEで質問してみる➡️】　結婚すべきか？の迷いがある人は詳しく見るをどうぞ♡ 🔘結婚すべきか？詳しく見る➡️
+
+            <div className="clear-both"></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      {/* Additional Sections */}
+
+      <section className="max-w-5xl mx-auto px-5 pb-16">
+
+        <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
+
+          <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-6">
+            【For MEN】経営者、有名企業勤務、医師、会計士などでハイステータスの男性へ
+          </h2>
+
+          <div className="text-[17px] sm:text-lg leading-8 text-gray-700 space-y-6">
+
+    時間を節約♡完全外注型サポート 【完全代行型】お見合い設定：ご希望に応じてプロフィールの厳選ご紹介からスケジュール調整まで、すべて当相談所が代行します。もしあなたが避けたいと思うわずらわしい作業があるならば、可能な限り代行させていただきます♡ 【温かみと美貌を兼ね備えた女性をご紹介】 単に容姿が美しいだけでなく、エグゼクティブの妻として、また人生の真のパートナーとしてお互いを高め合える、美貌とを温かい内面を合わせ持つ女性をご推薦します。
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
 
       {/* ============================================================
           BOTTOM CONTACT CTA TRAY
