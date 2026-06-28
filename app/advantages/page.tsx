@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useRef } from 'react';
+import Image from 'next/image';
+import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import Link from 'next/link';
 import { 
   Sparkles, 
@@ -190,67 +192,76 @@ export default function HighSpecStrategyPage() {
       {/* ============================================================
           SECTION 2: DOCTOR'S REALISTIC MESSAGE (Full-Width Mobile)
           ============================================================ */}
-      <div ref={section2Ref} className="w-full mb-8 sm:px-4">
-        <div className="max-w-4xl mx-auto bg-gradient-to-b from-white to-[#FFF8FA] w-full p-4 sm:p-6 shadow-sm border-y sm:border border-pink-100/60 sm:rounded-3xl">
-          
-          {/* BADGE */}
-          <div className="text-center mb-6">
-            <span className="text-xs font-black text-[#D9889D] uppercase tracking-widest block mb-1">Message from Female Doctor</span>
-            <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">
-              女医からのメッセージ
-            </h2>
-            <div className="w-12 h-0.5 bg-[#E6A2B3] mx-auto mt-2" />
-          </div>
 
-          {/* ESSENCE BODY */}
-          <div className="space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
-            <p>
-              個人の好みはありますが、やはり地位、内面、外見、エスコート力がそろったハイスペック男性は女性から非常に人気です。
-            </p>
-            <p>
-              そんな彼らと真のパートナーになるにはどうしたらいいと思いますか？
-            </p>
-            
-            <p className="font-black text-gray-900 text-base border-l-4 border-[#D9889D] pl-3 py-0.5">
-              まず、第一に【選ばれる】というスタンスでは【選ばれません】
-            </p>
-            
-            <p>
-              もう少しわかりやすくいうと、<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">彼らの高いステータスに匹敵するレベルの何かが自分に無い限り、真のパートナーにはなれません。</span>
-              たとえ、男性の気の迷いで選ばれたとしても長い結婚生活ではすぐに終わりが来てしまいます。
-            </p>
-            <p>
-              選び選ばれる、お互い与え合う、補い合い、守りあえるかが、長く幸せを持続させるポイントです。つまりお相手に何かを与えることができなければ、選ぶことも選ばれることも難しいのです。
-            </p>
+<div ref={section2Ref} className="w-full mb-8 sm:px-4">
+  <div className="max-w-4xl mx-auto bg-gradient-to-b from-white to-[#FFF8FA] w-full p-4 sm:p-6 shadow-sm border-y sm:border border-pink-100/60 sm:rounded-3xl">
 
-            {/* REALISTIC WARNING BOX */}
-            <div className="bg-red-50/60 p-4 rounded-xl border border-red-100 my-4 text-gray-900">
-              <p className="font-black text-sm sm:text-base text-red-700 mb-1.5 flex items-center gap-1">
-                <AlertCircle className="w-4 h-4 shrink-0" />
-                持続可能なパートナーになるための「厳しい現実」
-              </p>
-              <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
-                大阪梅田ドクターズ結婚相談所では、自分のもつ何かを何段も越えた【高望み】は基本、おすすめしていません。【持続可能なパートナー】になれないからです。
-              </p>
-              <p className="text-sm sm:text-base text-gray-800 leading-relaxed mt-2 font-bold">
-                あまりに勘違いな自己認識でいらっしゃる場合、成婚は困難です。あなたの魅力を客観的に評価させていただき、対等な範囲であなたの希望を叶える「一段上のパートナー」と成婚するお手伝いをさせていただきます。
-              </p>
-            </div>
+    {/* Header */}
+    <div className="text-center mb-8">
+      <span className="text-xs font-black text-[#D9889D] uppercase tracking-widest block mb-1">
+        Message from Female Doctor
+      </span>
 
-            <p>
-              私達と一緒に自分を客観視しましょう。そして、決断力、謙虚さ、前向きな意思があればきっと道は開かれます。
-            </p>
-            <p>
-              同じ時代にこうして過ごすのも何かのご縁。私達と一緒に頑張っていきたいという志をお持ちの賢明なあなたをお待ちしています。私達もまた、あなたと一緒に成長できるはずです。
-            </p>
-            
-            <p className="font-bold text-gray-900 pt-2">
-              よろしくお願いします。
-            </p>
-          </div>
+      <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">
+        女医からのメッセージ
+      </h2>
 
-        </div>
+      <div className="w-12 h-0.5 bg-[#E6A2B3] mx-auto mt-2" />
+    </div>
+
+    {/* Letter */}
+    <div className="text-base sm:text-lg text-gray-700 leading-8 tracking-wide">
+
+      <div className="float-left mr-5 mb-3 w-28 sm:w-32 md:w-40">
+        <Image
+          src={femaleAdvisor}
+          alt="現役女医"
+          className="rounded-xl shadow-md object-cover w-full h-auto"
+          priority
+        />
       </div>
+
+      <p>
+        個人の好みはありますが、やはり地位、内面、外見、エスコート力がそろったハイスペック男性は女性から非常に人気です。
+        そんな彼らと真のパートナーになるにはどうしたらいいと思いますか。
+
+        私は、「選ばれる」という気持ちだけでは、本当に選ばれることは難しいと考えています。
+
+        もう少し分かりやすく言えば、お相手の高いステータスや魅力に見合う何かをご自身も持っていなければ、
+        真のパートナーとして長く幸せな関係を築くことは簡単ではありません。
+        仮に一時的にご縁があったとしても、お互いが支え合い、与え合い、尊敬し合える関係でなければ、
+        長い結婚生活を幸せに続けることは難しいでしょう。
+
+        私は婚活とは「選ぶ・選ばれる」という一方通行のものではなく、
+        お互いが何を与えられるのかを考えながら築いていくものだと思っています。
+
+        だからこそ大阪梅田ドクターズ結婚相談所では、
+        ご自身の現在地とかけ離れた高望みをおすすめすることはありません。
+        厳しいようですが、それでは持続可能なパートナーシップにならない可能性が高いからです。
+
+        もし自己評価と現実に大きな差がある場合には、
+        そのことも誠実にお伝えします。
+        しかし、それは決して否定するためではありません。
+
+        あなたの魅力を客観的に見つめ、
+        今より一段上の素敵なお相手と幸せな結婚ができるよう、
+        一緒に考え、一緒に歩んでいきたいと思っています。
+
+        婚活では決断力や素直さ、謙虚さ、そして前向きな気持ちが、
+        思っている以上に未来を変えてくれます。
+
+        同じ時代にこうして出会えたことも、一つのご縁です。
+
+        私たちは、あなたが幸せな未来へ進むお手伝いができれば嬉しく思いますし、
+        その過程で私たち自身もまた成長させていただけると信じています。
+
+        お会いできる日を心より楽しみにしております。
+      </p>
+
+    </div>
+
+  </div>
+</div>
 
       {/* ============================================================
           BOTTOM CLOSING CTA BOARD (Full-Width Mobile)
