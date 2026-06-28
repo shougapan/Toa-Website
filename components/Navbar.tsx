@@ -20,10 +20,10 @@ export default function PremiumNavbar() {
   const navLinks = [
     { name: '大阪梅田結婚相談所について', href: '/' },
     { name: '大阪梅田結婚相談所が選ばれる理由', href: '/why-us' },
-    { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/why-us' },
+    { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
+    { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
-    { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '入会までの流れ', href: '/membership-steps' },
     { name: '婚活よくある質問Q＆A', href: '/FAQ' },
