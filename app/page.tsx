@@ -3,6 +3,9 @@
 
 import React from "react";
 import Image from "next/image";
+import femaleAdvisor from "@/public/femaleAdvisor.jpg";
+import maleAdvisor from "@/public/maleAdvisor.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -35,7 +38,7 @@ export default function Home() {
     </span>
 
     <h2 className="mt-2 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
-      大阪梅田結婚相談所とは
+      大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる理由｜現役医師監修×仲人歴20年
     </h2>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
@@ -106,9 +109,12 @@ export default function Home() {
       </p>
       
       {/* BUMPED: Link text size increased to text-xs / md:text-base */}
-      <a href="#strength1" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
-        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
-      </a>
+<Link
+  href="/why-us#strength1"
+  className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200"
+>
+  詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
+</Link>
     </div>
 
     {/* Card 2 */}
@@ -209,121 +215,161 @@ export default function Home() {
 
 </section>
       {/* --- DOCTOR'S SUPPORT SECTION --- */}
-      <section className="mx-auto max-w-4xl rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
-        <div className="text-center space-y-1 mb-10">
-          <span className="text-xs font-bold tracking-wider text-rose-400 uppercase block md:text-sm">
-            Message
-          </span>
-          <h2 className="text-xl font-black text-gray-800 sm:text-2xl md:text-3xl leading-snug">
-            現役女医として病院での経験から学んだ、<br className="hidden sm:inline" />
-            優しくて手厚い「心の保健室サポート」
-          </h2>
-        </div>
-
-<div className="space-y-1 text-base sm:text-lg md:text-xl text-gray-700 leading-snug font-normal tracking-wide">          <p>
-            病院の診察室で、ドクターがパソコンの画面ばかりを見て、あなたの顔をまともに見なければ寂しくて冷たい気持ちになりますよね。<br />
-            私が医療現場で一番大切にしているのは、<span className="font-bold text-gray-900 border-b-2 border-rose-300 bg-rose-50/50 px-1">「患者様の気持ちに寄り添ってお話をお伺いすることです」</span>
-          </p>
-          
-          <p>
-            また患者様も、それぞれ望むものは違います。聞いてほしい人もいれば、教えてほしい人もいます。ゆっくり癒されたい人もいれば、効率良く終わらせたい人もいます。医療に限らず、人は十人十色、望むものは様々です。どれが正解というわけではありません。
-          </p>
-          
-          <p>
-            また人の繋がりはあたたかいものです。人が人を思いやり、健康や当たり前の小さな幸せを望む。これはどのフィールドでも同じです。<br />
-            人生は無機質で冷たいものばかりではなく、暖かい気持ちやつながりがこの世界をまぁるく優しいものにしてくれます。
-          </p>
-          
-          <p>
-            婚活、特にお見合いがうまくいかずに先がみえなくなった時に必要なのも、冷酷な分析や厳しいお説教ではありません。<br />
-            深く心に寄り添い、ありのままのあなたやあなたの周りの状況を受け止め、あなたを支える温かい場所です。
-          </p>
-          
-          <p>
-            合理的な認識や、経験に基づく適切な判断があるのは当然いますが、さらなる人として温かみを加えて、ご満足いただけるサポートを提供させていただけるよう尽力いたします。
-          </p>
-          
-          <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
-            医師としても経験を積み、個人としても人生のさまざまな状況を経たからこそ見える景色があると考えています。<br />
-            今、この時にご一緒できる会員様を温かい気持ちでお待ちしています。
-          </p>
-        </div>
-      </section>
-      {/* --- COUNSELOR MESSAGE SECTION --- */}
 <section className="mx-auto max-w-4xl rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
-  <div className="text-center space-y-1 mb-10">
-    <span className="text-xs font-bold tracking-wider text-rose-400 uppercase block md:text-sm">
-      Message
-    </span>
-    <h2 className="text-xl font-black text-gray-800 sm:text-2xl md:text-3xl leading-snug">
-      ベテランカウンセラーから<br className="hidden sm:inline" />
-      会員様への想い
-    </h2>
-  </div>
 
-<div className="space-y-1 text-base sm:text-lg md:text-xl text-gray-700 leading-snug font-normal tracking-wide">   <p>
-      長いカウンセラー経験の中、たくさんの出会いに寄り添ってきました。
-      一緒に喜び、時には迷いや悲しみも共有してきました。
-      上手くいかずに涙する会員様をみると胸がギュッとなったことが何度もあります。
-    </p>
+      {/* Header */}
+      <div className="text-center space-y-1 mb-10">
+        <span className="text-xs font-bold tracking-wider text-rose-400 uppercase block md:text-sm">
+          Message
+        </span>
 
-    <p>
-      結婚という一つの目標に向けて、会員様とカウンセラーは二人三脚です。
-      その過程で、ご自身の恋愛というプライバシーをお話していただくには抵抗もあるとご想像します。
-    </p>
+        <h2 className="text-xl font-black text-gray-800 sm:text-2xl md:text-3xl leading-snug">
+          現役女医として病院での経験から学んだ、<br className="hidden sm:inline" />
+          優しくて手厚い「心の保健室サポート」
+        </h2>
+      </div>
 
-    <p>
-      でも、
-      <span className="font-bold text-gray-900 border-b-2 border-rose-300 bg-rose-50/50 px-1">
-        「少し聞いて欲しいことがあります」
-        「どうしたらいいと思いますか？」
-        「どう思われますか？」
-      </span>
-      と素直にご相談いただけることがあります。
-    </p>
+      {/* Content */}
+      <div className="text-base sm:text-lg md:text-xl text-gray-700 leading-snug font-normal tracking-wide space-y-6">
 
-    <p>
-      そういったご相談の時には、自分がカウンセラーとして必要とされることに熱い喜びを感じます。
-      そして戦略と技術において自分の持っている全てを使い、温かくサポートしたいと常に思っています。
-    </p>
+        {/* First paragraph WITH floated image */}
+        <p className="clearfix">
+          
+          {/* Float image */}
+          <span className="float-left mr-4 mb-2 w-28 sm:w-32 md:w-40">
+            <Image
+              src={femaleAdvisor}
+              alt="女性アドバイザー"
+              className="rounded-xl shadow-md object-cover w-full h-auto"
+              priority
+            />
+          </span>
 
-    <p>
-      上手くいっている時よりも、
-      <span className="font-bold text-gray-900">
-        「もう諦めようかな」
-      </span>
-      と立ち止まった時こそ側にいて、真の力を発揮したいと願っています。
-    </p>
+          病院の診察室で、ドクターがパソコンの画面ばかりを見て、あなたの顔をまともに見なければ寂しくて冷たい気持ちになりますよね。<br />
+          私が医療現場で一番大切にしているのは、
+          <span className="font-bold text-gray-900 border-b-2 border-rose-300 bg-rose-50/50 px-1">
+            「患者様の気持ちに寄り添ってお話をお伺いすることです」
+          </span>
+        </p>
 
-    <p>
-      会員様は大切な人生の分岐点を、たくさん迷いながら、そして決断をしていかれます。
-      婚活に限らず人生は選択の連続です。
-      たとえそれが間違いや回り道であったとしても、ご自身が深く悩み考えて出した結論ならば、きっと何かを得るはずだと信じています。
-    </p>
+        {/* Remaining paragraphs */}
+        <p>
+          また患者様も、それぞれ望むものは違います。聞いてほしい人もいれば、教えてほしい人もいます。ゆっくり癒されたい人もいれば、効率良く終わらせたい人もいます。医療に限らず、人は十人十色、望むものは様々です。どれが正解というわけではありません。
+        </p>
 
-    <p>
-      それは今後ずっと続く人生において、きっと役に立つでしょう。
-    </p>
+        <p>
+          また人の繋がりはあたたかいものです。人が人を思いやり、健康や当たり前の小さな幸せを望む。これはどのフィールドでも同じです。<br />
+          人生は無機質で冷たいものばかりではなく、暖かい気持ちやつながりがこの世界をまぁるく優しいものにしてくれます。
+        </p>
 
-    <p>
-      恋愛、結婚そして子育てをした人は、
-      <span className="font-bold text-gray-900">
-        「誰かのために自分の何かを与え、時には犠牲になることもありながら成長していく」
-      </span>
-      と聞いたことがあります。
-    </p>
+        <p>
+          婚活、特にお見合いがうまくいかずに先がみえなくなった時に必要なのも、冷酷な分析や厳しいお説教ではありません。<br />
+          深く心に寄り添い、ありのままのあなたやあなたの周りの状況を受け止め、あなたを支える温かい場所です。
+        </p>
 
-    <p>
-      恋愛や結婚、子育てを経て経験する無償の愛が、人を豊かにすると感じてやみません。
-    </p>
+        <p>
+          合理的な認識や、経験に基づく適切な判断があるのは当然ありますが、さらなる人としての温かみを加え、ご満足いただけるサポートを提供できるよう尽力いたします。
+        </p>
 
-    <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
-      ここで出会ったのも何かのご縁のはずです。<br />
-      大阪梅田結婚相談所で、一緒に頑張っていきましょう。
-    </p>
+        <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
+          医師としても経験を積み、個人としても人生のさまざまな状況を経たからこそ見える景色があると考えています。<br />
+          今、この時にご一緒できる会員様を温かい気持ちでお待ちしています。
+        </p>
 
-  </div>
-</section>
+      </div>
+    </section>
+      {/* --- COUNSELOR MESSAGE SECTION --- */}
+ <section className="mx-auto max-w-4xl rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
+
+      {/* Header */}
+      <div className="text-center space-y-1 mb-10">
+        <span className="text-xs font-bold tracking-wider text-rose-400 uppercase block md:text-sm">
+          Message
+        </span>
+
+        <h2 className="text-xl font-black text-gray-800 sm:text-2xl md:text-3xl leading-snug">
+          ベテランカウンセラーから<br className="hidden sm:inline" />
+          会員様への想い
+        </h2>
+      </div>
+
+      {/* Content */}
+      <div className="space-y-6 text-base sm:text-lg md:text-xl text-gray-700 leading-snug font-normal tracking-wide">
+
+        {/* First paragraph with wrapped image */}
+        <p className="clearfix">
+
+          <span className="float-left mr-4 mb-2 w-28 sm:w-32 md:w-40">
+            <Image
+              src={maleAdvisor}
+              alt="男性カウンセラー"
+              className="rounded-xl shadow-md object-cover w-full h-auto"
+              priority
+            />
+          </span>
+
+          長いカウンセラー経験の中、たくさんの出会いに寄り添ってきました。
+          一緒に喜び、時には迷いや悲しみも共有してきました。
+          上手くいかずに涙する会員様をみると胸がギュッとなったことが何度もあります。
+        </p>
+
+        <p>
+          結婚という一つの目標に向けて、会員様とカウンセラーは二人三脚です。
+          その過程で、ご自身の恋愛というプライバシーをお話していただくには抵抗もあるとご想像します。
+        </p>
+
+        <p>
+          でも、
+          <span className="font-bold text-gray-900 border-b-2 border-rose-300 bg-rose-50/50 px-1">
+            「少し聞いて欲しいことがあります」
+            「どうしたらいいと思いますか？」
+            「どう思われますか？」
+          </span>
+          と素直にご相談いただけることがあります。
+        </p>
+
+        <p>
+          そういったご相談の時には、自分がカウンセラーとして必要とされることに熱い喜びを感じます。
+          そして戦略と技術において自分の持っている全てを使い、温かくサポートしたいと常に思っています。
+        </p>
+
+        <p>
+          上手くいっている時よりも、
+          <span className="font-bold text-gray-900">
+            「もう諦めようかな」
+          </span>
+          と立ち止まった時こそ側にいて、真の力を発揮したいと願っています。
+        </p>
+
+        <p>
+          会員様は大切な人生の分岐点を、たくさん迷いながら、そして決断をしていかれます。
+          婚活に限らず人生は選択の連続です。
+          たとえそれが間違いや回り道であったとしても、ご自身が深く悩み考えて出した結論ならば、きっと何かを得るはずだと信じています。
+        </p>
+
+        <p>
+          それは今後ずっと続く人生において、きっと役に立つでしょう。
+        </p>
+
+        <p>
+          恋愛、結婚そして子育てをした人は、
+          <span className="font-bold text-gray-900">
+            「誰かのために自分の何かを与え、時には犠牲になることもありながら成長していく」
+          </span>
+          と聞いたことがあります。
+        </p>
+
+        <p>
+          恋愛や結婚、子育てを経て経験する無償の愛が、人を豊かにすると感じてやみません。
+        </p>
+
+        <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
+          ここで出会ったのも何かのご縁のはずです。<br />
+          大阪梅田結婚相談所で、一緒に頑張っていきましょう。
+        </p>
+
+      </div>
+    </section>
 <section className="mx-auto max-w-4xl px-3 py-2">
   <div className="mb-4 text-center">
     <h2 className="text-2xl font-black text-gray-900">
