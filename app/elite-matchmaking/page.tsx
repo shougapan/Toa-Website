@@ -148,7 +148,7 @@ LINE相談でお話しできるのを楽しみにしています。
 
 結婚すべきか？の迷いがある人は詳しく見るをどうぞ♡
 <Link
-  href="/should-i-get-married"
+  href="#essential-question"
   className="group inline-flex items-center justify-center rounded-full bg-pink-500 px-8 py-3 text-base font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-xl active:translate-y-0"
 >
   結婚すべきか？詳しく見る
@@ -206,6 +206,160 @@ LINE相談を心よりお待ちしております。
         </div>
 
       </section>
+
+     {/* ============================================================
+    NEW SECTION: THE ESSENTIAL QUESTION OF MARRIAGE (Full-Width Mobile & Large Font)
+    ============================================================ */}
+<div id="essential-question" className="w-full mb-10 sm:px-4">
+  <div className="max-w-4xl mx-auto space-y-8">
+    
+    {/* MAIN PHILOSOPHY CONTAINER */}
+    <div className="bg-white w-full p-5 sm:p-8 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
+      <span className="text-xs sm:text-sm font-black text-[#D9889D] uppercase tracking-widest block mb-1.5">The Essential Question</span>
+      <h2 className="text-2xl sm:text-3xl font-black text-gray-900 leading-snug tracking-tight">
+        【本質的な問い】一人でも豊かに生きていける時代に、<br className="hidden sm:inline" />あなたは本当に「結婚すべき」なのか？？
+      </h2>
+      <div className="w-16 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mt-3 mb-6 rounded-full" />
+      
+      <h3 className="text-lg sm:text-xl font-black text-gray-800 leading-snug mb-4 border-l-4 border-[#E6A2B3] pl-3">
+        過去の「義務」から、現代の「自由な選択肢」へ
+      </h3>
+      
+      {/* 本文フォントを text-base (標準) から text-lg (大) まで拡大 */}
+      <div className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify space-y-4 font-medium">
+        <p>
+          昭和の時代までは、結婚は「大人ならして当たり前の通過点」でした。しかし現代における結婚は、<span className="font-black text-gray-950 border-b-2 border-[#E6A2B3] px-0.5">「しても、しなくても、どちらでも幸せになれる自由な選択肢」</span>に変わっています。
+        </p>
+        <p>
+          つまり世間体やカタチではなく、結婚するということは<span className="font-bold text-gray-900 bg-rose-50/60 px-1 rounded-sm">【人生という長い旅を、お互いに支え合って進む『チーム』を作ること】</span>です。
+        </p>
+        <p>
+          一人の人生には、自分の思い通りになる「自由」や「1人だからこそ選べる選択肢」もあります。一方で結婚は、その自由を少しだけ相手と分け合う必要があり、その代わりに1人では得られない「深い安心感」と「チームで進む人生の選択肢」をふたりで育んでいくコースです。
+        </p>
+        <p className="font-black text-gray-950 text-lg sm:text-xl pt-2 text-[#D9889D]">
+          「どちらが正しい」ということはありません。
+        </p>
+        <p>
+          あなたがこれからの人生で、「自由な時間と1人だからこそできる選択を大切にしたいか」、それとも「誰かと人生を分かち合う時間と2人だからこそできる選択を大切にしたいか」という、これからの生き方の問題なのです。
+        </p>
+      </div>
+    </div>
+
+    {/* THREE VALUES OF MARRIAGE */}
+    <div className="bg-white w-full p-5 sm:p-8 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
+      <h3 className="text-xl sm:text-2xl font-black text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-4 mb-6">
+        <span className="w-2.5 h-5 bg-[#D9889D] rounded-xs shrink-0" />
+        結婚を選ぶ人たちが家族に見出している「3つの真実の価値」
+      </h3>
+      <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify mb-6">
+        さて、ここは結婚相談所なので、結婚を選ぶ人たちが、結婚、自由、そして家族にどんな価値を見出しているかを見てみましょう。その価値は大きくわけて3つあると思います。
+      </p>
+
+      {/* VALUE BLOCKS */}
+      <div className="space-y-6">
+        
+        {/* VALUE 1 */}
+        <div className="bg-[#FAF8F5] p-5 rounded-xl border border-gray-100">
+          <h4 className="font-black text-lg sm:text-xl text-gray-900 mb-3 flex items-start gap-2">
+            <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">1</span>
+            人生の「基盤・よりどころ」としての位置づけと孤独の解消
+          </h4>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify">
+            最も多くの人が家族に求める位置づけです。結婚を「人生を生き抜くためのチーム結成」と捉えます。具体的には絶対的な味方がいることで安心や安定を得られます。
+          </p>
+          <div className="mt-3 space-y-2 pl-3 border-l-2 border-[#E6A2B3] text-sm sm:text-base text-gray-600">
+            <p>• <span className="font-black text-gray-900">孤独の解消：</span>人生の喜びや苦しみを分かち合える相手がいる安心感</p>
+            <p>• <span className="font-black text-gray-900">自己肯定感の向上：</span>ありのままの自分を受け入れてくれる存在の獲得</p>
+          </div>
+        </div>
+
+        {/* VALUE 2 */}
+        <div className="bg-[#FAF8F5] p-5 rounded-xl border border-gray-100">
+          <h4 className="font-black text-lg sm:text-xl text-gray-900 mb-3 flex items-start gap-2">
+            <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">2</span>
+            人生のリスク軽減と、経済的・生活基盤の安定
+          </h4>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify">
+            万が一の病気やキャリアの転換期を迎えたとき、一人で全てを抱え込むのはハイリスクです。二人で支え合うことで、人生の様々なリスクに備えたり、共働きによる世帯収入の増加によって、生活の選択肢を大きく広げることができます。
+          </p>
+        </div>
+
+        {/* VALUE 3 */}
+        <div className="bg-[#FAF8F5] p-5 rounded-xl border border-gray-100">
+          <h4 className="font-black text-lg sm:text-xl text-gray-900 mb-3 flex items-start gap-2">
+            <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">3</span>
+            人生の自己実現を達成し、ふたりで人生を2倍豊かにする
+          </h4>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify">
+            「1人でも十分に幸せだけど、2人ならもっと楽しい」という高い次元の考え方です。
+            自分の子供を育てたい、温かい家庭を築いたいという願望の実現や、独身の立場から脱却して新しい社会的な役割（夫・妻・親）を得る側面もあります。
+          </p>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify mt-3">
+            お互いの仕事や趣味、一人の時間も尊重し合い、美味しいものを食べる、旅をするなど、何をしても人生を2倍楽しめるでしょう。家族になれば過ごす時間は多くなり、経験の共有はさらに増えていきます。
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    {/* THE QUESTION SELF-REFLECTION BOX */}
+    <div className="bg-white w-full p-5 sm:p-8 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
+      <h3 className="text-lg sm:text-xl font-black text-gray-900 mb-3">
+        あなたにとっての「位置づけ」を見つけるヒント
+      </h3>
+      <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+        もし「自分にとって結婚って何だろう？」と迷ったら、次の問いを自分に投げかけてみてください。
+      </p>
+
+      <div className="bg-rose-50/50 p-5 sm:p-6 rounded-xl border border-rose-100 text-center my-5">
+        <p className="font-black text-base sm:text-xl text-gray-950 leading-snug tracking-tight">
+          「もし、一生誰にも独身であることを責められず、お金の不安も一切ないとしたら、<br className="hidden sm:inline" />私は誰かと一緒に暮らしたいですか？」
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
+        <div className="bg-[#FAF8F5] p-4 sm:p-5 rounded-xl border border-gray-100">
+          <p className="font-black text-base sm:text-lg mb-2 flex items-center gap-1.5 text-rose-600">
+            <span>👉 「それでも誰かといたい」場合</span>
+          </p>
+          <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            あなたにとって結婚は<span className="font-bold text-gray-900">「精神的なつながりや喜びの共有」</span>を目的とする場合が多いです。
+          </p>
+        </div>
+
+        <div className="bg-[#FAF8F5] p-4 sm:p-5 rounded-xl border border-gray-100">
+          <p className="font-black text-base sm:text-lg mb-2 flex items-center gap-1.5 text-gray-700">
+            <span>👉 「それなら1人がいい」場合</span>
+          </p>
+          <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            今のあなたにとって結婚は優先度が低いか、もしくは結婚に<span className="font-bold text-gray-900">「条件や明確な自己実現」</span>を求めている場合が多いです。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* DOCTOR'S COMMENT BLOCK */}
+    <div className="bg-gradient-to-b from-white to-[#FFF8FA] w-full p-5 sm:p-8 shadow-sm border-y sm:border border-pink-100/60 sm:rounded-3xl">
+      <div className="flex items-center gap-2 mb-4">
+        <span className="bg-pink-100 text-[#D9889D] text-xs sm:text-sm font-black px-3 py-1 rounded-md tracking-wider">女医からの一言</span>
+      </div>
+      
+      <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed text-justify font-medium">
+        <p>
+          求めている結婚像がぼんやりとわかれば、それを自分に与えてくれるお相手も少しずつわかってくると思います。
+          一緒にあなたにとってベストの結婚の形、またそのお相手を探しましょう♡
+        </p>
+        <p className="font-black text-gray-950 text-lg sm:text-xl border-l-4 border-[#D9889D] pl-4 py-0.5 bg-white shadow-2xs p-3 rounded-r-xl border border-gray-100">
+          また結婚や、自分の求めるものについて考えることは、自分を深く知ることになり【アイデンティティの確立】に繋がります。
+        </p>
+        <p className="text-gray-600 text-sm sm:text-base">
+          ここで深く内省した経験は、きっと将来、あなたの人生において様々な分かれ道、選択すべき岐路に立たされた時に、何か役立つに違いありません。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div> 
       </div>
   );
 }
