@@ -27,21 +27,20 @@ export default function PremiumNavbar() {
     return () => { document.body.style.overflow = 'unset'; };
   }, [isOpen]);
 
-  const navLinks = [
+const navLinks = [
     { name: '大阪梅田ドクターズ結婚相談所について', href: '/' },
     { name: '大阪梅田ドクターズ結婚相談所が選ばれる理由', href: '/why-us' },
     { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
-    { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
-    // { name: 'ハイスペックなあなたへ', href: '/high-spec' },
+  { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
     { name: '少人制のハイクラス成婚', href: '/executive' },
+    { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider' },
+   { name: '男性のための戦略', href: '/mens-strategy' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
-    { name: '男性のための戦略', href: '/mens-strategy' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
-    { name: '成婚エピソード', href: '/marriage-story' },
     { name: '入会までの流れ', href: '/membership-steps' },
-    { name: '婚活よく.ある質問Q＆A', href: '/FAQ' },
-    { name: 'いい人がいない！ともう３0代のあなたへ', href: '/consider' },
     { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps' },
+    { name: '婚活よく.ある質問Q＆A', href: '/FAQ' },
+    { name: '成婚エピソード', href: '/marriage-story' },
     { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
   ];
 
