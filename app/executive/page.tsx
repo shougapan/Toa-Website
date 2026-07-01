@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import maleAdvisor from "@/public/maleAdvisor.jpg";
 
 import React, { useRef } from 'react';
 import Link from 'next/link';
@@ -196,70 +198,93 @@ export default function HighClassSupportPage() {
       {/* ============================================================
           SECTION 3: COUNSELOR'S MESSAGE
           ============================================================ */}
-      <div ref={section3Ref} className="w-full px-2 sm:px-4 mb-8">
-        <div className="bg-gradient-to-b from-white to-[#FFF8FA] rounded-3xl p-4 sm:p-6 shadow-sm border border-pink-100/60">
-          
-          {/* COUNSELOR BADGE */}
-          <div className="text-center mb-6">
-            <span className="text-xs font-black text-[#D9889D] uppercase tracking-widest block mb-1">Message from Expert</span>
-            <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">
-              ベテランカウンセラーからのひとこと
-            </h2>
-            <p className="text-base font-black text-[#D9889D] mt-2 bg-pink-50 inline-block px-4 py-1 rounded-full border border-pink-100">
-              「本当に価値のある唯一の出会い」を、あなたへ。
-            </p>
-          </div>
+ {/* MESSAGE CONTENT BODY */}
+<div className="text-[17px] sm:text-lg text-gray-700 leading-8 tracking-wide">
 
-          {/* MESSAGE CONTENT BODY */}
-          <div className="space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
-            <p>
-              はじめまして。大阪梅田ドクターズ結婚相談所の男性カウンセラーです。
-            </p>
-            <p>
-              これまで数多くの成婚の喜びを共にしてきた私だからこそ、確信していることがあります。それは、ハイクラスな方の婚活に必要なのは「たくさんの紹介」ではなく、<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「たった一人の、本質が合うパートナーとの出会い」</span>であるということです。
-            </p>
-            <p>
-              高い社会的地位や、日々のお忙しさ、そして「妥協したくない理想の条件」を抱えながら、なんとなく…婚活を進めてはいませんか？当相談所は、会員様一人ひとりの人生に誰よりも深く寄り添うため、【完全少人数制】に徹底的にこだわっています。
-            </p>
+  {/* Portrait */}
+  <div className="float-right ml-5 mb-4 w-32 sm:w-36 md:w-44">
+    <Image
+      src={maleAdvisor}
+      alt="ベテランカウンセラー"
+      className="rounded-xl shadow-md object-cover w-full h-auto"
+      priority
+    />
+  </div>
 
-            <div className="bg-white p-3.5 rounded-xl border border-gray-100 shadow-2xs my-4">
-              <p className="font-bold text-gray-900 mb-1">💡 ベテランを選ぶ本当の意味</p>
-              <p className="text-gray-600 text-sm">
-                「若いカウンセラーの方が、自分の感覚や恋愛を分かってくれそう」そう思う方も多いかもしれません。しかし、あなたが目指すのが「理想の成婚」「ハイクラスな結婚」であれば、私たちは自信を持って【実績あるベテランカウンセラー】をおすすめします。ハイクラス成婚に必要なのは、「表面的な共感」や「妥協」ではなく<span className="font-bold text-gray-900">「百戦錬磨のサポート力」と「相手を見抜く人間力」</span>だからです。
-              </p>
-            </div>
+  <p>
+    はじめまして。大阪梅田ドクターズ結婚相談所の男性カウンセラーです。
 
-            <p>
-              あなたの価値を誰よりも理解し、時には家族のように親身に、時にはプロとして客観的に、成婚のその日まで二人三脚で伴走することをお約束します。
-            </p>
-            <p>
-              また、ハイクラスな結婚において、避けて通れないのが<span className="font-bold text-gray-900">「お相手のご両親や家柄との調和」</span>です。ベテランカウンセラーは、親世代の心理やマナーにも精通しています。「相手のご家族に愛される立ち振る舞い」や、育った環境が違う二人の間を取り持つクッションとしての役割は、経験豊富なベテランだからこそご提供できる技です。
-            </p>
+    <br /><br />
 
-            {/* DEEP PHILSOPHY BLOCK */}
-            <div className="bg-rose-50/50 p-4 rounded-xl border border-rose-100 my-4 text-gray-900">
-              <p className="font-black text-base text-[#D9889D] mb-1.5 flex items-center gap-1">
-                <Heart className="w-4 h-4 shrink-0" />
-                結婚の土台にあるのは、いつの時代も、人を心から愛する喜びと素晴らしさ
-              </p>
-              <p className="text-sm sm:text-base leading-relaxed text-justify text-gray-800">
-                ハイクラスな婚活となると、年収、学歴、職業といった「条件のパズル」を合わせることに必死になってしまいがちです。しかしながら、やはり結婚は恋愛の延長上にあるべきだと考えています。
-              </p>
-              <p className="text-sm sm:text-base leading-relaxed text-justify text-gray-800 mt-2 font-bold">
-                結婚には条件も大切ですが、最後に男女を繋ぐのはやはり愛だと思っています。ずっと先の将来、長い年月をかけたあと、死が夫婦や人々を悲しく別つ時、涙が流れるような愛が生まれますように願っています。
-              </p>
-            </div>
+    これまで数多くの成婚の喜びを共にしてきた私だからこそ、確信していることがあります。それは、ハイクラスな方の婚活に必要なのは「たくさんの紹介」ではなく、
+    <span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">
+      「たった一人の、本質が合うパートナーとの出会い」
+    </span>
+    であるということです。
 
-            <p className="font-bold text-gray-900">
-              「ここに来て、本当に良かった」
-            </p>
-            <p>
-              そう笑顔で卒業していただける未来のために、私は持てるすべての情熱と経験を注ぎます。私と一緒に、愛溢れる結婚を探しにいきませんか？
-            </p>
-          </div>
+    <br /><br />
 
-        </div>
-      </div>
+    高い社会的地位や、日々のお忙しさ、そして「妥協したくない理想の条件」を抱えながら、なんとなく…婚活を進めてはいませんか？当相談所は、会員様一人ひとりの人生に誰よりも深く寄り添うため、【完全少人数制】に徹底的にこだわっています。
+
+    <br /><br />
+
+    <span className="font-bold text-gray-900">
+      💡 ベテランを選ぶ本当の意味
+    </span>
+
+    <br /><br />
+
+    「若いカウンセラーの方が、自分の感覚や恋愛を分かってくれそう」そう思う方も多いかもしれません。しかし、あなたが目指すのが「理想の成婚」「ハイクラスな結婚」であれば、私たちは自信を持って【実績あるベテランカウンセラー】をおすすめします。ハイクラス成婚に必要なのは、「表面的な共感」や「妥協」ではなく、
+    <span className="font-bold text-gray-900">
+      「百戦錬磨のサポート力」と「相手を見抜く人間力」
+    </span>
+    だからです。
+
+    <br /><br />
+
+    あなたの価値を誰よりも理解し、時には家族のように親身に、時にはプロとして客観的に、成婚のその日まで二人三脚で伴走することをお約束します。
+
+    <br /><br />
+
+    また、ハイクラスな結婚において、避けて通れないのが
+    <span className="font-bold text-gray-900">
+      「お相手のご両親や家柄との調和」
+    </span>
+    です。ベテランカウンセラーは、親世代の心理やマナーにも精通しています。「相手のご家族に愛される立ち振る舞い」や、育った環境が違う二人の間を取り持つクッションとしての役割は、経験豊富なベテランだからこそご提供できる技です。
+
+    <br /><br />
+
+    <span className="font-black text-[#D9889D]">
+      ❤️ 結婚の土台にあるのは、いつの時代も、人を心から愛する喜びと素晴らしさ
+    </span>
+
+    <br /><br />
+
+    ハイクラスな婚活となると、年収、学歴、職業といった「条件のパズル」を合わせることに必死になってしまいがちです。しかしながら、やはり結婚は恋愛の延長上にあるべきだと考えています。
+
+    <br /><br />
+
+    <span className="font-bold text-gray-900">
+      結婚には条件も大切ですが、最後に男女を繋ぐのはやはり愛だと思っています。ずっと先の将来、長い年月をかけたあと、死が夫婦や人々を悲しく別つ時、涙が流れるような愛が生まれますように願っています。
+    </span>
+
+    <br /><br />
+
+    <span className="font-bold text-gray-900">
+      「ここに来て、本当に良かった」
+    </span>
+
+    <br /><br />
+
+    そう笑顔で卒業していただける未来のために、私は持てるすべての情熱と経験を注ぎます。私と一緒に、愛溢れる結婚を探しにいきませんか？
+  </p>
+
+  <div className="clear-both" />
+
+</div>
+
+
+
 
       {/* ============================================================
           BOTTOM CLOSING CTA BOARD
