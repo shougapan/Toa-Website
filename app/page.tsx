@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-6 pb-2 md:pb-12">
+    <div className="pt-[45px] space-y-6 pb-2 md:pb-12">
       
       
       {/* --- HERO SECTION --- */}
@@ -18,7 +18,7 @@ export default function Home() {
 <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[205px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
-    src="/main.jpg"
+    src="/main1.jpg"
     alt="Marriage Consultation Hero"
     className="absolute inset-0 w-full  object-center"
   />

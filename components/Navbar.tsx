@@ -30,13 +30,15 @@ export default function PremiumNavbar() {
   const navLinks = [
     { name: '大阪梅田結婚相談所について', href: '/' },
     { name: '大阪梅田結婚相談所が選ばれる理由', href: '/why-us' },
+    { name: 'エリート婚活', href: '/elite-matchmaking' },
+    { name: 'ハイスペックなあなたへ', href: '/high-spec' },
     { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
     { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '入会までの流れ', href: '/membership-steps' },
-    { name: '婚活よくある質問Q＆A', href: '/FAQ' },
+    { name: '婚活よく.ある質問Q＆A', href: '/FAQ' },
     { name: 'いい人がいない！ともう３0代のあなたへ', href: '/consider' },
     { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps' },
     { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
@@ -65,7 +67,7 @@ export default function PremiumNavbar() {
               />
               <div className="flex flex-col">
                 <span className="text-base font-black text-gray-900 tracking-tight leading-tight">
-                  大阪梅田結婚相談所
+                  大阪梅田ドクターズ結婚相談所
                 </span>
                 <span className="text-[12px] font-black text-[#D9889D] tracking-widest leading-none mt-1 uppercase">
                   ２０代３０代の真剣婚活・1年以内の成婚

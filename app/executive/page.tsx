@@ -149,7 +149,7 @@ export default function HighClassSupportPage() {
         <div className="text-center mb-4">
           <span className="text-xs font-black text-[#D9889D] uppercase tracking-widest block">Premium Quality</span>
           <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight px-2">
-            医師、経営者、弁護士など、第一線で活躍するエグゼクティブ層にふさわしいプレミアムな出会いと、妥協のないハクラス結婚をプロデュースいたします。
+            医師、経営者、弁護士など、第一線で活躍するエグゼクティブ層にふさわしいプレミアムな出会いと、妥協のないハイクラス結婚をプロデュースいたします。
           </h2>
         </div>
 
@@ -182,7 +182,7 @@ export default function HighClassSupportPage() {
               【的確な認識と一流の成婚戦略がもたらす、無駄のない婚活】
             </h3>
             <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
-              多忙を極めるハクラス層だからこそ、タイムパフォーマンス（タイパ）は大切です。
+              多忙を極めるハイクラス層だからこそ、タイムパフォーマンス（タイパ）は大切です。
               激務による疲労やストレスを理解しメンタルサポートをする女医、そして、細かなマナーから様々な困難を乗り越える技を熟知したベテランカウンセラーの戦略。
             </p>
             <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
@@ -216,7 +216,7 @@ export default function HighClassSupportPage() {
               はじめまして。大阪梅田ドクターズ結婚相談所の男性カウンセラーです。
             </p>
             <p>
-              これまで数多くの成婚の喜びを共にしてきた私だからこそ、確信していることがあります。それは、ハクラスな方の婚活に必要なのは「たくさんの紹介」ではなく、<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「たった一人の、本質が合うパートナーとの出会い」</span>であるということです。
+              これまで数多くの成婚の喜びを共にしてきた私だからこそ、確信していることがあります。それは、ハイクラスな方の婚活に必要なのは「たくさんの紹介」ではなく、<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「たった一人の、本質が合うパートナーとの出会い」</span>であるということです。
             </p>
             <p>
               高い社会的地位や、日々のお忙しさ、そして「妥協したくない理想の条件」を抱えながら、なんとなく…婚活を進めてはいませんか？当相談所は、会員様一人ひとりの人生に誰よりも深く寄り添うため、【完全少人数制】に徹底的にこだわっています。
@@ -225,7 +225,7 @@ export default function HighClassSupportPage() {
             <div className="bg-white p-3.5 rounded-xl border border-gray-100 shadow-2xs my-4">
               <p className="font-bold text-gray-900 mb-1">💡 ベテランを選ぶ本当の意味</p>
               <p className="text-gray-600 text-sm">
-                「若いカウンセラーの方が、自分の感覚や恋愛を分かってくれそう」そう思う方も多いかもしれません。しかし、あなたが目指すのが「理想の成婚」「ハクラスな結婚」であれば、私たちは自信を持って【実績あるベテランカウンセラー】をおすすめします。ハクラス成婚に必要なのは、「表面的な共感」や「妥協」ではなく<span className="font-bold text-gray-900">「百戦錬磨のサポート力」と「相手を見抜く人間力」</span>だからです。
+                「若いカウンセラーの方が、自分の感覚や恋愛を分かってくれそう」そう思う方も多いかもしれません。しかし、あなたが目指すのが「理想の成婚」「ハイクラスな結婚」であれば、私たちは自信を持って【実績あるベテランカウンセラー】をおすすめします。ハイクラス成婚に必要なのは、「表面的な共感」や「妥協」ではなく<span className="font-bold text-gray-900">「百戦錬磨のサポート力」と「相手を見抜く人間力」</span>だからです。
               </p>
             </div>
 
@@ -233,7 +233,7 @@ export default function HighClassSupportPage() {
               あなたの価値を誰よりも理解し、時には家族のように親身に、時にはプロとして客観的に、成婚のその日まで二人三脚で伴走することをお約束します。
             </p>
             <p>
-              また、ハクラスな結婚において、避けて通れないのが<span className="font-bold text-gray-900">「お相手のご両親や家柄との調和」</span>です。ベテランカウンセラーは、親世代の心理やマナーにも精通しています。「相手のご家族に愛される立ち振る舞い」や、育った環境が違う二人の間を取り持つクッションとしての役割は、経験豊富なベテランだからこそご提供できる技です。
+              また、ハイクラスな結婚において、避けて通れないのが<span className="font-bold text-gray-900">「お相手のご両親や家柄との調和」</span>です。ベテランカウンセラーは、親世代の心理やマナーにも精通しています。「相手のご家族に愛される立ち振る舞い」や、育った環境が違う二人の間を取り持つクッションとしての役割は、経験豊富なベテランだからこそご提供できる技です。
             </p>
 
             {/* DEEP PHILSOPHY BLOCK */}
@@ -243,7 +243,7 @@ export default function HighClassSupportPage() {
                 結婚の土台にあるのは、いつの時代も、人を心から愛する喜びと素晴らしさ
               </p>
               <p className="text-sm sm:text-base leading-relaxed text-justify text-gray-800">
-                ハクラスな婚活となると、年収、学歴、職業といった「条件のパズル」を合わせることに必死になってしまいがちです。しかしながら、やはり結婚は恋愛の延長上にあるべきだと考えています。
+                ハイクラスな婚活となると、年収、学歴、職業といった「条件のパズル」を合わせることに必死になってしまいがちです。しかしながら、やはり結婚は恋愛の延長上にあるべきだと考えています。
               </p>
               <p className="text-sm sm:text-base leading-relaxed text-justify text-gray-800 mt-2 font-bold">
                 結婚には条件も大切ですが、最後に男女を繋ぐのはやはり愛だと思っています。ずっと先の将来、長い年月をかけたあと、死が夫婦や人々を悲しく別つ時、涙が流れるような愛が生まれますように願っています。
