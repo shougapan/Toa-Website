@@ -199,7 +199,7 @@ export default function HighClassSupportPage() {
           SECTION 3: COUNSELOR'S MESSAGE
           ============================================================ */}
  {/* MESSAGE CONTENT BODY */}
-<div className="text-[17px] sm:text-lg text-gray-700 leading-8 tracking-wide">
+< div className="text-[17px] sm:text-lg text-gray-700 leading-6 tracking-wide" ref={section3Ref}>
 
   {/* Portrait */}
   <div className="float-right ml-5 mb-4 w-32 sm:w-36 md:w-44">
