@@ -27,19 +27,19 @@ export default function PremiumNavbar() {
     return () => { document.body.style.overflow = 'unset'; };
   }, [isOpen]);
 
-const navLinks = [
+  const navLinks = [
     { name: '大阪梅田ドクターズ結婚相談所について', href: '/' },
     { name: '大阪梅田ドクターズ結婚相談所が選ばれる理由', href: '/why-us' },
     { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
-  { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
+    { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
     { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider' },
-   { name: '男性のための戦略', href: '/mens-strategy' },
+    { name: '男性のための戦略', href: '/mens-strategy' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
     { name: '入会までの流れ', href: '/membership-steps' },
     { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps' },
-    { name: '婚活よく.ある質問Q＆A', href: '/FAQ' },
+    { name: '婚活よくある質問Q＆A', href: '/FAQ' },
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
   ];
@@ -121,10 +121,10 @@ const navLinks = [
           isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
         }`}
       >
-        {/* 🛠️ FIX CONTAINER: Independent scroll wrapper for long lists */}
-        <div className="flex-1 overflow-y-auto px-6 pt-24 pb-6 custom-scrollbar">
-          <div className="flex flex-col gap-4">
-            <p className="text-[10px] font-black tracking-widest text-[#D9889D]/60 uppercase border-b border-gray-100 pb-2 mb-2">
+        {/* 🛠️ COMPACT CONTAINER: Highly scannable list structure context */}
+        <div className="flex-1 overflow-y-auto px-5 pt-20 pb-4 custom-scrollbar">
+          <div className="flex flex-col gap-1.5">
+            <p className="text-[10px] font-black tracking-widest text-[#D9889D]/60 uppercase border-b border-gray-100 pb-1 mb-1">
               Navigation Menu
             </p>
             {navLinks.map((link, idx) => (
@@ -132,33 +132,33 @@ const navLinks = [
                 key={link.name} 
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                style={{ transitionDelay: `${idx * 30}ms` }}
-                /* 🛠️ FIX DESIGN: Scaled font down to text-sm/text-base and added alignment properties for long strings */
-                className={`text-sm font-bold text-gray-800 hover:text-[#D9889D] flex items-start justify-between gap-4 py-1.5 border-b border-gray-50/50 group transform transition-all duration-300 ${
+                style={{ transitionDelay: `${idx * 20}ms` }}
+                /* 🛠️ UPDATED LINE HEIGHT & TEXT SIZE FOR COMPACT ONPAGE VIEWPORT */
+                className={`text-[13px] font-bold text-gray-800 hover:text-[#D9889D] flex items-center justify-between gap-3 py-1 border-b border-gray-50/30 group transform transition-all duration-300 ${
                   isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                 }`}
               >
-                <span className="text-left leading-relaxed">{link.name}</span>
-                <ChevronRight className="w-4 h-4 mt-1 text-gray-300 flex-shrink-0 group-hover:text-[#D9889D] transition-colors" />
+                <span className="text-left leading-5 tracking-tight">{link.name}</span>
+                <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0 group-hover:text-[#D9889D] transition-colors" />
               </Link>
             ))}
           </div>
         </div>
 
-        {/* 🛠️ FIX CTA POSITIONING: Stationary bottom drawer footer tray */}
-        <div className={`p-6 border-t border-gray-100 bg-white space-y-3 transform transition-all duration-500 delay-200 ${
+        {/* 🛠️ FIXED CTA DRAW TRAY */}
+        <div className={`p-5 border-t border-gray-100 bg-white space-y-2 transform transition-all duration-500 delay-150 ${
           isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
           <Link 
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-sm font-black py-3.5 rounded-xl shadow-xl shadow-[#E6A2B3]/20"
+            className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-sm font-black py-3 rounded-xl shadow-xl shadow-[#E6A2B3]/20"
           >
             <Calendar className="w-4 h-4" />
             <span>無料相談の枠を予約する</span>
           </Link>
           
-          <p className="text-center text-[11px] font-bold text-gray-400">
+          <p className="text-center text-[10px] font-bold text-gray-400">
             お電話や公式LINEからも随時受付中
           </p>
         </div>
