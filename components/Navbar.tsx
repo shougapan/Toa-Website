@@ -30,9 +30,9 @@ export default function PremiumNavbar() {
   const navLinks = [
     { name: '大阪梅田ドクターズ結婚相談所について', href: '/' },
     { name: '大阪梅田ドクターズ結婚相談所が選ばれる理由', href: '/why-us' },
-    { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
-    { name: 'ハイスペックなあなたへ', href: '/high-spec' },
     { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
+    { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
+    // { name: 'ハイスペックなあなたへ', href: '/high-spec' },
     { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '男性のための戦略', href: '/mens-strategy' },
