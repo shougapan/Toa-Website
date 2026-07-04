@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
           {/* Main Content */}
           <main className="relative z-10 pt-16 pb-24 lg:pt-24 lg:pb-0">
-            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-[98%] max-w-7xl px-0 sm:px-6 lg:px-8">
               {children}
             </div>
           </main>

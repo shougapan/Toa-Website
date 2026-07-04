@@ -20,8 +20,8 @@ import {
 export default function ReasonsPage() {
   return (
     <div>
-      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8]">
-        <div className="max-w-5xl mx-auto px-5 py-6 sm:py-16 space-y-2">
+      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8] max-w-full">
+        <div className=" mx-auto px-5 py-6 sm:py-16 space-y-2">
 
           <span className="inline-block text-xs font-black tracking-widest uppercase text-pink-500 mb-3">
             ハイスペックなあなたへ🩷💙
@@ -49,7 +49,7 @@ H3：その答えは、幸せをもたらす結婚を効率的に最短で掴み
 
       {/* Female Doctor Letter */}
 
-      <section className="max-w-5xl mx-auto px-5 py-2">
+<section className="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-10 py-2">
 
         <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
 
