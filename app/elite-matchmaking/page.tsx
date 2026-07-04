@@ -20,7 +20,7 @@ import {
 export default function ReasonsPage() {
   return (
     <div>
-      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8] max-w-full">
+      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8]">
         <div className=" mx-auto px-5 py-6 sm:py-16 space-y-2">
 
           <span className="inline-block text-xs font-black tracking-widest uppercase text-pink-500 mb-3">
@@ -49,7 +49,7 @@ H3：その答えは、幸せをもたらす結婚を効率的に最短で掴み
 
       {/* Female Doctor Letter */}
 
-<section className="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-10 py-2">
+<section className=" mx-auto px-0 sm:px-2 lg:px-10 py-2">
 
         <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
 
@@ -108,7 +108,7 @@ LINE相談でお話しできるのを楽しみにしています。
 
       {/* Male Counselor Letter */}
 
-      <section className="max-w-5xl mx-auto px-5 pb-12">
+      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
 
         <div className="rounded-3xl border border-blue-100 bg-white shadow-sm p-6 sm:p-10">
 
