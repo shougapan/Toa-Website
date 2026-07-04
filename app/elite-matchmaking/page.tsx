@@ -23,10 +23,8 @@ export default function ReasonsPage() {
       <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8] ">
         <div className=" mx-auto px-5 py-6 sm:py-16 space-y-2">
 
-          <span className="inline-block text-xs font-black tracking-widest uppercase text-pink-500 mb-3">
+          <span className="inline-block text-xs font-black tracking-widest uppercase text-black-500 mb-3">
             ハイスペックなあなたへ🩷💙
-
-      ハイスペック男性、ハイスペック女性のあなたへ。人生の幸せは一日でも長いほうがいい。
           </span>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
@@ -36,10 +34,9 @@ export default function ReasonsPage() {
           <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
       ハイスペック男女がお相手に困っているわけではないのに、大阪梅田ドクターズ結婚相談所で成婚にむきあうのはなぜなのか？
-H3：その答えは、幸せをもたらす結婚を効率的に最短で掴みとり、人生全体の幸福度を上げることが【価値ある選択】と考えているからです。
+その答えは、幸せをもたらす結婚を効率的に最短で掴みとり、人生全体の幸福度を上げることが【価値ある選択】と考えているからです。
 【人生の幸せををパートナーと共有する時間は、1日でも長いほうがいい】これは、ビジネスの世界で「決断と行動が早いほど、得られる恩恵は大きくなる」ように、婚活においても同様の結果がもたらされます。「一日でも早く理想のパートナーと出会うこと」は、人生全体の幸福度を最大化する決断です。
 ハイスペック男女が、迷うことなく「今」動き、一日でも長く結婚がもたらす幸せを享受すべき明確な理由がここにあります。
-
           </div>
 
         </div>
@@ -86,17 +83,22 @@ H3：その答えは、幸せをもたらす結婚を効率的に最短で掴み
 幸せな結婚生活のスタートは、一日でも早いほうがいいと思います。なぜなら、温かい家庭や家族や子供のために生きる毎日は、仕事とは違う別の大きな幸せを人生に与えてくれますし、幸せをささえる健康や寿命も限りあるものですから、一日一日は誰にとっても貴重なものです。
 ハイステータス男女の立場や思考を理解する大阪梅田ドクターズ結婚相談所で、あなたの豊かな未来を変える一歩を踏み出してみませんか？ 
 LINE相談でお話しできるのを楽しみにしています。
-<Link
-  href="/line"
-  className="group inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-3 text-base font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl active:translate-y-0"
->
-  LINEで質問してみる
-  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-    →
-  </span>
-</Link>
+
 
             <div className="clear-both"></div>
+
+
+<div className="mt-8 flex justify-center">
+  <Link
+    href="/line"
+    className="group inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-3 text-base font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl active:translate-y-0"
+  >
+    LINEで質問してみる
+    <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+</div>
 
           </div>
 
@@ -147,18 +149,25 @@ LINE相談でお話しできるのを楽しみにしています。
 
 
 結婚すべきか？の迷いがある人は詳しく見るをどうぞ♡
-<Link
+
+
+            <div className="clear-both"></div>
+
+            <div className="mt-8 flex justify-center">
+ 
+
+
+            <Link
   href="#essential-question"
   className="group inline-flex items-center justify-center rounded-full bg-pink-500 px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-xl active:translate-y-0"
 >
+  
   結婚すべきか？詳しく見る
   <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
     →
   </span>
 </Link>
-
-            <div className="clear-both"></div>
-
+</div>
           </div>
 
         </div>
@@ -174,7 +183,7 @@ LINE相談でお話しできるのを楽しみにしています。
           <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
             【For MEN】年収1000万円以上の医師・経営者・エグゼクティブの男性へ
           </h2>
-          <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
 時間を節約♡完全外注型サポート
 【完全代行型】お見合い設定：ご希望に応じてプロフィールの厳ご紹介からスケジュール調整まで、すべて当相談所が代行します。もしあなたが避けたいと思うわずらわしい作業があるならば、可能な限り代行させていただきます♡
@@ -186,7 +195,7 @@ LINE相談でお話しできるのを楽しみにしています。
           <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
             【For WOMEN】ハイスペック女性の方へ 💙ベテランカウンセラーより💙
           </h2>
-          <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 築いてきたキャリアも、人を愛する純粋な心も、どちらも諦めなくていい。
 はじめまして。大阪梅田ドクターズ結婚相談所のカウンセラーです。
 これまで、社会の第一線で美しく、そして懸命に戦ってきた多くの女性たちの人生に寄り添ってきました。その中で、彼女たちが口を揃えて言う言葉があります。
@@ -226,7 +235,7 @@ LINE相談を心よりお待ちしております。
       </h3>
       
       {/* 本文フォントを text-base (標準) から text-lg (大) まで拡大 */}
-      <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+      <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
         <p>
           昭和の時代までは、結婚は「大人ならして当たり前の通過点」でした。しかし現代における結婚は、<span className="font-black text-gray-950 border-b-2 border-[#E6A2B3] px-0.5">「しても、しなくても、どちらでも幸せになれる自由な選択肢」</span>に変わっています。
         </p>
@@ -251,7 +260,7 @@ LINE相談を心よりお待ちしております。
         <span className="w-2.5 h-5 bg-[#D9889D] rounded-xs shrink-0" />
         結婚を選ぶ人たちが家族に見出している「3つの真実の価値」
       </h3>
-      <p className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-55">
+      <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
         さて、ここは結婚相談所なので、結婚を選ぶ人たちが、結婚、自由、そして家族にどんな価値を見出しているかを見てみましょう。その価値は大きくわけて3つあると思います。
       </p>
 
@@ -264,7 +273,7 @@ LINE相談を心よりお待ちしております。
             <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">1</span>
             人生の「基盤・よりどころ」としての位置づけと孤独の解消
           </h4>
-          <p className="text-base sm:text-lg text-gray-600 leading- text-justify">
+          <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             最も多くの人が家族に求める位置づけです。結婚を「人生を生き抜くためのチーム結成」と捉えます。具体的には絶対的な味方がいることで安心や安定を得られます。
           </p>
           <div className="mt-3 space-y-2 pl-3 border-l-2 border-[#E6A2B3] text-sm sm:text-base text-gray-600">
@@ -279,7 +288,7 @@ LINE相談を心よりお待ちしております。
             <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">2</span>
             人生のリスク軽減と、経済的・生活基盤の安定
           </h4>
-          <p className="text-base sm:text-lg text-gray-600 leading- text-justify">
+          <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             万が一の病気やキャリアの転換期を迎えたとき、一人で全てを抱え込むのはハイリスクです。二人で支え合うことで、人生の様々なリスクに備えたり、共働きによる世帯収入の増加によって、生活の選択肢を大きく広げることができます。
           </p>
         </div>
@@ -290,11 +299,11 @@ LINE相談を心よりお待ちしております。
             <span className="bg-[#D9889D] text-white text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-sm shrink-0 mt-1">3</span>
             人生の自己実現を達成し、ふたりで人生を2倍豊かにする
           </h4>
-          <p className="text-base sm:text-lg text-gray-600 leading- text-justify">
+          <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             「1人でも十分に幸せだけど、2人ならもっと楽しい」という高い次元の考え方です。
             自分の子供を育てたい、温かい家庭を築いたいという願望の実現や、独身の立場から脱却して新しい社会的な役割（夫・妻・親）を得る側面もあります。
           </p>
-          <p className="text-base sm:text-lg text-gray-600 leading- text-justify mt-3">
+          <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             お互いの仕事や趣味、一人の時間も尊重し合い、美味しいものを食べる、旅をするなど、何をしても人生を2倍楽しめるでしょう。家族になれば過ごす時間は多くなり、経験の共有はさらに増えていきます。
           </p>
         </div>
@@ -307,7 +316,7 @@ LINE相談を心よりお待ちしております。
       <h3 className="text-lg sm:text-xl font-black text-gray-900 mb-3">
         あなたにとっての「位置づけ」を見つけるヒント
       </h3>
-      <p className="text-base sm:text-lg text-gray-700 leading- mb-4">
+      <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
         もし「自分にとって結婚って何だろう？」と迷ったら、次の問いを自分に投げかけてみてください。
       </p>
 
@@ -344,7 +353,7 @@ LINE相談を心よりお待ちしております。
         <span className="bg-pink-100 text-[#D9889D] text-xs sm:text-sm font-black px-3 py-1 rounded-md tracking-wider">女医からの一言</span>
       </div>
       
-      <div className="space-y-4 text-base sm:text-lg text-gray-700 leading- text-justify font-medium">
+      <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
         <p>
           求めている結婚像がぼんやりとわかれば、それを自分に与えてくれるお相手も少しずつわかってくると思います。
           一緒にあなたにとってベストの結婚の形、またそのお相手を探しましょう♡
