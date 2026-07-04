@@ -33,7 +33,7 @@ export default function ReasonsPage() {
  人生の幸せは一日でも長い方がいい。年収1000万以上男女・医師が集うハイスペック婚活
           </h1>
 
-          <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
       ハイスペック男女がお相手に困っているわけではないのに、大阪梅田ドクターズ結婚相談所で成婚にむきあうのはなぜなのか？
 H3：その答えは、幸せをもたらす結婚を効率的に最短で掴みとり、人生全体の幸福度を上げることが【価値ある選択】と考えているからです。
@@ -66,7 +66,7 @@ H3：その答えは、幸せをもたらす結婚を効率的に最短で掴み
 
           </div>
 
-          <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
             <div className="float-left mr-5 mb-3 w-28 sm:w-36 md:w-44">
               <Image
@@ -124,7 +124,7 @@ LINE相談でお話しできるのを楽しみにしています。
 
           </div>
 
-          <div className="text-base sm:text-lgmt-8    leading- text-gray-700 space-y-5">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
             <div className="float-left mr-5 mb-3 w-28 sm:w-36 md:w-44">
               <Image
@@ -169,7 +169,7 @@ LINE相談でお話しできるのを楽しみにしています。
 
       {/* Additional Sections */}
 
-      <section className="max-w-5xl mx-auto px-5 pb-16">
+      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
         <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
           <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
             【For MEN】年収1000万円以上の医師・経営者・エグゼクティブの男性へ
