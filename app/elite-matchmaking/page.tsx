@@ -20,7 +20,7 @@ import {
 export default function ReasonsPage() {
   return (
     <div>
-      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8]">
+      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8] ">
         <div className=" mx-auto px-5 py-6 sm:py-16 space-y-2">
 
           <span className="inline-block text-xs font-black tracking-widest uppercase text-pink-500 mb-3">
@@ -29,7 +29,7 @@ export default function ReasonsPage() {
       ハイスペック男性、ハイスペック女性のあなたへ。人生の幸せは一日でも長いほうがいい。
           </span>
 
-          <h1 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
  人生の幸せは一日でも長い方がいい。年収1000万以上男女・医師が集うハイスペック婚活
           </h1>
 
