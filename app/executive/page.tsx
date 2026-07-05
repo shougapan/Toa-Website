@@ -52,8 +52,8 @@ export default function HighClassSupportPage() {
           <span>Premium Limited Member</span>
         </div>
         
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-snug tracking-tight w-full mx-auto">
-          女医とベテランカウンセラーが導く、<br className="sm:hidden" />完全少人数制のハイクラス成婚
+        <h1 className="text-2xl lg:text-5xl font-black text-gray-900 leading-tight">
+          女医とベテランカウンセラーが<br className="sm:hidden" />導く、完全少人数制のハイクラス成婚
         </h1>
         
         <h2 className="text-sm sm:text-base md:text-lg font-bold text-gray-600 mt-2 tracking-wide">
@@ -66,55 +66,111 @@ export default function HighClassSupportPage() {
       {/* ============================================================
           DYNAMIC TABLE OF CONTENTS INDEX
           ============================================================ */}
-      <div className="w-full px-2 sm:px-4 mb-8">
-        <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-[0_4px_20px_rgba(230,162,179,0.03)] border border-gray-200/50">
-          <h2 className="text-sm font-black text-gray-400 tracking-wider uppercase mb-2 flex items-center gap-2">
-            <HelpCircle className="w-4 h-4 text-[#D9889D]" />
-            目次：プレミアムな成婚戦略を知る
-          </h2>
-          
-          <div className="space-y-1.5">
-            <button 
-              onClick={() => scrollToSection(section1Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
-            >
-              <span className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
-                誰もが「最高峰のサポート」で活動できる一律料金制
-              </span>
-              <span className="text-xs font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
-                詳細をみる <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </button>
+<div className="w-full px-2 sm:px-4 mb-8">
 
-            <button 
-              onClick={() => scrollToSection(section2Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
-            >
-              <span className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
-                第一線で活躍するエグゼクティブ層にふさわしいプレミアムな出会い
-              </span>
-              <span className="text-xs font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
-                詳細をみる <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </button>
+  <aside className="rounded-2xl border border-pink-100 bg-gradient-to-b from-white to-[#FFF8FA] shadow-sm">
 
-            <button 
-              onClick={() => scrollToSection(section3Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
-            >
-              <span className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
-                ベテランカウンセラーからのひとこと「本当に価値のある唯一の出会いを」
-              </span>
-              <span className="text-xs font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
-                詳細をみる <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </button>
-          </div>
-        </div>
+    <header className="px-5 py-5 border-b border-pink-100">
+
+      <div className="flex items-center gap-2 mb-2">
+        <HelpCircle className="w-4 h-4 text-pink-500" />
+
+        <span className="text-xs font-black tracking-[0.18em] uppercase text-pink-600">
+          Premium Guide
+        </span>
       </div>
+
+      <h2 className="text-xl font-black text-gray-900">
+        このページでわかること
+      </h2>
+
+    </header>
+
+    <div className="divide-y divide-pink-100">
+
+      {/* 1 */}
+
+      <div className="flex items-center justify-between gap-6 px-5 py-5">
+
+        <div>
+
+          <div className="text-xs font-black tracking-widest text-pink-500">
+            SECTION 01
+          </div>
+
+          <h3 className="mt-1 font-bold text-gray-900">
+            誰もが「最高峰のサポート」で活動できる一律料金制
+          </h3>
+
+        </div>
+
+        <button
+          onClick={() => scrollToSection(section1Ref)}
+          className="shrink-0 inline-flex items-center gap-2 rounded-full bg-pink-500 px-4 py-2 text-sm font-black text-white shadow-sm transition hover:bg-pink-600 hover:shadow-md"
+        >
+          詳しく見る
+          <ChevronRight className="w-4 h-4" />
+        </button>
+
+      </div>
+
+      {/* 2 */}
+
+      <div className="flex items-center justify-between gap-6 px-5 py-5">
+
+        <div>
+
+          <div className="text-xs font-black tracking-widest text-blue-500">
+            SECTION 02
+          </div>
+
+          <h3 className="mt-1 font-bold text-gray-900">
+            第一線で活躍するエグゼクティブ層にふさわしいプレミアムな出会い
+          </h3>
+
+        </div>
+
+        <button
+          onClick={() => scrollToSection(section2Ref)}
+          className="shrink-0 inline-flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2 text-sm font-black text-white shadow-sm transition hover:bg-blue-600 hover:shadow-md"
+        >
+          詳しく見る
+          <ChevronRight className="w-4 h-4" />
+        </button>
+
+      </div>
+
+      {/* 3 */}
+
+      <div className="flex items-center justify-between gap-6 px-5 py-5">
+
+        <div>
+
+          <div className="text-xs font-black tracking-widest text-purple-500">
+            SECTION 03
+          </div>
+
+          <h3 className="mt-1 font-bold text-gray-900">
+            ベテランカウンセラーからのひとこと
+          </h3>
+
+        </div>
+
+        <button
+          onClick={() => scrollToSection(section3Ref)}
+          className="shrink-0 inline-flex items-center gap-2 rounded-full bg-purple-500 px-4 py-2 text-sm font-black text-white shadow-sm transition hover:bg-purple-600 hover:shadow-md"
+        >
+          詳しく見る
+          <ChevronRight className="w-4 h-4" />
+        </button>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+</div>
 
       {/* ============================================================
           SECTION 1: FLAT RATE PREMIUM SUPPORT
@@ -125,12 +181,12 @@ export default function HighClassSupportPage() {
             <div className="bg-emerald-50 text-emerald-700 p-1.5 rounded-lg">
               <DollarSign className="w-5 h-5" />
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight">
+            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight pb-2">
               誰もが「最高峰のサポート」で活動できる一律料金制
             </h2>
           </div>
           
-          <div className="w-full mt-3 text-sm sm:text-base text-gray-700 leading-relaxed text-justify space-y-4">
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             <p>
               多くの結婚相談所では、実績のあるメインカウンセラーのサポートを受けるために、追加料金や高額な上位プランが必要となります。しかし、大阪梅田ドクターズ結婚相談所では<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「すべての会員様に、最高品質のサポートで行き届いた成婚をお届けしたい」</span>と考えています。
             </p>
@@ -147,7 +203,7 @@ export default function HighClassSupportPage() {
       {/* ============================================================
           SECTION 2: EXECUTIVE PRODUCING & LIMITED SLOTS
           ============================================================ */}
-      <div ref={section2Ref} className="w-full px-2 sm:px-4 mb-8">
+      <div ref={section2Ref} className="w-full px-2 sm:px-4 mb-8 ">
         <div className="text-center mb-4">
           <span className="text-xs font-black text-[#D9889D] uppercase tracking-widest block">Premium Quality</span>
           <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight px-2">
@@ -159,18 +215,18 @@ export default function HighClassSupportPage() {
         <div className="bg-white rounded-2xl p-4 sm:p-5 shadow-xs border border-gray-100 space-y-5">
           
           {/* SUBSECTION 1 */}
-          <div className="border-l-4 border-[#D9889D] pl-3">
-            <h3 className="text-base sm:text-lg font-black text-gray-900 flex items-center gap-1.5">
+          <div className="border-l-4 border-[#D9889D] pl-3 pb-2">
+            <h3 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight pb-2">
               <Users className="w-5 h-5 text-[#D9889D]" />
               ダブルサポートを貫くための「完全少人数制」
             </h3>
-            <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+            <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               この贅沢な2名体制を維持し、お一人おひとりに限界まで手をかけるため、私たちはあえて<span className="font-bold text-gray-900">【完全少人数制】</span>という選択をしています。「少人数制だと、今すぐには入会できないの？」と思われるかもしれません。
             </p>
-            <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+            <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               私たちは、現在活動されている会員様へのレスポンスを最優先し、サポートの質を絶対に落さないよう、毎月の<span className="font-bold text-red-600">「新規ご入会枠」を毎月5名に限定</span>させていただいております。
             </p>
-            <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+            <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               在籍会員様が成婚退会されるペースに合わせて順番にご案内する形をとることで、会員様全員が「いつでもプロにすぐ相談できる環境」を徹底して担保しています。
             </p>
           </div>
@@ -179,15 +235,15 @@ export default function HighClassSupportPage() {
 
           {/* SUBSECTION 2 */}
           <div className="border-l-4 border-[#D9889D] pl-3">
-            <h3 className="text-base sm:text-lg font-black text-gray-900 flex items-center gap-1.5">
+            <h3 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight pb-2">
               <Compass className="w-5 h-5 text-[#D9889D]" />
               【的確な認識と一流の成婚戦略がもたらす、無駄のない婚活】
             </h3>
-            <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+            <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               多忙を極めるハイクラス層だからこそ、タイムパフォーマンス（タイパ）は大切です。
               激務による疲労やストレスを理解しメンタルサポートをする女医、そして、細かなマナーから様々な困難を乗り越える技を熟知したベテランカウンセラーの戦略。
             </p>
-            <p className="mt-2 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
+            <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               2人のプロの目があるからこそ、常に客観的でブレのない正しい判断が可能です。あなたの大切な未来を、「誰が担当になるか分からない」といった不安のない、最高峰のサポート環境でお迎えいたします。
             </p>
           </div>
@@ -199,17 +255,34 @@ export default function HighClassSupportPage() {
           SECTION 3: COUNSELOR'S MESSAGE
           ============================================================ */}
  {/* MESSAGE CONTENT BODY */}
-< div className="text-[17px] sm:text-lg text-gray-700 leading-6 tracking-wide" ref={section3Ref}>
 
-  {/* Portrait */}
-  <div className="float-right ml-5 mb-4 w-32 sm:w-36 md:w-44">
-    <Image
-      src={maleAdvisor}
-      alt="ベテランカウンセラー"
-      className="rounded-xl shadow-md object-cover w-full h-auto"
-      priority
-    />
-  </div>
+
+
+      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
+
+        <div className="rounded-3xl border border-blue-100 bg-white shadow-sm p-6 sm:p-10">
+
+          <div className="text-center mb-8">
+
+            <span className="text-xs font-black tracking-widest uppercase text-sky-500 block">
+              Message
+            </span>
+
+            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
+              🩵ベテランカウンセラーのメッセージ💙
+            </h2>
+
+          </div>
+
+          <div ref={section3Ref} className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
+
+            <div className="float-left mr-5 mb-3 w-28 sm:w-36 md:w-44">
+              <Image
+                src={maleAdvisor}
+                alt="Male Counselor"
+                className="rounded-2xl shadow-md w-full h-auto object-cover"
+              />
+            </div>
 
   <p>
     はじめまして。大阪梅田ドクターズ結婚相談所の男性カウンセラーです。
@@ -279,9 +352,17 @@ export default function HighClassSupportPage() {
     そう笑顔で卒業していただける未来のために、私は持てるすべての情熱と経験を注ぎます。私と一緒に、愛溢れる結婚を探しにいきませんか？
   </p>
 
-  <div className="clear-both" />
 
-</div>
+
+            <div className="clear-both"></div>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
 
 
 
@@ -294,17 +375,17 @@ export default function HighClassSupportPage() {
           <div className="absolute top-0 left-0 w-full h-full bg-linear-to-br from-[#D9889D]/10 to-transparent pointer-events-none" />
           
           <HeartHandshake className="w-7 h-7 text-[#E6A2B3] mx-auto mb-2 animate-pulse" />
-          <h3 className="text-lg sm:text-xl font-black mb-1.5">毎月5名様限定のプレミアム相談枠</h3>
-          <p className="text-sm text-gray-400 w-full mx-auto mb-4 font-medium leading-relaxed text-justify sm:text-center">
+          <h3 className="text-xl sm:text-2xl font-black mb-1.5">毎月5名様限定のプレミアム相談枠</h3>
+          <p className="space-y-2 text-gray-400 leading-relaxed font-medium w-full">
             質の高いダブルサポートと、妥協のない戦略的な出会いを担保するため、新規ご入会は毎月5名様に絞らせていただいております。ご自身のキャリアと人生にふさわしい最高峰の環境をお探しの方は、まずはお気軽に無料カウンセリングからお申し込みください。
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full">
+          <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full pt-3">
             <Link 
               href="/#contact"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-sm font-black px-6 py-3 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-[#E6A2B3]/20"
             >
-              <span>完全少人数制のカウンセリングを予約する</span>
+              <span className="space-y-2 text-gray-100 leading-relaxed font-medium w-full">完全少人数制のカウンセリングを予約する</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
