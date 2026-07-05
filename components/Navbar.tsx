@@ -36,6 +36,8 @@ export default function PremiumNavbar() {
     { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider' },
     { name: '誠実で笑顔が可愛い「最高の男性」にであいませんか？', href: '/ideal-man' },
     { name: '男性のための戦略', href: '/mens-strategy' },
+    { name: '僕の条件で出会える女性は？', href: 'ideal-woman' },
+    { name: '可愛い子に選ばれる男の戦略', href: '/become-her-choice' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
     { name: '入会までの流れ', href: '/membership-steps' },
