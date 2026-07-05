@@ -60,42 +60,76 @@ export default function HighSpecStrategyPage() {
       {/* ============================================================
           DYNAMIC TABLE OF CONTENTS INDEX (Full-Width Mobile)
           ============================================================ */}
-      <div className="w-full mb-8 sm:px-4 sm:mt-6">
-        <div className="bg-white w-full max-w-4xl mx-auto p-4 sm:p-5 shadow-[0_4px_20px_rgba(230,162,179,0.03)] border-y sm:border border-gray-200/50 sm:rounded-2xl">
-          <h2 className="text-base font-black text-gray-400 tracking-wider uppercase mb-2 flex items-center gap-2">
-            <HelpCircle className="w-4 h-4 text-[#D9889D]" />
-            目次：選ばれる真の実績・戦略を読み解く
-          </h2>
-          
-          <div className="space-y-1">
-            <button 
-              onClick={() => scrollToSection(section1Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
-            >
-              <span className="text-base font-bold text-gray-900 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
-                【成婚のヒント】なぜ、年収1000万超のエグゼクティブは「誰もが羨む美女」を断ったのか？
-              </span>
-              <span className="text-xs font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
-                戦略をみる <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </button>
+<div className="w-full mb-8 sm:px-4 sm:mt-6">
+  <div className="bg-white w-full max-w-4xl mx-auto p-5 sm:p-6 shadow-[0_6px_30px_rgba(0,0,0,0.04)] border border-gray-200 rounded-3xl">
 
-            <button 
-              onClick={() => scrollToSection(section2Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
-            >
-              <span className="text-base font-bold text-gray-900 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
-                女医からのメッセージ：持続可能なパートナーになるための客観的自己認識
-              </span>
-              <span className="text-xs font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
-                メッセージをみる <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </button>
-          </div>
+    <h2 className="text-base font-black text-black tracking-wider uppercase mb-2 flex items-center gap-2">
+      <HelpCircle className="w-4 h-4 text-[#D9889D]" />
+      👇 気になるテーマからご覧ください
+    </h2>
+
+    <p className="text-sm text-gray-600 mb-6">
+      ボタンをクリックすると、そのセクションへ移動します。
+    </p>
+
+    <div className="space-y-5">
+
+      {/* 成婚のヒント */}
+      <div className="rounded-2xl border border-sky-200 bg-gradient-to-r from-sky-50 to-white p-5 shadow-sm">
+
+        <h3 className="text-lg font-black text-gray-900">
+          【成婚のヒント】
+        </h3>
+
+        <p className="mt-2 text-base text-gray-700 leading-relaxed">
+          なぜ、年収1000万超のエグゼクティブは
+          「誰もが羨む美女」を断ったのか？
+        </p>
+
+        <div className="mt-6 flex justify-end">
+
+          <button
+            onClick={() => scrollToSection(section1Ref)}
+            className="group inline-flex min-w-[260px] justify-center items-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 px-6 py-3.5 text-base font-black text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-xl active:scale-95"
+          >
+            📖 成婚のヒントを読む
+            <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
+
         </div>
+
       </div>
+
+      {/* 女医からのメッセージ */}
+      <div className="rounded-2xl border border-pink-200 bg-gradient-to-r from-[#FFF8FA] to-white p-5 shadow-sm">
+
+        <h3 className="text-lg font-black text-gray-900">
+          👩‍⚕️ 女医からのメッセージ
+        </h3>
+
+        <p className="mt-2 text-base text-gray-700 leading-relaxed">
+          持続可能なパートナーになるための
+          客観的自己認識
+        </p>
+
+        <div className="mt-6 flex justify-end">
+
+          <button
+            onClick={() => scrollToSection(section2Ref)}
+            className="group inline-flex min-w-[260px] justify-center items-center gap-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3.5 text-base font-black text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-xl active:scale-95"
+          >
+            💗 女医からのメッセージ
+            <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
       {/* ============================================================
           SECTION 1: THE REALITY OF EXECUTIVE MARRIAGE (Full-Width Mobile)

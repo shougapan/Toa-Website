@@ -24,7 +24,7 @@ export default function ReasonsPage() {
         <div className=" mx-auto px-5 py-6 sm:py-16 space-y-2">
 
           <span className="inline-block text-xs font-black tracking-widest uppercase text-black-500 mb-3">
-            ハイスペックなあなたへ🩷💙
+            🩷ハイスペックなあなたへ💙
           </span>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
@@ -348,24 +348,44 @@ LINE相談を心よりお待ちしております。
     </div>
 
     {/* DOCTOR'S COMMENT BLOCK */}
-    <div className="bg-gradient-to-b from-white to-[#FFF8FA] w-full p-5 sm:p-8 shadow-sm border-y sm:border border-pink-100/60 sm:rounded-3xl">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="bg-pink-100 text-[#D9889D] text-xs sm:text-sm font-black px-3 py-1 rounded-md tracking-wider">女医からの一言</span>
-      </div>
-      
-      <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-        <p>
-          求めている結婚像がぼんやりとわかれば、それを自分に与えてくれるお相手も少しずつわかってくると思います。
-          一緒にあなたにとってベストの結婚の形、またそのお相手を探しましょう♡
-        </p>
-        <p className="font-black text-gray-950 text-lg sm:text-xl border-l-4 border-[#D9889D] pl-4 py-0.5 bg-white shadow-2xs p-3 rounded-r-xl border border-gray-100">
-          また結婚や、自分の求めるものについて考えることは、自分を深く知ることになり【アイデンティティの確立】に繋がります。
-        </p>
-        <p className="text-gray-600 text-sm sm:text-base">
-          ここで深く内省した経験は、きっと将来、あなたの人生において様々な分かれ道、選択すべき岐路に立たされた時に、何か役立つに違いありません。
-        </p>
-      </div>
+<div className="bg-gradient-to-b from-white to-[#FFF8FA] w-full p-5 sm:p-8 shadow-sm border-y sm:border border-pink-100/60 sm:rounded-3xl">
+
+  <div className="flex items-center gap-2 mb-5">
+    <span className="bg-pink-100 text-[#D9889D] text-xs sm:text-sm font-black px-3 py-1 rounded-md tracking-wider">
+      女医からの一言
+    </span>
+  </div>
+
+  <div className="text-gray-800 leading-relaxed font-medium">
+
+    {/* Floating image */}
+    <div className="float-left mr-5 mb-3 w-24 sm:w-32 md:w-36">
+      <Image
+        src={femaleAdvisor}
+        alt="女医カウンセラー"
+        className="rounded-2xl shadow-md w-full h-auto object-cover"
+        priority
+      />
     </div>
+
+    <p className="mb-4">
+      求めている結婚像がぼんやりとわかれば、それを自分に与えてくれるお相手も少しずつわかってくると思います。
+      一緒にあなたにとってベストの結婚の形、またそのお相手を探しましょう♡
+    </p>
+
+    <p className="font-black text-gray-950 text-lg sm:text-xl border-l-4 border-[#D9889D] pl-4 py-3 bg-white shadow-sm rounded-r-xl border border-gray-100 mb-4">
+      また結婚や、自分の求めるものについて考えることは、自分を深く知ることになり【アイデンティティの確立】に繋がります。
+    </p>
+
+    <p className="text-gray-600 text-sm sm:text-base">
+      ここで深く内省した経験は、きっと将来、あなたの人生において様々な分かれ道、選択すべき岐路に立たされた時に、何か役立つに違いありません。
+    </p>
+
+    <div className="clear-both" />
+
+  </div>
+
+</div>
 
   </div>
 </div> 

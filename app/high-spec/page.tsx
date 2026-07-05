@@ -20,7 +20,7 @@ export default function EliteMatchmakingPage() {
         <div className="max-w-5xl mx-auto px-4 py-14">
 
           <div className="inline-flex items-center rounded-full bg-rose-100 px-4 py-1 text-sm font-semibold text-rose-700">
-            ハイスペックなあなたへ 🩷💙
+            🩷ハイスペックなあなたへ 💙
           </div>
 
           <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight text-gray-900">

@@ -34,6 +34,7 @@ export default function PremiumNavbar() {
     { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
     { name: '少人制のハイクラス成婚', href: '/executive' },
     { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider' },
+    { name: '誠実で笑顔が可愛い「最高の男性」にであいませんか？', href: '/ideal-man' },
     { name: '男性のための戦略', href: '/mens-strategy' },
     { name: '料金プランと成婚までの流れ', href: '/plan' },
     { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
