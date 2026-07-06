@@ -148,24 +148,6 @@ export default function PremiumNavbar() {
             ))}
           </div>
         </div>
-
-        {/* 🛠️ FIXED CTA DRAW TRAY */}
-        <div className={`p-5 border-t border-gray-100 bg-white space-y-2 transform transition-all duration-500 delay-150 ${
-          isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-        }`}>
-          <Link 
-            href="/contact"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-sm font-black py-3 rounded-xl shadow-xl shadow-[#E6A2B3]/20"
-          >
-            <Calendar className="w-4 h-4" />
-            <span>無料相談の枠を予約する</span>
-          </Link>
-          
-          <p className="text-center text-[10px] font-bold text-gray-400">
-            お電話や公式LINEからも随時受付中
-          </p>
-        </div>
       </div>
     </>
   );
