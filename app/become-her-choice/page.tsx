@@ -1,11 +1,11 @@
 export default function BecomeTheManSheChoosesPage() {
   return (
-    <main className="space-y-16">
+    <main className="space-y-2">
 
       {/* ========================================================= */}
       {/* HERO */}
       {/* ========================================================= */}
-      <section className="w-full py-10">
+      <section className="w-full py-2">
         <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-3xl bg-gradient-to-b from-pink-50/60 via-white to-blue-50/40 border border-pink-100 shadow-sm">
 
           <header className="space-y-6">
