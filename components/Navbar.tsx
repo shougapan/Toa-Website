@@ -5,6 +5,28 @@ import Link from 'next/link';
 import { Menu, X, HeartHandshake, ChevronRight, Calendar } from 'lucide-react';
 import Image from "next/image";
 
+import {
+  Home,
+  Sparkles,
+  Users,
+  Star,
+  Crown,
+  AlertCircle,
+  Heart,
+  User,
+  Target,
+  Gem,
+  CreditCard,
+  HelpCircle,
+  ClipboardList,
+  ArrowRightLeft,
+  MessageCircleQuestion,
+  Trophy,
+  FileText,
+  ShieldAlert,
+  FlaskConical,
+} from "lucide-react";
+
 export default function PremiumNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,26 +49,26 @@ export default function PremiumNavbar() {
     return () => { document.body.style.overflow = 'unset'; };
   }, [isOpen]);
 
-  const navLinks = [
-    { name: '大阪梅田ドクターズ結婚相談所について', href: '/' },
-    { name: '大阪梅田ドクターズ結婚相談所が選ばれる理由', href: '/why-us' },
-    { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages' },
-    { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking' },
-    { name: '少人制のハイクラス成婚', href: '/executive' },
-    { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider' },
-    { name: '誠実で笑顔が可愛い「最高の男性」にであいませんか？', href: '/ideal-man' },
-    { name: '🍎男性のための戦略', href: '/mens-strategy' },
-    { name: '🍊僕の条件で出会える女性は？', href: 'ideal-woman' },
-    { name: '🍇可愛い子に選ばれる男の戦略', href: '/become-her-choice' },
-    { name: '料金プランと成婚までの流れ', href: '/plan' },
-    { name: '婚活の悩みと不安を解消する特別サポート', href: '/support' },
-    { name: '入会までの流れ', href: '/membership-steps' },
-    { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps' },
-    { name: '婚活よくある質問Q＆A', href: '/FAQ' },
-    { name: '成婚エピソード', href: '/marriage-story' },
-    { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
-    { name: 'test', href: '/test' },
-  ];
+const navLinks = [
+  { name: '大阪梅田ドクターズ結婚相談所について', href: '/', icon: Home },
+  { name: '大阪梅田ドクターズ結婚相談所が選ばれる理由', href: '/why-us', icon: Sparkles },
+  { name: 'ハイスペック男性との成婚を望む女性たちへ', href: '/advantages', icon: Users },
+  { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking', icon: Crown },
+  { name: '少人制のハイクラス成婚', href: '/executive', icon: Gem },
+  { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider', icon: AlertCircle },
+  { name: '誠実で笑顔が可愛い「最高の男性」にであいませんか？', href: '/ideal-man', icon: Heart },
+  { name: '男性のための戦略', href: '/mens-strategy', icon: Target },
+  { name: '僕の条件で出会える女性は？', href: '/ideal-woman', icon: User },
+  { name: '可愛い子に選ばれる男の戦略', href: '/become-her-choice', icon: Star },
+  { name: '料金プランと成婚までの流れ', href: '/plan', icon: CreditCard },
+  { name: '婚活の悩みと不安を解消する特別サポート', href: '/support', icon: HelpCircle },
+  { name: '入会までの流れ', href: '/membership-steps', icon: ClipboardList },
+  { name: '結婚相談所の入会から成婚退会までの流れとサポート内容を解説', href: '/steps', icon: ArrowRightLeft },
+  { name: '婚活よくある質問Q＆A', href: '/FAQ', icon: MessageCircleQuestion },
+  { name: '成婚エピソード', href: '/marriage-story', icon: Trophy },
+  { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules', icon: ShieldAlert },
+  { name: 'test', href: '/test', icon: FlaskConical },
+];
 
   return (
     <>
@@ -131,21 +153,40 @@ export default function PremiumNavbar() {
             <p className="text-[10px] font-black tracking-widest text-[#D9889D]/60 uppercase border-b border-gray-100 pb-1 mb-1">
               Navigation Menu
             </p>
-            {navLinks.map((link, idx) => (
-              <Link 
-                key={link.name} 
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                style={{ transitionDelay: `${idx * 20}ms` }}
-                /* 🛠️ UPDATED LINE HEIGHT & TEXT SIZE FOR COMPACT ONPAGE VIEWPORT */
-                className={`text-[13px] font-bold text-gray-800 hover:text-[#D9889D] flex items-center justify-between gap-3 py-1 border-b border-gray-50/30 group transform transition-all duration-300 ${
-                  isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
-                }`}
-              >
-                <span className="text-left leading-5 tracking-tight">{link.name}</span>
-                <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0 group-hover:text-[#D9889D] transition-colors" />
-              </Link>
-            ))}
+{navLinks.map((link, idx) => {
+  const Icon = link.icon;
+
+  return (
+    <Link
+      key={link.name}
+      href={link.href}
+      onClick={() => setIsOpen(false)}
+      style={{ transitionDelay: `${idx * 20}ms` }}
+      className={`group flex items-center justify-between gap-4
+        px-4 py-3 rounded-2xl border border-gray-100
+        bg-white/70 hover:bg-white
+        shadow-sm hover:shadow-md
+        active:scale-[0.98]
+        transition-all duration-300
+        text-[13px] font-bold text-gray-800
+        hover:text-[#D9889D]
+        ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'}
+      `}
+    >
+      <div className="flex items-center gap-3">
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-pink-50 text-pink-500 group-hover:bg-pink-100 transition-colors">
+          <Icon className="w-4 h-4" />
+        </span>
+
+        <span className="text-left leading-5 tracking-tight">
+          {link.name}
+        </span>
+      </div>
+
+      <ChevronRight className="w-3.5 h-3.5 text-gray-300 group-hover:text-[#D9889D] transition-colors" />
+    </Link>
+  );
+})}
           </div>
         </div>
       </div>

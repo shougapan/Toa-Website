@@ -70,22 +70,22 @@ export default function MembershipSteps() {
 <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full">
 
   <p className="flex items-start gap-3">
-    <span className="text-pink-500 animate-pulse text-lg shrink-0">✦</span>
+    <span className="text-red-600 animate-pulse text-lg shrink-0">✕</span>
     <span>「お金を払えば、相談所がすべてやってくれる」と受け身な方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-pink-500 animate-pulse text-lg shrink-0 [animation-delay:200ms]">✦</span>
+    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:200ms]">✕</span>
     <span>プロのアドバイスや戦略を素直に実践できず、言い訳を重ねてしまう方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-pink-500 animate-pulse text-lg shrink-0 [animation-delay:400ms]">✦</span>
+    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:400ms]">✕</span>
     <span>ご自身のことは棚に上げ、お相手への批判や愚痴ばかりを口にされる方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-pink-500 animate-pulse text-lg shrink-0 [animation-delay:600ms]">✦</span>
+    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:600ms]">✕</span>
     <span>「どうせ私なんて」「この歳だから無理」と、最初から諦める前提の方</span>
   </p>
 
