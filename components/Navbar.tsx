@@ -45,6 +45,7 @@ export default function PremiumNavbar() {
     { name: '婚活よくある質問Q＆A', href: '/FAQ' },
     { name: '成婚エピソード', href: '/marriage-story' },
     { name: '結婚相談所お見合いの暗黙のルールと意外なNGマナー', href: '/rules' },
+    { name: 'test', href: '/test' },
   ];
 
   return (
