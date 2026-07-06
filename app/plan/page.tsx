@@ -41,7 +41,7 @@ export default function PricingPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-[0_4px_25px_rgba(230,162,179,0.04)] border border-white/80 space-y-4 text-gray-800 text-sm sm:text-base leading-relaxed font-medium">
           <p>
-            大阪の結婚相談所［大阪梅田結婚相談所］の料金システムと活動の流れをご案内します。当相談所は、特定の事務所を構えない出張型結婚相談所・オンライン婚活のスタイルを採用しています。
+            大阪の結婚相談所［大阪梅田ドクターズ結婚相談所］の料金システムと活動の流れをご案内します。当相談所は、特定の事務所を構えない出張型結婚相談所・オンライン婚活のスタイルを採用しています。
           </p>
           <p>
             一等地のオフィス家賃や莫大な広告宣伝費を徹底的にカットすることで、初期費用や月会費を抑えたリーズナブルな料金設定と、<span className="font-bold border-b border-[#E6A2B3] text-gray-900">現役医師監修・カウンセラー歴20年のベテラン仲人による最高峰の手厚いサポート</span>（コスパ最強）を両立させています。お金の無駄を一切省き、成婚という「結果」に100%投資できるスマートなプランです。

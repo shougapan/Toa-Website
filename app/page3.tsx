@@ -99,7 +99,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h1 className="text-sm md:text-base font-bold tracking-wider text-gray-900 leading-none">
-                  大阪梅田結婚相談所
+                  大阪梅田ドクターズ結婚相談所
               </h1>
               <p className="text-[10px] md:text-xs text-gray-600 tracking-tight mt-0.5 font-medium">
                   MARRIAGE & MEDICAL AGENCY
@@ -173,7 +173,7 @@ export default function HomePage() {
           <div className="mt-5 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
             <p className="text-xs sm:text-sm text-gray-500 font-bold bg-[#FAF8F5] lg:bg-transparent border border-gray-100 lg:border-none px-4 py-2 lg:p-0 rounded-xl flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
-              大阪梅田結婚相談所が選ばれる三つのポイント
+              大阪梅田ドクターズ結婚相談所が選ばれる三つのポイント
             </p>
             <div className="w-6 h-6 rounded-full bg-[#E6A2B3]/10 flex items-center justify-center animate-bounce">
               <ChevronDown className="w-3.5 h-3.5 text-[#D9889D]" />
@@ -325,7 +325,7 @@ export default function HomePage() {
         <div className="relative z-10">
           <h1 className="text-xs sm:text-sm font-black tracking-widest text-[#D9889D] uppercase mb-4 flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 animate-pulse" />
-            <span>大阪の結婚相談所なら［大阪梅田結婚相談所］が選ばれる3つの理由</span>
+            <span>大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる3つの理由</span>
           </h1>
           <p className="text-xl sm:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight leading-tight max-w-4xl mx-auto">
             現役医師監修 × 仲人歴20年<br className="sm:hidden"/>
@@ -385,7 +385,7 @@ export default function HomePage() {
 
         <div className="bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-white shadow-[0_20px_40px_rgba(0,0,0,0.02)] max-w-4xl mx-auto">
           <p className="text-[13px] sm:text-sm text-gray-600 leading-xl font-medium text-justify mb-8">
-            大阪の結婚相談所［大阪梅田結婚相談所］が圧倒的な高い成婚率を誇る最大の理由は、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンドとして徹底的に伴走する点にあります。多くの大手結婚相談所やIBJ加盟店でありがちな「ただ条件を並べてシステムで検索するだけ」の機械的なマッチングでは、結婚後の価値観の不一致による失敗や、入会後のミスマッチによるスピード離婚のリスクを排除できません。<br/><br/>
+            大阪の結婚相談所［大阪梅田ドクターズ結婚相談所］が圧倒的な高い成婚率を誇る最大の理由は、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンドとして徹底的に伴走する点にあります。多くの大手結婚相談所やIBJ加盟店でありがちな「ただ条件を並べてシステムで検索するだけ」の機械的なマッチングでは、結婚後の価値観の不一致による失敗や、入会後のミスマッチによるスピード離婚のリスクを排除できません。<br/><br/>
             当相談所では、まずあなた自身が気づいていない深層心理にある「本当の結婚相手への理想像」を入会面談で徹底的に解剖します。医師監修のカウンセリング心理学や脳科学、行動経済学のアプローチを用いて、あなたが人生において「絶対に譲れない条件」と「実は妥協しても幸せになれるポイント」をロジカルに切り分けます。そこに、20年間関西圏のシビアな婚活市場（大阪市・堺市・東大阪市・枚方市・吹田市・豊中市・八尾市など）を見続けてきたプロの豊富な成婚データを掛け合わせることで、あなたのライフスタイルや性格に100%マッチする「隠れた優良男性・理想の女性」の条件を科学的に特定。高収入・高学歴・正社員・公務員・経営者など、身元が保証された年収600万円以上のハイクラスな会員層からも、あなたに本当に合うお相手をスクリーニングします。
           </p>
 

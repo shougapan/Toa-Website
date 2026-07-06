@@ -47,7 +47,7 @@ export default function HeroSection() {
               <div className="mt-5 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
                 <p className="text-xs sm:text-sm text-gray-500 font-bold bg-[#FAF8F5] lg:bg-transparent border border-gray-100 lg:border-none px-4 py-2 lg:p-0 rounded-xl flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D]" />
-                  大阪梅田結婚相談所が選ばれる三つのポイント
+                  大阪梅田ドクターズ結婚相談所が選ばれる三つのポイント
                 </p>
                 <div className="w-6 h-6 rounded-full bg-[#E6A2B3]/10 flex items-center justify-center animate-bounce">
                   <ChevronDown className="w-3.5 h-3.5 text-[#D9889D]" />

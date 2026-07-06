@@ -15,7 +15,7 @@ export default function MarriageAdvicePage() {
     <h1 className="mt-2 text-3xl font-bold leading-tight text-gray-900">
       「いい人が減った？」と思い始めた30代のあなたへ、
       <span className="text-pink-600">
-        大阪梅田結婚相談所
+        大阪梅田ドクターズ結婚相談所
       </span>
       への入会は効率いい選択肢の一つ。
     </h1>
@@ -111,12 +111,12 @@ export default function MarriageAdvicePage() {
       <br /><br />
 
       <span className="font-semibold text-pink-700">
-        大阪梅田結婚相談所では、身元審査をクリアした人だけしかおらず、独身偽装や年収、経歴の詐称は不可能です。
+        大阪梅田ドクターズ結婚相談所では、身元審査をクリアした人だけしかおらず、独身偽装や年収、経歴の詐称は不可能です。
       </span>
 
       <br /><br />
 
-      ハイスペック男女やご両親がしっかりされている育ちの良い男女は、「確実な未来」のためにお金を払う経済力があるので、初期費用や月会費を「安全の保証と、時間効率のための必要経費」と捉えています。そのため経済的・精神的に自立した魅力的な男女が大阪梅田結婚相談所にたくさん集まるのです。
+      ハイスペック男女やご両親がしっかりされている育ちの良い男女は、「確実な未来」のためにお金を払う経済力があるので、初期費用や月会費を「安全の保証と、時間効率のための必要経費」と捉えています。そのため経済的・精神的に自立した魅力的な男女が大阪梅田ドクターズ結婚相談所にたくさん集まるのです。
 
       <br /><br />
 
@@ -140,7 +140,7 @@ export default function MarriageAdvicePage() {
 
       <br /><br />
 
-      大阪梅田結婚相談所では、自分の未来を変えたい、前向きにチャレンジしたい、そのためにプロの技を利用したいという、意識の高い会員様をお待ちしています。
+      大阪梅田ドクターズ結婚相談所では、自分の未来を変えたい、前向きにチャレンジしたい、そのためにプロの技を利用したいという、意識の高い会員様をお待ちしています。
       私達の人脈と経験にてお手伝いさせていただきます。
 
     </p>
@@ -158,7 +158,7 @@ export default function MarriageAdvicePage() {
       </h2>
 
       <p className="mt-3 text-pink-50 leading-7 text-[15px]">
-        ぜひ大阪梅田結婚相談所にいらしてください。
+        ぜひ大阪梅田ドクターズ結婚相談所にいらしてください。
       </p>
 
       <button className="mt-6 w-full rounded-full bg-white py-3 text-base font-semibold text-pink-600 shadow-lg hover:bg-pink-50 transition-colors">

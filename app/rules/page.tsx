@@ -126,7 +126,7 @@ export default function MatchmakingRules() {
 
         {/* フッター誘導 */}
         <div className="bg-gradient-to-br from-gray-900 to-slate-800 text-white p-3 rounded-xl text-center shadow-md">
-          <p className="text-[16px] font-medium text-rose-300">大阪梅田結婚相談所のお見合いサポート</p>
+          <p className="text-[16px] font-medium text-rose-300">大阪梅田ドクターズ結婚相談所のお見合いサポート</p>
           <p className="text-[17px] font-bold mt-0.5 leading-snug">
             他にも色々ルールがあるので<br />わからないことは何でも聞いてくださいね。
           </p>

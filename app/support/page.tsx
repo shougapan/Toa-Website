@@ -57,7 +57,7 @@ export default function SupportPage() {
         <div className="w-16 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-3 rounded-full" />
         
         <p className="w-full mt-3 text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
-          大阪梅田結婚相談所で「誰に申し込めばいいか分からない」「プロフィールの見方が分からない」とお悩みではありませんか？当相談所では、データだけに頼らない仲人型ならではの<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">【技あり！特別サポート紹介】</span>で、あなたの婚活の悩みを丸ごと解決します！
+          大阪梅田ドクターズ結婚相談所で「誰に申し込めばいいか分からない」「プロフィールの見方が分からない」とお悩みではありませんか？当相談所では、データだけに頼らない仲人型ならではの<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">【技あり！特別サポート紹介】</span>で、あなたの婚活の悩みを丸ごと解決します！
         </p>
       </div>
 
@@ -255,14 +255,14 @@ export default function SupportPage() {
               </div>
               <h4 className="font-black text-base text-gray-900">【打率の高さ】お見合いのプロがお相手の「隠れた希望」に合致しているか確認して申し込みます</h4>
               <p className="text-sm text-gray-600 leading-relaxed text-justify">
-                例えば、20代女性を希望している40代男性に同世代の40代女性が申し込んでもお見合い成立はほぼしません。大阪梅田結婚相談所では、他社とのカウンセラー同士・仲人の連携情報により、お相手の隠れた希望条件に、あなたがマッチしているかを事前確認して申し込み代行します。だからこそ、無駄な申し込みであなたが傷つくことはなく、お見合いの成立確率が劇的に跳ね上がるのです。
+                例えば、20代女性を希望している40代男性に同世代の40代女性が申し込んでもお見合い成立はほぼしません。大阪梅田ドクターズ結婚相談所では、他社とのカウンセラー同士・仲人の連携情報により、お相手の隠れた希望条件に、あなたがマッチしているかを事前確認して申し込み代行します。だからこそ、無駄な申し込みであなたが傷つくことはなく、お見合いの成立確率が劇的に跳ね上がるのです。
               </p>
             </div>
           </div>
 
           {/* BRAND ASSURANCE BLOCK */}
           <div className="bg-[#FAF8F5] rounded-xl p-3 border border-gray-100 text-sm text-gray-700 leading-relaxed font-bold text-justify">
-            当社【大阪梅田結婚相談所】では、女性医師の客観的な分析眼と、キャリア20年のベテランカウンセラーが、他社相談所との深いパイプからこの裏情報を直接引き出します。あなたが「どこをポイントにして選べばハズレがないか」を明確にアドバイスいたします。
+            当社【大阪梅田ドクターズ結婚相談所】では、女性医師の客観的な分析眼と、キャリア20年のベテランカウンセラーが、他社相談所との深いパイプからこの裏情報を直接引き出します。あなたが「どこをポイントにして選べばハズレがないか」を明確にアドバイスいたします。
           </div>
         </div>
       </div>
@@ -442,7 +442,7 @@ export default function SupportPage() {
               </p>
 
               <p>
-                まず、当社【大阪梅田結婚相談所】が考える真の会話とは…？
+                まず、当社【大阪梅田ドクターズ結婚相談所】が考える真の会話とは…？
               </p>
 
               <p>

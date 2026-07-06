@@ -10,7 +10,7 @@ export default function HomePage() {
           
           <div>
             <h1 className="text-2xl font-bold text-rose-800 tracking-tight">
-              大阪梅田結婚相談所
+              大阪梅田ドクターズ結婚相談所
             </h1>
             <p className="text-xs text-gray-500">女性医師監修</p>
           </div>

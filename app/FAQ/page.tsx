@@ -320,7 +320,7 @@ export default function FAQPage() {
     </div>
     <div className="w-full px-4 sm:px-8 py-4 sm:py-6 text-gray-700 text-sm sm:text-base leading-snug sm:leading-relaxed">
       <p>
-        A. 大阪梅田結婚相談所ではプロフィール写真を「申し込みをした・されたお相手のみ」に限定公開し、極秘で活動することができます。
+        A. 大阪梅田ドクターズ結婚相談所ではプロフィール写真を「申し込みをした・されたお相手のみ」に限定公開し、極秘で活動することができます。
       </p>
     </div>
   </div>

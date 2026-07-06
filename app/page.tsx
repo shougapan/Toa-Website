@@ -48,7 +48,7 @@ export default function Home() {
   <div className="max-w-2xl mx-auto space-y-1 text-gray-700 leading-relaxed text-base md:text-lg">
 
     <p>
-      大阪梅田結婚相談所は、現役女医 × キャリア20年のベテランが
+      大阪梅田ドクターズ結婚相談所は、現役女医 × キャリア20年のベテランが
       あなたの成婚をサポートする唯一無二の結婚相談所です。
     </p>
 
@@ -169,7 +169,7 @@ export default function Home() {
 
     <h2 className="mt-3 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
       梅田エリアにおける婚活の現実と<br />
-      大阪梅田結婚相談所のアプローチ
+      大阪梅田ドクターズ結婚相談所のアプローチ
     </h2>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
@@ -193,7 +193,7 @@ export default function Home() {
     </p>
 
     <p>
-      梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田結婚相談所では、
+      梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、
       他社には決して真似できない唯一無二の体制として、
       <span className="font-bold text-gray-900">
         「理性の医学」と「感性の仲人」
@@ -365,7 +365,7 @@ export default function Home() {
 
         <p className="pt-4 font-bold text-gray-950 md:text-2xl leading-snug">
           ここで出会ったのも何かのご縁のはずです。<br />
-          大阪梅田結婚相談所で、一緒に頑張っていきましょう。
+          大阪梅田ドクターズ結婚相談所で、一緒に頑張っていきましょう。
         </p>
 
       </div>
@@ -493,7 +493,7 @@ export default function Home() {
 
     <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
       <p>
-        大阪梅田結婚相談所では、あなた自身も気づいていない深層心理にある
+        大阪梅田ドクターズ結婚相談所では、あなた自身も気づいていない深層心理にある
         <span className="font-bold text-gray-900">「本当の結婚相手への理想像」</span>
         を入会面談で徹底的に解剖します。
       </p>
@@ -579,7 +579,7 @@ export default function Home() {
 
     <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
       <p>
-        交際期間を重ね、お互いの結婚への温度感が固まったら、プロポーズです。大阪梅田結婚相談所では、お相手に100%喜ばれるプロポーズの言葉・シチュエーション・タイミングや、婚約指輪）の選び方、夜景の見える高級レストランの演出までを完全バックアップします。
+        交際期間を重ね、お互いの結婚への温度感が固まったら、プロポーズです。大阪梅田ドクターズ結婚相談所では、お相手に100%喜ばれるプロポーズの言葉・シチュエーション・タイミングや、婚約指輪）の選び方、夜景の見える高級レストランの演出までを完全バックアップします。
       </p>
       
       <p>
@@ -716,7 +716,7 @@ export default function Home() {
     </span>
 
     <h2 className="mt-3 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
-      大阪梅田結婚相談所はこんな方におすすめ
+      大阪梅田ドクターズ結婚相談所はこんな方におすすめ
     </h2>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />

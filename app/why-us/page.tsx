@@ -30,7 +30,7 @@ export default function ReasonsPage() {
           <span>Why Choose Us</span>
         </div>
         <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
-          大阪の結婚相談所なら<span className="text-[#D9889D]">［大阪梅田結婚相談所］</span>が選ばれる6つの理由
+          大阪の結婚相談所なら<span className="text-[#D9889D]">［大阪梅田ドクターズ結婚相談所］</span>が選ばれる6つの理由
           <span className="block text-base sm:text-xl font-bold text-gray-500 mt-3 tracking-normal">
             現役医師監修 × 仲人歴20年ベテランがもたらすロジカル成婚戦略
           </span>
@@ -301,7 +301,7 @@ export default function ReasonsPage() {
 
           <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             <p>
-              大阪の結婚相談所［大阪梅田結婚相談所］で理想のパートナーと出会うためには、何よりも前向きなモチベーションを維持することが欠かせません。しかし、お見合いのお断りが続いたり、マッチングアプリでの既婚者や嘘の出会いに直面したりして、強いストレスや焦りから「婚活疲れ」を引き起こしてしまう男女が後を絶ちません。
+              大阪の結婚相談所［大阪梅田ドクターズ結婚相談所］で理想のパートナーと出会うためには、何よりも前向きなモチベーションを維持することが欠かせません。しかし、お見合いのお断りが続いたり、マッチングアプリでの既婚者や嘘の出会いに直面したりして、強いストレスや焦りから「婚活疲れ」を引き起こしてしまう男女が後を絶ちません。
             </p>
             <div className="bg-rose-50/50 border border-rose-100 rounded-2xl p-6 my-2">
               <h3 className="text-base sm:text-lg lg:text-xl font-black text-gray-900 flex items-center gap-2 mb-3">
