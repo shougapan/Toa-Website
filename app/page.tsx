@@ -45,39 +45,13 @@ export default function Home() {
   </div>
 
   {/* Body */}
-  <div className="max-w-2xl mx-auto space-y-1 text-gray-700 leading-relaxed text-base md:text-lg">
+  <p>大阪の結婚相談所なら少人数制
+大阪梅田ドクターズ結婚相談所
+現役医師監修・仲人歴20年のベテランカウンセラーがサポート。
 
-    <p>
-      大阪梅田ドクターズ結婚相談所は、現役女医 × キャリア20年のベテランが
-      あなたの成婚をサポートする唯一無二の結婚相談所です。
-    </p>
+現役女医と男性ベテランカウンセラーが導く、至極のハイスペック婚活
 
-    <p className="font-semibold text-gray-900">
-      確かな未来が見つかる場所。
-    </p>
-
-    <p>
-      医師・弁護士・会計士・経営者など、
-      ハイステータス層の多忙なライフスタイルを深く理解した
-      「現役医師サポート」と、
-      20年の経験で培った成婚ノウハウを融合しています。
-    </p>
-
-    <p>
-      その結果、理想と現実のバランスを取りながら、
-      ハイステータス婚を現実へと導きます。
-    </p>
-
-    <p>
-      「医師 婚活 相談所 ベテランカウンセラー」をお探しの方へ。
-      仕事も結婚も妥協したくないあなたのための特別な相談所です。
-    </p>
-
-    <p className="font-bold text-gray-900">
-      忙しい日々の中でも、最短距離で“本当に合う結婚”へ。
-    </p>
-
-  </div>
+運命の相手と1年以内の成婚を目指す大人のための結婚相談所</p>
 
 </section>
 
@@ -86,25 +60,25 @@ export default function Home() {
 <div className="md:hidden space-y-4">
 
   <div className="text-center">
-    <p className="text-[11px] font-black tracking-[0.35em] uppercase text-[#B07A56]">
+    <p className="text-[11px] font-black tracking-[0.35em] uppercase text-gray-500">
       OUR STRENGTHS
     </p>
 
-    <h2 className="mt-2 text-3xl font-black text-[#5E4633]">
-      当相談所が選ばれる理由
+    <h2 className="mt-2 text-3xl font-black text-gray-900">
+      私たちが選ばれる3つの理由
     </h2>
 
-    <div className="mx-auto mt-3 h-1 w-14 rounded-full bg-gradient-to-r from-pink-300 via-green-300 to-[#B07A56]" />
+    <div className="mx-auto mt-3 h-1 w-14 rounded-full bg-gray-300" />
   </div>
 
   {/* 01 */}
   <Link
     href="/why-us#strength1"
-    className="block rounded-3xl border border-pink-200 bg-gradient-to-br from-pink-50 via-[#FFF8FA] to-[#FAF7F2] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+    className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
       <Image
-        src="/reason1.jpg"
+        src="/image3.jpg"
         alt="現役女医"
         width={112}
         height={112}
@@ -112,11 +86,11 @@ export default function Home() {
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-pink-600 shadow-sm">
-          ♥️ 01
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
+          01
         </div>
 
-        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+        <h3 className="mt-2 text-lg font-black text-gray-900">
           現役女医のプロデュース
         </h3>
 
@@ -124,7 +98,7 @@ export default function Home() {
           女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
         </p>
 
-        <p className="mt-3 font-black text-pink-600">
+        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           詳細を見る ▶
         </p>
       </div>
@@ -134,11 +108,11 @@ export default function Home() {
   {/* 02 */}
   <Link
     href="/why-us#strength2"
-    className="block rounded-3xl border border-green-200 bg-gradient-to-br from-green-50 via-[#F8FCF8] to-[#FAF7F2] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+    className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
-    <div className="flex flex-row-reverse gap-4 items-start">
+    <div className="flex  gap-4 items-start">
       <Image
-        src="/reason2.jpg"
+        src="/orange.jpg"
         alt="婚活カウンセリング"
         width={112}
         height={112}
@@ -146,11 +120,11 @@ export default function Home() {
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-green-700 shadow-sm">
-          🌿 02
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
+          02
         </div>
 
-        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+        <h3 className="mt-2 text-lg font-black text-gray-900">
           あなたの魅力を最大化
         </h3>
 
@@ -158,7 +132,7 @@ export default function Home() {
           出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
         </p>
 
-        <p className="mt-3 font-black text-green-700">
+        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           詳細を見る ▶
         </p>
       </div>
@@ -168,11 +142,11 @@ export default function Home() {
   {/* 03 */}
   <Link
     href="/why-us#strength3"
-    className="block rounded-3xl border border-stone-200 bg-gradient-to-br from-[#FAF7F2] via-[#FFFDF8] to-[#F5F0E8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+    className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
       <Image
-        src="/reason3.jpg"
+        src="/team1.jpg"
         alt="ハイクラス婚活"
         width={112}
         height={112}
@@ -180,11 +154,11 @@ export default function Home() {
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-[#7A5A42] shadow-sm">
-          🤎 03
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
+          03
         </div>
 
-        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+        <h3 className="mt-2 text-lg font-black text-gray-900">
           大阪 梅田の上質な出会い
         </h3>
 
@@ -192,7 +166,7 @@ export default function Home() {
           医師・経営者・大手企業勤務が集うハイクラスな会員層
         </p>
 
-        <p className="mt-3 font-black text-[#7A5A42]">
+        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           詳細を見る ▶
         </p>
       </div>
@@ -200,7 +174,6 @@ export default function Home() {
   </Link>
 
 </div>
-
 <section className="w-full px-4 md:px-8 py-2">
 
   {/* Optional subtle header */}
@@ -219,6 +192,17 @@ export default function Home() {
 
   {/* Body */}
   <div className="max-w-5xl mx-auto space-y-1 text-gray-700 leading-relaxed text-base md:text-lg">
+
+    {/* Floating Image */}
+    <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
+      <Image
+        src="/image5.jpg"
+        alt="婚活カウンセリング"
+        width={500}
+        height={650}
+        className="rounded-2xl object-cover shadow-md border border-gray-100"
+      />
+    </div>
 
     <p>
       大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。
@@ -252,6 +236,8 @@ export default function Home() {
       この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、
       あなたを最短ルートで幸せな結婚へと導き、高い成婚率を誇る最大の理由です。
     </p>
+
+    <div className="clear-both" />
 
   </div>
 
@@ -513,6 +499,7 @@ export default function Home() {
 
 <section className="w-full px-4 md:px-8 py-1">
 
+
   {/* Header */}
   <div className="max-w-5xl mx-auto text-center mb-2">
     <span className="text-sm font-bold tracking-wider text-rose-500 uppercase">
@@ -525,6 +512,17 @@ export default function Home() {
     </h2>
 
     <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-rose-400" />
+  </div>
+
+  {/* Team Image */}
+  <div className="max-w-5xl mx-auto mb-10">
+    <Image
+      src="/team1.jpg"
+      alt="大阪梅田ドクターズ結婚相談所 チーム"
+      width={1400}
+      height={700}
+      className="w-full rounded-3xl object-cover shadow-lg border border-gray-100"
+    />
   </div>
 
   {/* STEP 1 */}
