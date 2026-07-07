@@ -15,7 +15,7 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[205px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[300px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
     src="/orange.jpg"
