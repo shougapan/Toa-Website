@@ -1,12 +1,12 @@
 export default function BecomeTheManSheChoosesPage() {
   return (
-    <main className="space-y-2">
+    <main className="space-y-2 ">
 
       {/* ========================================================= */}
       {/* HERO */}
       {/* ========================================================= */}
       <section className="w-full py-2">
-        <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-3xl bg-gradient-to-b from-pink-50/60 via-white to-blue-50/40 border border-pink-100 shadow-sm">
+        <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-5 rounded-3xl bg-gradient-to-b from-pink-50/60 via-white to-blue-50/40 border border-pink-100 shadow-sm">
 
           <header className="space-y-6">
 
@@ -78,7 +78,7 @@ EQ【感情知能】を高める方法を指導。
         </div>
       </section>
 
-      <section className="w-full py-10">
+      <section className="w-full py-5">
   <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-3xl bg-gradient-to-b from-pink-50/40 via-white to-blue-50/30 border border-pink-100 shadow-sm">
 
     <header className="space-y-5">
@@ -124,7 +124,7 @@ EQ【感情知能】を高める方法を指導。
 
     {/* Feature Cards */}
 
-    <div className="mt-12 grid gap-8 lg:grid-cols-2">
+    <div className="mt-4 grid gap-8 lg:grid-cols-2">
 
       {/* Card 1 */}
 
@@ -185,7 +185,7 @@ EQ【感情知能】を高める方法を指導。
   </div>
 </section>
 
-<section className="w-full py-10">
+<section className="w-full py-2">
   <div className="mx-auto w-[98%] max-w-6xl rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/40 to-white p-8 sm:p-10 shadow-sm">
 
     <article className="space-y-6">
@@ -225,7 +225,7 @@ EQ【感情知能】を高める方法を指導。
   </div>
 </section>
 
-<section className="w-full py-8">
+<section className="w-full py-2">
   <div className="mx-auto w-[98%] max-w-6xl rounded-3xl bg-gradient-to-r from-pink-50 via-white to-blue-50 border border-pink-100 p-8 sm:p-10">
 
     <header className="space-y-5">
@@ -273,7 +273,7 @@ EQ【感情知能】を高める方法を指導。
   </div>
 </section>
 
-<section className="w-full py-10">
+<section className="w-full py-2">
   <div className="mx-auto w-[98%] max-w-6xl rounded-3xl border border-blue-100 bg-white p-8 sm:p-10 shadow-sm">
 
     <article className="space-y-6">
@@ -324,7 +324,7 @@ EQ【感情知能】を高める方法を指導。
   </div>
 </section>
 
-<section className="w-full py-12">
+<section className="w-full py-4">
   <div className="mx-auto w-[98%] max-w-6xl rounded-3xl bg-gradient-to-br from-green-50 via-white to-green-100 border border-green-200 p-10 text-center shadow-md">
 
     <header className="space-y-6">
