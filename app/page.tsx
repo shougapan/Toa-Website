@@ -1,3 +1,4 @@
+"use client";
 
 
 
@@ -7,7 +8,12 @@ import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import maleAdvisor from "@/public/maleAdvisor.jpg";
 import Link from "next/link";
 
+
+import { useState } from "react";
+
+
 export default function Home() {
+  const [expanded, setExpanded] = useState(false);
   return (
     <div className="pt-[45px] space-y-6 pb-2 md:pb-12">
       
@@ -79,27 +85,27 @@ export default function Home() {
     <div className="flex gap-4 items-start">
       <Image
         src="/image3.jpg"
-        alt="現役女医"
+        alt="現役女医とベテラン男性カウンセラー"
         width={112}
         height={112}
         className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
-          01
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
+            <span className="text-xl leading-none">🍓</span>
         </div>
 
         <h3 className="mt-2 text-lg font-black text-gray-900">
-          現役女医のプロデュース
+          現役女医とベテラン男性カウンセラーによる最高峰の婚活プロデュース
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
-          女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
+          ダブルサポートのハイクラス婚活。ハイスペックのための至極の婚活。
         </p>
 
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          詳細を見る ▶
+          →詳しく見る
         </p>
       </div>
     </div>
@@ -110,30 +116,30 @@ export default function Home() {
     href="/why-us#strength2"
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
-    <div className="flex  gap-4 items-start">
+    <div className="flex gap-4 items-start">
       <Image
-        src="/orange.jpg"
-        alt="婚活カウンセリング"
+        src="/reason1.jpg"
+        alt="ハイクラスの出会い"
         width={112}
         height={112}
         className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
-          02
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
+          <span className="text-xl leading-none">🍓🍓</span>
         </div>
 
         <h3 className="mt-2 text-lg font-black text-gray-900">
-          あなたの魅力を最大化
+          厳選された「ハイクラスの出会い」
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
-          出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
+          医師・経営者・エリートが集うハイクラスな会員層。至極のハイスペックな出会いをあなたへ。
         </p>
 
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          詳細を見る ▶
+          →詳しく見る
         </p>
       </div>
     </div>
@@ -146,28 +152,28 @@ export default function Home() {
   >
     <div className="flex gap-4 items-start">
       <Image
-        src="/team1.jpg"
-        alt="ハイクラス婚活"
+        src="/reason2.jpg"
+        alt="少人数制ハイクラス婚活"
         width={112}
         height={112}
         className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
       />
 
       <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm">
-          03
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
+          <span className="text-xl leading-none">🍓🍓🍓</span>
         </div>
 
         <h3 className="mt-2 text-lg font-black text-gray-900">
-          大阪 梅田の上質な出会い
+          新規入会限定5名
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
-          医師・経営者・大手企業勤務が集うハイクラスな会員層
+          毎月5名のみの新規入会制限・審査ありの少人数制・ハイクラス婚活。あなたの理想を形にする、フルオーダーメイド戦略。
         </p>
 
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          詳細を見る ▶
+          →詳しく見る
         </p>
       </div>
     </div>
@@ -190,60 +196,218 @@ export default function Home() {
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
   </div>
 
-  {/* Body */}
-  <div className="max-w-5xl mx-auto space-y-1 text-gray-700 leading-relaxed text-base md:text-lg">
+  
 
-    {/* Floating Image */}
-    <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
+  {/* Body */}
+<div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg">
+
+  {/* Floating Image */}
+  <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
+    <Image
+      src="/image5.jpg"
+      alt="婚活カウンセリング"
+      width={500}
+      height={650}
+      className="rounded-2xl object-cover shadow-md border border-gray-100"
+    />
+  </div>
+
+  <div
+    className={`overflow-hidden transition-all duration-500 ${
+      expanded ? "max-h-[2000px]" : "max-h-44"
+    }`}
+  >
+    <p> 大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。 </p> <p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。 </p> <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が最短で成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> <p> 梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には決して真似できない唯一無二の体制として、 <span className="font-bold text-gray-900"> 「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 </p> <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 </p> <p> この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたを最短ルートで幸せな結婚へと導き、高い成婚率を誇る最大の理由です。 </p>
+  </div>
+
+  {!expanded && (
+    <div className="mt-3 bg-gradient-to-t from-white to-transparent h-12 -mt-12 pointer-events-none" />
+  )}
+
+  <button
+    onClick={() => setExpanded(!expanded)}
+    className="mt-4 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-5 py-2 font-bold text-rose-600 hover:bg-rose-50 transition"
+  >
+    {expanded ? "閉じる ▲" : "続きを読む ▼"}
+  </button>
+
+  <div className="clear-both" />
+
+</div>
+</section>
+
+<section className="w-full px-4 md:px-8 py-4 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-8">
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        FOR HIGH-SPEC WOMEN
+      </span>
+
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
+        ハイスペックな男性と<br className="md:hidden" />
+        結婚したいあなたへ
+      </h2>
+
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+    </div>
+
+    {/* Content */}
+    <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-6">
+      {/* Bottom Image */}
+      <div className="pt-2">
+        <Image
+          src="/highspecMan.jpg"
+          alt="ハイスペックな男性との婚活"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
+        />
+      </div>
+      <p className="font-semibold text-gray-900 text-lg md:text-xl">
+        成婚を叶えるために必要な
+        <span className="text-rose-500 font-black">3つの条件</span>
+        とは？
+      </p>
+
+      <p>
+        多忙を極める彼らが心を満たされるのは、
+        互いを高め合える
+        <span className="font-bold text-gray-900">
+          『3つのリスペクト（尊敬と共感）』
+        </span>
+        です。
+      </p>
+
+      <p>
+        「たった1つの強み」があれば、
+        男性はあなたに最大の敬意と愛情を払います。
+      </p>
+
+      <p>
+        婚活とは、一方的に「選ぶ・選ばれる」の品定めではなく、
+        お互いに「何かを与え合う関係」を築く場所です。
+      </p>
+
+      <p>
+        相手のステータスに見合う
+        <span className="font-bold text-gray-900">
+          「あなただけの価値」
+        </span>
+        を当相談所で一緒に見つけ、
+        戦略的に磨き上げませんか？
+      </p>
+
+      {/* CTA */}
+      <div className="pt-2">
+        <Link
+          href="/three-respects"
+          className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-300 to-purple-700 px-7 py-4 text-base md:text-lg font-black text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          🔘 医師・エグゼクティブに愛される
+          <br className="md:hidden" />
+          『3つのリスペクト』の正体 ＞
+        </Link>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<section className="w-full px-4 md:px-8 py-4 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Top Image */}
+    <div className="mb-6">
       <Image
-        src="/image5.jpg"
-        alt="婚活カウンセリング"
-        width={500}
-        height={650}
-        className="rounded-2xl object-cover shadow-md border border-gray-100"
+        src="/ceremony.jpg"
+        alt="大阪梅田ドクターズ結婚相談所"
+        width={1200}
+        height={800}
+        className="w-full rounded-3xl object-cover shadow-lg"
       />
     </div>
 
-    <p>
-      大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。
-    </p>
-
-    <p>
-      しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、
-      どこを選べばいいか迷っている方も少なくありません。
-    </p>
-
-    <p>
-      令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が最短で成婚（婚活のゴール）を迎えるためには、
-      確かなエビデンスに基づいた婚活戦略が必要です。
-    </p>
-
-    <p>
-      梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、
-      他社には決して真似できない唯一無二の体制として、
-      <span className="font-bold text-gray-900">
-        「理性の医学」と「感性の仲人」
+    {/* Heading */}
+    <div className="text-center mb-6">
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        SPECIAL INTRODUCTIONS
       </span>
-      が交わるダブルサポート体制をご提供します。
-    </p>
 
-    <p>
-      医学的・心理学的アプローチによって異性の本音をロジカルに分析し、
-      長年の成婚ノウハウによって現場での実践に落とし込む。
-    </p>
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900">
+        人脈をいかしたご紹介
+      </h2>
 
-    <p>
-      この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、
-      あなたを最短ルートで幸せな結婚へと導き、高い成婚率を誇る最大の理由です。
-    </p>
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+    </div>
 
-    <div className="clear-both" />
+    {/* Text */}
+    <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5">
 
+      <p className="font-semibold text-gray-900">
+        大阪梅田ドクターズ結婚相談所の
+        <span className="font-black text-rose-500">
+          「人脈をいかしたご紹介」
+        </span>
+      </p>
+
+      <p>
+        女医と20年ベテランカウンセラーの人脈が紡ぐ、
+        あなただけの特別なご縁をご紹介いたします。
+      </p>
+
+      <p>
+        <span className="font-bold text-gray-900">
+          【女医ルート】
+        </span>
+        医療業界ネットワークからのご紹介。
+        職場婚のような安心感のもと、
+        医師・検査技師・薬剤師・看護師・研究員・大学教授など、
+        信頼できる方々とのご縁をサポートいたします。
+      </p>
+
+      <p>
+        <span className="font-bold text-gray-900">
+          【20年のベテランカウンセラールート】
+        </span>
+        梅田の経営者や地主家系との人脈、
+        そして20年間ハイスペック婚を支えてきた経験から、
+        「身元の確かな方をご紹介してほしい」
+        と直接ご相談をいただくこともございます。
+      </p>
+
+      <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5">
+        <p className="text-sm md:text-base">
+          ※ ご紹介は双方のご希望・条件・タイミングが合致した際にご提案させていただきます。
+          すべての方へのご紹介を保証するものではございませんので、
+          あらかじめご了承ください。
+        </p>
+      </div>
+
+      <p>
+        あなたのステータスを尊重し、
+        豊かで幸せな結婚生活へ向けて、
+        最短距離で伴走いたします。
+      </p>
+
+      <div className="rounded-3xl bg-gradient-to-r from-pink-500 to-purple-700 p-2 text-center text-white shadow-lg">
+        <p className="mt-2 text-xl md:text-2xl font-black">
+          幸せな未来のために
+        </p>
+
+        <p className="mt-2 text-lg md:text-xl font-semibold">
+          一緒に頑張りましょう！
+        </p>
+      </div>
+
+    </div>
   </div>
-
 </section>
       {/* --- DOCTOR'S SUPPORT SECTION --- */}
-<section className="mx-auto max-w-4xl rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
+<section className="mx-auto max-w-5xl space-y-1 text-gray-700 leading-relaxed text-base md:text-lg rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-6 sm:p-10 md:p-14 shadow-sm">
 
       {/* Header */}
       <div className="text-center space-y-1 mb-10">
