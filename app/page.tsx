@@ -83,82 +83,124 @@ export default function Home() {
 
       {/* --- STRENGTHS SECTION --- */}
 {/* --- STRENGTHS SECTION --- */}
-<section className="space-y-1">
+<div className="md:hidden space-y-4">
+
   <div className="text-center">
-    <h2 className="text-2xl font-black tracking-wide text-gray-950 md:text-3xl">
-      当相談所が選ばれる3つの理由
+    <p className="text-[11px] font-black tracking-[0.35em] uppercase text-[#B07A56]">
+      OUR STRENGTHS
+    </p>
+
+    <h2 className="mt-2 text-3xl font-black text-[#5E4633]">
+      当相談所が選ばれる理由
     </h2>
-    <div className="mx-auto mt-2 h-1 w-12 rounded bg-rose-400" />
+
+    <div className="mx-auto mt-3 h-1 w-14 rounded-full bg-gradient-to-r from-pink-300 via-green-300 to-[#B07A56]" />
   </div>
 
-  {/* Strict side-by-side grid across all screen sizes */}
-  <div className="grid grid-cols-3 gap-1.5 sm:gap-4 md:gap-6">
-    
-    {/* Card 1 */}
-    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
-      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
-        ♥️ 01
-      </div>
-      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
-      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
-        現役女医のプロデュース
-      </h3>
-      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
-      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
-        女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
-      </p>
-      
-      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
-<Link
-  href="/why-us#strength1"
-  className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200"
->
-  詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
-</Link>
-    </div>
+  {/* 01 */}
+  <Link
+    href="/why-us#strength1"
+    className="block rounded-3xl border border-pink-200 bg-gradient-to-br from-pink-50 via-[#FFF8FA] to-[#FAF7F2] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+  >
+    <div className="flex gap-4 items-start">
+      <Image
+        src="/reason1.jpg"
+        alt="現役女医"
+        width={112}
+        height={112}
+        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
+      />
 
-    {/* Card 2 */}
-    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
-      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
-        ♥️ 02
-      </div>
-      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
-      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
-        あなたの魅力を最大化
-      </h3>
-      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
-      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
-        出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
-      </p>
-      
-      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
-      <a href="#strength2" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
-        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
-      </a>
-    </div>
+      <div>
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-pink-600 shadow-sm">
+          ♥️ 01
+        </div>
 
-    {/* Card 3 */}
-    <div className="flex flex-col items-center rounded-2xl border border-rose-100 bg-white p-2 sm:p-4 md:p-5 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1">
-      <div className="mb-1 sm:mb-2 flex h-7 w-7 sm:h-9 sm:w-9 md:h-11 md:w-11 items-center justify-center rounded-full bg-rose-50 text-xs sm:text-base md:text-lg font-extrabold text-rose-600">
-        ♥️ 03
-      </div>
-      {/* BUMPED: Title size increased to text-base / md:text-2xl */}
-      <h3 className="text-base font-black text-gray-950 md:text-2xl tracking-tight leading-tight">
-        大阪 梅田の上質な出会い
-      </h3>
-      {/* BUMPED: Body text size increased to text-sm / md:text-lg */}
-      <p className="mt-1.5 text-sm md:text-lg font-bold leading-normal sm:leading-snug text-gray-900">
-        医師・経営者・大手企業勤務が集うハイクラスな会員層
-      </p>
-      
-      {/* BUMPED: Link text size increased to text-xs / md:text-base */}
-      <a href="#strength3" className="mt-auto pt-2 text-xs md:text-base font-black text-rose-500 hover:text-rose-600 hover:underline transition-colors duration-200">
-        詳細を見る <span className="inline-block text-[10px] md:text-sm">▶</span>
-      </a>
-    </div>
+        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+          現役女医のプロデュース
+        </h3>
 
-  </div>
-</section>
+        <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
+          女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
+        </p>
+
+        <p className="mt-3 font-black text-pink-600">
+          詳細を見る ▶
+        </p>
+      </div>
+    </div>
+  </Link>
+
+  {/* 02 */}
+  <Link
+    href="/why-us#strength2"
+    className="block rounded-3xl border border-green-200 bg-gradient-to-br from-green-50 via-[#F8FCF8] to-[#FAF7F2] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+  >
+    <div className="flex flex-row-reverse gap-4 items-start">
+      <Image
+        src="/reason2.jpg"
+        alt="婚活カウンセリング"
+        width={112}
+        height={112}
+        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
+      />
+
+      <div>
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-green-700 shadow-sm">
+          🌿 02
+        </div>
+
+        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+          あなたの魅力を最大化
+        </h3>
+
+        <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
+          出会った瞬間に『また会いたい』と思わせるさまざまな戦略をアドバイス
+        </p>
+
+        <p className="mt-3 font-black text-green-700">
+          詳細を見る ▶
+        </p>
+      </div>
+    </div>
+  </Link>
+
+  {/* 03 */}
+  <Link
+    href="/why-us#strength3"
+    className="block rounded-3xl border border-stone-200 bg-gradient-to-br from-[#FAF7F2] via-[#FFFDF8] to-[#F5F0E8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+  >
+    <div className="flex gap-4 items-start">
+      <Image
+        src="/reason3.jpg"
+        alt="ハイクラス婚活"
+        width={112}
+        height={112}
+        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
+      />
+
+      <div>
+        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-[#7A5A42] shadow-sm">
+          🤎 03
+        </div>
+
+        <h3 className="mt-2 text-lg font-black text-[#5E4633]">
+          大阪 梅田の上質な出会い
+        </h3>
+
+        <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
+          医師・経営者・大手企業勤務が集うハイクラスな会員層
+        </p>
+
+        <p className="mt-3 font-black text-[#7A5A42]">
+          詳細を見る ▶
+        </p>
+      </div>
+    </div>
+  </Link>
+
+</div>
+
 <section className="w-full px-4 md:px-8 py-2">
 
   {/* Optional subtle header */}
