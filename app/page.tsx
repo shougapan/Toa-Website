@@ -24,7 +24,7 @@ export default function Home() {
 <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[300px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
-    src="/orange.jpg"
+    src="/cuteGirl1.jpg"
     alt="Marriage Consultation Hero"
     className="absolute inset-0 w-full  object-center"
   />
@@ -77,27 +77,28 @@ export default function Home() {
     <div className="mx-auto mt-3 h-1 w-14 rounded-full bg-gray-300" />
   </div>
 
+
   {/* 01 */}
   <Link
     href="/why-us#strength1"
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
-      <Image
-        src="/image3.jpg"
-        alt="現役女医とベテラン男性カウンセラー"
-        width={112}
-        height={112}
-        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
-      />
 
-      <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
-            <span className="text-xl leading-none">🍓</span>
-        </div>
+      <div className="w-[40%] flex-shrink-0">
+        <Image
+          src="/image3.jpg"
+          alt="現役女医とベテラン男性カウンセラー"
+          width={400}
+          height={400}
+          className="w-full aspect-square rounded-2xl object-cover shadow-lg"
+        />
+      </div>
 
-        <h3 className="mt-2 text-lg font-black text-gray-900">
-          現役女医とベテラン男性カウンセラーによる最高峰の婚活プロデュース
+      <div className="flex-1">
+
+        <h3 className="text-lg font-black text-gray-900 leading-snug">
+          １－現役女医とベテラン男性カウンセラーによる最高峰の婚活プロデュース
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
@@ -107,9 +108,12 @@ export default function Home() {
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           →詳しく見る
         </p>
+
       </div>
+
     </div>
   </Link>
+
 
   {/* 02 */}
   <Link
@@ -117,21 +121,21 @@ export default function Home() {
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
-      <Image
-        src="/reason1.jpg"
-        alt="ハイクラスの出会い"
-        width={112}
-        height={112}
-        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
-      />
 
-      <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
-          <span className="text-xl leading-none">🍓🍓</span>
-        </div>
+      <div className="w-[40%] flex-shrink-0">
+        <Image
+          src="/man1.jpg"
+          alt="ハイクラスの出会い"
+          width={400}
+          height={400}
+          className="w-full aspect-square rounded-2xl object-cover shadow-lg"
+        />
+      </div>
 
-        <h3 className="mt-2 text-lg font-black text-gray-900">
-          厳選された「ハイクラスの出会い」
+      <div className="flex-1">
+
+        <h3 className="text-lg font-black text-gray-900 leading-snug">
+          ２－厳選された「ハイクラスの出会い」
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
@@ -141,9 +145,12 @@ export default function Home() {
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           →詳しく見る
         </p>
+
       </div>
+
     </div>
   </Link>
+
 
   {/* 03 */}
   <Link
@@ -151,21 +158,21 @@ export default function Home() {
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
-      <Image
-        src="/reason2.jpg"
-        alt="少人数制ハイクラス婚活"
-        width={112}
-        height={112}
-        className="w-28 h-28 rounded-2xl object-cover shadow-lg flex-shrink-0"
-      />
 
-      <div>
-        <div className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-black text-gray-700 shadow-sm text-3xl">
-          <span className="text-xl leading-none">🍓🍓🍓</span>
-        </div>
+      <div className="w-[40%] flex-shrink-0">
+        <Image
+          src="/woman1.jpg"
+          alt="少人数制ハイクラス婚活"
+          width={400}
+          height={400}
+          className="w-full aspect-square rounded-2xl object-cover shadow-lg"
+        />
+      </div>
 
-        <h3 className="mt-2 text-lg font-black text-gray-900">
-          新規入会限定5名
+      <div className="flex-1">
+
+        <h3 className="text-lg font-black text-gray-900 leading-snug">
+          ３－新規入会限定5名
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
@@ -175,7 +182,9 @@ export default function Home() {
         <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
           →詳しく見る
         </p>
+
       </div>
+
     </div>
   </Link>
 
@@ -562,105 +571,254 @@ export default function Home() {
 
       </div>
     </section>
-<section className="mx-auto max-w-4xl px-3 py-2">
-  <div className="mb-4 text-center">
-    <h2 className="text-2xl font-black text-gray-900">
-      料金システム一覧（税込）
+<section className="w-full px-4 md:px-8 py-8 bg-white">
+
+  {/* Header */}
+  <div className="max-w-5xl mx-auto text-center mb-8">
+
+    <span className="text-sm font-black tracking-[0.3em] uppercase text-blue-500">
+      Price Plan
+    </span>
+
+    <h2 className="mt-3 text-2xl md:text-4xl font-black text-[#102A43] leading-tight">
+      料金プラン
     </h2>
+
+    <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-400" />
+
   </div>
 
-  <div className="overflow-hidden rounded-2xl border border-rose-100 shadow-sm">
-    <table className="w-full table-fixed text-xs sm:text-sm">
-      <thead>
-        <tr className="bg-rose-50">
-          <th className="w-[28%] p-2 text-left font-bold text-gray-900">
-            料金項目
-          </th>
-          <th className="w-[22%] p-2 text-left font-bold text-gray-900">
-            金額
-          </th>
-          <th className="w-[50%] p-2 text-left font-bold text-gray-900">
-            サポート内容
-          </th>
-        </tr>
-      </thead>
 
-      <tbody className="divide-y divide-rose-100">
-        <tr>
-          <td className="p-2 font-bold text-gray-900">
-            初期費用
-            <div className="text-[10px] text-gray-500">
-              入会金・登録料含む
-            </div>
-          </td>
-          <td className="p-2 font-bold text-rose-600">
-            200,000円
-          </td>
-          <td className="p-2 text-gray-700">
-            システム登録、プロフィール作成・写真撮影サポート
-          </td>
-        </tr>
+  {/* Intro */}
+  <div className="max-w-5xl mx-auto mb-8 rounded-3xl border border-blue-100 bg-blue-50/50 p-5 md:p-8">
 
-        <tr>
-  <td className="p-2 font-bold text-gray-900">
-    お見合い料
-  </td>
-  <td className="p-2 font-bold text-green-600">
-    0円
-  </td>
-  <td className="p-2 text-gray-700">
-    月4回まで無料<br />
-    5回目以降は1回3,000円（税込）
-  </td>
-</tr>
+    <p className="text-gray-700 leading-relaxed font-medium">
+      当相談所は、最高のサポート品質と高い成婚実績を維持するため、
+      毎月の新規ご入会を
+      <span className="font-black text-[#102A43]">
+        【先着5名様限定】
+      </span>
+      の完全少人数制とさせていただいております。
+    </p>
 
-        <tr className="bg-gray-50/50">
-          <td className="p-2 font-bold text-gray-900">
-            月会費
-          </td>
-          <td className="p-2 font-bold text-rose-600">
-            15,000円
-          </td>
-          <td className="p-2 text-gray-700 leading-snug">
-            <br />
-            定期面談・相談料0円
-            <br />
-            （オンライン・カフェ・会議室）
-          </td>
-        </tr>
-
-        <tr>
-          <td className="p-2 font-bold text-gray-900">
-            服装サポート
-          </td>
-          <td className="p-2 font-bold text-green-600">
-            無料
-          </td>
-          <td className="p-2 text-gray-700">
-            梅田・難波での
-            デート服ファッション提案
-          </td>
-        </tr>
-
-        <tr className="bg-gray-50/50">
-          <td className="p-2 font-bold text-gray-900">
-            成婚料
-            <div className="text-[10px] text-gray-500">
-              成果報酬制
-            </div>
-          </td>
-          <td className="p-2 font-bold text-rose-600">
-            200,000円
-          </td>
-          <td className="p-2 text-gray-700">
-            ご成婚時のみ
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
+
+
+
+  {/* Pricing Table */}
+  <div className="max-w-5xl mx-auto overflow-hidden rounded-3xl border border-blue-100 shadow-sm">
+
+
+    {/* Table Header */}
+    <div className="
+      grid 
+      grid-cols-[1fr_1fr_2fr]
+      bg-[#102A43]
+      text-white
+      font-black
+      text-sm
+      md:text-base
+      p-4
+    ">
+
+      <div>
+        項目
+      </div>
+
+      <div>
+        金額（税込）
+      </div>
+
+      <div>
+        内容・備考
+      </div>
+
+    </div>
+
+
+
+    {[
+      {
+        title:"入会金",
+        price:"150,000円",
+        text:"入会審査、契約手続き、個別規約説明などです。"
+      },
+      {
+        title:"初期プロデュース・登録料",
+        price:"80,000円",
+        text:"女医×ベテランカウンセラーによる初回戦略面談、プロフィール添削、写真選定、連盟システムへのデータ登録等です。"
+      },
+      {
+        title:"月会費",
+        price:"15,000円",
+        text:"毎月のシステム利用、および継続的なお悩み相談・サポートです。"
+      },
+      {
+        title:"お見合い料",
+        price:"0円（無料）",
+        text:
+        <>
+        月4回まで無料
+        <br />
+        5回目以降は1回3,000円（税込）
+        </>
+      },
+      {
+        title:"成婚料",
+        price:"250,000円",
+        text:"ご成婚（婚約）が成立し、相談所を寿退会される際にお支払いいただく成功報酬です。"
+      },
+
+    ].map((item,index)=>(
+
+      <div
+        key={index}
+        className="
+        grid 
+        grid-cols-1
+        md:grid-cols-[1fr_1fr_2fr]
+        gap-3
+        md:gap-0
+        border-t
+        border-blue-100
+        bg-white
+        p-5
+        md:p-4
+        "
+      >
+
+        <div className="
+          font-black
+          text-[#102A43]
+        ">
+          {item.title}
+        </div>
+
+
+        <div className="
+          font-black
+          text-blue-600
+        ">
+          {item.price}
+        </div>
+
+
+        <div className="
+          text-sm
+          md:text-base
+          leading-relaxed
+          text-gray-700
+          font-medium
+        ">
+          {item.text}
+        </div>
+
+
+      </div>
+
+    ))}
+
+
+  </div>
+
+
+
+  {/* Refund Notice */}
+  <div className="
+    max-w-5xl mx-auto
+    mt-6
+    rounded-2xl
+    border
+    border-blue-100
+    bg-blue-50
+    p-5
+    text-sm
+    leading-relaxed
+    text-gray-700
+  ">
+
+    ※契約書面をお渡しした日から8日以内のクーリングオフ期間経過後は、
+    初期費用分（入会金・登録料）は中途退会時の返金対象外（返金0円）となります。
+
+  </div>
+
+
+
+  {/* Vacation System */}
+  <div className="max-w-5xl mx-auto mt-10">
+
+
+    <div className="
+      rounded-3xl
+      border
+      border-blue-200
+      bg-gradient-to-br
+      from-blue-50
+      to-white
+      p-6
+    ">
+
+
+      <h3 className="
+        text-xl
+        md:text-2xl
+        font-black
+        text-[#102A43]
+      ">
+        【安心の休会制度】
+      </h3>
+
+
+      <p className="
+        mt-3
+        text-gray-700
+        leading-relaxed
+        font-medium
+      ">
+        お仕事の繁忙期や、少し婚活をお休みしたいときのために、
+        会員籍を維持したままお休みできるシステムをご用意しています。
+      </p>
+
+
+
+      <div className="mt-5 space-y-3 text-gray-800 font-medium">
+
+
+        <p className="flex gap-2">
+          <span className="text-blue-600 font-black">✓</span>
+          休会中の月会費：月額 3,000円 （通常の月会費15,000円はストップします）
+        </p>
+
+
+        <p className="flex gap-2">
+          <span className="text-blue-600 font-black">✓</span>
+          休会期間：1回につき最長3ヶ月まで
+        </p>
+
+
+        <p className="flex gap-2">
+          <span className="text-blue-600 font-black">✓</span>
+          休会中の特典：システムはお休みですが、月1回まで担当カウンセラーにLINEで直接相談が可能です。
+        </p>
+
+
+        <p className="flex gap-2">
+          <span className="text-blue-600 font-black">✓</span>
+          ※お見合い予定がある場合、または交際中のお相手がいる場合は休会できません。
+          休会希望月の前月20日までにお申し出ください。
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
 </section>
-
 <section className="w-full px-4 md:px-8 py-1">
 
 
