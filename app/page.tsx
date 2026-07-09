@@ -15,7 +15,7 @@ import { useState } from "react";
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
   return (
-    <div className="pt-[45px] space-y-6 pb-2 md:pb-12">
+    <div className=" space-y-6 pb-2 md:pb-12">
       
       
       {/* --- HERO SECTION --- */}
@@ -204,7 +204,7 @@ export default function Home() {
   {/* Floating Image */}
   <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
     <Image
-      src="/image5.jpg"
+      src="/doctorSuit.jpg"
       alt="婚活カウンセリング"
       width={500}
       height={650}
