@@ -48,47 +48,58 @@ export default function PremiumNavbar() {
 
   const menuSections = [
     {
-      title: "大阪梅田ドクターズ結婚相談所について",
+      title: "初めてのドクターズ結婚相談所・強み",
       icon: HeartHandshake,
       links: [
         {
-          name: "大阪梅田ドクターズ結婚相談所について",
+          name: "大阪梅田ドクターズ結婚相談所",
           href: "/",
         },
         {
-          name: "選ばれる理由",
+          name: "ドクターズ結婚相談所が選ばれる理由",
           href: "/why-us",
         },
       ],
     },
 
     {
-      title: "女性向け婚活戦略",
+      title: "３０代の女性のためのスマート成婚戦略",
       icon: Crown,
       links: [
         {
-          name: "ハイスペック男性との成婚を望む女性たちへ",
+          name: "ハイスペック男性と結婚する方法",
           href: "/advantages",
         },
+      
         {
-          name: "いい人がいない！ともう３０代のあなたへ",
+          name: "３０代婚活でいい人がいないと思うあなたへ",
           href: "/consider",
         },
         {
-          name: "最高の男性に出会う方法",
+          name: "笑顔の可愛い最高の男性が惹かれる高いＥＱ",
           href: "/ideal-man",
-        },
+        }
       ],
     },
+
+        {
+      title: "ハイスペックな男女へ",
+      icon: Crown,
+      links: [
+     { 
+          name: "ハイスペックなあなたへ",
+          href: "/elite-matchmaking",
+        },
+
+      ],
+    },
+
+
 
     {
       title: "男性向け婚活戦略",
       icon: UserRound,
       links: [
-        {
-          name: "ハイスペックなあなたへ",
-          href: "/elite-matchmaking",
-        },
         {
           name: "男性のための戦略",
           href: "/mens-strategy",

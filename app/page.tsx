@@ -6,9 +6,12 @@ import React from "react";
 import Image from "next/image";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import maleAdvisor from "@/public/maleAdvisor.jpg";
+import sweets from "@/public/sweets.jpg";
+import ceremony from "@/public/ceremony1.jpg";
+import dad from "@/public/dad.jpg";
 import Link from "next/link";
 
-
+import mensMarriage from "@/public/youngMan1.jpg";
 import { useState } from "react";
 
 
@@ -21,7 +24,7 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[300px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[500px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
     src="/cuteGirl1.jpg"
@@ -43,9 +46,9 @@ export default function Home() {
       About
     </span>
 
-    <h2 className="mt-2 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
+    <h1 className="mt-2 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
       大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる理由｜現役医師監修×仲人歴20年
-    </h2>
+    </h1>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
   </div>
@@ -413,6 +416,664 @@ export default function Home() {
       </div>
 
     </div>
+  </div>
+</section>
+
+<section className="w-full px-4 md:px-8 py-4 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Top Image */}
+    <div className="mb-6">
+      <Image
+        src="/woman.jpg"
+        alt="誠実で笑顔が可愛い最高の男性との出会い"
+        width={1200}
+        height={800}
+        className="w-full rounded-3xl object-cover shadow-lg"
+      />
+    </div>
+
+
+    {/* Heading */}
+    <div className="text-center mb-6">
+
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        IDEAL PARTNER
+      </span>
+
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
+        誠実で笑顔が可愛い<br />
+        「最高の男性」に出会いませんか？
+      </h2>
+
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+
+    </div>
+    
+
+
+
+    {/* Text */}
+    <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5">
+
+
+      <p className="font-semibold text-gray-900">
+        30代女性の
+        <span className="font-black text-rose-500">
+          「真剣婚活」
+        </span>
+        を応援します。
+      </p>
+
+
+      <p>
+        仕事もプライベートも一生懸命頑張ってきたあなたへ。
+        大阪梅田ドクターズ結婚相談所は、
+        本当に心から安心できる
+        <span className="font-bold text-gray-900">
+          理想のパートナーシップ
+        </span>
+        をご提案します。
+      </p>
+
+
+      <p>
+        普段は知的で落ち着きがあり、
+        仕事では高い能力を発揮するハイスペックなエグゼクティブ男性。
+      </p>
+
+
+      <p>
+        しかし、あなたの前でだけ見せる
+        <span className="font-black text-rose-500">
+          少年のような無邪気な笑顔。
+        </span>
+        
+        そんなギャップにあふれた、
+        誠実で温かい男性との幸せな結婚を、
+        私たちが全力でサポートいたします。
+      </p>
+
+
+
+      {/* Highlight Box */}
+      <div className="
+        rounded-3xl
+        border
+        border-pink-100
+        bg-gradient-to-br
+        from-pink-50
+        via-white
+        to-[#FAF7F2]
+        p-5
+      ">
+
+        <p className="font-black text-gray-900 text-lg md:text-xl">
+          完全少人数制だからこそできる
+          <span className="text-rose-500">
+            フルオーダーメイド婚活
+          </span>
+        </p>
+
+
+        <p className="mt-3 text-gray-700">
+          あなたの価値観・魅力・理想の未来を丁寧に理解し、
+          一人ひとりに合わせた戦略で、
+          最高のご縁へと導きます。
+        </p>
+
+      </div>
+
+
+
+      <p>
+        「条件だけでは選べない」
+        「一緒にいるだけで自然と笑顔になれる」
+        そんな人生のパートナーとの出会いを、
+        大阪梅田ドクターズ結婚相談所で見つけませんか？
+      </p>
+
+
+{/* CTA */}
+<div className="
+  rounded-2xl
+  bg-gradient-to-r
+  from-pink-400
+  to-rose-500
+  px-5
+  py-4
+  text-center
+  text-white
+  shadow-md
+">
+
+  <p className="text-base md:text-lg font-black">
+    誠実で笑顔が可愛い
+    「最高の男性」に出会いませんか？
+  </p>
+
+  <p className="mt-1 text-sm md:text-base font-bold">
+    詳細はこちら 🔘
+  </p>
+
+</div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full px-4 md:px-8 py-8 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-6">
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        MEN'S MARRIAGE STRATEGY
+      </span>
+
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900">
+        男のスピード婚活
+      </h2>
+
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+    </div>
+
+    {/* Main Card */}
+    <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
+
+      {/* Top Image */}
+      <div className="relative h-[210px] md:h-[360px] w-full">
+        <Image
+          src={mensMarriage}
+          alt="男性の婚活"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+      </div>
+
+      {/* Hero */}
+      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
+        <h3 className="text-2xl md:text-3xl font-black text-white">
+          「可愛い女性と出会いたい」
+        </h3>
+
+        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
+          最短で成婚を目指す男性の真剣婚活
+        </p>
+      </div>
+
+      {/* Content */}
+      <div className="px-4 py-5 md:px-8 md:py-8 space-y-5">
+
+        <div className="space-y-4 text-[15px] md:text-base leading-7 text-gray-700">
+
+          <p>
+            「妥協してまで結婚したくない。でも、
+            <span className="font-bold text-rose-600">
+              笑顔の可愛い女性
+            </span>
+            に隣りにいてほしい。」
+          </p>
+
+          <p>
+            男性の真剣婚活に寄り添う
+            <span className="font-bold text-gray-900">
+              『大阪梅田ドクターズ結婚相談所』
+            </span>
+            。現役医師と男性カウンセラーによる
+            <span className="font-bold text-rose-600">
+              ダブルサポート
+            </span>
+            で、
+            <span className="font-bold text-gray-900">
+              理想の可愛い女性を射止めるための戦略的婚活
+            </span>
+            を徹底サポートします。
+          </p>
+
+        </div>
+
+        {/* Highlight */}
+        <div className="rounded-2xl border border-rose-200 bg-rose-100 p-4 md:p-6">
+
+          <h4 className="text-center text-lg md:text-xl font-black text-rose-700">
+            あなたが目指す未来
+          </h4>
+
+          <div className="mt-4 grid gap-3 md:grid-cols-3">
+
+            <div className="rounded-xl bg-white p-4 text-center shadow-sm">
+              <p className="font-bold text-gray-800 leading-6">
+                人生をかけて
+                <br />
+                守りたい女性との出会い
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-white p-4 text-center shadow-sm">
+              <p className="font-bold text-gray-800 leading-6">
+                胸が熱くなるような恋
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-white p-4 text-center shadow-sm">
+              <p className="font-bold text-gray-800 leading-6">
+                支えあえる
+                <br />
+                パートナー
+              </p>
+            </div>
+
+          </div>
+
+          <p className="mt-5 text-center text-[15px] leading-7 text-gray-700">
+            あなたの理想に
+            <span className="mx-1 font-black text-rose-600">
+              100%
+            </span>
+            寄り添い、
+            愛らしいパートナーとのご縁へ導きます。
+          </p>
+
+        </div>
+
+        {/* CTA */}
+        <div className="grid gap-3 md:grid-cols-3">
+
+          <a
+            href="#"
+            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+          >
+            <div className="text-3xl">🍏</div>
+
+            <h5 className="mt-3 text-lg font-black text-gray-900">
+              男性のための戦略
+            </h5>
+
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              最短で理想のお相手と出会うための婚活戦略をご紹介します。
+            </p>
+
+            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
+              詳しく見る →
+            </div>
+          </a>
+
+          <a
+            href="#"
+            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+          >
+            <div className="text-3xl">🍏</div>
+
+            <h5 className="mt-3 text-lg font-black text-gray-900">
+              僕の条件で出会える女性は？
+            </h5>
+
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              あなたの条件から理想のお相手をご紹介します。
+            </p>
+
+            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
+              詳しく見る →
+            </div>
+          </a>
+
+          <a
+            href="#"
+            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+          >
+            <div className="text-3xl">🍏</div>
+
+            <h5 className="mt-3 text-lg font-black text-gray-900">
+              可愛い子に選ばれる男の戦略
+            </h5>
+
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              女性から選ばれる男性になるためのポイントを詳しく解説します。
+            </p>
+
+            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
+              詳しく見る →
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full px-4 md:px-8 py-8 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-6">
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        BEGINNER'S SUPPORT
+      </span>
+
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900">
+        恋愛ビギナー、婚活初心者のあなたへ
+      </h2>
+
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+    </div>
+
+    {/* Main Card */}
+    <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
+
+      {/* Top Image */}
+      <div className="relative h-[210px] md:h-[360px] w-full">
+        <Image
+          src={sweets}
+          alt="恋愛初心者サポート"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+      </div>
+
+      {/* Hero */}
+      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
+        <h3 className="text-2xl md:text-3xl font-black text-white">
+          恋愛経験ゼロからスピード成婚へ
+        </h3>
+
+        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
+          初めての婚活でも安心して進められます。
+        </p>
+      </div>
+
+      {/* Content */}
+      <div className="space-y-5 px-4 py-5 md:px-8 md:py-8">
+
+        <div className="space-y-4 text-[15px] leading-7 text-gray-700">
+
+          <p>
+            恋愛経験ゼロからスピード成婚を叶える
+            <span className="font-bold text-gray-900">
+              『大阪梅田ドクターズ結婚相談所』
+            </span>
+            。
+            恋愛経験の少ないあなたの疑問や悩みを、一つひとつ丁寧に解決します。
+          </p>
+
+          <p>
+            強みは、
+            <span className="font-bold text-rose-600">
+              「現役女医 × 婚活キャリア20年のベテラン仲人」
+            </span>
+            が、あなたのためだけに時間をかけてサポートすることです。
+          </p>
+
+        </div>
+
+        {/* Questions */}
+        <div className="rounded-2xl border border-rose-200 bg-rose-100 p-4 md:p-6">
+
+          <h4 className="text-center text-lg md:text-xl font-black text-rose-700">
+            こんなお悩みはありませんか？
+          </h4>
+
+          <div className="mt-4 space-y-3">
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              💬 お見合いで何を話せばいい？
+            </div>
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              👔 デートにはどんな服装で行けばいい？
+            </div>
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              📱 LINEの返信はどう返せばいい？
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Support */}
+        <div className="rounded-2xl border border-pink-200 bg-white p-5">
+
+          <h4 className="text-xl font-black text-gray-900">
+            あなたの「絶対的な味方」
+          </h4>
+
+          <p className="mt-3 text-[15px] leading-7 text-gray-700">
+            婚活ビギナーの小さな悩みも、
+            <span className="font-bold text-rose-600">
+              2人のプロ
+            </span>
+            があなたの「絶対的な味方」となり、
+            <span className="font-bold">
+              24時間以内
+            </span>
+            を目安にスピードサポート。
+          </p>
+
+          <p className="mt-4 text-[15px] leading-7 text-gray-700">
+            20年間の成婚実績をもとに、
+            あなたの隣で温かく並走し続けます。
+            いつでも相談できる安心感があるから、
+            恋愛経験が少なくても迷わず最短距離で成婚へ進めます。
+          </p>
+
+        </div>
+
+        {/* CTA */}
+        <div className="grid gap-3 md:grid-cols-2">
+
+          <a
+            href="#"
+            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+          >
+            <div className="text-3xl">🌸</div>
+
+            <h5 className="mt-3 text-lg font-black text-gray-900">
+              恋愛初心者・婚活ビギナーのあなたへ
+            </h5>
+
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              初めての婚活でも安心して進めるためのサポートをご紹介します。
+            </p>
+
+            <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
+              詳しく見る →
+            </div>
+          </a>
+
+          <a
+            href="#"
+            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+          >
+            <div className="text-3xl">💝</div>
+
+            <h5 className="mt-3 text-lg font-black text-gray-900">
+              恋愛経験が無いのですが大丈夫ですか？
+            </h5>
+
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              恋愛経験がなくても成婚できる理由を詳しくご紹介します。
+            </p>
+
+            <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
+              詳しく見る →
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section className="w-full px-4 md:px-8 py-8 bg-white">
+  <div className="max-w-5xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-6">
+      <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
+        FOR PARENTS
+      </span>
+
+      <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900">
+        【親御様へ】お子様の幸せな結婚を願うあなたへ
+      </h2>
+
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
+    </div>
+
+    {/* Main Card */}
+    <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
+
+      {/* Top Image */}
+      <div className="relative h-[210px] md:h-[360px] w-full">
+        <Image
+          src={ceremony}
+          alt="幸せな結婚"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+      </div>
+
+      {/* Hero */}
+      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
+        <h3 className="text-2xl md:text-3xl font-black text-white">
+          お子様の幸せを願う親御様へ
+        </h3>
+
+        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
+          ご家族の想いに寄り添い、未来へのご縁をお手伝いします。
+        </p>
+      </div>
+
+      {/* Content */}
+      <div className="space-y-5 px-4 py-5 md:px-8 md:py-8">
+
+        <div className="space-y-4 text-[15px] leading-7 text-gray-700">
+
+          <p>
+            大切に育てたご子息、ご令嬢が、
+            これからの人生でさらなる幸せと安心を得てほしい。
+            それは親として自然で温かな願いです。
+          </p>
+
+          <p>
+            <span className="font-bold text-gray-900">
+              大阪梅田ドクターズ結婚相談所
+            </span>
+            は、
+            そんな親御様の愛情を形にする結婚相談所です。
+          </p>
+
+        </div>
+
+        {/* Feature Box */}
+        <div className="rounded-2xl border border-rose-200 bg-rose-100 p-4 md:p-6">
+
+          <h4 className="text-center text-lg md:text-xl font-black text-rose-700">
+            私たちがお手伝いできること
+          </h4>
+
+          <div className="mt-4 space-y-3">
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              🤝 人脈を活かしたハイスペックな会員層とのご縁
+            </div>
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              🌸 婚活の分岐点での的確なアドバイス
+            </div>
+
+            <div className="rounded-xl bg-white p-4 shadow-sm">
+              💝 親御様の想いをお子様へ優しくお伝えするサポート
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Message */}
+        <div className="rounded-2xl border border-pink-200 bg-white p-5">
+
+          <h4 className="text-xl font-black text-gray-900">
+            お子様らしい幸せを大切に
+          </h4>
+
+          <p className="mt-3 text-[15px] leading-7 text-gray-700">
+            私たちは、お子様ご本人の価値観を何よりも尊重し、
+            お互いを尊敬し合える理想のパートナーとの未来を一緒に考えます。
+          </p>
+
+          <p className="mt-4 text-[15px] leading-7 text-gray-700">
+            ご家族の願いと、お子様の想い。
+            その両方を大切にしながら、
+            幸せな未来へのご縁を丁寧につないでいきます。
+          </p>
+
+        </div>
+
+        {/* Bottom Image */}
+        <div className="relative h-[220px] md:h-[380px] overflow-hidden rounded-2xl">
+          <Image
+            src={dad}
+            alt="親子の絆"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+        </div>
+
+        {/* Closing */}
+        <div className="rounded-2xl bg-gradient-to-r from-rose-50 to-pink-50 p-6 text-center border border-rose-100">
+
+          <h4 className="text-xl font-black text-gray-900">
+            私たちの想いに共感していただける親御様へ
+          </h4>
+
+          <p className="mt-3 text-[15px] leading-7 text-gray-700">
+            お子様の幸せな未来について、
+            まずはお気軽にご相談ください。
+            あなたの想いに寄り添いながら、
+            最適なご縁探しをお手伝いいたします。
+          </p>
+
+        </div>
+
+        {/* CTA */}
+        <a
+          href="#"
+          className="group flex items-center justify-between rounded-2xl border border-green-200 bg-gradient-to-r from-green-50 to-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+        >
+          <div>
+            <div className="text-lg font-black text-gray-900">
+              【親御様へ】
+            </div>
+
+            <p className="mt-1 text-sm text-gray-600">
+              大切なご子息・ご令嬢の結婚を願うあなたへ
+            </p>
+          </div>
+
+          <div className="font-bold text-green-700 transition-transform group-hover:translate-x-1">
+            詳しく見る →
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
 </section>
       {/* --- DOCTOR'S SUPPORT SECTION --- */}

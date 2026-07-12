@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import Image from "next/image";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
@@ -17,6 +15,16 @@ import {
   CheckCircle2
 } from 'lucide-react';
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる6つの理由",
+  description:
+    "大阪で成婚率が高いおすすめの仲人型結婚相談所なら大阪梅田ドクターズ。現役女医監修の最高峰の婚活プロデュースとキャリア20年のベテランによる2名1組ダブルサポート、オーダーメイドの婚活戦略でスピード成婚へ導きます。",
+};
+
+
 export default function ReasonsPage() {
   return (
     <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-16 selection:bg-[#E6A2B3]/20">
@@ -30,18 +38,20 @@ export default function ReasonsPage() {
           <span>Why Choose Us</span>
         </div>
         <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
-          大阪の結婚相談所なら<span className="text-[#D9889D]">［大阪梅田ドクターズ結婚相談所］</span>が選ばれる6つの理由
+          大阪の結婚相談所なら<span className="text-[#D9889D]"> <br/>［大阪梅田ドクターズ結婚相談所］</span>が選ばれる6つの<br/>理由
           <span className="block text-base sm:text-xl font-bold text-gray-500 mt-3 tracking-normal">
             現役医師監修 × 仲人歴20年ベテランがもたらすロジカル成婚戦略
           </span>
         </h1>
+
+        <h2>  大阪で成婚率が高いおすすめの仲人型結婚相談所をお探しの男女へ。大阪梅田ドクターズ結婚相談所が選ばれる理由をご案内します。当相談所では、現役医師（女医）監修による最高峰の婚活プロデュースと、キャリア20年のベテラン仲人による2名1組の個別ダブルサポート体制を確立。妥協なき「理想像の徹底解剖」と「男のプライド」「女性のこだわり」を120%受け止めるオーダーメイドの婚活戦略で、ハイクラスな出会いからスピード成婚までを最短距離で実現します。</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-2 rounded-full" />
       </div>
 
       {/* ============================================================
           MAIN CONTENTS (ボックスを撤去し、テキスト幅を最大化)
           ============================================================ */}
-      <div  className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 space-y-16">
+      <div  className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 space-y-2">
         
         {/* ------------------------------------------------------------
             理由 1
@@ -111,61 +121,68 @@ export default function ReasonsPage() {
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 pt-6 border-t border-gray-200">
 
   {/* Female Doctor */}
-  <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+<div className="w-full space-y-2 rounded-2xl border border-rose-100 bg-rose-50 p-5 text-gray-800 leading-relaxed font-medium shadow-sm">
 
-    <span className="inline-block text-xs font-black bg-[#E6A2B3] text-white px-2.5 py-1 rounded mb-4">
-      現役女医の視点
+  <span className="inline-block text-xs font-black bg-[#E6A2B3] text-white px-2.5 py-1 rounded mb-2">
+    現役女医の視点
+  </span>
+
+  <div className="text-[15px] leading-7 text-gray-700">
+
+    <span className="float-left mr-4 mb-2 w-24 sm:w-28">
+      <Image
+        src={femaleAdvisor}
+        alt="現役女医"
+        className="rounded-xl shadow-md object-cover w-full h-auto"
+      />
     </span>
 
-    <div className="text-[15px] leading-7 text-gray-700">
-
-      <span className="float-left mr-4 mb-2 w-24 sm:w-28">
-        <Image
-          src={femaleAdvisor}
-          alt="現役女医"
-          className="rounded-xl shadow-md object-cover w-full h-auto"
-        />
-      </span>
-
-      数々の診療を経てたくさんの方と接し寄り添ってきた経験から、
-      「誰を選べばいいのか」「誰が自分に合うのか」
-      「お相手が本当に求めているパートナー像」を分析。
-      重要な運命の分かれ道で、
-      大切な決断に寄り添ってお気持ちを汲みながら
-      サポートさせていただきます。
-
-    </div>
+    数々の診療を経てたくさんの方と接し寄り添ってきた経験から、
+    「誰を選べばいいのか」「誰が自分に合うのか」
+    「お相手が本当に求めているパートナー像」を分析。
+    重要な運命の分かれ道で、
+    大切な決断に寄り添ってお気持ちを汲みながら
+    サポートさせていただきます。
 
   </div>
+
+</div>
 
   {/* Male Counselor */}
-  <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+<div className="w-full space-y-2 rounded-2xl border border-sky-100 bg-sky-50 p-5 text-gray-800 leading-relaxed font-medium shadow-sm">
 
-    <span className="inline-block text-xs font-black bg-gray-900 text-white px-2.5 py-1 rounded mb-4">
-      ベテラン仲人の視点
+  <span className="inline-block text-xs font-black bg-sky-500 text-white px-2.5 py-1 rounded mb-2">
+    ベテラン仲人の視点
+  </span>
+
+  <div className="text-[15px] leading-7 text-gray-700">
+
+    <span className="float-left mr-4 mb-2 w-24 sm:w-28">
+      <Image
+        src={maleAdvisor}
+        alt="ベテラン仲人"
+        className="rounded-xl shadow-md object-cover w-full h-auto"
+      />
     </span>
 
-    <div className="text-[15px] leading-7 text-gray-700">
+    20年の経験に基づき、
+    現実的に成婚へ至るための相性や条件を推測。
+    時には多数の経験から予想される結果や
+    厳しく耳の痛い内容も正直にお伝えします。
+    現場のリアルなカウンセリング経験に裏打ちされた情報だからこそ、
+    結果的にまわり道を避けることができ、
+    人生の貴重な時間を有意義に過ごせます。
 
-      <span className="float-left mr-4 mb-2 w-24 sm:w-28">
-        <Image
-          src={maleAdvisor}
-          alt="ベテラン仲人"
-          className="rounded-xl shadow-md object-cover w-full h-auto"
-        />
-      </span>
+    <br /><br />
 
-      20年の経験に基づき、
-      現実的に成婚へ至るための相性や条件を推測。
-      時には多数の経験から予想される結果や
-      厳しく耳の痛い内容も正直にお伝えします。
-      現場のリアルなカウンセリング経験に裏打ちされた情報だからこそ、
-      結果的にまわり道を避けることができ、
-      人生の貴重な時間を有意義に過ごせます。もちろん、最後に決断するのは会員様です。婚活に正解はありません。十人十色のご希望に応じて、細かくアットホームに対応できるのが当社の強みです。
-
-    </div>
+    もちろん、最後に決断するのは会員様です。
+    婚活に正解はありません。
+    十人十色のご希望に応じて、
+    細かくアットホームに対応できるのが当社の強みです。
 
   </div>
+
+</div>
 
 </div>
           </div>
