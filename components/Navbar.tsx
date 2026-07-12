@@ -116,6 +116,17 @@ export default function PremiumNavbar() {
     },
 
     {
+      title: "親御様へ　大切なお子様の結婚を願うあなたへ",
+      icon: UserRound,
+      links: [
+        {
+          name: "親御様がお子様の結婚を願う",
+          href: "/parents",
+        },
+      ],
+    },
+
+    {
       title: "料金・サポートについて",
       icon: Sparkles,
       links: [
