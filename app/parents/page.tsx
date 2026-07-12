@@ -2,6 +2,14 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, MessageCircle, Phone, CheckCircle, Users, Award, ShieldCheck } from 'lucide-react';
 
+// import { Metadata } from 'next';
+
+// export const metadata: Metadata = {
+//   title: '【親御様へ】女医とベテランの力で叶える我が子の上質な成婚｜大阪梅田ドクターズ結婚相談所', // You can adjust the title as needed
+//   description: '【現役女医の客観的視点】と【男性ベテランカウンセラーの経験】が融合した大阪梅田ドクターの結婚相談所。焦りのないお子様の心を前向きに開く魔法のカウンセリングと、的確な判断力による「上質な出会い」で、親御様の「こういう人と歩んでほしい」という本気の願いを叶えます。',
+// };
+
+
 export default function ParentsLandingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

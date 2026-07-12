@@ -3,6 +3,21 @@
 import React, { useState } from 'react';
 import { Heart, Brain, Smile, Activity, MessageSquare, CheckCircle, HelpCircle, Sparkles, RefreshCw, Award, ArrowRight } from 'lucide-react';
 
+import { Metadata } from 'next';
+
+
+
+// ============================================================================
+// 1. Static Metadata Export (For Head Tags & Social Previews)
+// ============================================================================
+// export const metadata: Metadata = {
+//   title: '【女医の本質】「選ぶ・選ばれる」婚活の呪縛。外部基準を脱する本当の相性｜大阪梅田ドクターズ結婚相談所',
+//   description: '評価や査定を続けるうちに自分の欲しいパートナーを見失う罠。選ばれるために本当の自分を捨てる葛藤に対し、他人の物差しを捨てて自分のリラックス度を基準にする、心理学に基づいた正しい選び方を提示。現役女医監修コラム。'
+// };
+
+
+
+
 export default function EQPage() {
   // クイズ状態の管理
   const [currentQuestion, setCurrentQuestion] = useState<number | null>(null);
