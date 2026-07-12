@@ -119,7 +119,7 @@ export default function PremiumNavbar() {
             className="rounded-full object-cover bg-white/10 flex-shrink-0 ring-1 ring-purple-300/30 shadow-sm"
           />
           <div className="text-left md:text-center">
-            <span className="text-xs md:text-sm font-bold tracking-wider block md:inline text-white drop-shadow-sm">
+            <span className="text-sm md:text-sm font-bold tracking-wider block md:inline text-white drop-shadow-sm">
               大阪梅田ドクターズ結婚相談所
             </span>
             <span className="hidden md:inline mx-2 text-purple-300/40">|</span>
