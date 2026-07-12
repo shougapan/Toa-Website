@@ -42,56 +42,58 @@ export default function Gallery({
   };
 
   return (
-    <section className="w-full max-w-5xl mx-auto space-y-0">
+<section className="w-full max-w-5xl mx-auto">
 
-      {/* IMAGE */}
-      <div className="relative aspect-[16/9] overflow-hidden rounded-3xl shadow-md">
+  <div className="relative overflow-hidden rounded-2xl border border-pink-100 bg-gradient-to-r from-pink-50 via-white to-blue-50 px-5 py-4 shadow-sm">
 
-        {slides.map((slide, index) => (
-          <Image
-            key={index}
-            src={slide.src}
-            alt={slide.alt}
-            fill
-            className={`object-cover transition-opacity duration-700 ${
-              current === index
-                ? "opacity-100"
-                : "opacity-0 absolute inset-0"
-            }`}
-            priority={index === 0}
-          />
-        ))}
+    {/* Previous */}
+    <button
+      onClick={previous}
+      className="absolute left-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm transition hover:bg-pink-50"
+    >
+      ←
+    </button>
 
-        {/* Previous */}
+    {/* Content */}
+    <div className="px-10">
+
+      <h3 className="text-lg md:text-xl font-black text-gray-900 leading-tight">
+        {slides[current].title}
+      </h3>
+
+      <p className="mt-1 text-[15px] leading-6 text-gray-700">
+        {slides[current].description}
+      </p>
+
+    </div>
+
+    {/* Next */}
+    <button
+      onClick={next}
+      className="absolute right-3 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm transition hover:bg-pink-50"
+    >
+      →
+    </button>
+
+  </div>
+
+  {/* Dots */}
+  {slides.length > 1 && (
+    <div className="mt-2 flex justify-center gap-1.5">
+      {slides.map((_, index) => (
         <button
-          onClick={previous}
-          className="absolute left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/80 hover:bg-white shadow transition"
-        >
-          ←
-        </button>
+          key={index}
+          onClick={() => setCurrent(index)}
+          className={`transition-all ${
+            current === index
+              ? "h-2 w-5 rounded-full bg-rose-500"
+              : "h-2 w-2 rounded-full bg-rose-200 hover:bg-rose-300"
+          }`}
+        />
+      ))}
+    </div>
+  )}
 
-        {/* Next */}
-        <button
-          onClick={next}
-          className="absolute right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/80 hover:bg-white shadow transition"
-        >
-          →
-        </button>
-      </div>
-
-      {/* NEWS BOX (tighter, visually attached) */}
-      <div className="rounded-b-3xl border-x border-b border-pink-100 bg-gradient-to-br from-pink-50 via-white to-blue-50 px-6 py-6 shadow-sm -mt-2">
-
-        <h3 className="text-xl font-black text-gray-900 transition-all duration-500">
-          {slides[current].title}
-        </h3>
-
-        <p className="mt-2 leading-7 text-gray-700 text-base transition-all duration-500">
-          {slides[current].description}
-        </p>
-
-      </div>
-
-    </section>
+</section>
   );
 }

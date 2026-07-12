@@ -1,4 +1,4 @@
-"use client";
+
 
 import React from "react";
 import Link from "next/link";
@@ -8,6 +8,19 @@ import {
   Sparkles,
   ArrowRight,
 } from "lucide-react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "最高の男性が最後に惹かれる高いEQ",
+  description:
+    "大阪梅田で大人の優しさと可愛い笑顔を持つ理想の男性と出会いませんか？仕事と両立しながら最速成婚が叶う理由を解説。スマートな男性が最後に惹かれる「高いEQ（心の知能指数）」の秘密と、恋する楽しさを忘れない大阪梅田ドクターズ相談所独自のサポートをお伝えします。",
+  alternates: {
+    canonical: "/ideal-man",
+  },
+};
+
+
 
 export default function IdealManPage() {
 
@@ -22,7 +35,7 @@ export default function IdealManPage() {
     </span>
 
     <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
-      誠実で笑顔が可愛い「最高の男性」に出会いませんか？
+      笑顔の可愛い最高の男性が惹かれる高いＥＱ
     </h1>
 
     <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">

@@ -11,8 +11,14 @@ import ceremony from "@/public/ceremony1.jpg";
 import dad from "@/public/dad.jpg";
 import Link from "next/link";
 
+import Gallery from "@/components/Gallery"
+
 import mensMarriage from "@/public/youngMan1.jpg";
 import { useState } from "react";
+
+import img1 from "@/public/main1.jpg";
+import img2 from "@/public/couple1.jpg";
+import img3 from "@/public/femaleAdvisor.jpg";
 
 
 export default function Home() {
@@ -24,7 +30,7 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[500px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[390px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
     src="/cuteGirl1.jpg"
@@ -47,7 +53,7 @@ export default function Home() {
     </span>
 
     <h1 className="mt-2 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
-      大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる理由｜現役医師監修×仲人歴20年
+      大阪梅田でハイクラス婚活・スピード成婚なら［大阪梅田ドクターズ結婚相談所］｜現役医師監修×仲人歴20年
     </h1>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
@@ -63,6 +69,33 @@ export default function Home() {
 運命の相手と1年以内の成婚を目指す大人のための結婚相談所</p>
 
 </section>
+
+    <Gallery
+      interval={5000}
+      slides={[
+        {
+          src: img1,
+          alt: "Counselling",
+          title: "💙 成婚まで完全サポート",
+          description:
+            "20年以上の経験を活かし、あなたの婚活を最後までサポートします。",
+        },
+        {
+          src: img2,
+          alt: "Happy Couple",
+          title: "🩷 理想のお相手との出会い",
+          description:
+            "一人ひとりに合わせた戦略で、運命のお相手探しをお手伝いします。",
+        },
+        {
+          src: img3,
+          alt: "Office",
+          title: "🌸 完全予約制",
+          description:
+            "落ち着いた空間で安心してご相談いただけます。",
+        },
+      ]}
+    />
 
       {/* --- STRENGTHS SECTION --- */}
 {/* --- STRENGTHS SECTION --- */}
@@ -552,9 +585,15 @@ export default function Home() {
     「最高の男性」に出会いませんか？
   </p>
 
-  <p className="mt-1 text-sm md:text-base font-bold">
-    詳細はこちら 🔘
-  </p>
+<Link
+  href="/ideal-man"
+  className="group mt-2 inline-flex items-center gap-2 rounded-full bg-rose-500 px-5 py-2 text-sm md:text-base font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-rose-600 hover:shadow-md"
+>
+  <span>詳細はこちら</span>
+  <span className="transition-transform group-hover:translate-x-1">
+    →
+  </span>
+</Link>
 
 </div>
 
@@ -681,66 +720,96 @@ export default function Home() {
         </div>
 
         {/* CTA */}
-        <div className="grid gap-3 md:grid-cols-3">
+<div className="grid gap-2 md:grid-cols-3">
 
-          <a
-            href="#"
-            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-          >
-            <div className="text-3xl">🍏</div>
+  <a
+    href="/mens-strategy"
+    className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
+  >
+    <div className="flex items-start gap-3">
 
-            <h5 className="mt-3 text-lg font-black text-gray-900">
-              男性のための戦略
-            </h5>
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
+        🍏
+      </div>
 
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              最短で理想のお相手と出会うための婚活戦略をご紹介します。
-            </p>
+      <div className="flex-1">
 
-            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
-              詳しく見る →
-            </div>
-          </a>
+        <h5 className="text-base font-black leading-tight text-gray-900">
+          男性のための戦略
+        </h5>
 
-          <a
-            href="#"
-            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-          >
-            <div className="text-3xl">🍏</div>
+        <p className="mt-1 text-sm leading-5 text-gray-600">
+          最短で理想のお相手と出会うための婚活戦略をご紹介します。
+        </p>
 
-            <h5 className="mt-3 text-lg font-black text-gray-900">
-              僕の条件で出会える女性は？
-            </h5>
-
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              あなたの条件から理想のお相手をご紹介します。
-            </p>
-
-            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
-              詳しく見る →
-            </div>
-          </a>
-
-          <a
-            href="#"
-            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-          >
-            <div className="text-3xl">🍏</div>
-
-            <h5 className="mt-3 text-lg font-black text-gray-900">
-              可愛い子に選ばれる男の戦略
-            </h5>
-
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              女性から選ばれる男性になるためのポイントを詳しく解説します。
-            </p>
-
-            <div className="mt-3 font-bold text-green-700 group-hover:translate-x-1 transition-transform">
-              詳しく見る →
-            </div>
-          </a>
-
+        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
+          詳しく見る →
         </div>
+
+      </div>
+
+    </div>
+  </a>
+
+  <a
+    href="/ideal-woman"
+    className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
+  >
+    <div className="flex items-start gap-3">
+
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
+        🍏
+      </div>
+
+      <div className="flex-1">
+
+        <h5 className="text-base font-black leading-tight text-gray-900">
+          僕の条件で出会える女性は？
+        </h5>
+
+        <p className="mt-1 text-sm leading-5 text-gray-600">
+          あなたの条件から理想のお相手をご紹介します。
+        </p>
+
+        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
+          詳しく見る →
+        </div>
+
+      </div>
+
+    </div>
+  </a>
+
+  <a
+    href="/become-her-choice"
+    className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
+  >
+    <div className="flex items-start gap-3">
+
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
+        🍏
+      </div>
+
+      <div className="flex-1">
+
+        <h5 className="text-base font-black leading-tight text-gray-900">
+          可愛い子に選ばれる男の戦略
+        </h5>
+
+        <p className="mt-1 text-sm leading-5 text-gray-600">
+          女性から選ばれる男性になるためのポイントを詳しく解説します。
+        </p>
+
+        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
+          詳しく見る →
+        </div>
+
+      </div>
+
+    </div>
+  </a>
+
+</div>
 
       </div>
 

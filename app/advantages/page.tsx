@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useRef } from 'react';
 import Image from 'next/image';
@@ -17,6 +17,17 @@ import {
   AlertCircle,
   ShieldCheck
 } from 'lucide-react';
+
+// import type { Metadata } from "next";
+
+// export const metadata: Metadata = {
+//   title: "ハイスペック男性と結婚する方法",
+//   description:
+//     "大阪梅田で医師やハイスペック男性との結婚を叶えるためのハイクラス婚活戦略。エグゼクティブに選ばれるために必要な「3つのリスペクト」とは？女医の視点から、最短スピードで成婚へと導き、その後も持続可能な関係を保つための具体的な条件を徹底解説します。",
+//   alternates: {
+//     canonical: "/advantages",
+//   },
+// };
 
 export default function HighSpecStrategyPage() {
   // ナビゲーションのアンカースクロール用リファレンス
@@ -51,11 +62,13 @@ export default function HighSpecStrategyPage() {
         </div>
         
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-snug tracking-tight w-full max-w-4xl mx-auto">
-          ハイスペック男性との成婚を望む女性たちへ
+          大阪梅田で医師・ハイスペック男性と結婚する方法｜女性向けハイクラス婚活の戦略
         </h1>
         
         <div className="w-16 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-4 rounded-full" />
       </div>
+
+      <h2 className="w-full pt-8 pb-6 text-center bg-white border-b border-gray-100 px-4">大阪梅田で医師やエグゼクティブ男性に選ばれ、確実にハイクラス成婚を叶えるためには、彼ら結婚観を捉えた専用のアプローチが必要です。本ページでは、ハイスペック婚活に必要な３つのリスペクトについて解説します。あなたが最短スピードで成婚にいたり、その後、持続可能な関係を保つための条件について女医の視点から説明していきます。</h2>
 
       {/* ============================================================
           DYNAMIC TABLE OF CONTENTS INDEX (Full-Width Mobile)

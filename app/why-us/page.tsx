@@ -216,9 +216,6 @@ export default function ReasonsPage() {
                 <Compass className="w-4 h-4 text-amber-600" />
                 プライバシー厳守の洗練されたサポート体制
               </h4>
-              <p className="text-sm sm:text-base text-gray-700">
-                当相談所は事務所を構えない出張型・オンライン婚活の強みを活かし、ホテルグランヴィア大阪やスイスホテル南海大阪といったお洒落なホテルラウンジ、プライバシーの守られた個室カフェで、周囲の目を一切気にせずリラックスして作戦会議を行います。
-              </p>
             </div>
 
             <p>
