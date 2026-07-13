@@ -61,7 +61,7 @@ export default function Home() {
   </div>
 
   {/* Body */}
-  <p>大阪の結婚相談所なら少人数制
+  <p className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg">大阪の結婚相談所なら少人数制
 大阪梅田ドクターズ結婚相談所
 現役医師監修・仲人歴20年のベテランカウンセラーがサポート。
 
