@@ -46,6 +46,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "大阪梅田ドクターズ結婚相談所", href: "/" },
         { name: "ドクターズ結婚相談所が選ばれる理由", href: "/why-us" },
+        { name: "初心者", href: "/beginners" },
       ],
     },
     {
@@ -69,6 +70,8 @@ export default function PremiumNavbar() {
         { name: "男性のための戦略", href: "/mens-strategy" },
         { name: "僕の条件で出会える女性は？", href: "/ideal-woman" },
         { name: "可愛い子に選ばれる男の戦略", href: "/become-her-choice" },
+        { name: "理想の恋人婚を叶える方法", href: "/ideal-match" },
+        
       ],
     },
     {

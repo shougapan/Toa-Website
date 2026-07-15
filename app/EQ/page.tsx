@@ -2,6 +2,22 @@
 
 import React, { useState } from 'react';
 import { Heart, Brain, Smile, Activity, MessageSquare, CheckCircle, HelpCircle, Sparkles, RefreshCw, Award, ArrowRight } from 'lucide-react';
+// import { Metadata } from 'next';
+
+
+
+// export const metadata: Metadata = {
+//   title: "婚活に必要なEQとその高め方｜大阪梅田ドクターズ結婚相談所",
+//   description:
+//     "大阪・梅田で女医とベテランカウンセラーが運営する「大阪梅田ドクターズ結婚相談所」。心理医学・行動科学に基づく「結婚に必要な4つのEQコアスキル」の解説と、後天的にEQを高める独自の成婚感情トレーニング方法についてプロが詳しく解説します。",
+//   alternates: {
+//     canonical: "/advantages",
+//   },
+// };
+
+
+
+
 
 export default function EQPage() {
   // クイズ状態の管理
@@ -64,31 +80,15 @@ export default function EQPage() {
       <section className="w-full space-y-1.5 text-gray-700 leading-relaxed rounded-xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-3.5 shadow-sm text-base">
         {/* Header */}
         <div className="text-center space-y-1 mb-4 p-1 text-base">
-          <span className="font-bold tracking-wider text-rose-400 uppercase block text-base">
-            About EQ Method
-          </span>
           <h1 className="font-black text-gray-900 leading-snug text-base">
-            大阪梅田でハクラス婚活・スピード成婚なら［大阪梅田ドクターズ結婚相談所］｜現役医師監修×仲人歴20年
+            婚活・結婚生活に不可欠な「4つのEQコアスキル」と感情の高め方
           </h1>
           <div className="mx-auto mt-1 h-0.5 w-16 bg-rose-400" />
         </div>
 
         {/* Content */}
         <div className="text-gray-700 leading-relaxed font-normal tracking-wide space-y-3.5 w-full text-base">
-          <div className="bg-slate-50 border border-slate-100 p-3 rounded-lg text-center space-y-1.5 w-full text-base">
-            <p className="font-bold text-gray-900 text-base">
-              大阪の結婚相談所なら少人数制 大阪梅田ドクターズ結婚相談所
-            </p>
-            <p className="text-gray-600 text-base">
-              現役医師監修・仲人歴20年のベテランカウンセラーがサポート。
-            </p>
-            <p className="text-rose-600 font-black text-base">
-              現役女医と男性ベテランカウンセラーが導く、至極のハイスペック婚活
-            </p>
-            <p className="text-gray-400 text-base">
-              運命の相手と1年以内の成婚を目指す大人のための結婚相談所
-            </p>
-          </div>
+          
 
           <p className="w-full px-1 text-base">
             大阪梅田ドクターズ結婚相談所では、独自の成婚メソッドとして、心理学や人間関係構築の現場で最重視される「EQ（心の知能指数）」を取り入れています。どれほど素晴らしい条件（年収・学歴・外見）でお相手とマッチングしても、生涯続く幸福な結婚生活を維持し、深めていくために本当に必要なのは、条件の先にある「感情の知性（EQ）」です。

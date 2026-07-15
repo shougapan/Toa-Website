@@ -180,8 +180,6 @@ For Women Around 30
 </section>
 
 
-import Link from "next/link";
-
 <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
 
   <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
