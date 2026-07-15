@@ -80,7 +80,7 @@ export default function EQPage() {
       <section className="w-full space-y-1.5 text-gray-700 leading-relaxed rounded-xl border border-rose-100 bg-gradient-to-b from-white to-[#FAF8F5]/40 p-3.5 shadow-sm text-base">
         {/* Header */}
         <div className="text-center space-y-1 mb-4 p-1 text-base">
-          <h1 className="font-black text-gray-900 leading-snug text-base">
+          <h1 className="font-black text-gray-900 leading-snug text-3xl">
             婚活・結婚生活に不可欠な「4つのEQコアスキル」と感情の高め方
           </h1>
           <div className="mx-auto mt-1 h-0.5 w-16 bg-rose-400" />
