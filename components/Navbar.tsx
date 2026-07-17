@@ -46,7 +46,6 @@ export default function PremiumNavbar() {
       links: [
         { name: "大阪梅田ドクターズ結婚相談所", href: "/" },
         { name: "ドクターズ結婚相談所が選ばれる理由", href: "/why-us" },
-        { name: "初心者", href: "/beginners" },
       ],
     },
     {
@@ -77,7 +76,11 @@ export default function PremiumNavbar() {
     {
       title: "親御様へ 大切なお子様の結婚を願うあなたへ",
       icon: UserRound,
-      links: [{ name: "親御様がお子様の結婚を願う", href: "/parents" }],
+      links: [{ name: "親御様がお子様の結婚を願う", href: "/parents" },
+         { name: "恋愛初心者、婚活ビギナーのあなたへ", href: "/beginners" },
+
+
+      ],
     },
     {
       title: "婚活に必要な４つのEQとその高め方",

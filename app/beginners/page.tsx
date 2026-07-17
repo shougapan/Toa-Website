@@ -1,7 +1,20 @@
-"use client"
+
 
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, MessageCircle, Heart, ShieldCheck } from 'lucide-react';
+
+// import { Metadata } from 'next';
+
+
+
+// export const metadata: Metadata = {
+//   title: "恋愛初心者がスピード成婚する方法",
+//   description:
+//     "大阪梅田でスピード成婚を目指すなら大阪梅田ドクターズ結婚相談所へ。婚活・恋愛初心者に向けて、カウンセリングを通じたアイデンティティ構築やEQ向上をサポートします。異性から選ばれる魅力を身につけ、自分の力で生涯続く幸福な家庭を築きたい方は必見です。",
+//   alternates: {
+//     canonical: "/beginners",
+//   },
+// };
 
 export default function BeginnerLandingPage() {
   return (
