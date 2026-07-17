@@ -169,14 +169,33 @@ export default function BeginnerLandingPage() {
               </div>
             </div>
 
-            <div className="text-center px-4 pt-2 w-full">
-              <a href="#eq-check" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-800 text-lg font-bold">
-                ➡️ あなたのEQの高さをチェックする
-              </a>
-              <p className="text-base font-medium text-slate-800 mt-4 leading-relaxed w-full">
-                私たちは、あなたの「生き方や心のあり方」から伴走し、魅力をたくさん発見して、一生モノのパートナーシップを築く力を授けます。
-              </p>
-            </div>
+<div className="text-center px-4 pt-2">
+  <a
+    href="#eq-check"
+    className="
+      inline-flex items-center gap-2
+      rounded-full
+      bg-rose-500
+      px-5 py-2.5
+      text-sm md:text-base
+      font-bold
+      text-white
+      shadow-md
+      transition-all
+      hover:bg-rose-600
+      hover:shadow-lg
+    "
+  >
+    🌸 EQ診断をしてみる
+    <span>→</span>
+  </a>
+
+  <p className="mt-4 text-base font-medium text-slate-800 leading-relaxed">
+    私たちは、あなたの「生き方や心のあり方」から伴走し、
+    魅力をたくさん発見して、一生モノのパートナーシップを築く力を授けます。
+  </p>
+</div>
+
 
             {/* カウンセラーからのメッセージ */}
             <div className="bg-gradient-to-br from-indigo-50 to-amber-50/50 p-5 md:p-6 border-y md:border border-indigo-100/80 w-full md:rounded-xl space-y-4">

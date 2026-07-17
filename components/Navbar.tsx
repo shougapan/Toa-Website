@@ -87,7 +87,13 @@ export default function PremiumNavbar() {
       icon: UserRound,
       links: [
         { name: "恋愛初心者がスピード成婚する方法", href: "/beginners" },
+        { name: "大人の結婚に必要な「人間的成熟度」と内面魅力", href: "/emotional-maturity" },
       ],
+    },
+    {
+      title: "本質的な問い",
+      icon: UserRound,
+      links: [{ name: "??", href: "/" }],
     },
     {
       title: "婚活に必要な４つのEQとその高め方",
