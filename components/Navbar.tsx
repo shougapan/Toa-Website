@@ -77,9 +77,16 @@ export default function PremiumNavbar() {
       title: "親御様へ 大切なお子様の結婚を願うあなたへ",
       icon: UserRound,
       links: [{ name: "親御様がお子様の結婚を願う", href: "/parents" },
-         { name: "恋愛初心者、婚活ビギナーのあなたへ", href: "/beginners" },
+         
 
 
+      ],
+    },
+    {
+      title: "恋愛初心者、婚活ビギナーのあなたへ",
+      icon: UserRound,
+      links: [
+        { name: "恋愛初心者がスピード成婚する方法", href: "/beginners" },
       ],
     },
     {
