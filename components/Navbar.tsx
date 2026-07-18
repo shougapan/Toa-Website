@@ -98,6 +98,7 @@ export default function PremiumNavbar() {
         { name: "「価値観の一致」を探している人が、いつまでも結婚できない理由", href: "/alignment-myth" },
         { name: "婚活で「選ぶ・選ばれる」レースに疲れたあなたへ。", href: "/intellectual-maturity" },
         { name: "なぜハイスペックとの成婚を望むのか？", href: "/true-partnership" },
+        { name: "真の幸せを手に入れる方法", href: "/wellbeing" },
 
       ],
     },
@@ -107,12 +108,12 @@ export default function PremiumNavbar() {
       links: [{ name: "婚活・結婚生活に必要なEQとその高めかたを説明", href: "/EQ" }],
     },
     {
-      title: "料金・サポートについて",
+      title: "料金・入会制限について",
       icon: Sparkles,
       links: [
-        { name: "料金プランと成婚までの流れ", href: "/plan" },
+        { name: "料金プランと少人数制について", href: "/plan" },
         { name: "婚活の悩みと不安を解消する特別サポート", href: "/support" },
-        { name: "入会までの流れ", href: "/membership-steps" },
+        { name: "入会制限と入会審査", href: "/membership-steps" },
       ],
     },
     {

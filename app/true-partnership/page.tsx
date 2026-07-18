@@ -22,7 +22,7 @@ export default function HighSpecTrapAnalysis() {
     'author': [
       {
         '@type': 'Person',
-        'name': '現役女医（当相談所監修）',
+        'name': '現役女医（大阪梅田ドクターズ結婚相談所監修）',
         'jobTitle': 'Medical Doctor'
       },
       {
