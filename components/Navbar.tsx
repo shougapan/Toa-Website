@@ -97,6 +97,7 @@ export default function PremiumNavbar() {
         { name: "男性は女性の外見しか見ない？問いと答え", href: "/attraction-essence" },
         { name: "「価値観の一致」を探している人が、いつまでも結婚できない理由", href: "/alignment-myth" },
         { name: "婚活で「選ぶ・選ばれる」レースに疲れたあなたへ。", href: "/intellectual-maturity" },
+        { name: "なぜハイスペックとの成婚を望むのか？", href: "/true-partnership" },
 
       ],
     },
