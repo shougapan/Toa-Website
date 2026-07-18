@@ -93,7 +93,11 @@ export default function PremiumNavbar() {
     {
       title: "本質的な問い",
       icon: UserRound,
-      links: [{ name: "??", href: "/" }],
+      links: [
+        { name: "男性は女性の外見しか見ない？問いと答え", href: "/attraction-essence" },
+        { name: "「価値観の一致」を探している人が、いつまでも結婚できない理由", href: "/alignment-myth" },
+
+      ],
     },
     {
       title: "婚活に必要な４つのEQとその高め方",
@@ -125,7 +129,7 @@ export default function PremiumNavbar() {
     <>
       {/* MEDICAL THEMED NAVY-PURPLE TOP HEADER */}
       <div 
-        className={`w-full bg-gradient-to-r from-[#1E1B4B] via-[#2E1065] to-[#3B0764] text-[#FAF7F4] py-2.5 px-4 z-50 relative shadow-md shadow-purple-950/20 border-b border-indigo-500/10 transition-all ${
+        className={`w-full bg-gradient-to-r from-[#1E1B4B] via-[#2E1065] to-[#3B0764] text-[#FAF7F4] py-0 px-4 z-50 relative shadow-md shadow-purple-950/20 border-b border-indigo-500/10 transition-all ${
           isOpen ? "hidden" : "block"
         }`}
       >
