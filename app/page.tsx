@@ -12,7 +12,7 @@ import dad from "@/public/dad.jpg";
 import Link from "next/link";
 
 import Gallery from "@/components/Gallery"
-import Banner from "@/components/Banner"
+
 
 import mensMarriage from "@/public/youngMan1.jpg";
 import { useState } from "react";
@@ -98,8 +98,6 @@ export default function Home() {
       ]}
     />
 
-
-<Banner/>
 
 
       {/* --- STRENGTHS SECTION --- */}
