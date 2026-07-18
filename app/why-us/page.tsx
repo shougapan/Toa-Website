@@ -211,17 +211,12 @@ export default function ReasonsPage() {
               客観的なデータ分析（ロジカルな戦略）と、1対1の手厚いサポート（感情に寄り添う親身なケア）を完璧に両立させることができます。
             </p>
             
-            <div className="bg-amber-50/60 border border-amber-200/60 rounded-2xl p-6 my-6">
-              <h4 className="font-black text-gray-900 text-sm sm:text-base lg:text-lg mb-2 flex items-center gap-2">
-                <Compass className="w-4 h-4 text-amber-600" />
-                プライバシー厳守の洗練されたサポート体制
-              </h4>
-            </div>
+
 
             <p>
               恋愛経験なしの方や口下手な男性であっても、2名のプロがお見合い会話術の伝授から梅田・難波での服装コーディネート（ショッピング同行）、さらには交際中のLINEの返信頻度や、仮交際お断りの理由分析、真剣交際タイミングの調整、さらにはプロポーズの言葉・シチュエーションの演出までを完全バックアップ。
             </p>
-            <p className="text-base font-black text-gray-900 border-t border-gray-200 pt-6">
+            <p className="text-base  text-gray-800 border-t border-gray-200 pt-6">
               自己流の婚活やマッチングアプリの不都合な真実（サクラ・嘘・目的違い）に振り回されて婚活疲れを起こす前に、最高峰のプロフェッショナルによる妥協なき「理想像の徹底解剖」をぜひご体感ください。あなたのプライドを守りながら、最短ルートでスピード成婚へ導く最強のシステムがここにあります。
             </p>
           </div>
@@ -270,31 +265,54 @@ export default function ReasonsPage() {
             </div>
 
             {/* 医療アプローチ */}
-            <h3 className="text-base sm:text-lg lg:text-xl font-black text-gray-900 pt-6 flex items-center gap-2">
-              <LineChart className="w-5 h-5 text-teal-600" />
-              成婚の確率を高める「3つの医療アプローチ」
-            </h3>
-            <div className="space-y-4 bg-teal-50/40 border border-teal-100 rounded-2xl p-6">
-              <div className="flex gap-3">
-                <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">1. 検査</span>
-                <p className="text-sm sm:text-base text-gray-800"><span className="font-bold">独自の分析であなたの強みを可視化：</span>客観的なデータを用いて、婚活市場における「あなたの最大の強み」を明確にします。</p>
-              </div>
-              <div className="flex gap-3 border-t border-teal-100/50 pt-3">
-                <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">2. 処方</span>
-                <p className="text-sm sm:text-base text-gray-800"><span className="font-bold">課題をクリアにする的確なアドバイス：</span>どうしたら現在の状況をより良く改善できるか、具体的なステップを提案します。</p>
-              </div>
-              <div className="flex gap-3 border-t border-teal-100/50 pt-3">
-                <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">3. サポート</span>
-                <p className="text-sm sm:text-base text-gray-800"><span className="font-bold">メンタルまで支える徹底的なケア：</span>医師ならではの心理学の知見で、婚活に伴う不安やストレスをケアし、ポジティブに完走できるよう支えます。</p>
-              </div>
-            </div>
 
-            <div className="pt-4 text-center">
-              <h4 className="text-lg lg:text-xl font-black text-gray-900 mb-2">【仕事も結婚も両方欲しい！】</h4>
-              <p className="text-sm sm:text-base">
-                あなたが仕事で培ってきた決断力や論理力、誠実さは、幸せな結婚を掴むための強力な武器になります。キャリアも、これからの人生の幸福も、どちらも諦める必要はありません。知性とデータを味方につけて、ハイスペックな異性や理解の深い一生モノのパートナーと出会う一歩を踏み出してみませんか？
-              </p>
-            </div>
+
+{/* Added bg-green-50/50 for a soft, light green background tint */}
+<div className="space-y-4 bg-green-50/50 border border-teal-100 rounded-2xl p-6">
+<h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 pt-6 flex items-center gap-2">
+  <LineChart className="w-6 h-6 text-teal-600" />
+  成婚の確率を高める「3つの医療アプローチ」
+</h3>
+  <div className="flex gap-3">
+    <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">1. 検査</span>
+    <p className="text-base sm:text-lg text-gray-800">
+      <span className="font-bold">独自の分析であなたの強みを可視化：</span>
+      客観的なデータを用いて、婚活市場における「あなたの最大の強み」を明確にします。
+    </p>
+  </div>
+  
+  <div className="flex gap-3 border-t border-teal-100/50 pt-3">
+    <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">2. 処方</span>
+    <p className="text-base sm:text-lg text-gray-800">
+      <span className="font-bold">課題をクリアにする的確なアドバイス：</span>
+      どうしたら現在の状況をより良く改善できるか、具体的なステップを提案します。
+    </p>
+  </div>
+  
+  <div className="flex gap-3 border-t border-teal-100/50 pt-3">
+    <span className="font-black text-xs text-teal-700 bg-teal-100 px-2 py-0.5 rounded h-5 mt-1 shrink-0">3. サポート</span>
+    <p className="text-base sm:text-lg text-gray-800">
+      <span className="font-bold">メンタルまで支える徹底的なケア：</span>
+      医師ならではの心理学の知見で、婚活に伴う不安やストレスをケアし、ポジティブに完走できるよう支えます。
+    </p>
+  </div>
+</div>
+
+<div className="pt-4">
+
+
+  {/* Added a light pink background (rose-50/50), matching the rounded corners, border, and 16px text base */}
+  <div className="space-y-4 bg-rose-50/50 border border-rose-100 rounded-2xl p-6">
+    <h4 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 pt-6 text-center mb-4">
+    【仕事も結婚も両方欲しい！】
+  </h4>
+    <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
+      あなたが仕事で培ってきた決断力や論理力、誠実さは、幸せな結婚を掴むための強力な武器になります。
+      キャリアも、これからの人生の幸福も、どちらも諦める必要はありません。
+      知性とデータを味方につけて、ハイスペックな異性や理解の深い一生モノのパートナーと出会う一歩を踏み出してみませんか？
+    </p>
+  </div>
+</div>
           </div>
         </section>
 
@@ -317,15 +335,18 @@ export default function ReasonsPage() {
             <p>
               大阪の結婚相談所［大阪梅田ドクターズ結婚相談所］で理想のパートナーと出会うためには、何よりも前向きなモチベーションを維持することが欠かせません。しかし、お見合いのお断りが続いたり、マッチングアプリでの既婚者や嘘の出会いに直面したりして、強いストレスや焦りから「婚活疲れ」を引き起こしてしまう男女が後を絶ちません。
             </p>
-            <div className="bg-rose-50/50 border border-rose-100 rounded-2xl p-6 my-2">
-              <h3 className="text-base sm:text-lg lg:text-xl font-black text-gray-900 flex items-center gap-2 mb-3">
-                <Brain className="w-5 h-5 text-rose-500 shrink-0" />
-                医学・心理学的アプローチによる「独自のメンタルケア体制」
-              </h3>
-              <p className="text-sm sm:text-base text-gray-900 leading-relaxed">
-                当相談所は、医療現場で多くの心と向き合ってきた現役医師が監修し、自らもカウンセラーを兼任する、大阪でも極めて珍しい体制を整えています。医学的・心理学的知見に基づいた独自の「婚活メンタルケア」を導入し、感情論ではないロジカルなアプローチを実施。お断りの理由を客観的に分析して次の出会いに繋げるため、婚活疲れを綺麗に解消し、圧倒的に高い成婚率を叩き出しています。
-              </p>
-            </div>
+<div className="bg-rose-50/50 border border-rose-100 rounded-2xl p-6 my-2">
+  {/* Heading updated to text-xl sm:text-2xl lg:text-3xl and icon resized to w-6 h-6 */}
+  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 flex items-center gap-2 mb-4 pt-2">
+    <Brain className="w-6 h-6 text-rose-500 shrink-0" />
+    医学・心理学的アプローチによる「独自のメンタルケア体制」
+  </h3>
+  
+  {/* Body text updated to text-base sm:text-lg for 16px font on mobile */}
+  <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
+    当相談所は、医療現場で多くの心と向き合ってきた現役医師が監修し、自らもカウンセラーを兼任する、大阪でも極めて珍しい体制を整えています。医学的・心理学的知見に基づいた独自の「婚活メンタルケア」を導入し、感情論ではないロジカルなアプローチを実施。お断りの理由を客観的に分析して次の出会いに繋げるため、婚活疲れを綺麗に解消し、圧倒的に高い成婚率を叩き出しています。
+  </p>
+</div>
           </div>
         </section>
 

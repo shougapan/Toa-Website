@@ -234,7 +234,7 @@ export default function BeginnerLandingPage() {
       </section>
 
       {/* 自分で幸せを掴むための、3つのアプローチ - スマホ全幅 */}
-      <section className="py-8 bg-white w-full">
+      <section id="support" className="py-8 bg-white w-full">
         <div className="max-w-5xl mx-auto w-full">
           <div className="text-center mb-6 px-4 w-full">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-950 tracking-wider w-full">

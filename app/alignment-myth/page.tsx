@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
-
-
+import Image from 'next/image';
+import femaleAdvisor from "@/public/femaleAdvisor2.jpg";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "価値観の一致で探す人が結婚できない理由と選ぶべき相手",
@@ -55,7 +56,7 @@ export default function EssentialQuestionPage2() {
           </p>
 
           {/* --- 本質への転換（H2） --- */}
-          <section className="space-y-6 w-full pt-4">
+          <section className="space-y-2 w-full pt-4">
             <h2 className="text-xl sm:text-2xl font-black text-gray-900 border-l-4 border-[#E6A2B3] pl-4 mb-6 leading-relaxed w-full">
               【本質への転換】重要なのは「ズレがないこと」ではなく、ズレを前にした時の『適応力』
             </h2>
@@ -97,24 +98,56 @@ export default function EssentialQuestionPage2() {
           </section>
 
           {/* --- 一言メッセージ 🩷 --- */}
-          <div className="py-6 border-t border-b border-pink-150/40 w-full flex items-start gap-3">
-            <span className="text-xl mt-0.5">🩷</span>
-            <div className="w-full">
-              <span className="font-bold text-gray-900 text-lg block mb-1">一言メッセージ</span>
-              真面目な人は【選択にゼロか1】しかないことが多いです。要は、固定観念にしばられないことが大切。人生の答えは一つではありません。
-            </div>
-          </div>
+<div className="bg-white p-6 rounded-2xl shadow-lg max-w-sm mx-auto">
+  {/* Subtitle / Role Info */}
+  <div className="mb-4">
+    <p className="text-sm font-medium text-gray-500 tracking-wider">
+      キャリアカウンセラー / ライフコーチ
+    </p>
+  </div>
+
+  {/* Main Message Container with Text Wrapping */}
+  <div className="py-0 border-t border-b border-pink-150/40 w-full block flow-root text-gray-700 leading-relaxed">
+    
+    {/* Floated Image: Text wraps around this automatically */}
+    <div className="float-left mr-3 mb-2">
+      <Image
+        src={femaleAdvisor}
+        alt="アドバイザー"
+        width={84}  
+        height={84}
+        className="rounded-full object-cover border-4 border-pink-100"
+      />
+    </div>
+
+    {/* Content Area */}
+    <span className="text-xl inline-block mr-1 align-middle">🩷</span>
+    <span className="font-bold text-gray-900 text-lg inline align-middle">
+      一言メッセージ
+    </span>
+    
+    <p className="mt-2 text-base">
+      真面目な人は【選択にゼロか1】しかないことが多いです。要は、固定観念にしばられないことが大切。人生の答えは一つではありません。
+    </p>
+  </div>
+
+  {/* Action Buttons */}
+
+</div>
 
           {/* --- ポスト形式的思考への誘導 --- */}
-          <div className="py-4 text-center w-full">
-            <a 
-              href="#post-formal-thought"
-              className="inline-flex items-center gap-2 text-[#D9889D] hover:text-[#E6A2B3] font-bold text-base sm:text-lg transition-colors duration-200 border-b border-dashed border-[#D9889D] pb-1"
-            >
-              <span>🔘🔘 大人のための柔軟な思考システム【ポスト形式的思考とは？】を詳しく見る</span>
-            </a>
-          </div>
+<div className="py-0 text-center w-full px-4">
+<Link 
+  href="/emotional-maturity#consider"
+  className="group inline-flex items-center justify-center gap-2 bg-gradient-to-b from-[#E6A2B3] to-[#D9889D] text-white font-bold text-sm sm:text-base w-full max-w-md mx-auto py-3.5 px-6 rounded-xl border-t border-[#ffffff]/30 shadow-[0_6px_16px_-4px_rgba(217,136,157,0.6),_0_4px_12px_rgba(0,0,0,0.1),_inset_0_-4px_0_rgba(166,91,109,0.5)] transition-all duration-200 ease-out transform active:translate-y-1 active:shadow-[0_2px_8px_-2px_rgba(217,136,157,0.6),_inset_0_-1px_0_rgba(166,91,109,0.5)] hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-4px_rgba(217,136,157,0.7),_inset_0_-4px_0_rgba(166,91,109,0.5)]"
+>
+    <span className=" max-w-[97%] drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.15)]">
+      ポスト形式的思考とは？を詳しく見る➡
+    </span>
+    
 
+</Link>
+</div>
           {/* --- 結婚の定義 --- */}
           <section className="pt-6 w-full space-y-4">
             <h3 className="text-lg sm:text-xl font-black text-gray-900 flex items-center gap-2 w-full">

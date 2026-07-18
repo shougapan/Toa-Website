@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image from 'next/image';
+import maleAdvisor from "@/public/maleAdvisor2.jpg";
 // ※ Next.js等の環境に合わせて、適切なアイコンやImageコンポーネントをインポートしてください。
 // import Image from 'next/image';
 
@@ -154,7 +155,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
             </p>
           </div>
 
-          <div className="bg-gray-50 p-5 sm:p-6 rounded-2xl border border-gray-150">
+          <div id="consider" className="bg-gray-50 p-5 sm:p-6 rounded-2xl border border-gray-150">
             <h4 className="text-base font-black text-gray-900 mb-3 flex items-center gap-2">
               🧠 ポスト形式的思考とは？（大人の思考法）
             </h4>
@@ -212,24 +213,44 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </p>
         </div>
 
-        {/* --- メッセージ 💬 --- */}
-        <div className="p-6 sm:p-10 bg-[#FFF8FA] border-t border-b border-pink-100/60">
-          <div className="flex gap-3">
-            <span className="text-2xl mt-1">💬</span>
-            <div className="space-y-3 text-base text-gray-700 leading-relaxed">
-              <h4 className="font-bold text-gray-900 text-lg">メッセージ</h4>
-              <p>
-                大人になると価値観が固定するため自分を変えるのも難しくなる傾向がありますが、新しい知識や見解を知ることで、<strong>「なるほど、少し視野を広げて柔軟にチャレンジしてみようかな？」「そういうやり方もあるのか」</strong>と気づきのチャンスになればいいのかなと思います。
-              </p>
-              <p>
-                その上で、人生において、どのような選択をするかはあなた次第です。
-              </p>
-              <p className="font-bold text-[#D9889D]">
-                私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
-              </p>
-            </div>
-          </div>
-        </div>
+       <div className="p-6 sm:p-10 bg-[#FFF8FA] border-t border-b border-pink-100/60 flow-root">
+  
+  {/* Floated Image: Text will wrap around this seamlessly on mobile */}
+  <div className="float-left mr-4 mb-2">
+    <Image
+      src={maleAdvisor}
+      alt="アドバイザー"
+      width={84} // Perfect balance for mobile text-wrapping
+      height={84}
+      className="rounded-full object-cover border-4 border-pink-100"
+    />
+  </div>
+
+  {/* Header Content */}
+  <div className="mb-3">
+    <span className="text-2xl mr-2 inline-block align-middle">💬</span>
+    <h4 className="font-bold text-gray-900 text-lg inline-block align-middle">
+      メッセージ
+    </h4>
+  </div>
+
+  {/* Flowing Text Body */}
+  <div className="text-base text-gray-700 leading-relaxed space-y-3">
+    <p>
+      大人になると価値観が固定するため自分を変えるのも難しくなる傾向がありますが、新しい知識や見解を知ることで、
+      <strong>「なるほど、少し視野を広げて柔軟にチャレンジしてみようかな？」「そういうやり方もあるのか」</strong>
+      と気づきのチャンスになればいいのかなと思います。
+    </p>
+    
+    <p>
+      その上で、人生において、どのような選択をするかはあなた次第です。
+    </p>
+    
+    <p className="font-bold text-[#D9889D]">
+      私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
+    </p>
+  </div>
+</div>
 
         {/* --- まとめ＆フッター（CTA） --- */}
         <div className="p-6 sm:p-10 text-center bg-white space-y-6">

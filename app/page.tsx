@@ -943,44 +943,47 @@ export default function Home() {
 
         {/* CTA */}
         <div className="grid gap-3 md:grid-cols-2">
+<Link
+  href="/beginners#support"
+  className="group block rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+>
+  <div className="text-3xl">🌸</div>
 
-          <a
-            href="#"
-            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-          >
-            <div className="text-3xl">🌸</div>
+  <h5 className="mt-3 text-lg font-black text-gray-900">
+    恋愛初心者・婚活ビギナーのあなたへ
+  </h5>
 
-            <h5 className="mt-3 text-lg font-black text-gray-900">
-              恋愛初心者・婚活ビギナーのあなたへ
-            </h5>
+  <p className="mt-2 text-sm leading-6 text-gray-600">
+    初めての婚活でも安心して進めるためのサポートをご紹介します。
+  </p>
 
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              初めての婚活でも安心して進めるためのサポートをご紹介します。
-            </p>
+  <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
+    詳しく見る →
+  </div>
+</Link>
 
-            <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
-              詳しく見る →
-            </div>
-          </a>
+import Link from 'next/link';
 
-          <a
-            href="#"
-            className="group rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-          >
-            <div className="text-3xl">💝</div>
+// ... inside your component ...
 
-            <h5 className="mt-3 text-lg font-black text-gray-900">
-              恋愛経験が無いのですが大丈夫ですか？
-            </h5>
+<Link
+  href="/beginners"
+  className="group block rounded-2xl border border-green-200 bg-gradient-to-br from-green-50 to-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+>
+  <div className="text-3xl">💝</div>
 
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              恋愛経験がなくても成婚できる理由を詳しくご紹介します。
-            </p>
+  <h5 className="mt-3 text-lg font-black text-gray-900">
+    恋愛経験が無いのですが大丈夫ですか？
+  </h5>
 
-            <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
-              詳しく見る →
-            </div>
-          </a>
+  <p className="mt-2 text-sm leading-6 text-gray-600">
+    恋愛経験がなくても成婚できる理由を詳しくご紹介します。
+  </p>
+
+  <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
+    詳しく見る →
+  </div>
+</Link>
 
         </div>
 
@@ -1125,24 +1128,25 @@ export default function Home() {
         </div>
 
         {/* CTA */}
-        <a
-          href="#"
-          className="group flex items-center justify-between rounded-2xl border border-green-200 bg-gradient-to-r from-green-50 to-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-        >
-          <div>
-            <div className="text-lg font-black text-gray-900">
-              【親御様へ】
-            </div>
+  
+<Link
+  href="/parents"
+  className="group flex items-center justify-between rounded-2xl border border-green-200 bg-gradient-to-r from-green-50 to-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+>
+  <div>
+    <div className="text-lg font-black text-gray-900">
+      【親御様へ】
+    </div>
 
-            <p className="mt-1 text-sm text-gray-600">
-              大切なご子息・ご令嬢の結婚を願うあなたへ
-            </p>
-          </div>
+    <p className="mt-1 text-sm text-gray-600">
+      大切なご子息・ご令嬢の結婚を願うあなたへ
+    </p>
+  </div>
 
-          <div className="font-bold text-green-700 transition-transform group-hover:translate-x-1">
-            詳しく見る →
-          </div>
-        </a>
+  <div className="font-bold text-green-700 transition-transform group-hover:translate-x-1">
+    詳しく見る →
+  </div>
+</Link>
 
       </div>
 

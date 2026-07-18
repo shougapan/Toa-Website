@@ -96,6 +96,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "男性は女性の外見しか見ない？問いと答え", href: "/attraction-essence" },
         { name: "「価値観の一致」を探している人が、いつまでも結婚できない理由", href: "/alignment-myth" },
+        { name: "婚活で「選ぶ・選ばれる」レースに疲れたあなたへ。", href: "/intellectual-maturity" },
 
       ],
     },
@@ -129,7 +130,7 @@ export default function PremiumNavbar() {
     <>
       {/* MEDICAL THEMED NAVY-PURPLE TOP HEADER */}
       <div 
-        className={`w-full bg-gradient-to-r from-[#1E1B4B] via-[#2E1065] to-[#3B0764] text-[#FAF7F4] py-0 px-4 z-50 relative shadow-md shadow-purple-950/20 border-b border-indigo-500/10 transition-all ${
+        className={`w-full bg-gradient-to-r from-[#1E1B4B] via-[#2E1065] to-[#3B0764] text-[#FAF7F4] py-2.5 px-4 z-50 relative shadow-md shadow-purple-950/20 border-b border-indigo-500/10 transition-all ${
           isOpen ? "hidden" : "block"
         }`}
       >
