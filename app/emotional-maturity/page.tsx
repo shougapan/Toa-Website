@@ -1,16 +1,104 @@
 import React from 'react';
 import Image from 'next/image';
+import { Metadata } from 'next';
 import maleAdvisor from "@/public/maleAdvisor2.jpg";
-// ※ Next.js等の環境に合わせて、適切なアイコンやImageコンポーネントをインポートしてください。
-// import Image from 'next/image';
+
+// ==========================================
+// 1. ページ全体のSEO用メタデータ設定 (Server Side)
+// ==========================================
+export const metadata: Metadata = {
+  title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",
+  description:
+    "生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。白黒思考を脱却し、結婚生活の土台となるポスト形式的思考や真の共感力を育む4つの内面的アプローチを大阪梅田ドクターズ結婚相談所が提案します。",
+
+  keywords: [
+    "大阪梅田 結婚相談所",
+    "人間的成熟度",
+    "精神的成熟",
+    "ポスト形式的思考",
+    "共感力",
+    "大人の婚活",
+    "内面磨き",
+    "医師監修 結婚相談所",
+  ],
+
+  authors: [
+    {
+      name: "現役女医（大阪梅田ドクターズ結婚相談所監修）",
+    },
+    {
+      name: "ベテランカウンセラー",
+    },
+  ],
+
+  alternates: {
+    canonical: "/maturity",
+  },
+
+  openGraph: {
+    title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",
+    description:
+      "生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。矛盾を受け入れる大人の思考システムとは？",
+    type: "article",
+    locale: "ja_JP",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    url: "/maturity",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",
+    description:
+      "白黒思考から脱却し、生涯続く結婚生活の安心の土台となる「人間的成熟度」の育て方を解説。",
+  },
+};
 
 interface MaturityPageProps {
   sectionRef?: React.RefObject<HTMLDivElement>;
 }
 
+// ==========================================
+// 2. メインコンポーネント
+// ==========================================
 export default function MaturityPage({ sectionRef }: MaturityPageProps) {
+  
+  // 構造化データ (JSON-LD) の定義 - 記事の内容に完全一致
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    'headline': '大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件',
+    'description': '生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。白黒思考を脱却し、結婚生活の土台となるポスト形式的思考や真の共感力を育む4つの内面的アプローチ。',
+    'datePublished': '2026-07-20T12:00:00+09:00', // 現在の日付に合わせたタイムスタンプ
+    'author': [
+      {
+        '@type': 'Person',
+        'name': '現役女医（大阪梅田ドクターズ結婚相談所監修）',
+        'jobTitle': 'Medical Doctor'
+      },
+      {
+        '@type': 'Person',
+        'name': 'ベテランカウンセラー',
+        'jobTitle': 'Senior Marriage Counselor'
+      }
+    ],
+    'publisher': {
+      '@type': 'Organization',
+      'name': '大阪梅田ドクターズ結婚相談所',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://your-domain.com/logo.png' // 必要に応じて本番環境のロゴURLに差し替えてください
+      }
+    }
+  };
+
   return (
     <div ref={sectionRef} className="w-full bg-[#FFFBFD] py-10 sm:py-16 px-4">
+      {/* 構造化データをHEADまたはBody内に安全に注入 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="max-w-4xl mx-auto bg-white shadow-md border border-pink-100/60 rounded-3xl overflow-hidden">
         
         {/* --- ヒーローヘッダーセクション --- */}
@@ -71,10 +159,10 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
                 <span className="text-xl">🔵</span>
                 <h3 className="text-base sm:text-lg font-bold text-gray-900">自己への肯定感</h3>
               </div>
-              <p className="text-base text-gray-700 leading-relaxed pl-8 space-y-2">
-                <span>自分の強みだけでなく、不完全な部分や弱さも「これが今の自分だ」と認め、自分自身の最大の味方でいられる強さです。自分の内側にブレない土台があるため、精神的恒常性（メンタルの安定）を維持できます。</span>
-                <span className="block mt-2">他者からの過度な承認欲求（見返り）を求めず、自立して相手と向き合えるため、依存や支配のない対等なパートナーシップが築けます。</span>
-              </p>
+              <div className="text-base text-gray-700 leading-relaxed pl-8 space-y-2">
+                <p>自分の強みだけでなく、不完全な部分や弱さも「これが今の自分だ」と認め、自分自身の最大の味方でいられる強さです。自分の内側にブレない土台があるため、精神的恒常性（メンタルの安定）を維持できます。</p>
+                <p>他者からの過度な承認欲求（見返り）を求めず、自立して相手と向き合えるため、依存や支配のない対等なパートナーシップが築けます。</p>
+              </div>
             </div>
 
             {/* 条件4 */}
@@ -105,7 +193,6 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </p>
 
           <div className="space-y-6">
-            {/* 問いと答え */}
             <div className="bg-white p-5 rounded-2xl shadow-sm border border-pink-100">
               <div className="text-[#D9889D] font-black text-base mb-1">【問い】真に相手に共感するためには何が必要か？</div>
               <div className="text-gray-900 font-bold text-base mb-4">【答え】</div>
@@ -213,44 +300,39 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </p>
         </div>
 
-       <div className="p-6 sm:p-10 bg-[#FFF8FA] border-t border-b border-pink-100/60 flow-root">
-  
-  {/* Floated Image: Text will wrap around this seamlessly on mobile */}
-  <div className="float-left mr-4 mb-2">
-    <Image
-      src={maleAdvisor}
-      alt="アドバイザー"
-      width={84} // Perfect balance for mobile text-wrapping
-      height={84}
-      className="rounded-full object-cover border-4 border-pink-100"
-    />
-  </div>
+        {/* --- アドバイザーからのメッセージ --- */}
+        <div className="p-6 sm:p-10 bg-[#FFF8FA] border-t border-b border-pink-100/60 flow-root">
+          <div className="float-left mr-4 mb-2">
+            <Image
+              src={maleAdvisor}
+              alt="アドバイザー"
+              width={84}
+              height={84}
+              className="rounded-full object-cover border-4 border-pink-100"
+            />
+          </div>
 
-  {/* Header Content */}
-  <div className="mb-3">
-    <span className="text-2xl mr-2 inline-block align-middle">💬</span>
-    <h4 className="font-bold text-gray-900 text-lg inline-block align-middle">
-      メッセージ
-    </h4>
-  </div>
+          <div className="mb-3">
+            <span className="text-2xl mr-2 inline-block align-middle">💬</span>
+            <h4 className="font-bold text-gray-900 text-lg inline-block align-middle">
+              メッセージ
+            </h4>
+          </div>
 
-  {/* Flowing Text Body */}
-  <div className="text-base text-gray-700 leading-relaxed space-y-3">
-    <p>
-      大人になると価値観が固定するため自分を変えるのも難しくなる傾向がありますが、新しい知識や見解を知ることで、
-      <strong>「なるほど、少し視野を広げて柔軟にチャレンジしてみようかな？」「そういうやり方もあるのか」</strong>
-      と気づきのチャンスになればいいのかなと思います。
-    </p>
-    
-    <p>
-      その上で、人生において、どのような選択をするかはあなた次第です。
-    </p>
-    
-    <p className="font-bold text-[#D9889D]">
-      私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
-    </p>
-  </div>
-</div>
+          <div className="text-base text-gray-700 leading-relaxed space-y-3">
+            <p>
+              大人になると価値観が固定するため自分を変えるのも難しくなる傾向がありますが、新しい知識や見解を知ることで、
+              <strong>「なるほど、少し視野を広げて柔軟にチャレンジしてみようかな？」「そういうやり方もあるのか」</strong>
+              と気づ気のチャンスになればいいのかなと思います。
+            </p>
+            <p>
+              その上で、人生において、どのような選択をするかはあなた次第です。
+            </p>
+            <p className="font-bold text-[#D9889D]">
+              私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
+            </p>
+          </div>
+        </div>
 
         {/* --- まとめ＆フッター（CTA） --- */}
         <div className="p-6 sm:p-10 text-center bg-white space-y-6">

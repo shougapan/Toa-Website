@@ -626,7 +626,7 @@ export default function Home() {
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[350px] md:h-[360px] w-full">
+      <div className="relative h-[230px] md:h-[360px] w-full">
         <Image
           src={mensMarriage}
           alt="男性の婚活"
@@ -1098,16 +1098,6 @@ import Link from 'next/link';
 
         </div>
 
-        {/* Bottom Image */}
-        <div className="relative h-[220px] md:h-[380px] overflow-hidden rounded-2xl">
-          <Image
-            src={dad}
-            alt="親子の絆"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-        </div>
 
         {/* Closing */}
         <div className="rounded-2xl bg-gradient-to-r from-rose-50 to-pink-50 p-6 text-center border border-rose-100">

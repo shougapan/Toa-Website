@@ -5,11 +5,51 @@ import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: "なぜハイスペックとの成婚を望むのか？",
+  title: "恋愛初心者がスピード成婚する方法",
   description:
-    "ハイスペック婚を望む根底にある承認欲求や自己防衛本能。条件に振り回されず、自己のアイデンティティと望む未来を明確にすることで、あなたにとって本当に相性の良いパートナーと結ばれるための「迷いのない婚活の選択ルート」をあきらかにします。",
-};
+    "大阪梅田のドクターズ結婚相談所は、男性が外見に惹かれた後に内面を見始める心理を分析し、婚活において中身を愛されるための科学的な戦略を解説します。自己理解と内面磨きを通じて、成婚へ導くためのプロの視点を提案します。",
 
+  keywords: [
+    "大阪梅田 結婚相談所",
+    "婚活",
+    "成婚",
+    "スピード成婚",
+    "恋愛初心者",
+    "お見合い",
+    "婚活女性",
+    "医師監修 結婚相談所",
+  ],
+
+  authors: [
+    {
+      name: "現役女医（大阪梅田ドクターズ結婚相談所監修）",
+    },
+    {
+      name: "ベテランカウンセラー",
+    },
+  ],
+
+  alternates: {
+    canonical: "/beginners",
+  },
+
+  openGraph: {
+    title: "恋愛初心者がスピード成婚する方法",
+    description:
+      "男性心理を理解し、外見だけではなく内面から愛されるための婚活戦略を大阪梅田ドクターズ結婚相談所が解説します。",
+    type: "article",
+    locale: "ja_JP",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    url: "/beginners",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "恋愛初心者がスピード成婚する方法",
+    description:
+      "男性心理を理解し、成婚につながる魅力の磨き方を解説。",
+  },
+};
 
 export default function HighSpecTrapAnalysis() {
     // 2. Update the JSON-LD to match the "true-partnership" article details
