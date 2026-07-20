@@ -6,15 +6,15 @@ import React from "react";
 import Image from "next/image";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import maleAdvisor from "@/public/maleAdvisor.jpg";
-import sweets from "@/public/sweets.jpg";
-import ceremony from "@/public/ceremony1.jpg";
+import woman3 from "@/public/woman3.jpg";
+import ceremony from "@/public/marriage1.jpg";
 import dad from "@/public/dad.jpg";
 import Link from "next/link";
 
 import Gallery from "@/components/Gallery"
 
 
-import mensMarriage from "@/public/youngMan1.jpg";
+import mensMarriage from "@/public/woman2.jpg";
 import { useState } from "react";
 
 import img1 from "@/public/main1.jpg";
@@ -306,7 +306,7 @@ export default function Home() {
       {/* Bottom Image */}
       <div className="pt-2">
         <Image
-          src="/highspecMan.jpg"
+          src="/man3.jpg"
           alt="ハイスペックな男性との婚活"
           width={1200}
           height={800}
@@ -371,7 +371,7 @@ export default function Home() {
     {/* Top Image */}
     <div className="mb-6">
       <Image
-        src="/ceremony.jpg"
+        src="/doctors1.jpg"
         alt="大阪梅田ドクターズ結婚相談所"
         width={1200}
         height={800}
@@ -461,7 +461,7 @@ export default function Home() {
     {/* Top Image */}
     <div className="mb-6">
       <Image
-        src="/woman.jpg"
+        src="/man2.jpg"
         alt="誠実で笑顔が可愛い最高の男性との出会い"
         width={1200}
         height={800}
@@ -626,7 +626,7 @@ export default function Home() {
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[210px] md:h-[360px] w-full">
+      <div className="relative h-[350px] md:h-[360px] w-full">
         <Image
           src={mensMarriage}
           alt="男性の婚活"
@@ -841,9 +841,9 @@ export default function Home() {
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[210px] md:h-[360px] w-full">
+      <div className="relative h-[330px] md:h-[360px] w-full">
         <Image
-          src={sweets}
+          src={woman3}
           alt="恋愛初心者サポート"
           fill
           className="object-cover"
@@ -1011,7 +1011,7 @@ import Link from 'next/link';
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[210px] md:h-[360px] w-full">
+      <div className="relative h-[360px] md:h-[360px] w-full">
         <Image
           src={ceremony}
           alt="幸せな結婚"

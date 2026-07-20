@@ -1,11 +1,12 @@
 "use client"
 
 import React, { useState } from 'react';
+// Minimal icon imports for visual cues
+import { BookOpen, MessagesSquare, Shirt } from 'lucide-react';
 
 export default function MatchmakingRules() {
   const [activeTab, setActiveTab] = useState<'etiquette' | 'conversation' | 'clothing'>('etiquette');
 
-  // カテゴリ別のコンパクトなデータ構造
   const rules = {
     etiquette: [
       { text: "女性がお茶代を払うのはNG", desc: "お茶代は男性全額支払いがルール。女性はスマートに奢られましょう。" },
@@ -71,32 +72,60 @@ export default function MatchmakingRules() {
           </p>
         </div>
 
-        {/* スマホ用コンパクトタブ切り替え */}
-        <div className="grid grid-cols-3 gap-1 bg-gray-200/60 p-0.5 rounded-lg text-center">
-          <button
-            onClick={() => setActiveTab('etiquette')}
-            className={`py-1.5 text-[16px] font-bold rounded-md transition-all ${activeTab === 'etiquette' ? 'bg-white text-rose-600 shadow-sm' : 'text-gray-600'}`}
-          >
-            茶代・基本
-          </button>
-          <button
-            onClick={() => setActiveTab('conversation')}
-            className={`py-1.5 text-[16px] font-bold rounded-md transition-all ${activeTab === 'conversation' ? 'bg-white text-rose-600 shadow-sm' : 'text-gray-600'}`}
-          >
-            会話・質問
-          </button>
-          <button
-            onClick={() => setActiveTab('clothing')}
-            className={`py-1.5 text-[16px] font-bold rounded-md transition-all ${activeTab === 'clothing' ? 'bg-white text-rose-600 shadow-sm' : 'text-gray-600'}`}
-          >
-            服装・身だしなみ
-          </button>
+        {/* HIGH VISIBILITY TABS SECTION */}
+        <div className="space-y-1">
+          {/* Micro-copy to prompt action */}
+          <div className="flex justify-between items-center px-1">
+            <span className="text-[12px] font-bold text-gray-400 tracking-wider uppercase">Category</span>
+            <span className="text-[12px] text-rose-500 font-medium animate-pulse">タップで切り替え ↴</span>
+          </div>
+
+          <div className="grid grid-cols-3 gap-1 bg-gray-200/80 p-1 rounded-xl text-center shadow-inner">
+            {/* Tab 1 */}
+            <button
+              onClick={() => setActiveTab('etiquette')}
+              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
+                activeTab === 'etiquette'
+                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              <BookOpen className={`w-4 h-4 mb-0.5 ${activeTab === 'etiquette' ? 'text-rose-500' : 'text-gray-400'}`} />
+              <span>茶代・基本</span>
+            </button>
+
+            {/* Tab 2 */}
+            <button
+              onClick={() => setActiveTab('conversation')}
+              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
+                activeTab === 'conversation'
+                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              <MessagesSquare className={`w-4 h-4 mb-0.5 ${activeTab === 'conversation' ? 'text-rose-500' : 'text-gray-400'}`} />
+              <span>会話・質問</span>
+            </button>
+
+            {/* Tab 3 */}
+            <button
+              onClick={() => setActiveTab('clothing')}
+              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
+                activeTab === 'clothing'
+                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              <Shirt className={`w-4 h-4 mb-0.5 ${activeTab === 'clothing' ? 'text-rose-500' : 'text-gray-400'}`} />
+              <span>服装・マナー</span>
+            </button>
+          </div>
         </div>
 
-        {/* NG項目リスト（アコーディオンを使わず、スマホで流し見しやすい極薄設計） */}
+        {/* NG項目リスト */}
         <div className="space-y-1.5">
           {rules[activeTab].map((item, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-2 flex flex-col justify-center">
+            <div key={index} className="bg-white border border-gray-200 rounded-lg p-2 flex flex-col justify-center animate-fadeIn">
               <div className="flex items-start space-x-1">
                 <span className="inline-block flex-shrink-0 bg-rose-100 text-rose-700 font-extrabold text-[14px] px-1 rounded mt-0.5">
                   NG

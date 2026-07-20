@@ -273,7 +273,7 @@ export default function SupportPage() {
 
           {/* BRAND ASSURANCE BLOCK */}
           <div className="bg-[#FAF8F5] rounded-xl p-4 border border-gray-100 text-gray-700 leading-relaxed text-base md:text-lg font-bold text-justify">
-            当社【大阪梅田ドクターズ結婚相談所】では、女性医師の客観的な分析眼と、キャリア20年のベテランカウンセラーが、他社相談所との深いパイプからこの裏情報を直接引き出します。あなたが「どこをポイントにして選べばハズレがないか」を明確にアドバイスいたします。
+            当社【大阪梅田ドクターズ結婚相談所】では、女性医師の客観的な分析眼と、キャリア20年のベテランカウンセラーが、サポート。あなたが「どこをポイントにして選べばハズレがないか」を明確にアドバイスいたします。
           </div>
         </div>
       </div>
