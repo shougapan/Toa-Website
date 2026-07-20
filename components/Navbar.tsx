@@ -99,6 +99,7 @@ export default function PremiumNavbar() {
         { name: "婚活で「選ぶ・選ばれる」レースに疲れたあなたへ。", href: "/intellectual-maturity" },
         { name: "なぜハイスペックとの成婚を望むのか？", href: "/true-partnership" },
         { name: "真の幸せを手に入れる方法", href: "/wellbeing" },
+        { name: "いい人どまり卒業のヒント", href: "/nice-person" },
 
       ],
     },
@@ -113,7 +114,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "料金プランと少人数制について", href: "/plan" },
         { name: "婚活の悩みと不安を解消する特別サポート", href: "/support" },
-        { name: "入会制限と入会審査", href: "/membership-steps" },
+        { name: "【料金】についての中の【入会制限】に飛ぶようにしてください", href: "/membership-steps" },
       ],
     },
     {

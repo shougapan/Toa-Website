@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "大阪梅田のドクターズ結婚相談所は、男性が外見に惹かれた後に内面を見始めるという心理学的アプローチを分析し、婚活において中身を愛させる科学的な戦略を解説しています。自分の内面磨きを通じて、成婚へと導くためのプロの視点を提案します。内面の磨き方に関する詳細な戦略は、大阪梅田ドクターズ結婚相談所のウェブサイトでご確認いただけます。",
   alternates: {
-    canonical: "/beginners",
+    canonical: "/emotional-maturity",
   },
 };
 

@@ -193,7 +193,7 @@ export default function Home() {
 
   {/* 03 */}
   <Link
-    href="/why-us#strength3"
+    href="/membership-steps"
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
