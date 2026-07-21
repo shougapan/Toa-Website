@@ -114,7 +114,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "料金プランと少人数制について", href: "/plan" },
         { name: "婚活の悩みと不安を解消する特別サポート", href: "/support" },
-        { name: "【料金】についての中の【入会制限】に飛ぶようにしてください", href: "/membership-steps" },
+        { name: "入会制限と入会審査", href: "/membership-steps" },
       ],
     },
     {

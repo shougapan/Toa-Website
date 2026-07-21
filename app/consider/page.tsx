@@ -24,7 +24,7 @@ export default function MarriageAdvicePage() {
     </p>
 
     {/* Main Title (H1) */}
-    <h1 className="mt-2 text-3xl font-bold leading-tight text-gray-900">
+    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-snug tracking-tight w-full max-w-4xl mx-auto">
       「婚活でいい人がいない？」と思い始めた３０代のあなたへ|大阪梅田ドクターズ結婚相談所が効率的な理由
     </h1>
 

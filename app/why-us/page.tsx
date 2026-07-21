@@ -12,7 +12,12 @@ import {
   Phone,
   Brain,
   GraduationCap,
-  CheckCircle2
+  CheckCircle2,
+  ChevronDown,
+  Users,
+  Search,
+  Target,
+  Briefcase
 } from 'lucide-react';
 
 
@@ -48,6 +53,167 @@ export default function ReasonsPage() {
         <div className="w-20 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-2 rounded-full" />
       </div>
 
+<section className="w-full bg-slate-50 py-8 px-2 sm:px-4">
+      <div className="max-w-5xl mx-auto">
+        
+        {/* SECTION HEADER */}
+        <div className="text-center mb-6">
+          <span className="text-sm font-black text-[#E53E3E] uppercase tracking-widest block">
+            Features
+          </span>
+          <h2 className="text-xl sm:text-2xl font-black text-slate-900 leading-relaxed">
+            大阪梅田ドクターズ結婚相談所が選ばれる理由
+          </h2>
+          <p className="text-sm text-slate-500 mt-1">
+            ボックスをタップすると詳細へ移動します
+          </p>
+        </div>
+
+        {/* 6 BUTTON GRID */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          
+          {/* BUTTON 1 */}
+          <Link
+            href="#01"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                01
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Users className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              現役女医× ベテランカウンセラー「最高峰の婚活プロデュース」
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+          {/* BUTTON 2 */}
+          <Link
+            href="#02"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                02
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Search className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              2名1組のダブルサポート<br />妥協なき「理想像の徹底解剖」
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+          {/* BUTTON 3 */}
+          <Link
+            href="#03"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                03
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Target className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              オーダーメイドの婚活戦略
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+          {/* BUTTON 4 */}
+          <Link
+            href="#04"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                04
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Briefcase className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              キャリアも、結婚も、妥協しない。<br />「戦略的ハイスペック婚活」
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+          {/* BUTTON 5 */}
+          <Link
+            href="#05"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                05
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Brain className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              心理学・脳科学に基づく「心が疲れない婚活」
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+          {/* BUTTON 6 */}
+          <Link
+            href="#06"
+            scroll={true}
+            className="bg-white hover:bg-blue-50/50 rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-[#E53E3E]"
+          >
+            <div className="flex items-center justify-between w-full mb-2">
+              <span className="text-xs font-black text-[#E53E3E] bg-red-50 px-2 py-0.5 rounded">
+                06
+              </span>
+              <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors">
+                <Sparkles className="w-5 h-5 text-[#2563EB]" />
+              </div>
+            </div>
+            <span className="text-base font-bold text-slate-900 group-hover:text-[#2563EB] transition-colors leading-snug line-clamp-2">
+              恋愛経験が少ない男女の魅力を引き出すプロのサポート
+            </span>
+            <div className="mt-3 flex items-center justify-end text-[#2563EB] text-xs font-bold gap-0.5 opacity-70 group-hover:opacity-100 transition-opacity">
+              <span>詳細をみる</span>
+              <ChevronDown className="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform text-[#E53E3E]" />
+            </div>
+          </Link>
+
+        </div>
+      </div>
+    </section>
+
       {/* ============================================================
           MAIN CONTENTS (ボックスを撤去し、テキスト幅を最大化)
           ============================================================ */}
@@ -58,7 +224,7 @@ export default function ReasonsPage() {
             ------------------------------------------------------------ */}
         <section id="strength1" className="scroll-mt-24 relative w-full">
           <div className="flex items-center gap-4 mb-6">
-            <div  className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#E6A2B3] to-[#D9889D] flex items-center justify-center text-white font-black text-lg shadow-md shadow-[#E6A2B3]/20 shrink-0">
+            <div id="01" className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#E6A2B3] to-[#D9889D] flex items-center justify-center text-white font-black text-lg shadow-md shadow-[#E6A2B3]/20 shrink-0">
               01
             </div>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight">
@@ -87,7 +253,7 @@ export default function ReasonsPage() {
         {/* ------------------------------------------------------------
             理由 2
             ------------------------------------------------------------ */}
-        <section className="w-full">
+        <section id="02" className="w-full">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-400 to-indigo-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-purple-200 shrink-0">
               02
@@ -107,9 +273,6 @@ export default function ReasonsPage() {
           <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             <p>
               当相談所が圧倒的な高い成婚率を誇る最大の理由は、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンド（セコンド）として徹底的に伴走する点にあります。
-            </p>
-            <p>
-              多くの大手結婚相談所やIBJ加盟店でありがちな「ただ条件を並べてシステムで検索するだけ」の機械的なマッチングでは、結婚後の価値観の不一致による失敗や、入会後のミスマッチによるスピード離婚のリスクを排除できません。
             </p>
             <p>
               当相談所では、まずあなた自身が気づいていない深層心理にある「本当の結婚相手への理想像」を入会面談で徹底的に解剖します。医師監修のカウンセリング心理学や脳科学、行動経済学のアプローチを用いて、あなたが人生において<span className="text-purple-700 font-bold">「絶対に譲れない条件」</span>と<span className="text-gray-500 font-bold">「実は妥協しても幸せになれるポイント」</span>をロジカルに切り分けます。
@@ -193,7 +356,7 @@ export default function ReasonsPage() {
         {/* ------------------------------------------------------------
             理由 3
             ------------------------------------------------------------ */}
-        <section className="w-full">
+        <section id="03" className="w-full">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-400 to-orange-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-amber-200 shrink-0">
               03
@@ -227,7 +390,7 @@ export default function ReasonsPage() {
         {/* ------------------------------------------------------------
             理由 4
             ------------------------------------------------------------ */}
-        <section className="w-full">
+        <section id="04" className="w-full">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-teal-400 to-emerald-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-teal-200 shrink-0">
               04
@@ -321,7 +484,7 @@ export default function ReasonsPage() {
         {/* ------------------------------------------------------------
             理由 5
             ------------------------------------------------------------ */}
-        <section className="w-full">
+        <section id="05" className="w-full">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-rose-400 to-pink-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-rose-200 shrink-0">
               05
@@ -355,7 +518,7 @@ export default function ReasonsPage() {
         {/* ------------------------------------------------------------
             理由 6
             ------------------------------------------------------------ */}
-        <section className="w-full">
+        <section id="06" className="w-full">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-400 to-cyan-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-blue-200 shrink-0">
               06

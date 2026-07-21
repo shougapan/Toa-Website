@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { 
   Heart, 
   Sparkles, 
@@ -186,13 +187,19 @@ export default function EssentialInquirySix() {
               母性や父性とはお相手に対して【「どれだけ相手のダメなところや違いを笑って許せるか」という『許容範囲の広さ（器の大きさ）』そのものです。【少しお相手に優しくしよう】と意識すれば、許せる事が増えるかもしれませんね。
             </div>
             
-            <div className="pt-2 border-t border-sky-100/60 flex flex-wrap items-center justify-between gap-2">
-              <span className="text-sm font-bold text-gray-500">【正解は一つではないの考え】も参考にしてくださいね</span>
-              <button className="inline-flex items-center gap-1 bg-white hover:bg-sky-50 text-sky-700 text-sm font-black px-3 py-1.5 rounded-lg border border-sky-200 transition-colors">
-                <span>【ポスト形式的思考】を詳しくみる</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
+   <div className="pt-2 border-t border-sky-100/60 flex flex-wrap items-center justify-between gap-2">
+  <span className="text-sm font-bold text-gray-500">
+    【正解は一つではないの考え】も参考にしてくださいね
+  </span>
+
+  <Link
+    href="/emotional-maturity#consider"
+    className="inline-flex items-center gap-1 bg-white hover:bg-sky-50 text-sky-700 text-sm font-black px-3 py-1.5 rounded-lg border border-sky-200 transition-colors"
+  >
+    <span>【ポスト形式的思考】を詳しくみる</span>
+    <ArrowRight className="w-3.5 h-3.5" />
+  </Link>
+</div>
           </div>
         </div>
 
