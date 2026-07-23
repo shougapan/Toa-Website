@@ -31,7 +31,7 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[390px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
+<section className="bg-pink-200 relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[390px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
   <img
     src="/cuteGirl1.jpg"
@@ -231,12 +231,12 @@ export default function Home() {
 <section className="w-full px-4 md:px-8 py-2">
 
   {/* Optional subtle header */}
-  <div className="max-w-5xl mx-auto mb-10">
-    <span className="text-sm font-bold tracking-wider text-rose-500 uppercase">
+  <div className="max-w-5xl mx-auto mb-10 text-center">
+    <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
       Philosophy
     </span>
 
-    <h2 className="mt-3 text-2xl md:text-4xl font-black text-gray-900 leading-tight">
+    <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
       梅田エリアにおける婚活の現実と<br />
       大阪梅田ドクターズ結婚相談所のアプローチ
     </h2>
@@ -348,7 +348,7 @@ export default function Home() {
       </p>
 
       {/* CTA */}
-      <div className="pt-2">
+      <div className="pt-2 flex justify-center">
         <Link
           href="/three-respects"
           className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-300 to-purple-700 px-7 py-4 text-base md:text-lg font-black text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
@@ -359,27 +359,13 @@ export default function Home() {
         </Link>
       </div>
 
-
-
     </div>
   </div>
 </section>
 
 <section className="w-full px-4 md:px-8 py-4 bg-white">
   <div className="max-w-5xl mx-auto">
-
-    {/* Top Image */}
-    <div className="mb-6">
-      <Image
-        src="/doctors1.jpg"
-        alt="大阪梅田ドクターズ結婚相談所"
-        width={1200}
-        height={800}
-        className="w-full rounded-3xl object-cover shadow-lg"
-      />
-    </div>
-
-    {/* Heading */}
+        {/* Heading */}
     <div className="text-center mb-6">
       <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
         SPECIAL INTRODUCTIONS
@@ -391,6 +377,20 @@ export default function Home() {
 
       <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
     </div>
+
+
+    {/* Top Image */}
+    <div className="mb-6">
+      <Image
+        src="/doctors1.jpg"
+        alt="大阪梅田ドクターズ結婚相談所"
+ 
+                  width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
+      />
+    </div>
+
 
     {/* Text */}
     <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5">
@@ -457,20 +457,7 @@ export default function Home() {
 
 <section className="w-full px-4 md:px-8 py-4 bg-white">
   <div className="max-w-5xl mx-auto">
-
-    {/* Top Image */}
-    <div className="mb-6">
-      <Image
-        src="/man2.jpg"
-        alt="誠実で笑顔が可愛い最高の男性との出会い"
-        width={1200}
-        height={800}
-        className="w-full rounded-3xl object-cover shadow-lg"
-      />
-    </div>
-
-
-    {/* Heading */}
+        {/* Heading */}
     <div className="text-center mb-6">
 
       <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
@@ -487,6 +474,16 @@ export default function Home() {
     </div>
     
 
+    {/* Top Image */}
+    <div className="mb-6">
+      <Image
+        src="/man2.jpg"
+        alt="誠実で笑顔が可愛い最高の男性との出会い"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
+      />
+    </div>
 
 
     {/* Text */}
@@ -626,12 +623,14 @@ export default function Home() {
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[230px] md:h-[360px] w-full">
+      <div className="relative ">
         <Image
           src={mensMarriage}
           alt="男性の婚活"
-          fill
-          className="object-cover"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
+          
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       </div>
@@ -841,12 +840,13 @@ export default function Home() {
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[330px] md:h-[360px] w-full">
+      <div className="relative w-full">
         <Image
           src={woman3}
           alt="恋愛初心者サポート"
-          fill
-          className="object-cover"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
       </div>
@@ -960,9 +960,6 @@ export default function Home() {
   </div>
 </Link>
 
-import Link from 'next/link';
-
-// ... inside your component ...
 
 <Link
   href="/beginners"
@@ -1011,12 +1008,13 @@ import Link from 'next/link';
     <div className="overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-white via-rose-50 to-pink-50 shadow-xl">
 
       {/* Top Image */}
-      <div className="relative h-[360px] md:h-[360px] w-full">
+      <div className="relative w-full">
         <Image
           src={ceremony}
           alt="幸せな結婚"
-          fill
-          className="object-cover"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
       </div>
@@ -1568,9 +1566,9 @@ import Link from 'next/link';
     <Image
       src="/team1.jpg"
       alt="大阪梅田ドクターズ結婚相談所 チーム"
-      width={1400}
-      height={700}
-      className="w-full rounded-3xl object-cover shadow-lg border border-gray-100"
+          width={1200}
+          height={800}
+          className="w-full rounded-3xl object-cover shadow-lg"
     />
   </div>
 
